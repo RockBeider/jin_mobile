@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyMybaba">
+        <div class="cont w-460">
+            <h1 class="layerTitle">배송지 변경</h1>
+            <div class="layerBody ">
+                <div class="tab-a tab-ui">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0)">배송지 선택</a></li>
+                        <li><a href="javascript:void(0)">신규 입력</a></li>
+                    </ul>
+                </div>
+                <div class="tab-cont">
+                    <div class="on">
+                        <div class="form-wrap scroll-wrap">
+                            <div class="form-row disabled">
+                                <div class="form-box d-flex disabled">
+                                    <input type="text" value="" id="addr1-1" placeholder="집"  disabled/>
+                                    <button type="button" class="btn sm btn-form">배송지 목록</button>
+                                </div>
+                            </div>
+                            <div class="form-row disabled">
+                                <div class="form-box">
+                                    <input type="text" value="" id="addr1-2" placeholder="김바바" disabled />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" id="addr1-3" placeholder="01012345678" disabled />
+                                </div>
+                            </div>
+                            <!-- 주소 -->
+                            <div class="form-row">
+                                <div class="form-box d-flex disabled">
+                                    <input type="text" value="" id="addr1-4-1" placeholder="우편번호" disabled/>
+                                    <button type="button" class="btn sm btn-form">우편번호 검색</button>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box disabled">
+                                    <input type="text" value="" id="addr1-4-2" placeholder="주소" disabled/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box disabled">
+                                    <input type="text" value="" id="addr1-4-3" placeholder="상세 주소" disabled/>
+                                </div>
+                            </div>
+                            <!-- // 주소 -->
+                            <div class="form-row">
+                                <div class="checkbox"><input type="checkbox" id="repr-addr1"><label for="repr-addr1" class="font-s16">대표배송지로 설정합니다.</label></div>
+                            </div>
+                            <!-- 배송메시지 -->
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <label for="ordSel-1">배송 메세지</label>
+                                    <select id="ordSel-1">
+                                        <option selected="">직접 입력</option>
+                                        <option>배송 전 미리 연락바랍니다.</option>
+                                        <option>부재 시 경비실에 맡겨주세요.</option>
+                                        <option>부재 시 문자 또는 전화주세요.</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" placeholder="배송 메시지 입력 (최대 50자)" id="ordInp2-3">
+                                </div>
+                            </div>
+                            <!-- // 배송메시지 -->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-wrap scroll-wrap">
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" id="addr2-1" placeholder="배송지명" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" id="addr2-1" placeholder="받으시는 분"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" id="addr2-3" placeholder="휴대전화 번호"/>
+                                </div>
+                            </div>
+                            <!-- 주소 -->
+                            <div class="form-row">
+                                <div class="form-box d-flex disabled">
+                                    <input type="text" value="" id="addr2-4-1" placeholder="우편번호" disabled/>
+                                    <button type="button" class="btn sm btn-form">우편번호 검색</button>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box disabled">
+                                    <input type="text" value="" id="addr2-4-2" placeholder="주소" disabled/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box disabled">
+                                    <input type="text" value="" id="addr2-4-3" placeholder="상세 주소" />
+                                </div>
+                            </div>
+                            <!-- // 주소 -->
+                            <div class="form-row">
+                                <div class="checkbox"><input type="checkbox" id="repr-addr2"><label for="repr-addr2" class="font-s16">대표배송지로 설정합니다.</label></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="checkbox"><input type="checkbox" id="list-add"><label for="list-add" class="font-s16">기본배송지 목록에 추가합니다.</label></div>
+                            </div>
+                            <!-- 배송메시지 -->
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <label for="ordSel-2">배송 메세지</label>
+                                    <select id="ordSel-2">
+                                        <option selected="">직접 입력</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" placeholder="배송 메시지 입력 (최대 50자)" id="ordInp2-3">
+                                </div>
+                            </div>
+                            <!-- // 배송메시지 -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn">취소</button>
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('lyMybaba')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

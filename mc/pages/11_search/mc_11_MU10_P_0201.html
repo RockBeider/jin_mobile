@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 통합검색</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop full-size open">
+
+        <div class="cont">
+            <h1 class="layer-title"><span class="for-a11y">통합검색</span></h1>
+
+            <section>
+
+                <!-- search-area -->
+                <div class="search-area">
+                    <input type="text" class="search-input" placeholder="[지고트] 나들이 원피스 입고">
+                    <button class="del" onclick="searchArea_control.del()">삭제</button>
+                    <button type="button" class="search-btn"><span class="for-a11y">검색</span></button>
+                </div>
+                <!-- //search-area -->
+
+                <!-- tab-ui -->
+                <div class="tab-e tab-ui">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0)">쇼핑 트렌드</a></li>
+                        <li><a href="javascript:void(0)">추천 브랜드</a></li>
+                        <li><a href="javascript:void(0)">추천 상품</a></li>
+                    </ul>
+                </div>
+                <!-- //tab-ui -->
+
+                <!-- tab-cont -->
+                <div class="tab-cont expand">
+                    <!-- 쇼핑 트렌드 -->
+                    <div class="on">
+                        <!-- hash-tag-list -->
+                        <div class="hash-tag-list">
+                            <button type="button" class="hash-tag-item">윤아패딩</button>
+                            <button type="button" class="hash-tag-item">2020연말세일</button>
+                            <button type="button" class="hash-tag-item">에센스</button>
+                            <button type="button" class="hash-tag-item">캐시미어</button>
+                            <button type="button" class="hash-tag-item">비오템</button>
+                            <button type="button" class="hash-tag-item">나이키타임딜</button>
+                            <button type="button" class="hash-tag-item">타임특가모음</button>
+                            <button type="button" class="hash-tag-item">후드티</button>
+                            <button type="button" class="hash-tag-item">비타민</button>
+                            <button type="button" class="hash-tag-item">후드티</button>
+                        </div>
+                        <!-- //hash-tag-list -->
+                    </div>
+                    <!-- //쇼핑 트렌드 -->
+
+                    <!-- 추천 브랜드 -->
+                    <div class="">
+
+                        <!-- banner-has-scroll -->
+                        <!-- <div class="banner-has-scroll expand-slider">
+                            <div class="swiper-box">
+                                <div class="swiper-container" id="recommend-brand">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="thumb">
+                                                    <img src="../../img/temp/20210504_tilbury_denimguide_1388_580_1620784305484.jpg" alt="">
+                                                </div>
+                                                <span class="brand-name">
+                                                    <span class="kr">더 틸버리</span>
+                                                    <span class="en">THE TILBURY</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <img src="../../img/temp/20210513_jj_best_1388x580_1621489069851.jpg" alt="">
+                                                <span class="brand-name">
+                                                    <span class="kr">제이제이지고트</span>
+                                                    <span class="en">JJ지고트</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- ///banner-has-scroll -->
+                        <div class="unitList-brand searchTop swiper expand-slider" id="recommend-brand">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="tagSet-thumb">
+                                        <span class="rank">1</span>
+                                    </div>
+                                    <span class="brand-name">
+                                        <span class="kr">제이제이지고트</span>
+                                        <span class="en">JJ지고트</span>
+                                    </span>
+                                    <a href="#">
+                                        <div class="thumb">
+                                            <img src="../../img/temp/20210511_brands_IZZATNEWYORK_1388x580_1620951527291.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="tagSet-thumb">
+                                        <span class="rank">2</span>
+                                    </div>
+                                    <span class="brand-name">
+                                        <span class="kr">아이잗바바</span>
+                                        <span class="en">THE IZZAT</span>
+                                    </span>
+                                    <a href="#">
+                                        <div class="thumb">
+                                            <img src="../../img/temp/20210511_brands_IZZATNEWYORK_1388x580_1620951527291.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="tagSet-thumb">
+                                        <span class="rank">3</span>
+                                    </div>
+                                    <span class="brand-name">
+                                        <span class="kr">아이잗바바</span>
+                                        <span class="en">THE IZZAT</span>
+                                    </span>
+                                    <a href="#">
+                                        <div class="thumb">
+                                            <img src="../../img/temp/20210511_brands_IZZATNEWYORK_1388x580_1620951527291.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="tagSet-thumb">
+                                        <span class="rank">4</span>
+                                    </div>
+                                    <span class="brand-name">
+                                        <span class="kr">아이잗바바</span>
+                                        <span class="en">THE IZZAT</span>
+                                    </span>
+                                    <a href="#">
+                                        <div class="thumb">
+                                            <img src="../../img/temp/20210511_brands_IZZATNEWYORK_1388x580_1620951527291.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="tagSet-thumb">
+                                        <span class="rank">5</span>
+                                    </div>
+                                    <span class="brand-name">
+                                        <span class="kr">아이잗바바</span>
+                                        <span class="en">THE IZZAT</span>
+                                    </span>
+                                    <a href="#">
+                                        <div class="thumb">
+                                            <img src="../../img/temp/20210511_brands_IZZATNEWYORK_1388x580_1620951527291.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="tagSet-thumb">
+                                        <span class="rank">6</span>
+                                    </div>
+                                    <span class="brand-name">
+                                        <span class="kr">아이잗바바</span>
+                                        <span class="en">THE IZZAT</span>
+                                    </span>
+                                    <a href="#">
+                                        <div class="thumb">
+                                            <img src="../../img/temp/20210511_brands_IZZATNEWYORK_1388x580_1620951527291.jpg" alt="">
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="swiper-scrollbar"></div>
+                            <script>
+                                var swiper = new Swiper('#recommend-brand', {
+                                    slidesPerView: 1.15,
+                                    spaceBetween: 4,
+                                    observer: true,
+                                    observeParents: true,
+                                    freeMode: true,
+                                    scrollbar: {
+                                        el: '.swiper-scrollbar',
+                                        // dragSize: '50px',
+                                    },
+                                });
+                            </script>
+                        </div>
+
+                        
+
+                    </div>
+                    <!-- //추천 브랜드 -->
+
+                    <!-- 추천상품 -->
+                    <div>
+                        <!-- banner-has-scroll -->
+                        <div class="banner-has-scroll expand-slider">
+                            <div class="swiper-box">
+                                <div class="swiper-container" id="recommend-product">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="thumb ratio-a">
+                                                    <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="thumb ratio-a">
+                                                    <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1394_1_310x455.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="thumb ratio-a">
+                                                    <img src="../../img/temp/Qkw1QTFTSzM=BL5A1SK3185_1_310x455.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="thumb ratio-a">
+                                                    <img src="../../img/temp/Qkw1QTBTTFA=BL5A0SLP342_1_310x455.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ///banner-has-scroll -->
+
+                        <script>
+                            var swiper = new Swiper('#recommend-product', {
+                                slidesPerView:2.2,
+                                spaceBetween: 4,
+                                observer: true,
+                                freeMode: true,
+                                observeParents: true,
+                                // scrollbar: {
+                                //     el: '.swiper-scrollbar',
+                                //     dragSize: '50px',
+                                // },
+                            });
+                        </script>
+                    </div>
+                    <!-- //추천상품 -->
+                </div>
+                <!-- //tab-cont -->
+
+                <!-- title-area -->
+                <div class="title-area">
+                    <div class="title-area-inner">
+                        <h3 class="title">실시간 급상승 검색어</h3>
+                    </div>
+                </div>
+                <!-- //title-area -->
+
+                <!-- realtime-keyword -->
+                <div class="realtime-keyword">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">1</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">나이키 운동화</span>
+                                <span class="rank-change">
+                                    <span class="rank-up">12</span>
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <!-- <span class="rank-n"></span> -->
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">2</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">원피스</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <span class="rank-down">3</span>
+                                    <!-- <span class="rank-n"></span> -->
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">3</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">트위드 자켓</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <span class="rank-n"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">4</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">파운데이션</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <span class="rank-n"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">5</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">풀오버니트</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <span class="rank-n"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">6</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">종합비타민</span>
+                                <span class="rank-change">
+                                    <span class="rank-up">12</span>
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <!-- <span class="rank-n"></span> -->
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">7</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">아이잗바바타임딜</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <span class="rank-down">3</span>
+                                    <!-- <span class="rank-n"></span> -->
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">8</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">바바패션타임딜</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <span class="rank-n"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">9</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">캐시미어니트</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <span class="rank-n"></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="rank-num">10</span>
+                                <!-- <span class="rank-thumb"><img src="../../img/temp/rank_thumb.png" alt="나이키 운동화"></span> -->
+                                <span class="rank-keyword">후드집업</span>
+                                <span class="rank-change">
+                                    <!-- <span class="rank-up">2</span> -->
+                                    <!-- <span class="rank-down">3</span> -->
+                                    <span class="rank-n"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="bottomWrap">
+                        <span class="baseTime">2021-01-23 14:00 기준</span>
+                    </div>
+                </div>
+                <!-- //realtime-keyword -->
+
+                <div class="banner swiper" id="banners">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                    <script>
+                        var swiper = new Swiper('#banners');
+                    </script>
+                </div>
+    
+
+
+            </section>
+
+
+            <button class="btn-close" onclick="location.href='../02_main/mc_02_MU01_M_0101.html'">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

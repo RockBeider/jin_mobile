@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyDetail">
+        <div class="cont w-440">
+            <h1 class="layerTitle">장바구니 쿠폰 받기</h1>
+            <div class="layerBody ly-detail-coupon">
+                <!-- <strong class="sub_tit">고객님을 위한 장바구니 쿠폰</strong>
+                <ul class="list-group dash">
+                    <li>상품에 따라 적용 조건이 다를 수 있습니다.<br>주문서에서 최종 적용가를 확인해주세요.</li>
+                    <li>주문 당 장바구니 쿠폰은 1개만 적용됩니다.</li>
+                </ul> -->
+                <div class="coupon-list">
+                    <div class="scroll-wrap">
+                        <strong class="sub_tit">고객님을 위한 장바구니 쿠폰</strong>
+                        <ul class="list-group dash">
+                            <li>상품에 따라 적용 조건이 다를 수 있습니다.<br>주문서에서 최종 적용가를 확인해주세요.</li>
+                            <li>주문 당 장바구니 쿠폰은 1개만 적용됩니다.</li>
+                        </ul>
+                        <ul class="list">
+                            <li>
+                                <div class="cpn_type02 basket"><!-- 장바구니 쿠폰 시 class="basket" 추가 -->
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10</strong>%</div>
+                                            <p class="name">[바바더프라이스 전용] 12% 쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span> <span>최대할인금액 100,000원</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02 complete"><!-- 쿠폰 다운완료 시 class="complete" 추가 -->
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10,000</strong>원</div>
+                                            <p class="name">[더아이잗컬렉션 OUTLET] 주말쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02 basket complete">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10</strong>%</div>
+                                            <p class="name">[바바더프라이스 전용] 12% 쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span> <span>최대할인금액 100,000원</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10,000</strong>원</div>
+                                            <p class="name">[더아이잗컬렉션 OUTLET] 주말쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!--//21.03.22 scroll추가 -->
+                </div>
+                <button type="button" class="btn primary w-full black">쿠폰 모두 받기</button><!-- 쿠폰 모두 받기 완료 시 class="all-complete"추가 -->
+            </div>
+            <button class="btn-close" onclick="popClose('lyOrder1')">팝업닫기</button>
+        </div>
+        <!--쿠폰없을경우-->
+        <div class="cont w-440" style="margin-left:100px; display: none;">
+            <h1 class="layerTitle">장바구니 쿠폰</h1>
+            <div class="layerBody ly-ord-coupon">
+                <div class="tab-a tab-ui">
+                    <ul>
+                        <li><a href="javascript:void(0)">쿠폰받기</a></li>
+                        <li class="on"><a href="javascript:void(0)">쿠폰적용</a></li>
+                    </ul>
+                </div>
+                <div class="tab-cont">
+                    <!--쿠폰받기-->
+                    <div>
+                        <div class="no-data">다운 가능한 쿠폰이 없습니다.</div>
+                    </div>
+                    <!--//쿠폰받기-->
+                    <!--쿠폰적용-->
+                    <div class="on">
+                        <!--쿠폰이 없을경우-->
+                        <div class="no-data">적용 가능한 쿠폰이 없습니다.</div>
+                        <!--//쿠폰이 없을경우-->
+                    </div>
+                    <!--//쿠폰적용-->
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('lyOrder1')">팝업닫기</button>
+        </div>
+        <!--//쿠폰없을경우-->
+    </div>
+</body>
+</html>

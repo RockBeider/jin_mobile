@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container"> 
+        <div class="center-wrap">
+            <div class="login-wrap">
+                <div>
+                    <div class="form-area">
+                        <h2 class="page-title">아이디 찾기</h2>      
+                        <div class="tab-a tab-ui">
+                            <ul>
+                                <li class="on"><a href="javascript:void(0);">휴대폰 본인인증</a></li>
+                                <li><a href="javascript:void(0);">회원정보</a></li>
+                            </ul>
+                        </div>       
+                        <div class="tab-cont">
+                            <!-- 휴대폰 본인인증 -->
+                            <div class="on">
+                                <div class="form-wrap phone-verify">
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <div class="form-box">
+                                                <input type="text" value=""  id="find-id2-1" placeholder="이름 입력"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-col">
+                                            <div class="form-box">
+                                                <select id="find-id2-2" >
+                                                    <option>내국인</option>
+                                                    <option>외국인</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <div class="form-box">
+                                                <input type="text" value=""  id="find-id2-3" placeholder="생년월일 입력 (8자리)"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-col">
+                                            <div class="form-box">
+                                                <select id="find-id2-4" >
+                                                    <option>남자</option>
+                                                    <option>여자</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <div class="form-box">
+                                                <input type="text" value=""  id="find-id2-5" placeholder="휴대폰 번호 입력 (‘-’제외하고 숫자만 입력)"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-col">
+                                            <div class="form-box">
+                                                <select id="find-id2-6" >
+                                                    <option>통신사</option>
+                                                    <option>SKT</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 인증번호 입력 -->
+                                    <div class="form-row btn-row">
+                                        <div class="form-col">
+                                            <div class="form-box d-flex">
+                                                <input type="text" id="certiCode" placeholder="인증번호 입력" class="w-120">
+                                                <span class="form-mid-txt">02:00</span>
+                                                <button type="button" class="btn sm btn-form">인증번호 재전송</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="form-msg c-secondary">인증 시간이 경과했습니다. 인증번호 재전송을 통해 인증을 다시 진행해 주세요.</p>
+                                    <!-- // 인증번호 입력 -->
+
+                                    <div class="pers-idx-guide">
+                                        <div class="acd-box">
+                                            <div class="accordion-title">
+                                                <div class="ttile">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="certiAgree" checked="">
+                                                        <label for="certiAgree">본인 인증을 위한 약관 모두 동의</label>
+                                                    </div>
+                                                </div>
+                                                <button>열림</button>
+                                            </div>
+                                            <div class="accordion-panel">
+                                                <div>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="checkbox black"> 
+                                                                <input type="checkbox" id="certiAgree1" checked="">
+                                                                <label for="certiAgree1">(필수) 개인정보 수집 및 이용 동의</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="checkbox black">
+                                                                <input type="checkbox" id="certiAgree2" checked="">
+                                                                <label for="certiAgree2">(필수) 고유식별정보 처리 동의</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="checkbox black">
+                                                                <input type="checkbox" id="certiAgree3" checked="">
+                                                                <label for="certiAgree3">(필수) 통신사 이용약관</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="checkbox black">
+                                                                <input type="checkbox" id="certiAgree4" checked="">
+                                                                <label for="certiAgree4">(필수) 서비스 이용약관</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-area">
+                                        <a href="#" class="btn primary black">인증번호 전송</a>
+                                        <!-- 인증번호 전송 후 확인 으로 변경
+                                        <a href="#" class="btn primary black">확인</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 회원정보 -->
+                            <div> 
+                                <div class="form-wrap">
+                                    <div class="form-row">
+                                        <div class="form-box">
+                                            <input type="text" value=""  id="find-id1-1" placeholder="이름 입력"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-box">
+                                            <input type="text" value=""  id="find-id1-2" placeholder="이메일 주소 또는 휴대폰 번호 입력"/>
+                                        </div>
+                                    </div>
+                                    <p class="form-msg c-black">회원가입 시 등록한 이메일 주소 또는 휴대폰 번호를 입력해 주세요</p>
+                                    <div class="btn-area">
+                                        <a href="#" class="btn primary">확인</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>팝업 샘플</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <button onclick="popOpen('ly-mybaba-premium-cancel02')"><span>팝업열기</span></button>
+
+    <!-- 20240228 #5319 [FO] 프리미엄 해지 설문 추가 -->
+    <div class="layerPop open" id="ly-mybaba-premium-cancel02">
+        <div class="cont w-500"><!--[P].w-500(width:500px)-->
+            <h1 class="layerTitle"></h1>
+            <div class="layerBody">
+                <p class="info-txt type2 align-c">
+                    <strong>프리미엄 멤버십 만족도 조사</strong><br><br>
+                    간단한 30초 만족도 설문에 참여해보세요<br>
+                    추첨을 통해 최대 <strong>10,000P</strong> 적립금 드려요                    
+                </p>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn primary w-full black">설문 참여하기</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('ly-mybaba-premium-cancel01')">팝업닫기</button>
+        </div>
+    </div>
+    <!-- //20240228 #5319 [FO] 프리미엄 해지 설문 추가 -->
+</body>
+</html>

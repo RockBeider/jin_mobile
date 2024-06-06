@@ -1,0 +1,481 @@
+    <div class="center-wrap">
+        <!-- 상단 톱 배너 - 메인에만 뜨는거 -->
+        <div class="topfixBanner">
+            <div class="swiper-wrap">
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#" class="bn-link">
+                                <div class="img-wrap"><img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220210_shopping-festa_preview_main_top_band_banner_pc_1920x60.jpg" alt="sampleImg"></div>
+                                <!-- <p class="txt">[공지] 바바패션 추석명절 배송 긴급 안내!</p> -->
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" class="bn-link">
+                                <div class="img-wrap"><img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220210_shopping-festa_preview_main_top_band_banner_pc_1920x60.jpg" alt="sampleImg"></div>
+                                <!-- <p class="txt">[공지] 바바패션 추석명절 배송 긴급 안내!</p> -->
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#" class="bn-link">
+                                <div class="img-wrap"><img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220210_shopping-festa_preview_main_top_band_banner_pc_1920x60.jpg" alt="sampleImg"></div>
+                                <!-- <p class="txt">[공지] 바바패션 추석명절 배송 긴급 안내!</p> -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-close" onclick="topFixBanner_remove()">닫기</button>
+        </div>
+        <!-- //상단 톱 배너 - 메인에만 뜨는거 -->
+        <div class="header-top">
+            
+			<!-- 20230707 #3951 [FO] PC > 헤더 > 좌측 로고 이미지 변경 -->
+			<!-- <a href="../02_main/pc_02_PU01_M_0101.html" class="logo">BABATHE.COM</a> -->
+			<a href="/main" class="logo" style="width:200px; height:52px; background:url('../../img/logo_2023-baba-awards.gif') no-repeat">BABATHE.COM</a>
+            <!-- 20230707 #3951 [FO] PC > 헤더 > 좌측 로고 이미지 변경 -->
+
+            <div class="form-search">
+                <input type="text" readonly/>
+                <!--<button type="button" class="btn-del">삭제하기</button>-->
+                <!-- <button type="button" class="btn-search" onClick="location.href='../11_search/pc_11_PU10_P_0201.html'" >검색하기</button> -->
+                <button type="button" class="btn-search">검색하기</button>
+            </div>
+            
+            <!-- 20210929 검색 레이어 팝업 내 검색창 크기 조정(PC) > 검색영역 추가 -->
+	        <div class="search-layer" style="display:none">
+	            <div class="layer-wrap">
+	                <div class="search-wrap">
+	                    <input type="text" placeholder="[지고트] 날씨좋은 계절, 나들이 원피스 입고" />
+	                    <button type="button" class="btn-search">검색하기</button>
+	                </div>
+	                <!-- 입력 전 -->
+	                <div class="bef" style="display:block;">
+	                    <div class="w-full d-flex">
+	                        <div class="w-half">
+	                            <!--최근검색어-->
+	                            <div class="recent-sch">
+	                                <h2 class="sch-tit">최근 검색어</h2>
+	                                <div class="btn-group">
+	                                    <button type="button" class="btn-adel">전체 삭제</button>
+	                                    <button type="button" class="btn-off">검색어 저장 끄기</button>
+	                                </div>
+	                                <div class="rec-list">
+	                                    <div class="rec"><a href="#">윤아패딩</a><button type="button" class="btn-del">삭제</button></div>
+	                                    <div class="rec"><a href="#">후드티</a><button type="button" class="btn-del">삭제</button></div>
+	                                    <div class="rec"><a href="#">가디건</a><button type="button" class="btn-del">삭제</button></div>
+	                                    <div class="rec"><a href="#">아이잗바바타임세일</a><button type="button" class="btn-del">삭제</button></div>
+	                                    <div class="rec"><a href="#">토트백</a><button type="button" class="btn-del">삭제</button></div>
+	                                    <div class="rec"><a href="#">트위드자켓</a><button type="button" class="btn-del">삭제</button></div>
+	                                </div>
+	                            </div>
+	                            <!--//최근검색어-->
+	                            <!--실시간 급상승 검색어-->
+	                            <div class="soar-kwd mg-t-50">
+	                                <h2 class="sch-tit">실시간 급상승 검색어<span class="date">12/29 14:00 기준</span></h2>
+	                                <div class="list">
+	                                    <ul>
+	                                        <li><a href="#"><strong>1</strong><span class="text">나이키 운동화</span> <span class="up">20</span></a></li>
+	                                        <li><a href="#"><strong>2</strong><span class="text">원피스</span> <span class=""></span></a></li>
+	                                        <li><a href="#"><strong>3</strong><span class="text">트위드 자켓</span> <span class="up">2</span></a></li>
+	                                        <li><a href="#"><strong>4</strong><span class="text">파운데이션</span> <span class="down">1</span></a></li>
+	                                        <li><a href="#"><strong>5</strong><span class="text">풀오버니트</span> <span class="up">3</span></a></li>
+	                                    </ul>
+	                                    <ul>
+	                                        <li><a href="#"><strong>6</strong><span class="text">종합비타민</span> <span class="down">1</span></a></li>
+	                                        <li><a href="#"><strong>7</strong><span class="text">아이잗바바타임세일</span> <span class=""></span></a></li>
+	                                        <li><a href="#"><strong>8</strong><span class="text">바바패션타임딜</span> <span class="up">2</span></a></li>
+	                                        <li><a href="#"><strong>9</strong><span class="text">캐시미어니트</span> <span class="up">2</span></a></li>
+	                                        <li><a href="#"><strong>10</strong><span class="text">후드집업</span> <span class=""></span></a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                            <!--//실시간 급상승 검색어-->
+	                        </div>
+	                        <div class="w-half">
+	                            <!--쇼핑 트렌드-->
+	                            <div class="trend-tag">
+	                                <h2 class="sch-tit">쇼핑 트렌드</h2>
+	                                <div class="tag-list">
+	                                    <a href="#" class="tag">#윤아패딩</a>
+	                                    <a href="#" class="tag">#2020연말세일</a>
+	                                    <a href="#" class="tag">#에센스</a>
+	                                    <a href="#" class="tag">#비타민</a>
+	                                    <a href="#" class="tag">#캐시미어</a>
+	                                    <a href="#" class="tag">#비오템</a>
+	                                    <a href="#" class="tag">#타임특가모음</a>
+	                                    <a href="#" class="tag">#원피스</a>
+	                                    <a href="#" class="tag">#후리스</a>
+	                                    <a href="#" class="tag">#나이키타임딜</a>
+	                                </div>
+	                            </div>
+	                            <!--//쇼핑 트렌드-->
+	                            <!-- 추천 -->
+	                            <div class="d-flex  mg-t-50">
+	                                <!-- 추천 브랜드 -->
+	                            <div class="unit-box brand-slide">
+	                                <h2 class="unit-title">추천 브랜드</h2>
+	                                <div class="swiper-wrap">
+	                                    <div class="swiper-container">
+	                                        <ul class="brand-list swiper-wrapper">
+	                                            <li class="swiper-slide">
+	                                                <a href="#">
+	                                                    <div class="brd-img">
+	                                                        <div class="ratio">
+	                                                            <img src="../../img/img_brandimg.jpg" alt="brandImg" />
+	                                                        </div>
+	                                                    </div>
+	                                                    <div class="brd-name">
+	                                                        렉토<span class="tx-eng">RECTO</span>
+	                                                    </div>
+	                                                </a>
+	                                            </li>
+	                                            <li class="swiper-slide">
+	                                                <a href="#">
+	                                                    <div class="brd-img">
+	                                                        <div class="ratio">
+	                                                            <img src="../../img/img_brandimg.jpg" alt="brandImg" />
+	                                                        </div>
+	                                                    </div>
+	                                                    <div class="brd-name">
+	                                                        렉토<span class="tx-eng">RECTO</span>
+	                                                    </div>
+	                                                </a>
+	                                            </li>
+	                                        </ul>
+	                                        <!-- Add Scrollbar -->
+	                                        <div class="swiper-scrollbar"></div>
+	                                        <!-- Add Arrows -->
+	                                        <div class="swiper-button-next"></div>
+	                                        <div class="swiper-button-prev"></div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <!-- // 추천 브랜드 -->
+	                            <!-- 추천 상품 -->
+	                            <div class="unit-box prd-slide">
+	                                <h2 class="unit-title">추천 상품</h2>
+	                                <!-- Swiper -->
+	                                <div class="swiper-wrap">
+	                                    <div class="swiper-container">
+	                                        <ul class="prd-list thum swiper-wrapper">
+	                                            <li class="swiper-slide">
+	                                                <a href="javascript:void(0)">
+	                                                    <div class="prd-img ">
+	                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+	                                                    </div>
+	                                                </a>
+	                                            </li>
+	                                            <li class="swiper-slide">
+	                                                <a href="javascript:void(0)">
+	                                                    <div class="prd-img ">
+	                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+	                                                    </div>
+	                                                </a>
+	                                            </li>
+	                                            <li class="swiper-slide">
+	                                                <a href="javascript:void(0)">
+	                                                    <div class="prd-img ">
+	                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+	                                                    </div>
+	                                                </a>
+	                                            </li>
+	                                            <li class="swiper-slide">
+	                                                <a href="javascript:void(0)">
+	                                                    <div class="prd-img ">
+	                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+	                                                    </div>
+	                                                </a>
+	                                            </li>
+	                                        </ul>
+	                                        <!-- Add Scrollbar -->
+	                                        <div class="swiper-scrollbar"></div>
+	                                        <!-- Add Arrows -->
+	                                        <div class="swiper-button-next"></div>
+	                                        <div class="swiper-button-prev"></div>
+	                                    </div>
+	                                </div>
+	                                <!-- //Swiper -->
+	                            </div>
+	                            <!-- // 추천 상품 -->
+	                            </div>
+	                            <!-- // 추천 -->
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- // 입력 전 -->
+	                <!-- 입력 후 -->
+	                <div class="aft" style="display:none;">
+	                    <div class="w-full d-flex">
+	                        <div class="w-half">
+	                            <!--검색어 자동완성-->
+	                            <div class="auto-comp">
+	                                <h2 class="sch-tit">검색어 자동완성</h2>
+	                                <div class="auto-list">
+	                                    <a href="#"><span>아</span>이잗바바타임딜</a>
+	                                    <a href="#">벤시몽 <span>아</span>이웨어</a>
+	                                    <a href="#">더<span>아</span>이잗뉴욕</a>
+	                                    <a href="#"><span>아</span>이잗바바타임딜</a>
+	                                    <a href="#">벤시몽 <span>아</span>이웨어</a>
+	                                    <a href="#">더<span>아</span>이잗뉴욕</a>
+	                                    <a href="#"><span>아</span>이잗바바타임딜</a>
+	                                    <a href="#">벤시몽 <span>아</span>이웨어</a>
+	                                    <a href="#">더<span>아</span>이잗뉴욕</a>
+	                                    <a href="#"><span>아</span>이잗바바타임딜</a>
+	                                    <a href="#">벤시몽 <span>아</span>이웨어</a>
+	                                </div>
+	                            </div>
+	                            <!--//검색어 자동완성-->
+	                            <!--추천 카테고리-->
+	                            <div class="recomm-category mg-t-50">
+	                                <h2 class="sch-tit">추천 카테고리</h2>
+	                                <ul>
+	                                    <li><a href="#">패션 &gt; 여성 &gt; 의류 &gt; 아우터</a></li>
+	                                    <li><a href="#">패션 &gt; 여성 &gt; 의류 &gt; 아우터</a></li>
+	                                </ul>
+	                            </div>
+	                            <!--//추천 카테고리-->
+	                            <!-- 20210929 검색 레이어 팝업 내 추천브랜드 영역 추가 > 최대 3개 브랜드 노출 -->
+	                            <!--추천 브랜드-->
+	                            <div class="recomm-brand mg-t-50">
+	                                <h2 class="sch-tit">추천 브랜드</h2>
+	                                <div class="recomm-brand-list">
+	                                    <a href="#"><img src="https://image.babathe.com/brand/10383/1623981713031.jpg" alt="IZZAT BABA"></a>
+	                                    <a href="#"><img src="https://image.babathe.com/brand/10460/1624946963186.jpg" alt="FABIANA FILIPPI"></a>
+	                                    <a href="#"><img src="https://image.babathe.com/brand/10571/1625474694961.jpg" alt="AMBUSH"></a>
+	                                </div>
+	                            </div>
+	                            <!--//추천 브랜드-->
+	                            <!-- //20210929 검색 레이어 팝업 내 추천브랜드 영역 추가  > 최대 3개 브랜드 노출 -->
+	                        </div>
+	                        <div class="w-half">
+	                            <!--추천 상품-->
+	                            <div class="recomm-prd">
+	                                <h2 class="sch-tit">추천 상품</h2>
+	                                <ul class="prd-list thum" >
+	                                    <li>
+	                                        <a href="javascript:void(0)">
+	                                            <div class="prd-img ">
+	                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+	                                            </div>
+	                                            <div class="prd-info">
+	                                                <div class="brand">THE IZZAT COLLECTION</div>
+	                                                <div class="name">
+	                                                    <!-- <div class="tx-ovf">셀링포인트 : 없으면 미노출</div> -->
+	                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                                </div>
+	                                                <!-- <div class="prd-price">
+	                                                    <div class="price"><strong>1,234,567</strong>원</div>
+	                                                    <div class="discount">10%</div>
+	                                                    <div class="price-org">1,065,960 원</div>
+	                                                </div>
+	                                                <div class="tag-group">
+	                                                    <span class="tag">NEW</span>
+	                                                    <span class="tag">BEST</span>
+	                                                    <span class="tag">10%할인</span>
+	                                                </div> -->
+	                                            </div>
+	                                        </a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0)">
+	                                            <div class="prd-img ">
+	                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+	                                            </div>
+	                                            <div class="prd-info">
+	                                                <div class="brand">THE IZZAT COLLECTION</div>
+	                                                <div class="name">
+	                                                    <div class="tx-ovf">셀링포인트 : 없으면 미노출</div>
+	                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                                </div>
+	                                                <div class="prd-price">
+	                                                    <div class="price"><strong>1,234,567</strong>원</div>
+	                                                    <div class="discount">10%</div>
+	                                                    <div class="price-org">1,065,960 원</div>
+	                                                </div>
+	                                                <div class="tag-group">
+	                                                    <span class="tag">NEW</span>
+	                                                    <span class="tag">BEST</span>
+	                                                </div>
+	                                            </div>
+	                                        </a>
+	                                    </li>
+	                                    <li>
+	                                        <a href="javascript:void(0)">
+	                                            <div class="prd-img ">
+	                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+	                                            </div>
+	                                            <div class="prd-info">
+	                                                <div class="brand">THE IZZAT COLLECTION</div>
+	                                                <div class="name">
+	                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                                </div>
+	                                                <div class="prd-price">
+	                                                    <div class="price"><strong>1,234,567</strong>원</div>
+	                                                    <div class="discount">10%</div>
+	                                                    <div class="price-org">1,065,960 원</div>
+	                                                </div>
+	                                                <div class="tag-group">
+	                                                    <span class="tag">NEW</span>
+	                                                    <span class="tag">BEST</span>
+	                                                    <span class="tag">10%할인</span>
+	                                                    <span class="tag">무료배송</span>
+	                                                </div>
+	                                            </div>
+	                                        </a>
+	                                    </li>
+	                                </ul>
+	                            </div>
+	                            <!--//추천 상품-->
+	                        </div>
+	                    </div>
+	                </div>
+	                <!-- // 입력 후 -->
+	                <!-- 프로모션 배너 -->
+	                <div class="swiper-wrap banner-slide">
+	                    <div class="swiper-container">
+	                        <div class="swiper-wrapper">
+	                            <div class="swiper-slide"><center><a href="#"><img src="https://image.babathe.com/display/12800/1631858911826.jpg" alt="배너"/></a></center></div>
+	                            <div class="swiper-slide"><center><a href="#"><img src="https://image.babathe.com/display/12800/1631858911826.jpg" alt="배너"/></a></center></div>
+	                            <div class="swiper-slide"><center><a href="#"><img src="https://image.babathe.com/display/12800/1631858911826.jpg" alt="배너"/></a></center></div>
+	                            <div class="swiper-slide"><center><a href="#"><img src="https://image.babathe.com/display/12800/1631858911826.jpg" alt="배너"/></a></center></div>
+	                            <div class="swiper-slide"><center><a href="#"><img src="https://image.babathe.com/display/12800/1631858911826.jpg" alt="배너"/></a></center></div>
+	                        </div><!--//[P] 21.02.18 링크 추가-->
+	                        <div class="swiper-pagination"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">5</span></div><!-- script 적용시 span 태그 다 삭제 필요 -->
+	                    </div>
+	                </div>
+	                <!-- // 프로모션 배너 -->
+	            </div>
+	            <a href="#" class="btn-lyclose">검색 닫기</a>
+	        </div>
+            <!-- //20210929 검색 레이어 팝업 내 검색창 크기 조정(PC) > 검색영역 추가 -->
+            
+            <ul class="util-menu">
+                <li><a href="../13_login/pc_13_PU12_M_0101.html">로그인</a></li>
+                <li><a href="../13_login/pc_13_PU12_M_0301.html">회원가입</a></li>
+                <li><a href="../15_cs/pc_15_PU14_M_0101.html">고객센터</a></li>
+                <li><a href="../12_order/pc_12_PU10_M_0101.html">장바구니<span class="badge">2</span></a></li>
+            </ul>
+        </div>
+        <div class="header-gnb">
+            <nav class="gnb gnb-left">
+                <ul>
+                    <li><a href="../04_care/pc_04_PU03_M_0301.html">케어</a></li>
+                    <li><a href="#">#프로모션1</a></li>
+                    <li><a href="#">#프로모션2</a></li>
+                    <li><a href="#">#프로모션3</a></li>
+                    <li><a href="#">#프로모션4</a></li>
+                    <li><a href="../09_channel/pc_09_PU08_M_0201_1.html">바바 <span class="c-secondary">ON<i class="icon-live blink"></i></span></a></li>
+                </ul>
+            </nav>
+            <!-- 20220329 PC > 공통 > 헤더 > 카테고리 항목 간격 조절 -->
+            <nav class="gnb">
+                <ul>
+                    <li class="on"><a href="../02_main/pc_02_PU01_M_0101.html">홈</a></li>
+                    <li><a href="../04_care/pc_04_PU03_M_0201.html">여성</a></li>
+                    <li><a href="../04_care/pc_04_PU03_M_0202.html">남성</a></li>
+                    <li><a href="">럭셔리</a></li>
+                    <li><a href="../04_care/pc_04_PU03_M_0203.html">뷰티</a></li>
+                    <li><a href="../04_care/pc_04_PU03_M_0204.html">헬스</a></li>
+                    <li><a href="">라이프</a></li>
+                </ul>
+            </nav>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="../07_outlet/pc_07_PU06_M_0101.html">아울렛</a></li>
+                    <li><a href="../05_brand/pc_05_PU04_M_0101.html">브랜드</a></li>
+                    <!-- <li><a href="../09_channel/pc_09_PU08_M_0305.html">채널</a></li> -->
+                    <li><a href="../08_news/pc_08_PU07_M_0001.html">베스트</a></li>
+                    <li><a href="../08_news/pc_08_PU07_M_0201.html">신상품</a></li>
+                    <li><a href="../06_event/pc_06_PU05_M_0101.html">기획전</a></li>
+                </ul>
+            </nav>
+            <!-- //20220329 PC > 공통 > 헤더 > 카테고리 항목 간격 조절 -->
+        </div>
+    </div>
+    <script>
+        var swiperTopFixBn = new Swiper('.topfixBanner .swiper-container', {
+	        slidesPerView: 1,
+	        spaceBetween: 0,
+	        loop: true,
+	        speed: 500,
+	        autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+	    });
+        
+        /* 20210929 스크립트 추가 */
+        /*swiper*/
+        var swiper1 = new Swiper('.brand-slide .swiper-container', {
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                dragSize: '200px',
+            },
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.brand-slide .swiper-button-next',
+                prevEl: '.brand-slide .swiper-button-prev',
+            },
+            observer: true,
+            observeParents: true,
+        });//추천브랜드
+        var swiper2 = new Swiper('.prd-slide .swiper-container', {
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                dragSize: '200px',
+            },
+            slidesPerView: 2,
+            spaceBetween: 18,
+            navigation: {
+                nextEl: '.prd-slide .swiper-button-next',
+                prevEl: '.prd-slide .swiper-button-prev',
+            },
+            observer: true,
+            observeParents: true,
+        });//추천상품
+        var swiper3 = new Swiper('.banner-slide .swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            observer: true,
+            observeParents: true,
+        }); //배너
+        
+        /*publishing UI only*/
+        $('.search-wrap input').focusin(function() {
+			$(this).keyup(function(){
+				if($(this).val().length >= 1) {
+					$('.search-layer').find('.bef').hide();
+					$('.search-layer').find('.aft').show();
+				}else{
+					$('.search-layer').find('.bef').show();
+					$('.search-layer').find('.aft').hide();
+				}
+			});
+		});
+        $('.form-search').on('click', function(){
+            $('.search-layer').show();
+        });
+        
+        $('.btn-lyclose').on('click', function(){
+            $('.search-layer').hide();
+        });
+        
+        /* $('.search-wrap input').each(function() {
+            $(this).focusin(function(){
+               $('.search-layer').find('.bef').hide();
+               $('.search-layer').find('.aft').show();
+            });
+            
+            $(this).focusout(function(){
+               $('.search-layer').find('.bef').show();
+               $('.search-layer').find('.aft').hide();
+            });
+		}); */
+        /* //publishing UI only*/
+        /*//20210929 스크립트 추가 */
+        
+    </script>

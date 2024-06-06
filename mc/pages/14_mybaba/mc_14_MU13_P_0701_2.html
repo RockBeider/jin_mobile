@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 포스팅 등록/수정</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop full-size open bg-gray" >
+        <div class="cont">
+            <h1 class="layer-title">포스팅 등록/수정</h1>
+
+            <section class="ly-mylf"><!-- 20211117 패션리더 포스팅 등록/수정 화면 개선 > class="ly-mylf" 추가 -->
+                <div class="contentsGroup">
+                    <h2>사진/동영상 *</h2>
+                    <div class="attachedFileList">
+                        <ul>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                    <div class="mainImage">
+                                        <span>대표이미지</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                    <button class="mainImagePick">대표이미지로<br>지정하기</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                            </li>
+                        </ul>
+                    </div>
+                    <ol class="tip-wrap">
+                        <li>최소 1개 / 최대 10개까지 등록 가능합니다.</li>
+                        <li>대표이미지를 변경하시려면 이미지를 선택하신 후 ‘대표이미지로 지정’ 버튼을 확인하시면 됩니다.</li>
+                        <li>사진/동영상 영역은 1:1 비율에 최적화되어 있습니다.</li>
+                        <li>사진은 10MB 이하 / 확장자 JPG, JPEG, PNG, GIF 파일만 가능합니다.</li>
+                        <li>동영상은 100MB 이하 / 확장자 mp4, mov, avi, wmv 파일만 가능합니다.</li>
+                        <li>총 용량은 500MB를 초과할 수 없습니다.</li>
+                    </ol>
+                </div>
+                <div class="contentsGroup">
+                    <h2>상세 설명 *</h2>
+                    <div class="event-write-wrap">
+                        <textarea cols="30" rows="6" placeholder="내용을 입력해 주세요.">지고트 네이버 라이브 방송 때도 입었던 신상 #지고트코트 😍  윤아씨가 입어서 화제가 된 지고트 코트! 오늘은 카멜컬러로 PICK!</textarea>
+                        <p class="word-length">0 / 300 자</p>
+                    </div>
+                </div>
+                <div class="contentsGroup">
+                    <h2>태그 편집</h2>
+                    <div class="form-flex">
+                        <div class="form-flex-cell">
+                        	<!-- 20211117 패션리더 포스팅 등록/수정 화면 개선 -->
+                            <!-- <input type="text" placeholder="#태그입력(최대 30개)"> -->
+                            <div class="inpToBtn">
+					            <input type="text" placeholder="#태그입력(최대 30개)">
+					            <button>입력</button>
+					        </div>
+                        	<!-- //20211117 패션리더 포스팅 등록/수정 화면 개선 -->
+                        </div>
+                    </div>
+                    <ul class="tip-wrap">
+                        <li class="tip decoNone">쉼표(,)로 구분하여 여러 개의 태그를 한번에 입력하실 수 있습니다. 예) 바바패션리더, 바바더닷컴, 바바프리미엄</li>
+                    </ul>
+                    <div class="tagEditor">
+                        <ul>
+                            <li><span>바바패션</span><button class="del">삭제</button></li>
+                            <li><span>#바바패션리더</span><button class="del">삭제</button></li>
+                            <li><span>데일리룩</span><button class="del">삭제</button></li>
+                            <li><span>#직장인</span><button class="del">삭제</button></li>
+                            <li><span>#오피스룩</span><button class="del">삭제</button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentsGroup">
+                    <h2>관련 상품*</h2>
+                    <div class="form-flex">
+                        <div class="form-flex-cell">
+                        	<!-- 20211117 패션리더 포스팅 등록/수정 화면 개선 -->
+                            <!-- <input type="text" placeholder="품번을 1개씩 입력하세요."> -->
+                            <div class="inpToBtn">
+					            <input type="text" placeholder="상품을 검색 후 추가해 주세요.">
+					            <button>검색</button>
+					        </div>
+                        	<!-- //20211117 패션리더 포스팅 등록/수정 화면 개선 -->
+                        </div>
+                    </div>
+                    <ul class="tip-wrap">
+                        <li class="tip type4">최소 1개 / 최대 10개까지 등록 가능합니다.</li>
+                    </ul>
+                    <!-- 20211117 패션리더 포스팅 등록/수정 화면 개선 -->
+                    <div class="attachedFileList">
+                        <ul>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                                <div class="item">
+                                    <div class="thumb"><img src="http://placehold.it/146x146" alt=""></div>
+                                    <button class="del">삭제</button>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                            </li>
+                            <li>
+                                <input type="file" class="upload" title="이미지 업로드">
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //20211117 패션리더 포스팅 등록/수정 화면 개선 -->
+                    <div class="btnWrap">
+                        <button class="btn-basicM">취소</button>
+                        <button class="btn-basicM blackSolid">확인</button>
+                    </div>
+                </div>
+            </section>
+            <button class="btn-close">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

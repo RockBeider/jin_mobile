@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>팝업 샘플</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <button onclick="popOpen('layerPop-test')"><span>팝업열기</span></button>
+    <div class="layerPop open" id="layerPop-test">
+        <div class="cont w-440"><!--[P].w-500(width:500px)-->
+            <h1 class="layerTitle"><img src="../../img/logo.png" class="IEpop-logo" alt="babathe.com"></h1>
+            <div class="layerBody">
+                <p class="IEpop-notice">바바더닷컴 사이트는 Chrome과 Edge 브라우저에<br>최적화되어 있습니다.</p>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn">취소</button>
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - BVEMEMT</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back">뒤로가기</button>
+            <h1 class="page-title">지고트</h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니</button>
+        </div>
+    </header>
+    <section>
+        <div class="content-wrap bvement-wrap">
+
+			<!-- 비브먼트 카테고리 -->
+			<div class="main-section sect-bv-cate">
+				<div class="swiper-circle swiper expand-slider" id="">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=16652" class="brand-item">
+								<span class="brand-item-img"><img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-cate-00.jpg" alt=""></span>
+								<span class="brand-item-txt">비브먼트</span>
+							</a>
+						</li>
+						<li class="swiper-slide on">
+							<a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=16654" class="brand-item">
+								<span class="brand-item-img"><img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-cate-01.jpg" alt=""></span>
+								<span class="brand-item-txt">지고트</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=16655" class="brand-item">
+								<span class="brand-item-img"><img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-cate-02.jpg" alt=""></span>
+								<span class="brand-item-txt">켈리도나휴</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=16656" class="brand-item">
+								<span class="brand-item-img"><img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-cate-03.jpg" alt=""></span>
+								<span class="brand-item-txt">시퀀스</span>
+							</a>
+						</li>
+					</ul>
+					<script>
+						var swiperSect1 = new Swiper('.sect-bv-cate .swiper.swiper-circle', {
+							slidesPerView: 4,
+							//slidesPerView: 'auto',
+							freeMode: true,
+							watchOverflow: true,
+						});
+					</script>
+				</div>
+			</div>
+			<!--//비브먼트 카테고리 -->
+			
+			<!--브랜드 별 기획전 목록-->
+			<div class="main-section sect-bv-brand-main">
+				<h3 class="bv-brand-title">B.VEMENT X JIGOTT</h3>
+	            <div class="bv-brand-main-swiper" id="">
+					<!-- <div class="title"><strong>JIGOTT JIGOTT<br>by BVMENT</strong></div> -->
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="thumb ratio-a">
+									<img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-img-07.jpg" alt="">
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="thumb ratio-a">
+									<img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-img-08.jpg" alt="">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+	                <script>
+	                    var swiperSect2 = new Swiper('.sect-bv-brand-main .bv-brand-main-swiper .swiper-container', {
+							slidesPerView: 1,
+							slidesPerGroup: 1,
+	                        //spaceBetween: 15,
+							navigation: {
+								nextEl: ".sect-bv-brand-main .swiper-button-next",
+								prevEl: ".sect-bv-brand-main .swiper-button-prev",
+							},
+	                        loop:true,
+	                        speed : 800,
+	                        autoplay: {
+	                            delay: 3000,
+	                            disableOnInteraction: false,
+	                        },
+	                    });
+	                </script>
+	            </div>
+				<p class="bv-brand-cont">
+					섬세한 테일러링이 시그니처인 지고트<br>
+					컨템퍼러리 감성을 더한 스타일
+				</p>
+            </div>
+            <!--브랜드 별 기획전 목록-->
+            
+			<!-- 비브먼트 상품 목록 -->
+			<div class="main-section sect-bv-prod">
+				<div class="tab-a swiper expand-slider" id="">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide on"><a href="javascript:void(0);">전체</a></li>
+						<!-- <li class="swiper-slide"><a href="javascript:void(0);">TAB22</a></li>
+						<li class="swiper-slide"><a href="javascript:void(0);">TAB333</a></li>
+						<li class="swiper-slide"><a href="javascript:void(0);">TAB4444</a></li>
+						<li class="swiper-slide"><a href="javascript:void(0);">TAB55555</a></li>
+						<li class="swiper-slide"><a href="javascript:void(0);">TAB55555</a></li>
+						<li class="swiper-slide"><a href="javascript:void(0);">TAB55555</a></li>
+						<li class="swiper-slide"><a href="javascript:void(0);">TAB55555</a></li>
+						<li class="swiper-slide"><a href="javascript:void(0);">TAB55555</a></li> -->
+					</ul>
+					<script>
+						var swiperSect2_01 = new Swiper('.sect-bv-prod .swiper.tab-a', {
+							slidesPerView: 'auto',
+							freeMode : true,
+							watchOverflow: true,
+						});
+					</script>
+				</div>
+				<!-- prd-list-filter -->
+				<div class="prd-list-filter">
+					<div class="prd-list-filter-inner">
+						<!-- <div class="total"><span>923</span> items</div> -->
+						<div class="extra">
+							<button><strong>상세필터</strong><span class="for-a11y">필터</span></button>
+							<select>
+								<option>신상품순</option>
+								<option>추천순</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<!-- //prd-list-filter -->
+				
+				<!-- unitList -->
+				<div class="unitList">
+					<ul>
+						<li>
+							<a href="#">
+								<div class="thumb ratio-a">
+									<img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-img.jpg" alt="">
+								</div>
+								<div class="unitInfoWrap">
+									<em class="label">EXCLUSIVE</em>
+									<div class="title"><!-- <em>[2021 신상품]</em> --><strong>상품명1줄</strong></div>
+									<div class="priceWrap">
+										<span class="price">296,743</span>
+										<span class="price-dis">296,743</span>
+									</div>
+								</div>
+							</a>
+							<input type="checkbox" class="check-like" title="좋아요 체크">
+						</li>
+						<li>
+							<a href="#">
+								<div class="thumb ratio-a">
+									<img src="https://image.babathe.com/static/img/pmg-img/temp-thumb-bvement-img.jpg" alt="">
+								</div>
+								<div class="unitInfoWrap">
+									<em class="label">EXCLUSIVE</em>
+									<div class="title"><!-- <em>[2021 신상품]</em> --><strong>상품명1줄 상품명1줄 상품명1줄</strong></div>
+									<div class="priceWrap">
+										<span class="price">5,296,743</span>
+										<span class="price-dis">9,296,743</span>
+									</div>
+								</div>
+							</a>
+							<input type="checkbox" class="check-like" title="좋아요 체크">
+						</li>
+					</ul>
+				</div>
+				<!-- //unitList -->
+			</div>
+			<!-- 비브먼트 상품 목록 -->
+		   
+		</div>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <link rel="stylesheet" href="../../css/babathe.css">
+</head>
+<body>
+    <header></header>
+    <section class="container">
+    <div class="center-wrap">
+        <div class="mybaba-wrap">
+            <div class="mybaba-header"></div>
+            <div class="contents">
+                <!--contents-->
+                <div class="cont-wrap">
+                    <div class="mybaba-complete">
+                        <h2 class="page-title">
+                            현재 진행중인 주문이 있어 회원탈퇴가 불가합니다.<br>
+                            주문 현황을 확인해주세요.
+                        </h2>
+                        <div class="btn-group">
+                            <button type="button" class="btn lg primary black">주문 현황 확인</button>
+                       </div>
+                    </div>
+                    <div class="mybaba-complete">
+                        <h2 class="page-title">
+                            고객님은 프리미엄 회비 환불이 가능하여  프리미엄 해지 후 회원탈퇴가 가능합니다.<br>
+                            프리미엄 해지를 진행하시겠습니까?
+                        </h2>
+                        <div class="btn-group">
+                            <button type="button" class="btn lg">프리미엄 혜택 확인</button>
+                            <button type="button" class="btn lg primary">해지 신청</button>
+                       </div>
+                    </div>
+                    <!-- 20230421 #3540 [FO/BO] 프리미엄 해지 UX 개선 > 환불여부 N 케이스 문구 추가 -->
+                    <div class="mybaba-complete">
+                        <h2 class="page-title">
+                            고객님은 현재 바바프리미엄 회원으로, 프리미엄 해지 후 회원탈퇴가 가능합니다.<br>
+                            해지를 진행하시겠습니까?                            
+                        </h2>
+                        <div class="btn-group">
+                            <button type="button" class="btn lg">프리미엄 혜택 확인</button>
+                            <button type="button" class="btn lg primary">해지 신청</button>
+                       </div>
+                    </div>
+                    <!-- //20230421 #3540 [FO/BO] 프리미엄 해지 UX 개선 > 환불여부 N 케이스 문구 추가 -->
+                </div>
+                <!--//contents-->
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer></footer>
+</body>
+<script>    
+    $(document).ready(function(){
+        /*publishing UI only*/
+        $('.mybaba-header').load('inc_maybaba_header.html');//mybabaheader load
+    });    
+</script>
+</html>

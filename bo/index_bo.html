@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>바바더닷컴 BO/PO LIST</title>
+    <!-- <link rel="stylesheet" href="css/common.css"> -->
+    <script>
+        document.addEventListener('DOMContentLoaded',domload);
+        function domload(){
+            //번호 자동으로 붙이는거 start
+            var table = document.getElementsByTagName('table')
+            Array.from(table).forEach(function(item,index){
+                item.querySelectorAll('table td:first-child').forEach(function(item,index){
+                    item.innerText = index + 1;
+                })
+            })
+            //번호 자동으로 붙이는거 end
+        }
+    </script>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+    table {border-spacing:0; border-collapse:collapse}
+    .index-wrap {padding:50px 40px; font-family: "Source Sans Pro";}
+    .index-wrap .title {font-size:24px; margin-bottom:20px; font-weight:400;}
+    .index-wrap table {width: 100%; font-family: 'Noto Sans KR';}
+    .index-wrap table th, .index-wrap table td {padding:5px 10px; border:1px solid #ddd; font-size:12px; font-weight:300;}
+    .index-wrap table th {background:#f0f0f0; color:#333;}
+    .index-wrap table td { color:#333;}
+    .index-wrap table td.center {text-align:center;}
+    .index-wrap table tr:not(.disabled):hover td {background:#f2feff;}
+    .index-wrap table .disabled td {background:#ddd; opacity: 0.4;}
+    .index-wrap table .end td {background-color:#e2ffea;}
+    ul.tab_area {position:fixed; top:150px; left:0; display:block; margin:0; padding:0}
+    ul.tab_area li {display:block}
+    ul.tab_area li a {display:block; width:40px; height:40px; line-height:40px; text-decoration:none; text-align:center; color:#000; border-radius:100%; background:#eeeeee}
+    ul.tab_area li.active a {font-weight:700; color:#fff; background:#000} 
+    ul.tab_area li ~ li {margin-top:10px}
+</style>
+</head>
+<body>
+    <div class="index-wrap">
+        <h1 class="title">BABATHE.COM LIST - <strong>BO/PO</strong></h1>
+        <p style="text-align:right; margin-bottom:10px; font-size:10px;">IA_v1.99(20210315)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;C:페이지, L:레이어 팝업, T:탭, K:링크</p>
+        <ul class="tab_area">
+        	<li><a href="../pc/index_pc.html">PC</a></li>
+        	<li><a href="../mc/index_mo.html">MO</a></li>
+        	<li class="active"><a href="../bo/index_bo.html">BO</a></li>
+        	<!-- <li><a href="../po/index_po.html">PO</a></li> -->
+        </ul>
+        <table>
+            <colgroup>
+                <col width="60px" />
+                <col width="90px" />
+                <col width="130px" />
+                <col width="170px" />
+                <col width="180px" />
+                <col width="190px" />
+                <col width="130px" />
+                <col width="50px" />
+                <col width="100px" />
+                <col width="200px" />
+                <col width="70px" />
+                <col width="100px" />
+                <col width="50px" />
+                <col width="" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>구분</th>
+                    <th>1 Depth</th>
+                    <th>2 Depth</th>
+                    <th>3 Depth</th>
+                    <th>4 Depth</th>
+                    <th>5 Depth</th>
+                    <th>유형</th>
+                    <th>화면ID</th>
+                    <th>HTML</th>
+                    <th>담당자</th>
+                    <th>완료일</th>
+                    <th>검수</th>
+                    <th>비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="center"></td>
+                    <td class="center">BO</td>
+                    <td>로그인</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td><a href="pages/01_login/bo_00_01_login.html" target="_blank">bo_00_01_login</a></td>
+                    <td class="center">모정훈</td>
+                    <td class="center">2022-06-14</td>
+                    <td class="center">◇</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="center"></td>
+                    <td class="center">PO</td>
+                    <td>로그인</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td><a href="pages/01_login/po_00_01_login.html" target="_blank">po_00_01_login</a></td>
+                    <td class="center">모정훈</td>
+                    <td class="center">2022-06-14</td>
+                    <td class="center">◇</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="center"></td>
+                    <td class="center">BO</td>
+                    <td>로그인</td>
+                    <td>휴대폰 인증</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td><a href="pages/01_login/bo_00_01_login_certify.html" target="_blank">bo_00_01_login_certify</a></td>
+                    <td class="center">모정훈</td>
+                    <td class="center">2022-06-14</td>
+                    <td class="center">◇</td>
+                    <td>20220614 BO/PO 2단계 인증 추가</td>
+                </tr>
+                <tr>
+                    <td class="center"></td>
+                    <td class="center">PO</td>
+                    <td>로그인</td>
+                    <td>휴대폰 인증</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="center"></td>
+                    <td class="center"></td>
+                    <td><a href="pages/01_login/po_00_01_login_certify.html" target="_blank">po_00_01_login_certify</a></td>
+                    <td class="center">모정훈</td>
+                    <td class="center">2022-06-14</td>
+                    <td class="center">◇</td>
+                    <td>20220614 BO/PO 2단계 인증 추가</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

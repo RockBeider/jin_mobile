@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyMainPop">
+        <div class="cont">
+            <div class="main-popup typeA">
+                <div class="swiper-wrap">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_main_pop01.jpg" alt="sampleImg"  /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_main_pop01.jpg" alt="sampleImg" /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_main_pop01.jpg" alt="sampleImg" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <button type="button" class="btn btn-tx">오늘 하루 그만보기</button>
+            </div>
+            <button class="btn-close" onclick="popClose('lyMainPop')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+<script>
+    /*publishing UI only*/
+    $(document).ready(function(){
+    });
+    var swiperMainPop = new Swiper('.main-popup.typeA .swiper-container', {
+        scrollbar: {
+            el: '.main-popup.typeA .swiper-scrollbar',
+            dragSize: '140px',
+        },
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        autoHeight:true,
+        navigation: {
+            nextEl: '.main-popup.typeA .swiper-button-next',
+            prevEl: '.main-popup.typeA .swiper-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+    });
+</script>
+</html>

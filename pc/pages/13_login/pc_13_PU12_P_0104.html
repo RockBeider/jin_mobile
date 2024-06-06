@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        .cont + .cont {margin-left:20px}
+    </style>
+</head>
+<body>
+    <div class="layerPop open" id="lyLogin">
+        <div class="cont w-400">
+            <h1 class="layerTitle">휴면계정 안내</h1>
+            <div class="layerBody">
+                <p class="info-txt">
+                    <strong class="font-w500">고객님의 계정은 1년이상 로그인하지 않아 휴면 상태로 전환되었습니다.</strong>
+                    바바더닷컴은 관련 법률에 의거하여 1년 이상 로그인하지 않은 회원님의 개인 정보를 안전하게 보호하기 위해, 휴면계정 정책을 시행하고 있습니다.<br>(관련법률: 정보통신망이용촉진및정보보호등에관한법률<br>(정보통신망법) 제29조(개인 정보의 파기) 제2항)<br><br>바바더닷컴을 다시 이용하려면 하단의 '휴면 해제하기' 버튼을 클릭해 주세요. 휴면 상태가 해제되며 정상적으로 서비스를 이용하실 수 있습니다.
+                </p>
+                <p class="noti-txt">[COMEBACK COUPON]│휴면 해제 시 5,000원 컴백 쿠폰 증정!</p><!-- 20220307 휴면해제쿠폰 안내 추가 -->
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn w-half">취소</button>
+                    <button type="button" type="button" class="btn primary w-half">휴면 해제하기</button>
+                </div>
+                <div class="banner-area">배너 영역</div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

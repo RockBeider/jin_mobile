@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 아울렛</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back" onclick="location.href='../02_main/mc_02_MU01_M_0101.html'">뒤로가기</button>
+            <h1 class="page-title">아울렛</h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니</button>
+        </div>
+    </header>
+    <section>
+         <div class="event-top-banner expand-slider" id="event-top-banner">
+            <ul class="swiper-wrapper">
+                <!--
+                <li class="swiper-slide">
+                    <img src="../../img/temp/thumb-720x920_2.png" alt="">
+                    <div class="event-info">
+                        <div class="event-info-inner">
+                            <div class="event-info-brand">JJ JIGOTT</div>
+                            <div class="event-info-tit">핸드메이드 코트 2종 54% OFF</div>
+                            <div class="event-info-date">2020.12.11 ~ 2021.01.10</div>
+                        </div>
+                    </div>
+                </li>
+                -->
+                <li class="swiper-slide">
+                    <img src="https://img.babathe.com/upload/display/corner/OUTLET_TOP_VISUAL/20210428_theizzat_outlet_outlet_top_visual_m.jpg" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="https://img.babathe.com/upload/display/corner/OUTLET_TOP_VISUAL/20210427_jj_summer_outlet_outlet_top_visual_m.jpg" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="https://img.babathe.com/upload/display/corner/OUTLET_TOP_VISUAL/20210428_theizzat_outlet_outlet_top_visual_m.jpg" alt="">
+                </li>
+                <li class="swiper-slide">
+                    <img src="https://img.babathe.com/upload/display/corner/OUTLET_TOP_VISUAL/20210427_jj_summer_outlet_outlet_top_visual_m.jpg" alt="">
+                </li>
+                <!-- <li class="swiper-slide">
+                    <div class="videoWrap">
+                        <video src='http://www.tomodevel.jp/material/video/disneyTour.mp4'>
+                            해당 브라우저는 video 태그를 지원하지 않습니다.
+                        </video>
+                        <button class="btn-play">재생버튼</button>
+                    </div>
+                </li> -->
+            </ul>
+            <!-- 20220413 상단 띠배너 롤링 수정 > 스크롤바, 팝업버튼 추가 -->
+            <div class="swiper-pagination"></div>
+            <button class="allView">전체보기</button>
+            <!-- //20220413 상단 띠배너 롤링 수정 > 스크롤바, 팝업버튼 추가 -->
+            <script>
+                /* 20220413 상단 띠배너 롤링 수정 > 상단 배너 스크립트 수정 */
+                var galleryTop = new Swiper('#event-top-banner', {
+                    slidesPerView: 'auto',
+                    watchOverflow: true,
+                    speed:500,
+                    loop:true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'progressbar',
+                    },
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                });
+                /* 20220413 상단 띠배너 롤링 수정 > 상단 배너 스크립트 수정 */
+            </script>
+        </div>
+
+
+        <div class="title-area">
+            <div class="title-area-inner">
+                <h2 class="title">브랜드</h2>
+                <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+            </div>
+        </div>
+
+        <div class="swiper-circle swiper expand-slider" id="brand-swiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#" class="brand-item">
+                        <span class="brand-item-img"><img src="../../img/temp/outlet-brand-1.jpg" alt=""></span>
+                        <span class="brand-item-txt">THE IZZAT<br>COLLECTION</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#" class="brand-item">
+                        <span class="brand-item-img"><img src="../../img/temp/outlet-brand-2.jpg" alt=""></span>
+                        <span class="brand-item-txt">JJ JIGOTT</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#" class="brand-item">
+                        <span class="brand-item-img"><img src="../../img/temp/outlet-brand-3.jpg" alt=""></span>
+                        <span class="brand-item-txt">THE IZZAT</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#" class="brand-item">
+                        <span class="brand-item-img"><img src="../../img/temp/outlet-brand-4.jpg" alt=""></span>
+                        <span class="brand-item-txt">IZZAT BABA</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var brand_swiper = new Swiper('#brand-swiper', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                watchOverflow: true,
+            });
+        </script>
+
+		<!-- 20211001 MD추천 신규 메뉴 추가 -->
+        <div class="title-area">
+            <div class="title-area-inner">
+                <h2 class="title">MD's PICK</h2>
+                <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+            </div>
+        </div>
+
+        <div class="tab-a swiper" id="tab-pickProduct">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide on"><a href="javascript:void(0)">카테고리1</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">카테고리2</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">카테고리3</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">카테고리4</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">카테고리5</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">카테고리6</a></li>
+            </ul>
+            <script>
+                var tab_newProduct = new Swiper('#tab-pickProduct', {
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    watchOverflow: true,
+                });
+            </script>
+        </div>
+
+        <div class="unitList">
+            <ul>
+                <li>
+                    <a href="../12_order/mc_12_MU02_M_0101.html">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>체크 시스루 배색 블라우스</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">79,000원 <em class="salePer">50%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1394_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>퍼프 소매 크링클 블라우스</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">69,000원 <em class="salePer">50%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/Qkw1QTFTSzM=BL5A1SK3185_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>[2021 신상품] 글리터 니트 밴딩 스커트</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">349,900원 <em class="salePer">50%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/Qkw1QTBTTFA=BL5A0SLP342_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>세미 배기 데님 팬츠</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">295,200원 <em class="salePer">10%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+            </ul>
+        </div>
+		<!-- //20211001 MD추천 신규 메뉴 추가 -->
+
+        <div class="title-area">
+            <div class="title-area-inner">
+                <h2 class="title">신상품</h2>
+                <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+            </div>
+        </div>
+
+        <div class="tab-a swiper" id="tab-newProduct">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide on"><a href="javascript:void(0)">전체</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">여성</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">남성</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">뷰티</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">헬스</a></li>
+            </ul>
+            <script>
+                var tab_newProduct = new Swiper('#tab-newProduct', {
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    watchOverflow: true,
+                });
+            </script>
+        </div>
+
+        <div class="unitList">
+            <ul>
+                <li>
+                    <a href="../12_order/mc_12_MU02_M_0101.html">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>체크 시스루 배색 블라우스</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">79,000원 <em class="salePer">50%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1394_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>퍼프 소매 크링클 블라우스</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">69,000원 <em class="salePer">50%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/Qkw1QTFTSzM=BL5A1SK3185_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>[2021 신상품] 글리터 니트 밴딩 스커트</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">349,900원 <em class="salePer">50%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/Qkw1QTBTTFA=BL5A0SLP342_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>세미 배기 데님 팬츠</strong></div>
+                            <div class="priceWrap">
+                                <span class="price">295,200원 <em class="salePer">10%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="title-area">
+            <div class="title-area-inner">
+                <h2 class="title">카테고리</h2>
+                <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+            </div>
+        </div>
+
+
+        <div class="tagViewer ">
+            <ul>
+                <li><a href="javascript:void(0)">#코트</a></li>
+                <li><a href="javascript:void(0)">#패딩/점퍼</a></li>
+                <li><a href="javascript:void(0)">#니트 블라우스</a></li>
+                <li><a href="javascript:void(0)">#자켓</a></li>
+                <li><a href="javascript:void(0)">#원피스</a></li>
+                <li><a href="javascript:void(0)">#팬츠/스커트</a></li>
+                <li><a href="javascript:void(0)">#세트</a></li>
+            </ul>
+        </div>
+
+        <div class="title-area">
+            <div class="title-area-inner">
+                <h2 class="title">랭킹</h2>
+                <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+            </div>
+        </div>
+
+        <div class="unitList">
+            <ul>
+                <!--
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                            <div class="tagSet-thumb">
+                                <span class="rank">1</span>
+                            </div>
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[온라인 단독]</em> <strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">1,296,743원</span>
+                                <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                <span class="price premi">1,000.000원 프리미엄</span>
+                            </div>
+                            <div class="tagSet">
+                                <div class="inner">
+                                    <span>NEW</span>
+                                    <span>BEST</span>
+                                    <span>10%할인</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크" checked>
+                </li>
+                -->
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/SUw2UDBCTDA=IL6P0BL0830_1_310x455.jpg" alt="">
+                            <div class="tagSet-thumb">
+                                <span class="rank">1</span>
+                            </div>
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>메탈 버튼 퍼프 블라우스</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">78,000원</span>
+                                <span class="price">39,000원 <em class="salePer">50%</em></span>
+                            </div>
+                            <div class="tagSet">
+                                <div class="inner">
+                                    <span>BEST</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/SUw2UDFQTzA=IL6P1PO0551_1_310x455.jpg" alt="">
+                            <div class="tagSet-thumb">
+                                <span class="rank">2</span>
+                            </div>
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>배색 칼라 케이블 풀오버 니트</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">90,000원</span>
+                                <span class="price">49,000원 <em class="salePer">50%</em></span>
+                            </div>
+                            <div class="tagSet">
+                                <div class="inner">
+                                    <span>10% 쿠폰</span>
+                                    <span>BEST</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/SUw2UDBCTDU=IL6P0BL5050_1_310x455.jpg" alt="">
+                            <div class="tagSet-thumb">
+                                <span class="rank">3</span>
+                            </div>
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong>펄버튼 레이스 지수</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">118,000원</span>
+                                <span class="price">59,000원 <em class="salePer">50%</em></span>
+                            </div>
+                            <div class="tagSet">
+                                <div class="inner">
+                                    <span>10% 쿠폰</span>
+                                    <span>BEST</span>
+                                    <span>NEW</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/VEs3TTBTTDA=TK7M0SL0199_11_310x455.jpg" alt="">
+                            <div class="tagSet-thumb">
+                                <span class="rank">4</span>
+                            </div>
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT</em>
+                            <div class="title"><strong>실키 페이즐리 와이드 팬츠</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">138,000원</span>
+                                <span class="price">34,500원 <em class="salePer">75%</em></span>
+                            </div>
+                            <div class="tagSet">
+                                <div class="inner">
+                                    <span>BEST</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+            </ul>
+        </div>
+
+        <div class="title-area">
+            <div class="title-area-inner">
+                <h2 class="title">할인관</h2>
+                <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+            </div>
+        </div>
+
+        <div class="tab-a swiper" id="tab-newProduct">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide on"><a href="javascript:void(0)">~20%할인</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">~50%할인</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">~70%할인</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">~90%할인</a></li>
+            </ul>
+            <script>
+                var tab_newProduct = new Swiper('#tab-newProduct', {
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    watchOverflow: true,
+                });
+            </script>
+        </div>
+
+        <div class="unitList">
+            <ul>
+                <!--
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">THE IZZAT COLLECTION</em>
+                            <div class="title"><em>[온라인 단독]</em> <strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">1,296,743원</span>
+                                <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                <span class="price im">1,000.000원 임직원</span>
+                            </div>
+                            <div class="tagSet">
+                                <div class="inner">
+                                    <span>NEW</span>
+                                    <span>BEST</span>
+                                    <span>무료배송</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크" checked>
+                </li>
+                -->
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/Skw0QTBPUDM=JL4A0OP3951_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">JJ JIGOTT</em>
+                            <div class="title"><em>[2021 신상품]</em> <strong> 코튼 블렌드 벨티드 플리츠</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">798,000원</span>
+                                <span class="price">718,200원 <em class="salePer">10%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-a">
+                            <img src="../../img/temp/Skw1QTBPUDA=JL5A0OP0160_1_310x455.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <em class="category">JIGOTT</em>
+                            <div class="title"><em>★윤아 착용★ [2021 신상품]</em> <strong> 벨티드 스트라이프 원피스</strong></div>
+                            <div class="priceWrap">
+                                <span class="price-dis">808,200원</span>
+                                <span class="price">898,000원 <em class="salePer">10%</em></span>
+                            </div>
+                        </div>
+                    </a>
+                    <input type="checkbox" class="check-like" title="좋아요 체크">
+                </li>
+
+
+            </ul>
+        </div>
+
+
+        
+
+        <div class="title-area">
+            <div class="title-area-inner">
+                <h2 class="title">기획전</h2>
+            </div>
+        </div>
+
+        <div class="unitList-full">
+            <ul>
+                <!--
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-1x1">
+                            <img src="../../img/temp/thumb-plan.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <div class="title"><strong>[더아이잗] 감각적인 핏을 선사하는 뉴 자켓</strong></div>
+                            <div class="date">SPRING JACKET 다채로운 봄</div>
+                        </div>
+                    </a>
+                </li>
+                -->
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-1x1">
+                            <img src="../../img/temp/20210511_brands_JIGOTT_1388x580_1620951167785.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <div class="title"><strong>[얼리윈터] 지고트 역시즌 최대 65% 할인</strong></div>
+                            <div class="date">2021.05.20 ~ 2021.05.23</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="thumb ratio-1x1">
+                            <img src="../../img/temp/20210511_brands_JJ-JIGOTT_1388x580_1620951445509.jpg" alt="">
+                        </div>
+                        <div class="unitInfoWrap">
+                            <div class="title"><strong>[얼리윈터] JJ지고트 역시즌 최대 70% 할인</strong></div>
+                            <div class="date">2021.05.20 ~ 2021.05.23</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="banner">
+            <a href="#"><img src="../../img/temp/banner.jpg" alt=""></a>
+        </div>
+
+    </section>
+    <footer>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 마이바바</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <a href="javascript:void(0)" onclick="popOpen('ly-mybaba-premium-cancel01')">팝업열기</a>
+
+    <!-- 20230421 #3540 [FO/BO] 프리미엄 해지 UX 개선 > 신규 팝업 추가 -->
+    <!-- 1. 인증 전 -->
+    <div class="layerPop systemPop open" id="ly-mybaba-premium-cancel01">
+        <div class="cont">
+            <div class="popTitle"></div>
+            <section>
+                <!-- 1. 환불가능 -->
+                <p class="info-txt">
+                    지금 해지하시면<br>
+                    <span class="name">XXX</span>님이 받으신 <strong class="point">30,000</strong> 포인트와<br>
+                    <strong>웰컴 혜택, 프리미엄 상시 할인 및 적립, 배송 혜택</strong>이 모두 사라져요.<br><br>
+                    모든 혜택을 포기하고<br>
+                    지금 바로 즉시 해지하시겠습니까?
+                </p>
+                <!-- //1. 환불가능 -->
+                <!-- 2. 환불불가 (30일 이내, 혜택 사용) -->
+                <p class="info-txt" style="margin-top:50px">
+                    혜택을 사용하셨으므로 회비 환불이<br>
+                    불가하며, <strong class="date">YYYY.MM.DD</strong> 부터<br>
+                    모든 프리미엄 혜택이 종료됩니다.<br><br>
+                    지금 바로 해지하시겠습니까?
+                </p>
+                <!-- //2. 환불불가 (30일 이내, 혜택 사용) -->
+                <!-- 3. 환불불가 (30일 이후) -->
+                <p class="info-txt" style="margin-top:50px">
+                    가입 후 30일이 경과하여 회비 환불이<br>
+                    불가하며, <strong class="date">YYYY.MM.DD</strong> 부터<br>
+                    모든 프리미엄 혜택이 종료됩니다.<br><br>
+                    지금 바로 해지하시겠습니까?
+                </p>
+                 <!-- //3. 환불불가 (30일 이후) -->
+                <div class="btnWrap full_btn">
+                    <button class="btn-basicS blackSolid">해지신청</button>
+                    <button class="btn-basicS gold">프리미엄 혜택 유지하기</button>
+                </div>
+            </section>
+            <button class="btn-close" onclick="popClose('ly-mybaba-lawyers01')">팝업닫기</button>
+        </div>
+    </div>
+    <!-- //20230421 #3540 [FO/BO] 프리미엄 해지 UX 개선 > 신규 팝업 추가 -->
+
+</body>
+</html>

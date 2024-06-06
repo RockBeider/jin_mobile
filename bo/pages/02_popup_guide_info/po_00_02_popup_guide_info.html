@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko"><head>
+	<title>BABATHE.COM 관리자 로그인</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="../../css/design.css">
+	<link rel="stylesheet" type="text/css" href="../../css/common.css">
+</head>
+<body cz-shortcut-listen="true">
+
+	<form id="layerExcelDownForm" name="layerExcelDownForm" method="post">
+		<style>
+			/** .guide_personal_info **/
+			.guide_personal_info {width:calc(100% - 10px)}
+			/* .list_down_reason */
+			.guide_personal_info .list_down_reason > div ~ div {margin-top:15px}
+			.guide_personal_info .list_down_reason > div label {font-size:14px; color:#111; cursor:pointer}
+			.guide_personal_info .list_down_reason > div:last-child input {width:100%; margin-top:-5px; padding:20px 10px; font-size:12px; border:1px solid #eaeaea; border-radius:5px; box-sizing:border-box}
+			/* .guide_down_reason */
+			.guide_personal_info .guide_down_reason {margin-top:40px}
+			.guide_personal_info .guide_down_reason > span {display:block; margin-bottom:15px; font-size:16px; font-weight:700}
+			.guide_personal_info .guide_down_reason ul li {padding:0 10px; line-height:1.4em; font-size:14px; text-indent:-8px; word-break:keep-all}
+			.guide_personal_info .guide_down_reason ul li ~ li {margin-top:7px}
+			
+		</style>
+		<div class="guide_personal_info"><!-- class="guide_personal_info"추가 -->
+			<div class="list_down_reason"><!-- class="list_down_reason"추가 -->
+				<div>
+					<input type="radio" name="downReason" id="reason01" value="배송을 위한 주문정보 다운로드">
+					<label for="reason01">배송을 위한 주문정보 다운로드</label>
+				</div>
+				<div>
+					<input type="radio" name="downReason" id="reason02" value="정산 데이터 확인을 위한 다운로드">
+					<label for="reason02">정산 데이터 확인을 위한 다운로드</label>
+				</div>
+				<div>
+					<input type="radio" name="downReason" id="reason03" value="내부 업무(SCM/CS 등)를 위한 다운로드">
+					<label for="reason03">내부 업무(SCM/CS 등)를 위한 다운로드</label>
+				</div>
+				<div>
+					<input type="radio" name="downReason" id="reason04" value="">
+					<label for="reason04">직접입력</label>
+				</div>
+				<div>
+					<input name="downReasonInput" placeholder="사유를 입력해 주세요." value="">
+				</div>
+			</div>
+			<div class="guide_down_reason"><!-- class="guide_down_reason"추가 -->
+				<span>개인 정보 취급 주의 안내</span>
+				<ul>
+					<li> - 배송, 정산, A/S 등의 목적으로 다운로드한 고객 개인 정보는 담당자 지정 및 엑셀 파일 암호화를 통해 불법 유출되지 않도록 철저한 관리가 필요합니다.</li>
+					<li> - 고객 개인 정보는 배송, 정산, A/S 등의 목적 달성 후 즉시 폐기하여 주시기 바라며, 당사에서 고지한 범위를 넘어선 광고, 할인, 이벤트 등으로 사용할 경우 법에 따라 처벌받을 수 있습니다.</li>
+					<li> - 상기 내용을 이해한 후 개인 정보가 유출되지 않도록 반드시 주의 바랍니다.</li>
+				</ul>
+			</div>
+		</div>
+	</form>
+	
+	<script type="text/javascript">
+	</script>
+
+</body>
+</html>

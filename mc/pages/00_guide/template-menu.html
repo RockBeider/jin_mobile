@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>ui 샘플</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        h1{margin: 20px 0;font-size: 20px;}
+        h1:before{content: "";display: inline-block;vertical-align: middle;width: 5px;height: 5px;background: #000;border-radius: 50%;margin: -5px 5px 0 5px;}
+    </style>
+</head>
+<body>
+    <section>
+
+
+        
+        <h1>메뉴구조</h1>
+        <div class="topMenuNav" id="topMenuNav">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide on"><a href="#">전체</a></li>
+                <li class="swiper-slide"><a href="#">실시간 구매 TOP</a></li>
+                <li class="swiper-slide"><a href="#">브랜드 랭킹</a></li>
+                <li class="swiper-slide"><a href="#">실시간 조회 TOP</a></li>
+                <li class="swiper-slide"><a href="#">베스트 리뷰</a></li>
+            </ul>
+            <script>
+                var menu_1dep = new Swiper('#topMenuNav', {
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    watchOverflow: true,
+                });
+            </script>
+        </div>
+        
+
+        <!-- topMenuNav-sub -->
+        <div class="topMenuNav-sub" id="topMenuNav-sub">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><a href="javascript:void(0)">라이브쇼핑</a></li>
+                <li class="swiper-slide on"><a href="javascript:void(0)">PLAY 쇼핑</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">패션필름</a></li>
+            </ul>
+            <script>
+                var topMenuNav_sub = new Swiper('#topMenuNav-sub', {
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    watchOverflow: true,
+                });
+            </script>
+        </div>
+        <!-- //topMenuNav-sub -->
+
+
+        <h1>공용 탭메뉴</h1>
+        <div class="tab-a swiper" id="tabUi">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide on"><a href="javascript:void(0)">All</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">Fashion</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">Beauty</a></li>
+            </ul>
+        </div>
+        <script>
+            var tabUi = new Swiper('#tabUi', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                watchOverflow: true,
+            });
+        </script>
+        <div class="tab-a swiper underLine black" id="tabUi2">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide on"><a href="javascript:void(0)">All</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">Fashion</a></li>
+                <li class="swiper-slide"><a href="javascript:void(0)">Beauty</a></li>
+                
+            </ul>
+        </div>
+        <script>
+            var tabUi = new Swiper('#tabUi2', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                watchOverflow: true,
+            });
+        </script>
+
+        <div class="tab-e">
+            <ul>
+                <li class="on"><a href="javascript:void(0)">쇼핑 트렌드</a></li>
+                <li><a href="javascript:void(0)">추천 브랜드</a></li>
+                <li><a href="javascript:void(0)">추천 상품</a></li>
+            </ul>
+        </div>
+
+
+    </section>
+</body>
+</html>

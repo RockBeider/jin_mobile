@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container"> 
+        <div class="center-wrap">
+            <div class="login-wrap">
+                <div>
+                    <div class="form-area">
+                        <h2 class="page-title">비밀번호 찾기</h2>      
+                        <div class="tab-a tab-ui">
+                            <ul>
+                                <li class="on"><a href="#">휴대폰 본인인증</a></li>
+                                <li><a href="#">이메일 인증</a></li>
+                            </ul>
+                        </div>       
+                        <div class="tab-cont">
+
+                            <!-- 휴대폰 본인인증 -->
+                            <div class="on">
+                                <p class="font-s16">아이디와 본인 명의의 휴대폰 번호 인증을 통해<br>비밀번호를 재설정하실 수 있습니다.</p>
+                                <div class="form-wrap phone-verify">
+                                    <div class="form-row btn-row">
+                                        <div class="form-col">
+                                            <div class="form-box">
+                                                <input type="text" value=""  id="find-pw1-1" placeholder="아이디 입력(이메일 주소 또는 휴대폰 번호)"/>
+                                            </div>
+                                        </div>
+                                        <div class="form-col">
+                                            <button type="button" class="btn primary">확인</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <div class="form-box disabled"><!-- 비활성시 class="disabled" 적용, 활성시 class="disabled" 삭제 -->
+                                                <input type="text" value=""  id="find-pw1-2" placeholder="이름 입력" disabled/><!-- 비활성시 class="disabled" 적용, 활성시 class="disabled" 삭제 -->
+                                            </div>
+                                        </div>
+                                        <div class="form-col">
+                                            <div class="form-box disabled">
+                                                <select id="find-pw1-3" disabled>
+                                                    <option>내국인</option>
+                                                    <option>외국인</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <div class="form-box disabled">
+                                                <input type="text" value=""  id="find-pw1-4" placeholder="생년월일 입력 (8자리)" disabled/>
+                                            </div>
+                                        </div>
+                                        <div class="form-col">
+                                            <div class="form-box disabled">
+                                                <select id="find-pw1-5" disabled>
+                                                    <option>남자</option>
+                                                    <option>여자</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-col">
+                                            <div class="form-box disabled"> 
+                                                <input type="text" value=""  id="find-pw1-6" placeholder="휴대폰 번호 입력 ('-'제외하고 숫자만 입력)" disabled/>
+                                            </div>
+                                        </div>
+                                        <div class="form-col">
+                                            <div class="form-box disabled">
+                                                <select id="find-pw1-7" disabled>
+                                                    <option>통신사</option>
+                                                    <option>SKT</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 인증번호 입력 -->
+                                    <div class="form-row btn-row">
+                                        <div class="form-col">
+                                            <div class="form-box d-flex">
+                                                <input type="text" id="certiCode1" placeholder="인증번호 입력" class="w-120">
+                                                <span class="form-mid-txt">02:00</span>
+                                                <button type="button" class="btn sm btn-form">인증번호 재전송</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="form-msg c-secondary">인증 시간이 경과했습니다. 인증번호 재전송을 통해 인증을 다시 진행해 주세요.</p>
+                                    <!-- // 인증번호 입력 -->
+
+                                    <div class="pers-idx-guide">
+                                        <div class="acd-box">
+                                            <div class="accordion-title">
+                                                <div class="ttile">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="certiAgree" checked="">
+                                                        <label for="certiAgree">본인 인증을 위한 약관 모두 동의</label>
+                                                    </div>
+                                                </div>
+                                                <button>열림</button>
+                                            </div>
+                                            <div class="accordion-panel">
+                                                <div>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="checkbox black"> 
+                                                                <input type="checkbox" id="certiAgree1" checked="">
+                                                                <label for="certiAgree1">(필수) 개인정보 수집 및 이용 동의</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="checkbox black">
+                                                                <input type="checkbox" id="certiAgree2" checked="">
+                                                                <label for="certiAgree2">(필수) 고유식별정보 처리 동의</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="checkbox black">
+                                                                <input type="checkbox" id="certiAgree3" checked="">
+                                                                <label for="certiAgree3">(필수) 통신사 이용약관</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="checkbox black">
+                                                                <input type="checkbox" id="certiAgree4" checked="">
+                                                                <label for="certiAgree4">(필수) 서비스 이용약관</label>
+                                                            </div>
+                                                            <a href="#" class="tx-link">보기</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn-area">
+                                        <a href="#" class="btn primary black">인증번호 전송</a>
+                                        <!-- 인증번호 전송 후 확인 으로 변경
+                                        <a href="#" class="btn primary black">확인</a>-->
+                                    </div>
+                                </div>
+                            </div>                        
+                            
+                            <!-- 이메일 인증 -->
+                            <div> 
+                                <p class="font-s16">회원가입 시 등록한 회원 정보와 이메일 주소 인증을 통해<br>비밀번호를 재설정하실 수 있습니다.</p>
+                                <div class="form-wrap">
+                                    <div class="form-row">
+                                        <div class="form-box">
+                                            <input type="text" value=""  id="find-pw2-1" placeholder="아이디 입력(이메일 주소 또는 휴대폰 번호)"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-box">
+                                            <input type="text" value=""  id="find-pw2-2" placeholder="이름 입력"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-area">
+                                        <a href="#" class="btn primary black">이메일 주소로 인증번호 전송</a>
+                                    </div>
+
+                                    
+                                </div>
+                                <!-- 인증번호 입력 -->
+                                <p class="font-s16"><strong class="c-gray1">인증 메일이 ****baba@mail.com (으)로 전송</strong>되었습니다.<br>이메일 확인 후 인증번호를 입력해 주세요.</p>
+                                <div class="form-wrap phone-verify">
+                                    <div class="form-row btn-row">
+                                        <div class="form-col">
+                                            <div class="form-box d-flex">
+                                                <input type="text" id="certiCode1" placeholder="인증번호 입력" class="w-120">
+                                                <span class="form-mid-txt">02:00</span>
+                                                <button type="button" class="btn sm btn-form">인증번호 재전송</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="form-msg c-secondary">인증 시간이 경과했습니다. 인증번호 재전송을 통해 인증을 다시 진행해 주세요.</p>
+                                </div>                            
+                                <div class="btn-area">
+                                    <a href="#" class="btn primary black">확인</a>
+                                </div>
+                                <p class="info-box">
+                                    <span>인증 메일이 수신되지 않으시나요?</span>
+                                    인증 메일을 받으실 메일 주소를 정확히 입력했는지 확인해주세요. 메일 주소가<br>정확한데도 메일이 확인되지 않는다면, '스팸메일함'으로 수신되었는지 확인해주세요.
+                                </p>
+                                <!-- // 인증번호 입력 -->
+                            </div>
+
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

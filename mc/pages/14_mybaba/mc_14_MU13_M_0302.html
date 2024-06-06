@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 마일리지</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back">뒤로가기</button>
+            <h1 class="page-title">마일리지</h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니<span class="num">11</span></button>
+        </div>
+    </header>
+    <section>
+
+        <!-- contentsGroup -->
+        <div class="contentsGroup">
+            <div class="mybaba-headerInfo">
+                <div class="mybaba-infoBlock benefitSchedule gray">
+                    <h3 class="title">마일리지 현황</h3>
+                    <!-- 20211012 현황 부분 클릭 액션 제외 요청 -->
+                   <!--  <a href="#" class="miles1">
+                        <span>사용가능</span>
+                        <strong>5,000M</strong>
+                    </a>
+                    <a href="#" class="miles2">
+                        <span>적립예정</span>
+                        <strong>500M</strong>
+                    </a>
+                    <a href="#" class="miles3">
+                        <span>적립예정</span>
+                        <strong>500M</strong>
+                    </a> -->
+                    <div class="info miles1">
+                        <span>사용가능</span>
+                        <strong>5,000M</strong>
+                    </div>
+                    <div class="info miles2">
+                        <span>적립예정</span>
+                        <strong>500M</strong>
+                    </div>
+                    <div class="info miles3">
+                        <span>소멸예정</span>
+                        <strong>500M</strong>
+                    </div>
+                    <!-- //20211012 현황 부분 클릭 액션 제외 요청 -->
+                </div>
+            </div>
+
+            <!-- <div class="switchMiles">
+                <strong>오프라인 마일리지<em>1,500점</em></strong>
+                <button>전환</button>
+                <ul class="tip-wrap">
+                    <li class="tip type5"><a class="" href="https://www.babathe.com/customer/notice/indexNoticeList?bbsGbNo=34&lettNo=12060">오프라인 마일리지 전환 서비스 종료 안내 (~9/18)</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <!-- //contentsGroup -->
+
+        <!-- expand -->
+        <div class="expand has-line">
+            <!-- title-area -->
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h4 class="title">전체 <span class="title-small">최근  1년</span></h4>
+                    <div class="title-extra">
+                        <button type="button" class="filter"><span class="for-a11y">필터</span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- //title-area -->
+
+            <!-- tab-e -->
+            <div class="tab-e">
+                <ul>
+                    <li class="on"><a href="javascript:void(0)">전체</a></li>
+                    <li><a href="javascript:void(0)">적립</a></li>
+                    <li><a href="javascript:void(0)">사용</a></li>
+                    <li><a href="javascript:void(0)">소멸</a></li>
+                </ul>
+            </div>
+            <!-- //tab-e -->
+
+            <!-- usedPointInfo -->
+            <div class="usedPointInfo">
+                <div class="usedPointInfo-inner">
+
+                    <div class="usedPointInfo-item">
+                        <div class="item-title">
+                            [적립] 상품구매
+                        </div>
+                        <div class="item-point">
+                            <span class="point minus">200P</span>
+                        </div>
+                        <div class="item-info">
+                            <p><a href="" class="underline">[JIGOTT]</a>뒷절개 플랩 울 트렌치 코트</p>
+                            <p class="date">2020-12-11</p>
+                            <p class="expire">사용만료일 : <span>2021-01-15</span></p><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                        </div>
+                    </div>
+
+                    <div class="usedPointInfo-item">
+                        <div class="item-title">
+                            [적립] 마일리지 결제
+                        </div>
+                        <div class="item-point">
+                            <span class="point plus">400P</span>
+                        </div>
+                        <div class="item-info">
+                            <p><a href="" class="underline">[JIGOTT]</a>뒷결개 플랩 울 트렌치 코트</p>
+                            <p class="date">2020-12-11</p>
+                            <p class="expire">사용만료일 : <span>2021-01-15</span></p><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                        </div>
+                    </div>
+
+                    <div class="usedPointInfo-item">
+                        <div class="item-title">
+                            [소멸] 유효기간 만료
+                        </div>
+                        <div class="item-point">
+                            <span class="point minus">400P</span>
+                        </div>
+                        <div class="item-info">
+                            <p class="date">2020-12-11</p>
+                        </div>
+                    </div>
+
+                    <div class="usedPointInfo-item">
+                        <div class="item-title">
+                            [사용] 오프라인 마일리지 전환
+                        </div>
+                        <div class="item-point">
+                            <span class="point plus">1,000P</span>
+                        </div>
+                        <div class="item-info">
+                            <p class="date">2020-12-11</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //usedPointInfo -->
+
+            <div class="btnWrap">
+                <button class="btn-basicM"><span class="more">더보기</span></button>
+            </div>
+
+            <div class="tipList">
+                <strong>마일리지 안내</strong>
+                <!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+                <ul class="tip-wrap">
+                    <!-- <li class="tip type3">적립예정 마일리지는 주문으로 인해 적립이 예정되어 있는 마일리지로 해당 주문의 모든 상품이 배송완료 되고, 15일 후 사용가능 마일리지로 자동 전환됩니다.</li> -->
+                    <li class="tip type3">소멸예정 마일리지는 유효기간 경과로 소멸이 예상되는 포인트입니다. 유효기간 종료일 자정 이후 소멸되므로 그 전에 사용하시기 바랍니다.</li>
+                    <li class="tip type3">마일리지의 유효기간은 1년이며, 1M = 1원입니다.</li>
+                    <li class="tip type3">마일리지는 주문 시에 10M 단위로 사용하실 수 있습니다. (단, 사용가능 마일리지가 1,000M 이상이어야 함.)</li>
+                    <li class="tip type3">1회 최대 사용 가능한 마일리지는 최종 결제금액의 50%입니다.</li>
+                    <li class="tip type3">일부 입점 상품은 마일리지 적립 및 사용이 불가할 수 있습니다.</li>
+                    <li class="tip type3">24년 3월 1일부터 마일리지 적립 서비스는 e포인트와 통합 운영되나, 기존에 적립된 마일리지는 유효기간 만료 전까지 이전과 동일한 방식으로 사용가능합니다.</li>
+                </ul>
+                <!-- //20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+            </div>
+
+
+        </div>
+        <!-- //expand -->
+
+    </section>
+    <footer></footer>
+</body>
+</html>

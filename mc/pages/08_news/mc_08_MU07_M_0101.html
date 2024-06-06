@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - BEST</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back">뒤로가기</button>
+            <h1 class="page-title">베스트</h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니<span class="num">11</span></button>
+        </div>
+    </header>
+    <section class="section-real-time"> <!-- 20230109 #2924 [FO] 베스트 랭킹 메뉴 간소화 및 카테고리 추가 > section태그에 class="section-real-time" 추가 -->
+
+        <!-- topMenuNav -->
+        <div class="topMenuNav sticky" id="topMenuNav">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><a href="#">전체</a></li>
+                <li class="swiper-slide on"><a href="#">실시간 구매 TOP</a></li>
+                <li class="swiper-slide"><a href="#">브랜드 랭킹</a></li>
+                <li class="swiper-slide"><a href="#">실시간 조회 TOP</a></li>
+                <li class="swiper-slide"><a href="#">베스트 리뷰</a></li>
+            </ul>
+        </div>
+        <script>
+            var topMenuNav = new Swiper('#topMenuNav', {
+                slidesPerView: 'auto',
+                freeMode: true,
+                watchOverflow: true,
+            });
+        </script>
+        <!-- //topMenuNav -->
+
+        <div class="tabContents">
+            <!-- 20230109 #2924 [FO] 베스트 랭킹 메뉴 간소화 및 카테고리 추가 > 시작 -->
+            <!-- <div class="tab-a swiper black" id="tab-realTimeBuyTop">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide on"><a href="#">전체</a></li>
+                    <li class="swiper-slide"><a href="#">여성</a></li>
+                    <li class="swiper-slide"><a href="#">남성</a></li>
+                    <li class="swiper-slide"><a href="#">뷰티</a></li>
+                    <li class="swiper-slide"><a href="#">헬스</a></li>
+                </ul>
+                <script>
+                    var tab_realTimeBuyTop = new Swiper('#tab-realTimeBuyTop', {
+                        slidesPerView: 'auto',
+                        freeMode: true,
+                        watchOverflow: true,
+                    });
+                </script>
+            </div> -->
+
+            <!-- 20230914 #4273 [FO]구매, 조회 랭킹에 연령 필터 추가 요청 > 시작 -->
+            <!-- <div class="categorySelectUi">
+                <div class="location">
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="categorySelectUi_layerOpen()">전체</a></li>
+                    </ul>
+                </div>
+                <div class="locationMenu">
+                    <ul>
+                        <li class="current"><a href="javascript:void(0)" onclick="locationMenu_click(this)">전체</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">여성</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">남성</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">뷰티</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">럭셔리</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">라이프</a></li>
+                    </ul>
+                </div>
+                <div class="deem"></div>
+                <script>
+                    var locationMenu_prev = document.querySelectorAll('.locationMenu > ul > li.current')[0];
+                    function locationMenu_click(obj){
+                        if(locationMenu_prev){
+                            locationMenu_prev.closest('li').classList.remove('current');
+                        }
+                        obj.closest('li').classList.add('current');
+                        locationMenu_prev = obj;
+                        categorySelectUi_layerClose();
+                    }
+                </script>
+            </div> -->
+            <div class="categorySelectUi prd-list-filter"><!-- 20230914 #4273 [FO]구매, 조회 랭킹에 연령 필터 추가 요청 > class="prd-list-filter" 추가 -->
+                <div class="location">
+                    <ul>
+                        <li><a href="javascript:void(0)" onclick="categorySelectUi_layerOpen()">전체</a></li>
+                    </ul>
+                    <!-- 20230914 #4273 [FO]구매, 조회 랭킹에 연령 필터 추가 요청 > 필터 버튼영역 추가 -->
+                    <div class="filter-btn" onclick="filterOpen()">
+                        <strong class="sel_fliter">전체 연령</strong>
+                        <button><span class="for-a11y">필터</span></button>
+                    </div>
+                    <!-- //20230914 #4273 [FO]구매, 조회 랭킹에 연령 필터 추가 요청 > 필터 버튼영역 추가 -->
+                </div>
+                <div class="locationMenu">
+                    <ul>
+                        <li class="current"><a href="javascript:void(0)" onclick="locationMenu_click(this)">전체</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">여성</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">남성</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">뷰티</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">럭셔리</a></li>
+                        <li><a href="javascript:void(0)" onclick="locationMenu_click(this)">라이프</a></li>
+                    </ul>
+                </div>
+                <div class="deem"></div>
+                <script>
+                    var locationMenu_prev = document.querySelectorAll('.locationMenu > ul > li.current')[0];
+                    function locationMenu_click(obj){
+                        if(locationMenu_prev){
+                            locationMenu_prev.closest('li').classList.remove('current');
+                        }
+                        obj.closest('li').classList.add('current');
+                        locationMenu_prev = obj;
+                        categorySelectUi_layerClose();
+                    }
+                </script>
+                <!-- 20230914 #4273 [FO]구매, 조회 랭킹에 연령 필터 추가 요청 > 연령별 필터 영역 추가 -->
+                <div class="filterLayer">
+                    <div class="cont">
+                        <div class="optSelectWrap n5">
+                            <div class="inner">
+                                <label><input type="radio" name="optCheck-1" checked><span>전체</span></label>
+                                <label><input type="radio" name="optCheck-1"><span>20대</span></label>
+                                <label><input type="radio" name="optCheck-1"><span>30대</span></label>
+                                <label><input type="radio" name="optCheck-1"><span>40대</span></label>
+                                <label><input type="radio" name="optCheck-1"><span>50대 이상</span></label>
+                            </div>
+                        </div>
+                        <div class="btnWrap">
+                            <button class="reset">새로고침</button>
+                            <button class="btn-basicM blackSolid" onclick="filterClose()">적용하기</button>
+                        </div>
+                    </div>
+                </div>  
+                <!-- //20230914 #4273 [FO]구매, 조회 랭킹에 연령 필터 추가 요청 > 연령별 필터 영역 추가 -->
+            </div>
+            <!-- //20230914 #4273 [FO]구매, 조회 랭킹에 연령 필터 추가 요청 > 종료 -->
+
+            <nav class="categorySelect-menu">
+                <!-- <ul>
+                    <li class="current"><a href="javascript:void(0)">전체상품 </a></li>
+                    <li><a href="javascript:void(0)">아우터</a></li>
+                    <li><a href="javascript:void(0)">원피스</a></li>
+                    <li><a href="javascript:void(0)">상의</a></li>
+                    <li><a href="javascript:void(0)">하의</a></li>
+                    <li><a href="javascript:void(0)">가방</a></li>
+                    <li><a href="javascript:void(0)">슈즈</a></li>
+                    <li><a href="javascript:void(0)">액세서리</a></li>
+                    <li class="more"><a href="javascript:void(0)">더보기</a></li>
+                </ul> -->
+            </nav>
+            <!-- //20230109 #2924 [FO] 베스트 랭킹 메뉴 간소화 및 카테고리 추가 -->
+
+            <!-- prd-list-filter -->
+            <div class="prd-list-filter">
+                <div class="prd-list-filter-inner">
+                    <div class="total"><span>2020-12-29 14:00</span> 기준</div>
+                    <div class="extra">
+                        <select>
+                            <option>실시간</option>
+                            <option>신상품순</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- //prd-list-filter -->
+    
+            <!-- unitList -->
+            <div class="unitList">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="thumb ratio-a">
+                                <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                                <div class="tagSet-thumb">
+                                    <span class="rank">1</span>
+                                </div>
+                            </div>
+                            <div class="unitInfoWrap">
+                                <em class="category">THE IZZAT COLLECTION</em>
+                                <div class="title"><em>[온라인 단독]</em> <strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                                <div class="priceWrap">
+                                    <span class="price-dis">1,296,743원</span>
+                                    <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                    <span class="price premi">1,000.000원 프리미엄</span>
+                                </div>
+                                <div class="tagSet">
+                                    <div class="inner">
+                                        <span>NEW</span>
+                                        <span>BEST</span>
+                                        <span>10%할인</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--- <input type="checkbox" class="check-like" title="좋아요 체크" checked=""> -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb ratio-a">
+                                <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                                <div class="tagSet-thumb">
+                                    <span class="rank">2</span>
+                                </div>
+                            </div>
+                            <div class="unitInfoWrap">
+                                <em class="category">THE IZZAT COLLECTION</em>
+                                <div class="title"><em>[온라인 단독]</em> <strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                                <div class="priceWrap">
+                                    <span class="price-dis">1,296,743원</span>
+                                    <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                    <span class="price im">1,000.000원 임직원</span>
+                                </div>
+                                <div class="tagSet">
+                                    <div class="inner">
+                                        <span>NEW</span>
+                                        <span>BEST</span>
+                                        <span>무료배송</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--- <input type="checkbox" class="check-like" title="좋아요 체크" checked=""> -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb ratio-a">
+                                <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                                <div class="tagSet-thumb">
+                                    <span class="rank">3</span>
+                                </div>
+                            </div>
+                            <div class="unitInfoWrap">
+                                <em class="category">THE IZZAT COLLECTION</em>
+                                <div class="title"><em>[온라인 단독]</em> <strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                                <div class="priceWrap">
+                                    <span class="price-dis">1,296,743원</span>
+                                    <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                    <span class="price secret">1,000.000원 시크릿</span>
+                                </div>
+                                <div class="tagSet">
+                                    <div class="inner">
+                                        <span>NEW</span>
+                                        <span>BEST</span>
+                                        <span>10%할인</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--- <input type="checkbox" class="check-like" title="좋아요 체크" checked=""> -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb ratio-a">
+                                <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                                <div class="tagSet-thumb">
+                                    <span class="rank">4</span>
+                                </div>
+                            </div>
+                            <div class="unitInfoWrap">
+                                <em class="category">THE IZZAT COLLECTION</em>
+                                <div class="title"><strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                                <div class="priceWrap">
+                                    <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                </div>
+                                <div class="tagSet">
+                                    <div class="inner">
+                                        <span>NEW</span>
+                                        <span>BEST</span>
+                                        <span>10%할인</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--- <input type="checkbox" class="check-like" title="좋아요 체크" checked=""> -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb ratio-a">
+                                <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                                <div class="tagSet-thumb">
+                                    <span class="rank">5</span>
+                                </div>
+                            </div>
+                            <div class="unitInfoWrap">
+                                <em class="category">THE IZZAT COLLECTION</em>
+                                <div class="title"><strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                                <div class="priceWrap">
+                                    <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                </div>
+                                <div class="tagSet">
+                                    <div class="inner">
+                                        <span>NEW</span>
+                                        <span>BEST</span>
+                                        <span>10%할인</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--- <input type="checkbox" class="check-like" title="좋아요 체크" checked=""> -->
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb ratio-a">
+                                <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                                <div class="tagSet-thumb">
+                                    <span class="rank">6</span>
+                                </div>
+                            </div>
+                            <div class="unitInfoWrap">
+                                <em class="category">THE IZZAT COLLECTION</em>
+                                <div class="title"><em>[온라인 단독]</em> <strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                                <div class="priceWrap">
+                                    <span class="price-dis">1,296,743원</span>
+                                    <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                    <span class="price premi">1,000.000원 프리미엄</span>
+                                </div>
+                                <div class="tagSet">
+                                    <div class="inner">
+                                        <span>NEW</span>
+                                        <span>BEST</span>
+                                        <span>10%할인</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <!--- <input type="checkbox" class="check-like" title="좋아요 체크" checked=""> -->
+                    </li>
+                </ul>
+            </div>
+            <!-- //unitList -->
+        </div>
+
+    </section>
+    <footer></footer>
+</body>
+</html>

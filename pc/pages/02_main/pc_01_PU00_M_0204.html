@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container"> 
+        <div class="center-wrap">
+            <div class="login-wrap">
+                <div class="baba-enter">
+                    <div class="form-area ">
+                        <h2 class="page-sub-title">입점/제휴 문의</h2>
+                        <div class="page-sub-txt">입점 및 제휴 프로모션에 관해 바바더닷컴에 제안해주세요.</div>
+                        <div class="ent-step">
+                            <dl>
+                                <dt><strong>STEP 01</strong>입점/제휴<br>신청서 작성</dt>
+                                <dd>입점/제휴 신청을<br>해주세요.</dd>
+                            </dl>
+                            <dl>
+                                <dt><strong>STEP 02</strong>담당자 검토 및<br>연락</dt>
+                                <dd>각 분야별 담당자 검토 후 입점이<br>적합한 경우 전화나 이메일 연락드립니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt><strong>STEP 03</strong>조건 협의 및<br>계약체결</dt>
+                                <dd>제휴 내용 구체화 및 조건 협의 후<br>계약을 체결합니다.</dd>
+                            </dl>
+                        </div>
+                        <div class="form-wrap">
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <select id="cate" class="placeholderOn">
+                                        <option disabled selected hidden>카테고리 선택</option>
+                                        <option>패션의류</option>
+                                        <option>명품잡화</option>
+                                        <option>뷰티/헬스케어</option>
+                                        <option>스포츠/레저</option>
+                                        <option>라이프</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="업체명 입력 (필수)"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="브랜드명 입력 (필수)"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="담당자명 입력 (필수)"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="전화번호 입력 (‘-’제외)"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="담당자 휴대폰 번호 입력 (‘-’제외, 필수)"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="담당자 이메일 입력 (필수)"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="사업자 등록번호 (필수)"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="사이트 주소 (http://)"/>
+                                </div>
+                            </div>
+                            <!-- 주소 -->
+                            <div class="form-row">
+                                <div class="form-box d-flex disabled">
+                                    <input type="text" value="" id="addr1-3" placeholder="우편번호" disabled/>
+                                    <button type="button" class="btn sm btn-form">우편번호 검색</button>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box disabled">
+                                    <input type="text" value="" id="addr1-3" placeholder="주소" disabled/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box disabled">
+                                    <input type="text" value="" id="addr1-3" placeholder="상세 주소" disabled/>
+                                </div>
+                            </div>
+                            <!-- // 주소 -->
+                            <div class="mg-t-20" >
+                                <textarea rows="4" placeholder="회사소개 입력 (필수)"></textarea>
+                                <div class="counter"><strong>1</strong> / <strong>300</strong> 자</div>
+                            </div>
+                            <div class="chk-list">
+                                <h3 class="title">상품 분류</h3>
+                                <div class="radio black">
+                                    <input type="radio" id="inc" name="item" checked="">
+                                    <label for="inc">병행수입</label>
+                                </div>
+                                <div class="radio black">
+                                    <input type="radio" id="sol" name="item">
+                                    <label for="sol">자체제작</label>
+                                </div>
+                                <div class="radio black">
+                                    <input type="radio" id="ven" name="item">
+                                    <label for="ven">벤더</label>
+                                </div>
+                            </div>
+                            <div class="mg-t-20" >
+                                <textarea rows="4" placeholder="상품소개 입력"></textarea>
+                                <div class="counter"><strong>1</strong> / <strong>300</strong> 자</div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" placeholder="동종업계 입점현황"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pers-idx-guide">
+                            <div class="acd-box">
+                                <div class="accordion-title">
+                                    <div class="ttile">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="ag" checked="">
+                                            <label for="ag">개인정보 수집 및 이용에 동의합니다.</label>
+                                        </div>
+                                    </div>
+                                    <button>열림</button>
+                                </div>
+                                <div class="accordion-panel">
+                                    <div>
+                                        <div class="scroll-wrap">
+                                            1. 제휴문의를 위한 개인정보 수집/이용 목적<br>
+                                            회사는 원활한 제휴문의를 위하여 아래와 같은 개인정보를 수집하고 있습니다.<br><br>
+                                            2. 수집하는 개인정보 항목 및 수집방법<br>
+                                            (1) 수집 항목<br>
+                                            - 성명, 연락처, 이메일<br>
+                                            (2) 수집 방법<br>
+                                            온라인 홈페이지<br>
+                                            3. 개인정보의 처리 및 보유기간<br>
+                                            회사는 법령에 따른 개인정보 보유 이용기간 또는 제휴문의 신청자로부터 개인정보를 수집할때 동의받은 개인정보 보유 이용기간 내에서 개인정보를 처리 및 보유합니다.<br>
+                                            (1) 제휴문의 접수 후 36개월 보관 후 파기
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn">취소</a>
+                            <a href="#" class="btn primary black">등록</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

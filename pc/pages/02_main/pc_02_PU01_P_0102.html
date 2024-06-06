@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyMainPop">
+        <div class="cont">
+            <div class="main-popup typeA">
+                <div class="swiper-wrap">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_main_pop01.jpg" alt="sampleImg"  /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_main_pop01.jpg" alt="sampleImg" /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_main_pop01.jpg" alt="sampleImg" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="swiper-scrollbar"></div> 21.07.26 삭제-->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-count">0 / 0</div><!--21.07.26 추가-->
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="btn-today">오늘 하루 그만보기</button>
+                    <button class="btn-close" onclick="popClose('lyMainPop')">닫기</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    /*publishing UI only*/
+    var swiperMainPop = new Swiper('.main-popup.typeA .swiper-container', {
+        on: {
+            init: function(){
+                swiperCountRander(this);
+            },
+            slideChange: function () {
+                swiperCountRander(this);
+            },
+        },
+        // scrollbar: {
+        //     el: '.main-popup.typeA .swiper-scrollbar',
+        // },
+        pagination: {
+          el: ".main-popup.typeA .swiper-pagination",
+        //   type: "fraction",
+            type: "progressbar",
+        },
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        autoHeight:true,
+        // navigation: {
+        //     nextEl: '.main-popup.typeA .swiper-button-next',
+        //     prevEl: '.main-popup.typeA .swiper-button-prev',
+        // },
+        observer: true,
+        observeParents: true,
+        speed:500,
+        loop:true,
+        autoplay: {
+			delay: 5050,
+			disableOnInteraction: false,
+		},
+    });
+</script>
+</html>

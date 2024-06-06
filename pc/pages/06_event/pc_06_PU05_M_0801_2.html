@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <!--<meta name="viewport" content="width=1440">-->
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="center-wrap">
+            <div class="event-wrap">
+                <div class="ev-admin-img">
+                    <span style="display:block; padding:100px 0; text-align:center; font-size:30px; color:#111">HTML 관리자 등록 이미지</span>
+                </div>
+                <div class="ev-title-wrap">
+                    <h2 class="title">이벤트명 노출영역 최대 두줄로 길어질 경우 줄바꿈되어 노출됩니다. 글자수 제한이 필요합니다.</h2>
+                    <div class="right">
+                        <span class="date">2021.01.18 ~ 2021.01.24</span>
+                        <button type="button" class="btn-share">공유하기</button>
+                    </div>
+                </div>
+                <div class="event-center"><!--//[P] 2021 수정반영-->
+                    <div class="ev-vote">
+                        <div class="vote-box ">
+                            <h3 class="vote-title">알록달록 <br>내가 사랑하는 컬러는?</h3>
+                            <div class="swiper-wrap vote1">
+                                <div class="swiper-container">
+                                    <ul class="swiper-wrapper radio-list">
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="thum-img">
+                                                    <div class="ratio"><img src="../../img/img_prd.jpg" alt="sampleImg" class="vertical"></div>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote11" name="r-vote1"  checked>
+                                                    <label for="r-vote11">빨간 장미가 <br>생각나는 붉은색</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="thum-img">
+                                                    <div class="ratio"><img src="../../img/img_prd.jpg" alt="sampleImg" class="vertical"></div>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote12" name="r-vote1">
+                                                    <label for="r-vote12">귀여운 개나리가 <br>생각나는 노란색</label>
+                                                </div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="thum-img">
+                                                    <div class="ratio"><img src="../../img/img_prd.jpg" alt="sampleImg" class="vertical"></div>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote13" name="r-vote1">
+                                                    <label for="r-vote13">시원한 바다가 <br>생각나는 파란색</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="thum-img">
+                                                    <div class="ratio"><img src="../../img/img_prd.jpg" alt="sampleImg" class="vertical"></div>
+                                                </div>
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote14" name="r-vote1">
+                                                    <label for="r-vote14">새콤, 탱글탱글 감귤이 <br>떠오르는 주황색</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn primary black">투표하기</button>
+                                <!--
+                                <button type="button" class="btn primary black">결과보기</button>
+                                <button type="button" class="btn primary black">투표완료</button>
+                                [P] 텍스트 변경후 사용-->
+                            </div>
+                        </div>
+                        <div class="vote-box">
+                            <h3 class="vote-title">알록달록 <br>내가 사랑하는 컬러는?</h3>
+                            <div class="swiper-wrap vote2">
+                                <div class="swiper-container">
+                                    <ul class="swiper-wrapper radio-group">
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote21" name="r-vote2" checked>
+                                                    <label for="r-vote21">빨간 장미가 <br>생각나는 붉은색</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote22" name="r-vote2">
+                                                    <label for="r-vote22">귀여운 개나리가 <br>생각나는 노란색</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote23" name="r-vote2">
+                                                    <label for="r-vote23">시원한 바다가 <br>생각나는 파란색</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <div class="box">
+                                                <div class="radio">
+                                                    <input type="radio" id="r-vote24" name="r-vote2">
+                                                    <label for="r-vote24">새콤달콤 맛있는 <br>오렌지와 <br>탱글탱글 감귤이 <br>떠오르는 주황색</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn primary" disabled>투표완료</button>
+                            </div>
+                        </div>
+                        
+                        <dl class="notice-box c-bgff">
+                            <dt>쿠폰 유의사항</dt>
+                            <dd>
+                                <ul class="list-group dash">
+                                    <li>쿠폰 사용기간 내 정해진 조건충족 시 할인적용이 가능합니다.</li>
+                                    <li>쿠폰 사용 시 최소구매금액과 최대할인금액을 확인하세요.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    $(document).ready(function(){
+        /*publishing UI only*/
+        $('.radio-list').find('li').on('click', function(){
+            $('.radio-list').find('li').removeClass('on');
+            $(this).addClass('on');
+            var name = $(this).find('input[type=radio]').attr('name');
+            $('.radio-list').find('input[name='+name+']').prop('checked', false);
+            $(this).find('input[name='+name+']').prop('checked', true);
+        }); // radio sample
+    });  
+    var swiperMain1 = new Swiper('.vote1 .swiper-container', {
+        pagination: {
+          el: ".vote1 .swiper-pagination",
+          type: "fraction",
+        },
+        slidesPerView: 3,
+        centeredSlides: true,
+        simulateTouch: false,
+        spaceBetween: 0,
+        // loop: true,
+        navigation: {
+            nextEl: '.vote1 .swiper-button-next',
+            prevEl: '.vote1 .swiper-button-prev',
+        },
+    });
+    var swiperMain1 = new Swiper('.vote2 .swiper-container', {
+        pagination: {
+          el: ".vote2 .swiper-pagination",
+          type: "fraction",
+        },
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 0,
+        simulateTouch: false,
+        // loop: true,
+        navigation: {
+            nextEl: '.vote2 .swiper-button-next',
+            prevEl: '.vote2 .swiper-button-prev',
+        },
+    });
+</script>
+</html>

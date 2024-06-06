@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <link rel="stylesheet" href="../../css/babathe.css">
+</head>
+<body>
+    <header></header>
+    <section class="container">
+    <div class="center-wrap">
+        <div class="channel-wrap">
+            <div class="contents">
+                <!--lnb-->
+                <div class="lnb-wrap">
+                    <nav class="lnb-list">
+                        <ul class="depth1">
+                            <li class="on">
+                                <a href="#">바바ON</a>
+                                <ul class="depth2">
+                                    <li class="on"><a href="#">라이브 쇼핑</a></li>
+                                    <li><a href="#">패션필름</a></li>
+                                    <li><a href="#">편성표</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">바바ZINE</a></li>
+                            <li><a href="#">마이채널</a></li>
+                        </ul>
+                    </nav><!--//[P] 2021수정반영-->
+                </div>
+                <!--//lnb-->
+                <!--contents-->
+                <div class="cont-wrap">
+                    <h2 class="page-title">라이브 쇼핑</h2>
+                    <div class="babalive-unit">
+                        <div class="page-top">
+                            <div class="liveshop-title">
+                                <h3 class="page-sub-title">바바 라이브 <span class="c-secondary">NOW</span></h3>
+                                <!-- <p class="sub-tx">4개의 바바 라이브 방송중<i class="icon-live blink"></i></p> -->
+                            </div>
+                        </div>
+                        <div>
+                            <img src="../../img/temp_baba01.jpg" alt="" style="display:block;"/>
+                        </div>
+                    </div>
+                    <div class="babalive-unit">
+                        <div class="page-top">
+                            <div class="title-shopping">
+                                <h3 class="page-sub-title">바바 라이브 쇼핑</h3>
+                            </div>
+                            <a href="#" class="btn btn-tx">편성표 확인</a>
+                        </div>
+                        <div>
+                            <img src="../../img/temp_baba02.jpg" alt="" style="display:block;"/>
+                        </div>
+                    </div>
+                    <div class="babalive-unit">
+                        <div class="page-top">
+                            <h3 class="page-sub-title">바바 TV 하이라이트</h3>
+                        </div>
+                        <div class="tab-a tab-ui">
+                            <ul>
+                                <li class="on"><a href="javascript:void(0)">전체</a></li>
+                                <li><a href="javascript:void(0)">여성</a></li>
+                                <li><a href="javascript:void(0)">남성</a></li>
+                                <li><a href="javascript:void(0)">뷰티</a></li>
+                                <li><a href="javascript:void(0)">헬스</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="../../img/temp_baba03.jpg" alt="" style="display:block; margin-top:40px;"/>
+                            <img src="../../img/temp_baba03.jpg" alt="" style="display:block; margin-top:50px;"/>
+                        </div>
+                    </div>
+                </div>
+                <!--//contents-->
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer></footer>
+</body>
+<script>    
+    $(document).ready(function(){
+        $('.btn-alarm').on('click', function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active').text('알림해제');
+            } else {
+                $(this).addClass('active').text('알림받기');
+            }
+        });
+    });
+
+    
+
+    var swiperLiveBox = new Swiper('.babalive-swiper > .swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 87,
+        navigation: {
+            nextEl: '.swiper-button-next.outer',
+            prevEl: '.swiper-button-prev.outer',
+        },
+    });
+
+    var swiperLive = new Swiper('.live-prd .swiper-container', {
+        scrollbar: {
+            el: '.live-prd .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 3,
+        spaceBetween: 14,
+        navigation: {
+            nextEl: '.live-prd .swiper-button-next',
+            prevEl: '.live-prd .swiper-button-prev',
+        },
+    });
+
+    
+</script>
+</html>

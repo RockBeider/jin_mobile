@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <link rel="stylesheet" href="../../css/babathe.css">
+</head>
+<body>
+    <header></header>
+    <section class="container">
+    <div class="center-wrap">
+        <div class="mybaba-wrap">
+            <div class="mybaba-header"></div>
+            <div class="contents">
+                <!--lnb-->
+                <div class="lnb-wrap">
+                    <nav class="lnb-list">
+                        <ul class="depth1">
+                            <li>
+                                <a href="#">마이바바</a>
+                                <ul class="depth2">
+                                    <li><a href="#">쇼핑정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">주문/배송 조회</a></li>
+                                            <li><a href="#">취소/교환/반품 신청</a></li>
+                                            <li><a href="#">취소/교환/반품 조회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">혜택정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">멤버십 혜택</a></li>
+                                            <li><a href="#">e포인트</a></li>
+                                            <li><a href="#">마일리지</a></li>
+                                            <li><a href="#">쿠폰</a></li>
+                                            <li><a href="#">임직원 혜택 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="on">
+                                        <a href="#">활동정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">상품 문의 내역</a></li>
+                                            <li><a href="#">1:1 문의 내역</a></li>
+                                            <li><a href="#">나의 상품리뷰</a></li>
+                                            <li class="on"><a href="#">관심상품</a></li>
+                                            <li><a href="#">관심브랜드</a></li>
+                                            <li><a href="#">방송알림 신청 현황</a></li>
+                                            <li><a href="#">친구 추천</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">바바프리미엄</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">프리미엄 혜택</a></li>
+                                            <li><a href="#">결제수단</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">바바패션리더</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">패션리더 정보</a></li>
+                                            <li><a href="#">포스팅 관리</a></li>
+                                            <li><a href="#">판매 현황</a></li>
+                                            <li><a href="#">패션리더 활동 가이드</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--//lnb-->
+                <!--contents-->
+                <div class="cont-wrap">
+                    <!-- 20240117 #4875 [FO]마이바바에 출석체크 이벤트 이동 버튼 추가 -->
+                    <div class="banner-wrap">
+                        <a href="https://pc.babathe.com/event/indexEventDetail?eventNo=12922"><img src="https://image.babathe.com/static/img/pmg-img/img_check_event_banner_pc.jpg" alt=""></a>
+                    </div>
+                    <!-- //20240117 #4875 [FO]마이바바에 출석체크 이벤트 이동 버튼 추가 -->
+                    <h2 class="skip-txt">마이바바 메인</h2>
+                    <div class="hd-top">
+                        <h3 class="page-sub-title">최근 주문/교환/반품 현황</h3>   
+                        <span class="stxt">(최근 1개월 기준)</span>
+                    </div>
+                    <div class="status">
+                        <ul>
+                            <li>
+                                <em>입금대기</em>
+                                <span><a href="#">1</a></span>
+                            </li>
+                            <li>
+                                <em>결제완료</em>
+                                <span><a href="#">0</a></span>
+                            </li>
+                            <li>
+                                <em>상품준비중</em>
+                                <span><a href="#">4</a></span>
+                            </li>
+                            <li>
+                                <em>배송중</em>
+                                <span><a href="#">1</a></span>
+                            </li>
+                            <li>
+                                <em>배송완료</em>
+                                <span><a href="#">5</a></span>
+                            </li>
+                            <li>
+                                <ul class="list">
+                                    <li>
+                                        <em>교환</em>
+                                        <span><a href="#">0</a></span>
+                                    </li>
+                                    <li>
+                                        <em>반품</em>
+                                        <span><a href="#">0</a></span>
+                                    </li>
+                                    <li>
+                                        <em>취소</em>
+                                        <span><a href="#">0</a></span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!--//21.04.28 수정반영-->
+                    <div class="hd-top">
+                        <h3 class="page-sub-title">나의 활동 현황</h3>   
+                    </div>
+                    <table class="tb-default type2">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="33.3%" />
+                            <col width="33.3%" />
+                            <col width="33.4%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">작성 가능한 상품리뷰</th>
+                                <th scope="col">추천가입 친구</th>
+                                <th scope="col">1:1 문의 (최근 1개월)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#"><strong>4</strong>건</a></td>
+                                <td><a href="#"><strong>12</strong>명</a></td>
+                                <td><a href="#"><strong>2</strong>건</a></td>
+                            </td>
+                        </tbody>
+                    </table>                
+                    <div class="hd-top">
+                        <h3 class="page-sub-title">패션리더 활동정보</h3>   
+                    </div>
+                    <table class="tb-default type2">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="33.3%" />
+                            <col width="33.3%" />
+                            <col width="33.4%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">실시간 총 판매액</th>
+                                <th scope="col">판매실적 e포인트</th>
+                                <th scope="col">포스팅</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#"><strong>983,200</strong>원</a></td>
+                                <td><a href="#"><strong>23,200P</strong></a></td>
+                                <td><a href="#"><strong>12</strong>개</a></td>
+                            </td>
+                        </tbody>
+                    </table>
+                    <div class="hd-top">
+                        <h3 class="page-sub-title">임직원 혜택현황 (2021년)</h3>   
+                        <a href="#" class="btn-arrow">자세히 보기</a>
+                    </div>
+                    <table class="tb-default type2">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="33.3%" />
+                            <col width="33.3%" />
+                            <col width="33.4%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">남은 금액</th>
+                                <th scope="col">사용한 금액</th>
+                                <th scope="col">총 구매한도</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>3,500,000</strong>원</td>
+                                <td><strong>1,500,000</strong>원</td>
+                                <td><strong>5,000,000</strong>원</td>
+                            </td>
+                        </tbody>
+                    </table>
+                    <div class="hd-top">
+                        <h3 class="page-sub-title">최근 주문내역</h3>   
+                    </div>
+                    <table class="tb-order">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="">
+                            <col width="200px">
+                            <col width="200px">
+                            <col width="200px">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul class="prd-list cart">
+                                        <li>
+                                            <a href="#" class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical">
+                                                </div>
+                                            </a>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZAAT COLLECTION</div>
+                                                <div class="name"><div class="tx-ovf">플리츠배색 레이스 밴드 스커트</div></div>
+                                                <div class="option">Black / 55</div>
+                                                <div class="total">수량 1개</div>
+                                                <div class="v-bottom">
+                                                    <div class="col-left">
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,254,000</strong>원</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="center">
+                                    <p class="mg-b-10">입금대기</p>
+                                    <a href="#" class="btn btn-tx">ORD20201125140013071</a><br>(2020-11-25)
+                                </td>
+                                <td class="center"></td>
+                                <td class="center">
+                                    <ul class="btn-list">
+                                        <li><button type="button" class="btn sm">리뷰작성</button></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="myorder-unit">
+                        <div class="banner-area" style="background:#dbdbdb; text-align:center; padding:48px 0; font-size:20px;">Banner Area</div>
+                        <div class="banner-area" style="background:#dbdbdb; text-align:center; padding:48px 0; font-size:20px; margin-top:20px;">Banner Area</div>
+                    </div>
+                    <div class="myorder-unit">
+                        <h3 class="page-sub-title">다른 분들은 최근 이런 상품을 많이 보셨네요.</h3>
+                        <div class="swiper-wrap mybaba-swiper01">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum col-5"><!--//[P] 2021 수정반영-->
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myorder-unit">
+                        <h3 class="page-sub-title">어쩌면 당신의 취향</h3>
+                        <div class="swiper-wrap mybaba-swiper02">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum col-5"><!--//[P] 2021 수정반영-->
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//contents-->
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer></footer>
+</body>
+<script>    
+    $(document).ready(function(){
+        /*publishing UI only*/
+        $('.mybaba-header').load('inc_maybaba_header.html');//mybabaheader load
+        $('.order-period .period').find('.btn.sm').on('click', function(){
+            var period = $(this).closest('.period');
+            period.find('.btn.sm').removeClass('primary');
+            $(this).addClass('primary');
+        });//period click event
+        $('.prd-list').find('.btn-wish').on('click', function(){
+            $(this).toggleClass('on')
+        }); // wish button toggle Class
+    });
+    var swiper1 = new Swiper('.mybaba-swiper01 .swiper-container', {
+        scrollbar: {
+            el: '.mybaba-swiper01 .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 5,//[P] 2021 수정반영
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.mybaba-swiper01 .swiper-button-next',
+            prevEl: '.mybaba-swiper01 .swiper-button-prev',
+        },
+    });
+    var swiper2 = new Swiper('.mybaba-swiper02 .swiper-container', {
+        scrollbar: {
+            el: '.mybaba-swiper02 .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 5, //[P] 2021 수정반영
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.mybaba-swiper02 .swiper-button-next',
+            prevEl: '.mybaba-swiper02 .swiper-button-prev',
+        },
+    });
+    
+
+</script>
+</html>

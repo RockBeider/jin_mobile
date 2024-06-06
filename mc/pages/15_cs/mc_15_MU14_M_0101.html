@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko" class="bg-gray">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 고객센터</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back">뒤로가기</button>
+            <h1 class="page-title">고객센터</h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니</button>
+        </div>
+    </header>
+    <section>
+        <div class="contentsGroup">
+            <div class="message-wrap type2">
+                <h2 class="complete-message">
+                    안녕하세요,<br>
+                    바바더닷컴 고객센터입니다.<br>
+                    <strong>무엇을 도와드릴까요?</strong>
+                </h2>
+            </div>
+            <div class="tab-a">
+                <ul>
+                    <li class="on"><a href="javascript:void(0)">고객센터</a></li>
+                    <li><a href="javascript:void(0)">FAQ</a></li>
+                    <li><a href="javascript:void(0)">1:1 문의</a></li>
+                    <li><a href="javascript:void(0)">공지사항</a></li>
+                </ul>
+            </div>
+
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h2 class="title">혹시, 이런 서비스를 <br>찾고 계신가요?</h2>
+                    <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+                </div>
+            </div>
+            <div class="swiper-boardViewBox" id="swiper-boardViewBox">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <strong><i><img src="../../img/icon_CS_01.png" alt=""></i><span>회원정보를 변경하고 싶어요</span></strong>
+                        <a href="#" class="bottomRight">회원정보변경</a>
+                    </li>
+                    <li class="swiper-slide">
+                        <strong><i><img src="../../img/icon_CS_02.png" alt=""></i><span>주문내역과 배송상태가 궁금해요</span></strong>
+                        <a href="#" class="bottomRight">주문/배송조회</a>
+                    </li>
+                    <li class="swiper-slide">
+                        <strong><i><img src="../../img/icon_CS_02.png" alt=""></i><span>반품이나 교환은 어디서하죠?</span></strong>
+                        <a href="#" class="bottomRight">반품/교환신청</a>
+                    </li>
+                    <li class="swiper-slide">
+                        <strong><i><img src="../../img/icon_CS_03.png" alt=""></i><span>내가 남긴 질문을 보고싶어요</span></strong>
+                        <a href="#" class="bottomRight">나의 문의내역</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                var swiper = new Swiper('#swiper-boardViewBox', {
+                    slidesPerView: 1.8,
+                    spaceBetween: 5,
+                });
+            </script>
+
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h2 class="title">원하는 문의내용을<br>FAQ에서 검색해보세요.</h2>
+                    <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+                </div>
+            </div>
+
+            <div class="search-area">
+                <input type="text" class="search-input" placeholder="검색어를 입력해 주세요.">
+                <button class="del" onclick="searchArea_control.del()">삭제</button>
+                <button type="button" class="search-btn"><span class="for-a11y">검색</span></button>
+            </div>
+            <div class="recommendedSearch">
+                <strong>추천검색어</strong>
+                <div class="tagViewer">
+                    <ul>
+                        <li><span>#배송조회</span></li>
+                        <li><span>#환불</span></li>
+                        <li><span>#배송지변경</span></li>
+                        <li><span>#주문취소</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h2 class="title">공지사항</h2>
+                    <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+                </div>
+            </div>
+            <div class="boardList-a">
+                <ul>
+                    <li class="new"><a href="#"><span>BABATHE.COM 시스템 점검 안내</span></a></li>
+                    <li><a href="#"><span>개인정보 처리방침 위탁업체 추가 안내</span></a></li>
+                    <li><a href="#"><span>개인정보 처리방침 배송 위탁업체 개인정보 처리</span></a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h2 class="title">당첨자 발표</h2>
+                    <div class="title-extra"><a href="#" class="more"><span class="for-a11y">더보기</span></a></div>
+                </div>
+            </div>
+            <div class="boardList-a">
+                <ul>
+                    <li class="new"><a href="#"><span>9월 신규회원 래플 이벤트 당첨자 발표</span></a></li>
+                    <li><a href="#"><span>2021 아우터페어 래플 이벤트 당첨자 발표</span></a></li>
+                    <li><a href="#"><span>7HEER UP 댓글 이벤트 당첨자 발표</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contentsGroup">
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h2 class="title">더 자세한 상담이 필요하세요?</h2>
+                </div>
+            </div>
+            <div class="inquiryMethod call">
+                <strong>상담원에게<br>전화로 문의하기!</strong>
+                <button>1644-0100 (유료)</button>
+                <em>평일 10:00-17:00 / 점심 12:30-14:00 / 주말 공휴일 휴무</em>
+            </div>
+            <div class="inquiryMethod online">
+                <strong>쉽고 편리하게<br>온라인으로 문의하기!</strong>
+                <button>1:1 문의</button>
+                <em>답변등록시 알림을 보내드려요.</em>
+            </div>
+            <!-- 20230818 #4093 [FO]온라인 심의접수 메뉴 추가 -->
+            <div class="inquiryMethod online-check">
+                <strong>온라인 심의 접수 방법<br>확인하기!</strong>
+                <button>방법 확인</button>
+            </div>
+            <!-- //20230818 #4093 [FO]온라인 심의접수 메뉴 추가 -->
+        </div>
+
+
+    </section>
+    <footer></footer>
+</body>
+</html>

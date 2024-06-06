@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>ui 샘플</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        h1{margin: 20px 0;font-size: 20px;}
+        h1:before{content: "";display: inline-block;vertical-align: middle;width: 5px;height: 5px;background: #000;border-radius: 50%;margin: -5px 5px 0 5px;}
+    </style>
+</head>
+<body>
+
+    <!-- 툴팁 start -->
+    <h1>툴팁</h1>
+
+    <div class="tooltip">
+        무료배송 <a class="tipIcon" href="javascript:void(0)">?</a>
+        <div class="tipCont">
+            <strong>배송비 조건 안내</strong><br><br>
+            50,000원 이상 구매 시 무료배송<br>
+            50,000원 미만 구매 시 2,500원<br><br>
+            ※ 제주/도서산간 지역 추가 배송비<br><br>
+            제주/도서산간 배송지의 경우 추가 운송비를 지불하여야 합니다.
+            <button class="btn-close">툴팁닫기</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="tooltip memRankBenefitPrice">
+        <a class="tipIcon txtType" href="javascript:void(0)">등급별혜택가</a>
+        <div class="tipCont">
+            <strong>회원등급별 혜택가</strong>
+            <div class="list-info">
+                <ul>
+                    <li>
+                        <strong>DIAMOND</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                    <li>
+                        <strong>PLATINUM</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                    <li>
+                        <strong>VVIP</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                    <li>
+                        <strong>VIP</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                    <li>
+                        <strong>GOLD</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                    <li>
+                        <strong>SILVER</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                    <li>
+                        <strong>RED</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                    <li>
+                        <strong>FAMILY</strong>
+                        <span>2,056,320원</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <strong>프리미엄가</strong>
+                        <span>2,060,000원</span>
+                    </li>
+                </ul>
+                <a href="#">바바프리미엄 가입</a>
+            </div>
+            <button class="btn-close">툴팁닫기</button>
+        </div>
+    </div>
+    <!-- 툴팁 end -->
+
+    <!-- 탭 start -->
+    <h1>탭</h1>
+    <div class="tab-a tab-ui">
+        <ul>
+            <li class="on"><a href="javascript:void(0)">All</a></li>
+            <li><a href="javascript:void(0)">Fashion</a></li>
+            <li><a href="javascript:void(0)">Beauty</a></li>
+            <li><a href="javascript:void(0)">Health</a></li>
+        </ul>
+    </div>
+    <div class="tab-cont">
+        <div class="on">tabCont1</div>
+        <div>tabCont2</div>
+        <div>tabCont3</div>
+        <div>tabCont4</div>
+    </div>
+
+    <div class="tab-a tab-ui swiper" id="tab-a-swiper-sample">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide on"><a href="javascript:void(0)">All</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Fashion</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Beauty</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+            <li class="swiper-slide"><a href="javascript:void(0)">Health</a></li>
+        </ul>
+    </div>
+    <script>
+        var tab_b_swiper_sample = new Swiper('#tab-a-swiper-sample', {
+            slidesPerView: 'auto',
+            resistance : false
+        });
+    </script>
+
+
+    <!-- 아코디언 start -->
+    <h1>아코디언</h1>
+    <div class="accordion-title"><h2 class="title-a">아코디언</h2><button>열림</button></div>
+    <div class="accordion-panel">
+        <div>
+            아코디언 내용
+        </div>
+    </div>
+    <div class="accordion-title open"><h2 class="title-a">아코디언</h2><button>열림</button></div>
+    <div class="accordion-panel">
+        <div>
+            아코디언 열린상태
+        </div>
+    </div>
+    <div class="accordion-title type2">아코디언 type2<button>열림</button></div>
+    <div class="accordion-panel">
+        <div>
+            아코디언 type2 내용
+        </div>
+    </div>
+
+    <div class="accordion-wrap oneActive">
+        <div class="accordion-title type2">아코디언 type2<button>열림</button></div>
+        <div class="accordion-panel">
+            <div>
+                아코디언 type2 내용
+            </div>
+        </div>
+        <div class="accordion-title type2">아코디언 type2<button>열림</button></div>
+        <div class="accordion-panel">
+            <div>
+                아코디언 type2 내용
+            </div>
+        </div>
+        <div class="accordion-title type2">아코디언 type2<button>열림</button></div>
+        <div class="accordion-panel">
+            <div>
+                아코디언 type2 내용
+            </div>
+        </div>
+        <div class="accordion-title type2">아코디언 type2<button>열림</button></div>
+        <div class="accordion-panel">
+            <div>
+                아코디언 type2 내용
+            </div>
+        </div>
+    </div>
+    
+    <!-- 아코디언 end -->
+
+    <!-- 커스텀 셀렉트박스 start -->
+    <h1>커스텀 셀렉트박스</h1>
+    <div class="selectbox">
+        <a class="title" href="javascript:void(0)">셀렉트title</a>
+        <ul class="cont">
+            <li><a href="javascript:void(0)">메뉴1</a></li>
+            <li><a href="javascript:void(0)">메뉴2</a></li>
+            <li><a href="javascript:void(0)">메뉴3</a></li>
+            <li><a href="javascript:void(0)">메뉴4</a></li>
+        </ul>
+    </div>
+    <!-- 커스텀 셀렉트박스 end -->
+
+    <h1>COUNTER</h1>
+    <div class="countUi">
+        <button class="btn-minus">-</button>
+        <input type="tel" value="3">
+        <button class="btn-plus">+</button>
+    </div>
+    <div class="countUi disabled">
+        <button class="btn-minus">-</button>
+        <input type="tel" value="3">
+        <button class="btn-plus">+</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyDetail">
+        <div class="cont w-750">
+            <h1 class="layerTitle">상품문의 작성</h1>
+            <div class="layerBody ">
+                <!--상품문의 작성-->
+                <div class="ly-review">
+                    <div class="scroll-wrap">
+                        <ul class="prd-list list">
+                            <li>
+                                <div class="prd-img">
+                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                </div>
+                                <div class="prd-info">
+                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                    <div class="name">
+                                        <div class="tx-ovf">2021 신상품 </div>
+                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="unit-box">
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <div class="form-box">
+                                        <select id="ly-sel1" class="placeholderOn">
+                                            <option disabled selected hidden>문의유형 선택</option>
+                                            <option>상품</option>
+                                            <option>배송</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-col">
+                                    <div class="form-box">
+                                        <input type="text" placeholder="제목을 입력해 주세요." id="ly-inp">
+                                    </div>
+                                </div>
+                            </div>
+                            <textarea rows="5" placeholder="내용을 입력해 주세요. (최소 10자 이상)"></textarea>
+                            <div class="checkbox">
+                                <input type="checkbox" id="ly-chk" checked=""><label for="ly-chk">비밀글로 문의하기</label>
+                            </div>
+                        </div>
+                        <div class="unit-box">
+                            <h3>첨부파일</h3>
+                            <div class="add-file">
+                                <div class="w-half">
+                                    <ul class="list">
+                                        <li>
+                                            <div class="pre-img on">
+                                                <div class="ratio ratio-1x1">
+                                                    <img src="../../img/big_banner_img.jpg" alt="sampleImg" />
+                                                </div>
+                                                <button tyep="button" class="btn-delete">이미지삭제하기</button>
+                                            </div>
+                                            <div class="add-img">
+                                                <input type="file" placeholder="파일찾기"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="pre-img on">
+                                                <div class="ratio ratio-1x1">
+                                                    <img src="../../img/big_banner_img.jpg" alt="sampleImg" />
+                                                </div>
+                                                <button tyep="button" class="btn-delete">이미지삭제하기</button>
+                                            </div>
+                                            <div class="add-img">
+                                                <input type="file" placeholder="파일찾기"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="pre-img on">
+                                                <div class="ratio ratio-1x1">
+                                                    <img src="../../img/big_banner_img.jpg" alt="sampleImg" />
+                                                </div>
+                                                <button tyep="button" class="btn-delete">이미지삭제하기</button>
+                                            </div>
+                                            <div class="add-img">
+                                                <input type="file" placeholder="파일찾기"/>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="pre-img ">
+                                                <div class="ratio ratio-1x1">
+                                                    <img src="../../img/big_banner_img.jpg" alt="sampleImg" />
+                                                </div>
+                                                <button tyep="button" class="btn-delete">이미지삭제하기</button>
+                                            </div>
+                                            <div class="add-img on">
+                                                <input type="file" placeholder="파일찾기"/>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <ul class="list-group dash">
+                                    <li>사진: 10MB 이하의 확장자 JPG, JPEG, PNG, GIF 파일</li>
+                                    <li>동영상: 50MB 이하의 확장자 WMV,AVI, MPG, MOV, MP4 파일</li>
+                                    <li>최대 4개까지 첨부 가능</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="unit-box">
+                            <dl class="notice-box">
+                                <dt>상품문의 작성 시 유의사항</dt>
+                                <dd>
+                                    <ul class="list-group dash">
+                                        <li>상품문의는 1,000자 이내로 작성해 주세요.</li>
+                                        <li>고객님의 소중한 개인정보 보호를 위해, 개인 정보(전화번호, 주민번호, 이름, 아이디 등)는 입력하지 않도록 주의해 주세요.</li>
+                                        <li>상품과 관련 없는 내용이나 허위 사실을 유포하는 경우에는사전 연락없이 삭제될 수 있습니다.</li>
+                                        <li>배송, 교환, 반품 등의 문의사항은 고객센터 &gt; 1:1문의를 이용해 주세요. 이곳에 등록하시면 답변을 받지 못할 수 있습니다.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="unit-box">
+                            <dl class="alram">
+                                <dt>답글 작성 시 알림받기</dt>
+                                <dd>
+                                    <!--
+                                    <div class="radio black">
+                                        <input type="radio" id="re-a1" name="re-a" checked><label for="re-a1">카카오톡</label>
+                                    </div>
+                                    [p] 2021수정반영-->
+                                    <div class="radio black">
+                                        <input type="radio" id="re-a2" name="re-a"><label for="re-a2">문자</label>
+                                    </div>
+                                    <div class="radio black">
+                                        <input type="radio" id="re-a3" name="re-a"><label for="re-a3">이메일</label>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="btn-bottom-group">
+                        <button type="button" class="btn">취소</button>
+                        <button type="button" class="btn primary">확인</button>
+                    </div>
+                </div>
+                <!--//상품문의 작성-->                
+            </div>
+            <button class="btn-close" onclick="popClose('lyDetail')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

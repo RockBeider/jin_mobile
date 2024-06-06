@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 필터</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <button onclick="popOpen('layerPop-filter')"><span>필터열기</span></button>
+    <div class="layerPop full-size open" id="layerPop-filter">
+        <div class="cont">
+            <h1 class="layer-title">필터</h1>
+
+            <section>
+                <div class="filterCont">
+                    <h2>카테고리</h2>
+                    <div class="optSelectWrap n3">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>여성</span></label>
+                            <label><input type="checkbox" name="optCheck-1" checked><span>남성</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>뷰티</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>헬스</span></label>
+                        </div>
+                    </div>
+                    <h2>브랜드</h2>
+                    <div class="optSelectWrap-swiper" id="optSelectWrap-swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="optSelectWrap n2">
+                                    <div class="inner">
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE TILBURY</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>factr</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>JJ JIGOTT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>JIGOTT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1" checked><span>IZZAT BABA</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE IZZAT COLLECTION</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE IZZAT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>A.P.C</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>PRADA</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>COS</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>GOLDEN GOOSE</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>GUCCI</span></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="optSelectWrap n2">
+                                    <div class="inner">
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE TILBURY</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>factr</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>JJ JIGOTT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>JIGOTT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>IZZAT BABA</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE IZZAT COLLECTION</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE IZZAT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>A.P.C</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>PRADA</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>COS</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>GOLDEN GOOSE</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>GUCCI</span></label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="optSelectWrap n2">
+                                    <div class="inner">
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE TILBURY</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>factr</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>JJ JIGOTT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>JIGOTT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>IZZAT BABA</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE IZZAT COLLECTION</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>THE IZZAT</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>A.P.C</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>PRADA</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>COS</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>GOLDEN GOOSE</span></label>
+                                        <label><input type="checkbox" name="optCheck-1"><span>GUCCI</span></label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                    <script>
+                        var optSelectWrap_swiper = new Swiper('#optSelectWrap-swiper', {
+                            slidesPerView: 'auto',
+                            spaceBetween: 4,
+                            scrollbar: {
+                                el: '.swiper-scrollbar',
+                                dragSize: '80px',
+                            },
+                            observer: true
+                        });
+                    </script>
+                    
+            
+                    <h2>사이즈</h2>
+                    <div class="optSelectWrap">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>44</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>55</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>66</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>FF</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>25</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>26</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>27</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>28</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>S</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>M</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>L</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>XL</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>225</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>230</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>235</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>240</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>250</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>260</span></label>
+                        </div>
+                    </div>
+                    <h2>색상</h2>
+                    <div class="optSelectWrap n3">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>블랙</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>화이트</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>네이비</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>보라</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>연두</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>골드</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>블랙</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>화이트</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>네이비</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>보라</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>연두</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>골드</span></label>
+                        </div>
+                    </div>
+                    <h2>소재</h2>
+                    <div class="optSelectWrap n3">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>올</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>캐시미어</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>면</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>나일론</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>데님</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>가죽</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>린넨</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>폴리에스터</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>알파카</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>가죽</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>올</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>나일론</span></label>
+                        </div>
+                    </div>
+                    <h2>가격</h2>
+                    <div class="optSelectWrap n1">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>5만원 미만</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>5만원 ~ 10만원 미만</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>10만원 ~ 20만원 미만</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>20만원 ~ 30만원 미만</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>30만원 ~ 50만원 미만</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>50만원 ~ 70만원 미만</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>70만원 ~ 100만원 미만</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>100만원 이상</span></label>
+                        </div>
+                    </div>
+                    <h2>연령</h2>
+                    <div class="optSelectWrap n3">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>~ 10대</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>10대</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>20대</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>30대</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>40대</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>50대 이상</span></label>
+                        </div>
+                    </div>
+                    <h2>시즌</h2>
+                    <div class="optSelectWrap n3">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>봄</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>여름</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>가을</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>겨울</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>사계절</span></label>
+                        </div>
+                    </div>
+                    <h2>특별한 날</h2>
+                    <div class="optSelectWrap n3">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>파티</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>하객</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>데이트</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>면접</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>입학</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>졸업</span></label>
+                        </div>
+                    </div>
+                    <h2>스타일</h2>
+                    <div class="optSelectWrap n3">
+                        <div class="inner">
+                            <label><input type="checkbox" name="optCheck-1"><span>오피스룩</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>캐주얼룩</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>데일리룩</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>홈웨어</span></label>
+                            <label><input type="checkbox" name="optCheck-1"><span>페미닌</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomFloating-button">
+                    <button class="reset">새로고침</button>
+                    <button class="btn-basicL">NNN개의 상품 보기</button>
+                </div>
+            </section>
+            <button class="btn-close" onclick="popClose('layerPop-filter')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

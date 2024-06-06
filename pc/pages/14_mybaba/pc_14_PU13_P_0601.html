@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id>
+        <div class="cont w-440">
+            <h1 class="layerTitle">배송지 확인</h1>
+            <div class="layerBody">
+                <div class="ly-addr-area">
+                    <div class="recent">
+                        <div class="addr-info">
+                            <span class="name">김바바 (집)</span>
+                            <span class="phone">010.1234.5678</span>
+                            <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                            <div class="btn-area">
+                                <a href="#" class="btn btn-tx">배송지 목록</a>
+                                <a href="#" class="btn btn-tx">신규</a><!--//[P]2021수정반영-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-box">
+                            <select class="placeholderOn selected" >
+                                <option disabled  hidden>메시지를 입력하거나 선택해 주세요.</option>
+                                <option selected>직접 입력</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-box">
+                            <input type="text" value="빠른 배송 부탁드려요." placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn">취소</button>
+                    <button type="button" type="button" class="btn primary">변경</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('lyMybaba')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

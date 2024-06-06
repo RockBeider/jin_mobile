@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 통합검색</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop full-size open">
+        
+        <!-- 20230822 #4037 통합검색 리뉴얼 > start -->
+        <div class="cont search-renewal"> <!-- 20230822 #4037 통합검색 리뉴얼 > .cont에 class="search-renewal"추가 -->
+            <!-- <h1 class="layer-title"><span class="for-a11y">통합검색</span></h1> -->
+            
+            <section>
+
+                <!-- search-area -->
+                <div class="search-area type02">
+                    <input type="text" class="search-input" placeholder="[지고트] 나들이 원피스 입고">
+                    <button class="del" onclick="searchArea_control.del()">삭제</button>
+                    <!-- <button type="button" class="search-btn"><span class="for-a11y">검색</span></button> -->
+                    <button type="button" class="btn-search">검색</button>
+                    <button type="button" class="btn-cart">장바구니</button>
+                </div>
+                <!-- //search-area -->
+
+                <!-- input-active-keyin -->
+                <div class="input-active-keyin">
+
+                    <!-- recommend-category -->
+                    <div class="recommend-category">
+                        <ul>
+                            <li><a href="">패션 &gt; 여성 &gt; 의류 &gt; <span class="point">아</span>우터</a></li>
+                            <li><a href="">패션 &gt; 여성 &gt; 의류 &gt; <span class="point">아</span>우터</a></li>
+                        </ul>
+                    </div>
+                    <!-- //recommend-category -->
+
+                    <!-- keyword-list -->
+                    <div class="keyword-list">
+                        <ul>
+                            <li><a href=""><span class="point">아이</span>잗바바타임딜</a></li>
+                            <li><a href="">벤시몽 <span class="point">아이</span>웨어</a></li>
+                            <li><a href="">더<span class="point">아이</span>잗뉴욕</a></li>
+                            <li><a href=""><span class="point">아이</span>잗바바타임딜</a></li>
+                            <li><a href="">벤시몽 <span class="point">아이</span>웨어</a></li>
+                            <li><a href="">더<span class="point">아이</span>잗뉴욕</a></li>
+                        </ul>
+                    </div>
+                    <!-- //keyword-list -->
+                    
+                    <!-- 20210929 검색 레이어 팝업 내 추천브랜드 영역 추가 > 최대 3개 브랜드 노출 -->
+                    <!-- title-area -->
+                    <div class="title-area">
+                        <div class="title-area-inner">
+                            <h3 class="title">추천 브랜드</h3>
+                        </div>
+                    </div>
+                    <!-- //title-area -->
+                    
+                    <!-- recommend-brand -->
+                    <div class="recommend-brand">
+                        <ul>
+                            <li><a href="#">IZZAT BABA</a></li>
+                            <li><a href="#">FABIANA FILIPPI</a></li>
+                            <li><a href="#">AMBUSH</a></li>
+                        </ul>
+                    </div>
+                    <!-- //recommend-brand -->
+                    <!-- //20210929 검색 레이어 팝업 내 추천브랜드 영역 추가 > 최대 3개 브랜드 노출 -->
+
+                    <!--배너 영역-->
+                    <div class="main-section sect-banner">
+                        <div class="banner swiper" id="">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                                <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                                <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                                <a href="#" class="swiper-slide"><img src="../../img/temp/banner.jpg" alt=""></a>
+                            </div>
+                            <script>
+                                var swiperSect4 = new Swiper('.sect-banner .swiper.banner', {
+                                    loop:true,
+                                    autoplay: {
+                                        delay: 4000,
+                                        disableOnInteraction: false,
+                                    },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!--//배너 영역-->
+
+                </div>
+                <!-- //input-active-keyin -->
+            </section>
+
+            <button class="btn-close">팝업닫기</button>
+        </div>
+        <!-- //20230822 #4037 통합검색 리뉴얼 > end -->
+
+    </div>
+</body>
+</html>

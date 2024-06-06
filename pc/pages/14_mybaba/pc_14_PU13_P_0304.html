@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyMybaba">
+        <div class="cont w-1100">
+            <h1 class="layerTitle">상세 이미지</h1>
+            <div class="layerBody">
+				
+                 <!-- Swiper -->
+                  <div class="swiper-wrap popup-swiper-goodsDetail">
+                      <!--top Image-->
+                      <div class="swiper-container gallery-top">
+                          <div class="swiper-wrapper">
+                               <div class="swiper-slide">
+                                   <div class="swiper-zoom-container">
+                                        <img src="https://img.babathe.com/upload/specialDisplay/htmlImage/2020/20210916_merry_chuseok_pc_09.jpg" alt="상품 이미지" />
+                                   </div>
+                               </div>
+                               <div class="swiper-slide">
+                                   <div class="swiper-zoom-container">
+                                        <img src="../../img/img_prd.jpg" alt="상품 이미지" />
+                                   </div>
+                               </div>
+                               <!-- 영상 -->
+                               <div class="swiper-slide">
+                                   <div class="swiper-zoom-container">
+	                                   <div class="video-wrap">
+	                                       <video id="videoSample" src='http://www.tomodevel.jp/material/video/disneyTour.mp4' controls autoplay muted>
+	                                           	<!-- 해당 브라우저는 video 태그를 지원하지 않습니다. -->
+	                                       </video>
+	                                   </div>
+                                   </div>
+                               </div>
+                               <!-- 영상 -->
+                               <div class="swiper-slide">
+                                   <div class="swiper-zoom-container">
+                                        <img src="../../img/img_prd.jpg" alt="상품 이미지" />
+                                   </div>
+                               </div>
+                               <div class="swiper-slide">
+                                   <div class="swiper-zoom-container">
+                                        <img src="../../img/img_prd.jpg" alt="상품 이미지" />
+                                   </div>
+                               </div>
+                               <div class="swiper-slide">
+                                   <div class="swiper-zoom-container">
+                                        <img src="../../img/img_prd.jpg" alt="상품 이미지" />
+                                   </div>
+                               </div>
+                           </div>
+	                       <!-- Add Arrows -->
+	                       <div class="swiper-button-next"></div>
+	                       <div class="swiper-button-prev"></div>
+	                       <!-- Add Pagination -->
+	                       <div class="swiper-pagination"></div>
+                       </div>
+                       <!--//top Image-->
+                   </div>
+                   <script>
+                    var galleryTop = new Swiper('.gallery-top', {
+	                    loop: false,
+	                    watchOverflow: true,
+	                    zoom: {
+	                        maxRatio: 5,
+	                    },
+	                    pagination: {
+	                        el: '.swiper-pagination',
+	                        type: 'fraction'
+	                    },
+                        navigation: {
+                          nextEl: '.swiper-button-next',
+                          prevEl: '.swiper-button-prev',
+                        },     
+                        on :{
+                          slideChange :function(swiper){
+                              $('.gallery-top .swiper-slide').find('video').each(function(){
+                                  this.pause();
+                              });
+                          },
+                          slideChangeTransitionStart : function(){
+                              $('.gallery-top .swiper-slide-active').find('video').each(function(){
+                                  //this.play();
+                                  this.pause();
+                              });
+                          },
+                        }
+                      });
+                   </script>
+                  <!-- //Swiper -->
+				
+            </div>
+            <button class="btn-close" onclick="popClose('lyMybaba5')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

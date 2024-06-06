@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 펀딩 상품 안내</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop mainBanner open">
+        <div class="cont">
+            <section>
+                <div class="mainBanner-contents swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#"><img src="../../img/temp/mainBanner.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="../../img/temp/mainBanner.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="../../img/temp/mainBanner.jpg" alt=""></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="../../img/temp/mainBanner.jpg" alt=""></a></li>
+                    </ul>
+                    <div class="paginationWrap">
+                        <div class="swiper-pagination"></div>
+                        <div class="count">0 / 0</div>
+                    </div>
+                    <script>
+                        var swiper_mainBanner_imgWrap = new Swiper('.mainBanner-contents',{
+                            resistanceRatio : 0,
+                            pagination: {
+                                el: ".paginationWrap .swiper-pagination",
+                                type: "progressbar",
+                            },
+                            on: {
+                                init: function(e){
+                                    swiperCountRander(e);
+                                },
+                                slideChange: function (e) {
+                                    swiperCountRander(e);
+                                },
+                            },
+                            loop: true,
+                            autoplay: {
+                                delay: 5000,
+                                disableOnInteraction: false,
+                            },
+                        })
+                    </script>
+                </div>
+                <div class="btnWrap">
+                    <button class="stopWatchingToday">오늘 하루 그만보기</button>
+                    <button class="close">닫기</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

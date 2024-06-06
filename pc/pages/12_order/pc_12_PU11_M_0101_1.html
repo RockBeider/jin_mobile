@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="center-wrap w-fixed">
+            <div class="order-wrap">
+                <div class="order-info aside-contents">
+                    <div class="page-top">
+                        <h1 class="page-title">주문서</h1>
+                        <ul class="cart-step">
+                            <li>장바구니</li>
+                            <li class="on">주문서</li>
+                            <li>주문완료</li>
+                        </ul>
+                    </div>
+                    <!--약관동의-->
+                    <div class="order-form">
+                        <div class="order-title">
+                            <h2 class="page-sub-title">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="guestAgree" checked />
+                                    <label for="guestAgree"> 비회원 주문 약관 동의 (필수)</label>
+                                </div>
+                            </h2>
+                        </div>
+                        <div class="guest-guide">
+                            <h4>비회원 필수 입력 정보 수집 동의서</h4>
+                            <dl>
+                                <dt>비회원 개인정보보호를 위한 이용자 동의서에 동의해 주세요.</dt>
+                                <dd>
+                                    바바그룹은 비회원 고객님에게 서비스 제공을 위하여 아래와 같이 개인정보를 수집,이용합니다.<br>
+                                    ※ 동의를 거부하시는 경우에는, 비회원 구매를 하실 수 없음을 알려드립니다.<br>
+                                    바바그룹의 개인정보처리에 대한 자세한 사항은 "개인정보처리방침"을 확인하여 주시기 바랍니다
+                                </dd>
+                            </dl>
+                        </div>
+                        <table class="tb-info mg-t-40">
+                            <caption>비회원 필수 입력 정보 수집 내용</caption>
+                            <colgroup>
+                                <col width="270px"/>
+                                <col width="280px"/>
+                                <col width=""/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">개인정보 수집 항목</th>
+                                    <th scope="col">구분</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-c">상품 배송 및 서비스 제공을 위한<br>사용자 정보 확인</td>
+                                    <td class="align-c">배송의뢰인 및 수령인의 성명, 전화번호 <br>또는휴대전화번호, 주소, 이메일주소</td>
+                                    <td class="align-c" rowspan="2">5년 보관<br>(전자상거래 등에서의<br>소비자보호에 관한 법률)</td>
+                                </tr>
+                                <tr>
+                                    <td class="align-c">상품 구매에 대한 대금결제<br>및취소</td>
+                                    <td class="align-c">신용카드정보, 은행계좌정보,<br>휴대전화번호</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//약관동의-->
+                    <!--주문 고객 정보-->
+                    <div class="order-form">
+                        <div class="order-title">
+                            <h2 class="page-sub-title">주문 고객 정보</h2>
+                        </div>
+                        <div class="form-wrap">
+                            <div class="form-row">
+                                <div class="form-col w-half">
+                                    <div class="form-box">
+                                        <label for="ordInp1-1">주문하시는 분</label>
+                                        <input type="text" value="김바바"  id="ordInp1-1" placeholder="주문하시는 분 (필수)"/>
+                                    </div>
+                                </div>
+                                <div class="form-col w-half">
+                                    <div class="form-box">
+                                        <label for="ordInp1-2">휴대전화 번호</label>
+                                        <input type="text" value="01012345678" id="ordInp1-2" placeholder="휴대전화 번호 (필수)"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <label for="ordInp1-3">이메일 주소</label>
+                                    <input type="text" value="baba@email.com"  id="ordInp1-3" placeholder="이메일 주소 (선택)"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//주문 고객 정보-->
+                    <!--배송지 정보-->
+                    <div class="order-form">
+                        <div class="order-title d-flex">
+                            <h3 class="page-sub-title">배송지 정보</h3>
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk-G" checked>
+                                <label for="chk-G">주문 고객 정보와 동일</label>
+                            </div>
+                        </div>
+                        <div class="form-wrap">
+                            <div class="form-row">
+                                <div class="form-col w-half">
+                                    <div class="form-box">
+                                        <label for="ordInp2-1">받으시는 분</label>
+                                        <input type="text" value="김바바 (집)"  id="ordInp2-1" />
+                                    </div>
+                                </div>
+                                <div class="form-col w-half">
+                                    <div class="form-box">
+                                        <label for="ordInp2-2">휴대전화 번호</label>
+                                        <input type="text" value="01012345678"  id="ordInp2-2" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-col zipcode">
+                                    <div class="form-box d-flex ">
+                                        <input type="text" id="inpCode" placeholder="우편번호">
+                                        <button type="button" class="btn sm btn-form">우편번호 검색</button>
+                                    </div>
+                                </div>
+                                <div class="form-col">
+                                    <div class="form-box">
+                                        <input type="text" value="" placeholder="주소"  id="ordInp2-4" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" placeholder="상세 주소"  id="ordInp2-5" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <label for="ordSel-1">배송 메세지</label>
+                                    <select id="ordSel-1">
+                                        <option>직접 입력</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value="" placeholder="배송 메시지 입력 (최대 50자)"  id="ordInp2-3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//배송지 정보-->
+                    <!--해외배송상품 추가 정보-->
+                    <div class="order-form">
+                        <div class="order-title">
+                            <h2 class="page-sub-title">개인통관고유부호</h2>
+                        </div>
+                        <div class="form-wrap">
+                            <div class="form-row">
+                                <div class="form-box">
+                                    <input type="text" value=""  id="ordInp3-1" placeholder="개인통관고유부호 입력 (필수, 13자리)"/>
+                                </div>                            
+                            </div>
+                            <div class="order-guide">
+                                <div class="acd-box">
+                                    <div class="accordion-title">
+                                        <div class="title">
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="persIdx" checked="">
+                                                <label for="persIdx">통관정보 수집, 제공에 동의 (필수)</label>
+                                            </div>
+                                        </div>
+                                        <button>열림</button>
+                                    </div>
+                                    <div class="accordion-panel">
+                                        <div>
+                                            <p class="lable-line">
+                                                통관업무를 위해 개인통관고유부호를 수집하여 판매자에게 제공하며, 다음 주문 시 사용할 수 있도록 탈퇴 시까지 <br>저장됩니다.
+                                                단, 비회원 주문일 경우 개인통관고유부호를 별도로 저장하지 않습니다.
+                                            </p>
+                                            <div class="pers-box">
+                                                <h3>개인통관고유부호 안내</h3>
+                                                <p>개인식별을 위한 고유번호로 통관 시 주민등록번호 대신 사용할 수 있습니다. 개인통관고유번호는 전자통관시스템에서 신청 후 <br>즉시 발급 가능합니다.</p>
+                                                <p class="link"><a href="#" class="tx-link c-secondary">개인통관고유부호 신청 바로가기</a></p>
+                                            </div>
+                                            <div class="pers-box">
+                                                <h3>해외배송상품 이용 안내</h3>
+                                                <ul class="list-group dash">
+                                                    <li>배송기간
+                                                        <p>해외배송상품은 주문 후 평균 5~15일(영업일 기준) 소요됩니다. 국제택배의 경우 한국 세관 통관 후부터 배송추적이 가능합니다.</p>
+                                                    </li>
+                                                    <li>취소/반품/교환
+                                                        <p>
+                                                            주문취소는 결제완료 상태일 경우만 가능합니다.
+                                                            반품/교환은 수취일로부터 7일 이내에 하실 수 있습니다.
+                                                            구매자 귀책사유로 인한(단순 변심, 사이즈 교환 등) 반품/교환일 경우 비용(수입관세, 왕복국제운송료)은 고객님께서 부담하셔야 하오니 양해 부탁드립니다.
+                                                        </p>
+                                                    </li>
+                                                    <li>관세
+                                                        <p>
+                                                            해외에 소재한 업체 상품 구매 시 개인이 자가사용 목적으로 수입하는 개인수입통관 원칙에 의거, 
+                                                            물품가격이 150달러<br>(목록통관대상은 미국발 200달러) 초과되는 경우 고객님을 납세의무자로 하여 국제택배업체가 통관절차를 수행합니다.<br>
+                                                            이 때 발생하는 관세 및 수입부가세 등은 운송업체의 안내에 따라 고객님께서 대한민국 세관에 납부하시게 됩니다.
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--//21.03.09 UI변경-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//해외배송상품 추가 정보-->
+                    <!--주문 상품 정보-->
+                    <div class="order-form">
+                        <h2 class="page-sub-title">주문 상품 정보 (4)</h2>
+                        <div class="form-wrap">
+                            <div class="prd-order-list">
+                                <div class="prd-group">
+                                    <ul class="prd-list cart">
+                                        <li>
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="../../img/temp_prd_img.jpg" alt="상품이미지" />
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">JIGOTT</div>
+                                                <div class="name"><div class="tx-ovf">얼리버드 할인 온라인 단독 캐시미어 100%</div></div>
+                                                <div class="option">캐시미어 100% H라인 코트 / 네이비 / 44</div>
+                                                <div class="total">수량 : 1개</div>
+                                                <div class="v-bottom">
+                                                    <div class="col-left">
+                                                        <div class="prd-price">
+                                                            <div class="price">1,254,000원</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="../../img/temp_prd_img.jpg" alt="상품이미지" />
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">JIGOTT</div>
+                                                <div class="name"><div class="tx-ovf">얼리버드 할인 온라인 단독 캐시미어 100%</div></div>
+                                                <div class="option">캐시미어 100% H라인 코트 / 네이비 / 44</div>
+                                                <div class="total">수량 : 1개</div>
+                                                <div class="v-bottom">
+                                                    <div class="col-left">
+                                                        <div class="prd-price">
+                                                            <div class="price">1,254,000원</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="rowspan">
+                                        <div class="center-items">무료배송</div>
+                                    </div>
+                                </div>
+                                <div class="prd-group">
+                                    <ul class="prd-list cart">
+                                        <li>
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="../../img/temp_prd_img.jpg" alt="상품이미지" />
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">epigram</div>
+                                                <div class="name"><div class="tx-ovf">얼리버드 할인 온라인 단독 캐시미어 100%</div></div>
+                                                <div class="option">캐시미어 100% H라인 코트 / 네이비 / 44</div>
+                                                <div class="total">수량 1개</div>
+                                                <div class="v-bottom">
+                                                    <div class="col-left">
+                                                        <div class="prd-price">
+                                                            <div class="price">1,254,000원</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="../../img/temp_prd_img.jpg" alt="상품이미지" />
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">Deeperence</div>
+                                                <div class="name"><div class="tx-ovf">얼리버드 할인 온라인 단독 캐시미어 100%</div></div>
+                                                <div class="option">캐시미어 100% H라인 코트 / 네이비 / 44</div>
+                                                <div class="total">수량 1개</div>
+                                                <div class="v-bottom">
+                                                    <div class="col-left">
+                                                        <div class="prd-price">
+                                                            <div class="price">1,254,000원</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="rowspan">
+                                        <div class="center-items">배송비 2.500원</div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//주문 상품 정보-->
+                    <!--결제수단-->
+                    <div class="order-form">
+                        <div class="order-title">
+                            <h2 class="page-sub-title">결제수단</h2>
+                        </div>
+                        <div class="form-wrap">
+                            <div class="pay-type">
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT1" checked>
+                                    <label for="payT1"><p>신용/체크카드<!--<span>최근결제</span>--></p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT2">
+                                    <label for="payT2"><p>실시간 계좌이체</p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT3">
+                                    <label for="payT3"><p>가상계좌입금</p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT4">
+                                    <label for="payT4"><p>네이버페이</p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT5">
+                                    <label for="payT5"><p>카카오페이</p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT6">
+                                    <label for="payT6"><p>삼성페이</p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT7">
+                                    <label for="payT7"><p>페이코</p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT8">
+                                    <label for="payT8"><p>토스</p></label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="payType" id="payT9">
+                                    <label for="payT9"><p>스마일페이</p></label>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="form-row mg-t-30">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="chk-save" checked>
+                                    <label for="chk-save">지금 선택한 결제수단을 다음에도 사용</label>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <!--//결제수단-->
+                    <!--구매동의 및 구매안전 서비스 안내-->
+                    <div class="order-form">
+                        <div class="acd-box terms-agree">
+                            <div class="accordion-title order-title">
+                                <div class="title"><h2 class="page-sub-title">구매동의 및 구매안전 서비스 안내</h2></div>
+                                <button>열림</button>
+                            </div>
+                            <div class="accordion-panel">
+                                <div>
+                                    <div class="c-bgf5">
+                                        <h4>구매동의</h4>
+                                        <p>주문 상품의 상품명, 상품가격, 배송정보를 확인하였으며, 구매에 동의합니다. (전자상거래법 제 8조 2항)</p>
+                                        <h4 class="mg-t-40">전자상거래 구매안전 서비스 안내</h4>
+                                        <p>바바더닷컴의 모든 판매자는 안전거래를 위해 구매금액, 결제수단에 상관없이 모든 거래에 대하여 NHN KCP구매안전서비스(에스크로)를 제공하고 있습니다. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--//21.03.09 UI변경-->
+                    <!--//구매동의 및 구매안전 서비스 안내-->
+                    <!--[비회원] 회원가입--> 
+                    <div class="cart-unit-box c-bgf5 mg-t-20">
+                        <p class="unit-text">
+                            잠깐만요! 아직 BABATHE.com 회원이 아니신가요? <br>
+                            회원가입 시 즉시 할인, 신규 가입 쿠폰, 포인트 적립 등<br> 다양한 회원 혜택을 받으실 수 있습니다.
+                        </p>
+                        <a href="#" class="tx-link">신규 회원가입</a>
+                    </div>
+                    <!--// [비회원] 회원가입 --><!--21.03.09 UI변경-->
+                    <!--비회원 주문 시 안내문구 -->
+                    <div class="cart-unit-box premium">
+                        <p class="unit-text">
+                            따라올 수 없는 놀라운 혜택, 바바프리미엄 멤버십도 함께 가입해보세요. <br>
+                        </p>
+                        <a href="#" class="tx-link">바바프리미엄 자세히보기 </a>
+                    </div>
+                    <!--// 비회원 주문 시 안내문구 --><!--21.03.09 UI변경-->
+                </div>
+                <aside class="aside-wrap">
+                    <h2 class="aside-title">결제금액 확인</h2>
+                    <div class="price-list">
+                        <dl>
+                            <dt>총 주문금액</dt>
+                            <dd><strong>2,090,880</strong>원</dd>
+                        </dl>
+                        <dl>
+                            <dt>배송비</dt>
+                            <dd><strong>2,500</strong>원</dd>
+                        </dl>
+                        <dl class="total">
+                            <dt>최종 결제금액</dt>
+                            <dd class="c-secondary"><strong class="num">2,090,880</strong>원</dd>
+                        </dl>
+                    </div>
+                    <button type="button" class="btn lg primary">2,090,880원 결제하기</button>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    /*publishing UI only*/
+</script>
+</html>

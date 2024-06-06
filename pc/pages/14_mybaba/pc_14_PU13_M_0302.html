@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <link rel="stylesheet" href="../../css/babathe.css">
+</head>
+<body>
+    <header></header>
+    <section class="container">
+    <div class="center-wrap">
+        <div class="mybaba-wrap">
+            <div class="mybaba-header"></div>
+            <div class="contents">
+                <!--lnb-->
+                <div class="lnb-wrap">
+                    <nav class="lnb-list">
+                        <ul class="depth1">
+                            <li>
+                                <a href="#">마이바바</a>
+                                <ul class="depth2">
+                                    <li><a href="#">쇼핑정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">주문/배송 조회</a></li>
+                                            <li><a href="#">취소/교환/반품 신청</a></li>
+                                            <li><a href="#">취소/교환/반품 조회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="on">
+                                        <a href="#">혜택정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">멤버십 혜택</a></li>
+                                            <li><a href="#">e포인트</a></li>
+                                            <li class="on"><a href="#">마일리지</a></li>
+                                            <li><a href="#">쿠폰</a></li>
+                                            <li><a href="#">임직원 혜택 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">활동정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">상품 문의 내역</a></li>
+                                            <li><a href="#">1:1 문의 내역</a></li>
+                                            <li><a href="#">나의 상품리뷰</a></li>
+                                            <li><a href="#">관심상품</a></li>
+                                            <li><a href="#">관심브랜드</a></li>
+                                            <li><a href="#">방송알림 신청 현황</a></li>
+                                            <li><a href="#">친구 추천</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">바바프리미엄</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">프리미엄 혜택</a></li>
+                                            <li><a href="#">결제수단</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">바바패션리더</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">패션리더 정보</a></li>
+                                            <li><a href="#">포스팅 관리</a></li>
+                                            <li><a href="#">판매 현황</a></li>
+                                            <li><a href="#">패션리더 활동 가이드</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--//lnb-->
+                <!--contents-->
+                <div class="cont-wrap">
+                    <h2 class="page-title">마일리지</h2>
+                    <div class="hd-top">
+                        <div class="d-flex align-items-center">
+                            <h3 class="page-sub-title">마일리지 현황</h3>
+                            <!-- <div class="m-offline">
+                                <p>오프라인 마일리지<span class="mg-l-20">1,500점</span></p>
+                                <button type="button" class="btn sm primary">온라인 마일리지로 전환</button>
+                                <button type="button" class="btn-notice">도움말</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="myfl-status c-bgf5">
+                        <div class="mybaba-util">
+                            <dl class="m-mileage">
+                                <dt>사용가능</dt>
+                                <dd>4,500M</dd>
+                            </dl>
+                            <dl class="m-mileage plus">
+                                <dt>적립예정</dt>
+                                <dd>500M</dd>
+                            </dl>
+                            <dl class="m-mileage minus">
+                                <dt>소멸예정</dt>
+                                <dd>250M</dd>
+                            </dl>
+                        </div>
+                    </div><!--//[P] 2021수정반영-->
+                    <!--
+                    <table class="tb-default type2">
+                        <caption></caption>
+                        <colgroup>
+                            <col width="25%" />
+                            <col width="25%" />
+                            <col width="25%" />
+                            <col width="25%" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">사용가능</th>
+                                <th scope="col">적립예정</th>
+                                <th scope="col">소멸예정</th>
+                                <th scope="col">오프라인 마일리지</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>4,500P</strong></td>
+                                <td><strong>500P</strong></td>
+                                <td><strong>250P</strong></td>
+                                <td><strong>1,500P</strong><br><button type="button" class="btn sm primary mg-t-10">온라인 마일리지로 전환</button></td>
+                            </td>
+                        </tbody>
+                    </table>
+                    -->
+                    <div class="order-period justify-centent-center">
+                        <div class="period">
+                            <button type="button" class="btn sm">1개월</button>
+                            <button type="button" class="btn sm">3개월</button>
+                            <button type="button" class="btn sm primary">6개월</button>
+                            <button type="button" class="btn sm">1년</button>
+                        </div>
+                        <div class="period-search mg-l-30">
+                            <div class="datepicker">
+                                <input type="text" value="2019-10-20" id="datePickInput-start" readonly >
+                                <!-- <button type="button" class="btn-calendar">날짜선택</button> -->
+                            </div>
+                            <span class="tx-mid">~</span>
+                            <div class="datepicker">
+                                <input type="text" value="2021-10-20" id="datePickInput-end" readonly >
+                                <!-- <button type="button" class="btn-calendar">날짜선택</button> -->
+                            </div>
+                            <button type="button" class="btn sm primary black btn-search">조회</button>
+                        </div>
+                    </div>
+                    <div class="myinfo-unit">
+                        <div class="tab-c tab-ui">
+                            <ul>
+                                <li class="on"><a href="#">전체</a></li>
+                                <li><a href="#">적립</a></li>
+                                <li><a href="#">사용</a></li>
+                                <li><a href="#">소멸</a></li>
+                            </ul>
+                        </div>
+                        <table class="tb-order mg-t-20">
+                            <caption></caption>
+                            <colgroup>
+                                <col width="150px" />
+                                <col width="150px" />
+                                <col width="150px" />
+                                <col width="" />
+                                <col width="150px" />
+                                <col width="150px" /><!-- 20220804 소멸일정 항목 추가 > 전체, 적립 탭영역에서 구분값이 적립일 경우에만 사용만료일 항목 노출 -->
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">날짜</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col" colspan="2">내용</th>
+                                    <th scope="col">마일리지</th>
+                                    <th scope="col">사용만료일</th><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">적립</td>
+                                    <td>상품 구매</td>
+                                    <td><a href="#" class="btn btn-tx c-gray1">[JIGOTT] 뒷절개 플랩 울 트렌치 코트</a></td>
+                                    <td class="center"><strong class="c-secondary font-w500">+1,500P</strong></td>
+                                    <td class="center">2020-12-11</td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">사용</td>
+                                    <td>마일리지 결제</td>
+                                    <td><a href="#" class="btn btn-tx c-gray1">[JIGOTT] 뒷절개 플랩 울 트렌치 코트</a></td>
+                                    <td class="center"><strong class="font-w500">-1,000P</strong></td>
+                                    <td class="center"></td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">적립예정</td>
+                                    <td>상품 구매</td>
+                                    <td><a href="#" class="btn btn-tx c-gray1">[JIGOTT] 뒷절개 플랩 울 트렌치 코트</a></td>
+                                    <td class="center"><strong class="c-secondary font-w500">(+500P)</strong></td>
+                                    <td class="center"></td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">적립</td>
+                                    <td>상품 구매</td>
+                                    <td><a href="#" class="btn btn-tx c-gray1">[JIGOTT] 뒷절개 플랩 울 트렌치 코트</a></td>
+                                    <td class="center"><strong class="c-secondary font-w500">+1,500P</strong></td>
+                                    <td class="center">2020-12-11</td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">사용</td>
+                                    <td>마일리지 결제</td>
+                                    <td><a href="#" class="btn btn-tx c-gray1">[JIGOTT] 뒷절개 플랩 울 트렌치 코트</a></td>
+                                    <td class="center"><strong class="font-w500">-1,000P</strong></td>
+                                    <td class="center"></td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                                
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">적립</td>
+                                    <td>상품 구매</td>
+                                    <td><a href="#" class="btn btn-tx c-gray1">[JIGOTT] 뒷절개 플랩 울 트렌치 코트</a></td>
+                                    <td class="center"><strong class="c-secondary font-w500">+1,500P</strong></td>
+                                    <td class="center">2020-12-11</td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">소멸</td>
+                                    <td colspan="2"><div class="tx-price">유효기간 만료</div></td>
+                                    <td class="center"><strong class="font-w500">-500P</strong></td>
+                                    <td class="center"></td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                                <tr>
+                                    <td class="center">2020-12-11</td>
+                                    <td class="center">적립</td>
+                                    <td colspan="2"><div class="tx-price">오프라인 마일리지 전환</div></td>
+                                    <td class="center"><strong class="c-secondary font-w500">+3,000P</strong></td>
+                                    <td class="center">2020-12-11</td><!-- 20220804 소멸일정 항목 추가 > 적립 영역에만 사용만료일 항목 노출 -->
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="paging">
+                            <a href="#" class="prev"><span>이전</span></a>
+                            <a href="#" class="on">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <a href="#" class="next"><span>다음</span></a>
+                        </div>
+                    </div><!--//[P] 2021수정반영-->
+                    <div class="myinfo-unit">
+                        <!--
+                        <div class="myorder-top">
+                            <h3 class="title sm">마일리지 안내</h3>
+                        </div>
+                        -->
+                        <div class="notice-box c-bgff">
+                            <dd>
+                                <!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+                                <ul class="list-group dash font-s14">
+                                    <!-- <li>적립예정 마일리지는 주문으로 인해 적립이 예정되어 있는 마일리지로 해당 주문의 모든 상품이 배송완료 되고, 15일 후 사용가능 마일리지로 자동 전환됩니다.</li> -->
+                                    <li>소멸예정 마일리지는 유효기간 경과로 소멸이 예상되는 포인트입니다. 유효기간 종료일 자정 이후 소멸되므로 그 전에 사용하시기 바랍니다.</li>
+                                    <li>마일리지의 유효기간은 1년이며, 1M = 1원입니다.</li>
+                                    <li>마일리지는 주문 시에 10M 단위로 사용하실 수 있습니다. (단, 사용가능 마일리지가 1,000M 이상이어야 함.)</li>
+                                    <li>1회 최대 사용 가능한 마일리지는 최종 결제금액의 50%입니다.</li>
+                                    <li>일부 입점 상품은 마일리지 적립 및 사용이 불가할 수 있습니다.</li>
+                                    <li>24년 3월 1일부터 마일리지 적립 서비스는 e포인트와 통합 운영되나, 기존에 적립된 마일리지는 유효기간 만료 전까지 이전과 동일한 방식으로 사용가능합니다.</li>
+                                </ul>
+                                <!-- //20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+                            </dd>
+                        </div>
+                    </div>
+                </div>
+                <!--//contents-->
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer></footer>
+</body>
+<script>    
+    $(document).ready(function(){
+        /*publishing UI only*/
+        $('.mybaba-header').load('inc_maybaba_header.html');//mybabaheader load
+        $('.order-period .period').find('.btn.sm').on('click', function(){
+            var period = $(this).closest('.period');
+            period.find('.btn.sm').removeClass('primary');
+            $(this).addClass('primary');
+        });//period click event
+        $('#datePickInput-start').datepicker({
+            dateFormat: 'yy-mm-dd',
+            showOn: 'both',
+            buttonImage: '../../img/icon_calendar.png',
+            buttonImageOnly: true,
+        }); // datepicker
+        $('#datePickInput-end').datepicker({
+            dateFormat: 'yy-mm-dd',
+            showOn: 'both',
+            buttonImage: '../../img/icon_calendar.png',
+            buttonImageOnly: true
+        }); // datepicker
+    });    
+</script>
+</html>

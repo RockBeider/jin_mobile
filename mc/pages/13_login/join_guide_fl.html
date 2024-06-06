@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko" class="memJoin-guide fashionLeader">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 마이바바</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/join_guide.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back">뒤로가기</button>
+            <h1 class="page-title"></h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니</button>
+        </div>
+    </header>
+    <section>
+        <div class="visual-bg">
+            <!-- <img src="../../img/memjoin_guide/memJoin-guide-main-bg-fashionLeader.jpg" alt="모든 순간이 즐거운 바바와 여러분의 만남, 바바패션리더가 되어보세요."> --><!-- 20210906 페이지내 화보 변경 -->
+            <img src="https://image.babathe.com/static/img/pmg-img/fl_apply_banner_m.jpg" alt="모든 순간이 즐거운 바바와 여러분의 만남, 바바패션리더가 되어보세요."><!-- 20220217 바바패션리더 화보이미지 교체 -->
+        </div>
+        <div class="memJoin-cont">
+            <div class="cont">
+                <div class="txt">
+                    <em>혜택</em>
+                    <strong>함께하는 기쁜<br>더 특별한 혜택</strong>
+                </div>
+                <div class="visual">
+                    <div class="coupone" id="swiper-giftTip">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../img/memjoin_guide/fl-slide-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../img/memjoin_guide/fl-slide-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../img/memjoin_guide/fl-slide-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg.jpg" alt="">
+        </div>
+        <div class="memJoin-cont">
+            <div class="cont">
+                <div class="txt">
+                    <em>등급 조건</em>
+                    <strong>바바 스페셜리더</strong>
+                </div>
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/fl-spcial-title.png" alt="">
+                    <img src="../../img/memjoin_guide/fl-spcial.png" alt="">
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg.jpg" alt="">
+        </div>
+        <div class="memJoin-cont" style="padding-bottom: 0;">
+            <div class="cont">
+                <h2 class="txt">
+                    <em>토탈케어</em>
+                    <strong>바바패션 X 패션리더</strong>
+                </h2>
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/fl-totalCare-title.png" alt="">
+                    <!-- <img src="../../img/memjoin_guide/fl-totalCare.png" alt=""> --><!-- 20210906 페이지내 화보 변경 -->
+                    <img src="https://image.babathe.com/static/img/pmg-img/fl_totalCare_title_m.png" alt=""><!-- 20220217 바바패션리더 화보이미지 교체 -->
+                </div>
+            </div>
+        </div>
+        <div class="memJoin-cont" style="padding-bottom: 0;">
+            <div class="cont">
+                <h2 class="txt">
+                    <em>활동 방법</em>
+                    <img src="../../img/memjoin_guide/fl-tip-1-title.png" alt="">
+                </h2>
+                <div class="visual">
+                    
+                    <img src="../../img/memjoin_guide/fl-tip-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="memJoin-cont note" style="padding-bottom: 0;">
+            <div class="cont">
+                <h2 class="txt">
+                    <em>유의 사항</em>
+                    <img src="../../img/memjoin_guide/fl-tip2-title.png" alt="">
+                </h2>
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/fl-tip-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="memJoin-cont fl-msg" style="padding-bottom: 0;">
+            <div class="cont">
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/fl-msg-title.png" alt="">
+                    <img src="../../img/memjoin_guide/fl-msg-subtitle.png" alt="">
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg2.jpg" alt=""><!-- 20210906 페이지내 화보 변경 -->
+        </div>
+       
+
+        <div class="btnWrap">
+            <button class="btn-basicL blackSolid">지원하기</button>
+        </div>
+    </section>
+    <script>
+        var swiper_giftTip = new Swiper('#swiper-giftTip',{
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        var slideUp = {
+            distance: '100px',
+            origin: 'bottom',
+            duration: 2000,
+            opacity: 1,
+        };
+         ScrollReveal().reveal('.memJoin-cont .cont .visual > *, .memJoin-cont .cont .txt > *,.list-babaCategory > ul > li',slideUp);
+    </script>
+</body>
+</html>

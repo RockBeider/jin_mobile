@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 최근 본 상품</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop full-size open" >
+        <div class="cont">
+            <h1 class="layer-title">최근 본 상품</h1>
+            <section>
+                <div class="title-area">
+                    <div class="title-area-inner">
+                        <h3 class="title">김바바님의 최근 본 상품 (14)</h3>
+                    </div>
+                </div>
+                <div class="recentThisProduct">
+                    <div class="unitList swiper expand-slider recentThisProduct-uiList" id="recentThisProduct-uiList">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide on">
+                                <a href="#" onclick="recentThisProduct_uiList_click(this)">
+                                    <div class="thumb ratio-a">
+                                        <img src="../../img/temp/VEwyTjBPUEE=TL2N0OPA242_11_310x455.jpg" alt="">
+                                    </div>
+                                </a>
+                                <button class="del">삭제</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" onclick="recentThisProduct_uiList_click(this)">
+                                    <div class="thumb ratio-a">
+                                        <img src="../../img/temp/Q0w1QTBTTDc=CL5A0SL7439_1_310x455.jpg" alt="">
+                                    </div>
+                                </a>
+                                <button class="del">삭제</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" onclick="recentThisProduct_uiList_click(this)">
+                                    <div class="thumb ratio-a">
+                                        <img src="../../img/temp/Q0w1QTFQTzc=CL5A1PO7660_1_310x455.jpg" alt="">
+                                    </div>
+                                </a>
+                                <button class="del">삭제</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" onclick="recentThisProduct_uiList_click(this)">
+                                    <div class="thumb ratio-a">
+                                        <img src="../../img/temp/Q0w2QTBPUDg=CL6A0OP8849_1_310x455.jpg" alt="">
+                                    </div>
+                                </a>
+                                <button class="del">삭제</button>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" onclick="recentThisProduct_uiList_click(this)">
+                                    <div class="thumb ratio-a">
+                                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                    </div>
+                                </a>
+                                <button class="del">삭제</button>
+                            </li>
+                        </ul>
+                        <script>
+
+                            //최근본상품 클릭시
+                            function recentThisProduct_uiList_click(obj){
+                                if(document.querySelectorAll('#recentThisProduct-uiList > ul > li.on')[0]){
+                                    document.querySelectorAll('#recentThisProduct-uiList > ul > li.on')[0].classList.remove('on');
+                                }
+                                obj.parentElement.classList.add('on');
+                            }
+
+                            var recentThisProduct_uiList = new Swiper('#recentThisProduct-uiList', {
+                                slidesPerView: 3,
+                                spaceBetween: 4,
+                                watchOverflow: true,
+                                freeMode: true,
+                            });
+                        </script>
+                    </div>
+                    
+                    <div class="unitList horizontal recentThisProduct-detail">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb ratio-a">
+                                        <img src="../../img/temp/VEwyTjBPUEE=TL2N0OPA242_11_310x455.jpg" alt="">
+                                    </div>
+                                    <div class="unitInfoWrap">
+                                        <em class="category">THE IZZAT COLLECTION</em>
+                                        <div class="title"><em>[온라인 단독]</em> <strong>밴딩 후드 원피스+스커트 세트</strong></div>
+                                        <div class="priceWrap">
+                                            <span class="price-dis">100.743원</span>
+                                            <span class="price">69,000원 <em class="salePer">10%</em></span>
+                                        </div>
+                                        <div class="tagSet">
+                                            <div class="inner">
+                                                <span>NEW</span>
+                                                <span>BEST</span>
+                                                <span>무료배송</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="title-area">
+                    <div class="title-area-inner">
+                        <h4 class="title">최근 본 상품과 비슷한 상품</h4>
+                    </div>
+                </div>
+                
+                <div class="unitList swiper expand-slider" id="unitListSwiper-similarProduct">
+                    <ul class="swiper-wrapper">
+                        <!--
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb ratio-a">
+                                    <img src="../../img/temp/thumb-316x462.jpg" alt="">
+                                </div>
+                                <div class="unitInfoWrap">
+                                    <em class="category">THE IZZAT COLLECTION</em>
+                                    <div class="title"><em>셀링포인트 영역 1줄</em> <strong>밍크 체인 장식 코트형 트위드 자켓</strong></div>
+                                    <div class="priceWrap">
+                                        <span class="price">1,296,743원 <em class="salePer">10%</em></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        -->
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb ratio-a">
+                                    <img src="../../img/temp/Q0w1QTBPUDU=CL5A0OP5151_1_310x455.jpg" alt="">
+                                </div>
+                                <div class="unitInfoWrap">
+                                    <em class="category">THE IZZAT</em>
+                                    <div class="title"><strong>카라 탈부착 볼륨 원피스</strong></div>
+                                    <div class="priceWrap">
+                                        <span class="price">772,200원<br> <em class="salePer">10%</em></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <input type="checkbox" class="check-like" title="좋아요 체크">
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb ratio-a">
+                                    <img src="../../img/temp/Q0w2QTBPUDg=CL6A0OP8849_1_310x455.jpg" alt="">
+                                </div>
+                                <div class="unitInfoWrap">
+                                    <em class="category">THE IZZAT</em>
+                                    <div class="title"><strong>스트레이트 버튼 장식 원피스</strong></div>
+                                    <div class="priceWrap">
+                                        <span class="price">718,200원<br> <em class="salePer">10%</em></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <input type="checkbox" class="check-like" title="좋아요 체크">
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb ratio-a">
+                                    <img src="../../img/temp/Q0w1QTFDRDU=CL5A1CD5560_1_310x455.jpg" alt="">
+                                </div>
+                                <div class="unitInfoWrap">
+                                    <em class="category">THE IZZAT</em>
+                                    <div class="title"><strong>웨이브 스트라이프 니트 가디건</strong></div>
+                                    <div class="priceWrap">
+                                        <span class="price">448,200원<br> <em class="salePer">10%</em></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <input type="checkbox" class="check-like" title="좋아요 체크">
+                        </li>
+                    </ul>
+                    <script>
+                        var unitListSwiper_similarProduct = new Swiper('#unitListSwiper-similarProduct', {
+                            slidesPerView: 2,
+                            spaceBetween: 4,
+                        });
+                    </script>
+                </div>
+
+                <div class="title-area">
+                    <div class="title-area-inner">
+                        <h4 class="title">최근 본 상품 관련 콘텐츠</h4>
+                    </div>
+                </div>
+
+                <div class="unitList-full swiper expand-slider" id="unitListSwiper-recentThisProductContents">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb ratio-1x1">
+                                    <img src="../../img/temp/20210414_jj_what_ru_doing_1388x580_1618299272823.jpg" alt="">
+                                </div>
+                                <div class="unitInfoWrap">
+                                    <div class="title"><strong>[JJ지고트] 안사고 뭐하니?</strong></div>
+                                    <div class="sub">2021.04.14 ~ 2021.05.31</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb ratio-1x1">
+                                    <img src="../../img/temp/20210414_baba_choice_1388x580_1618390069292.jpg" alt="">
+                                </div>
+                                <div class="unitInfoWrap">
+                                    <div class="title"><strong>[아이잗바바] 잘 선택한 자켓으로 봄 스타일링 완성하기</strong></div>
+                                    <div class="sub">2021.04.16 ~ 2021.06.30</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="thumb ratio-1x1">
+                                    <img src="../../img/temp/20210408_collection_updown_1388x580_1617926487376.jpg" alt="">
+                                </div>
+                                <div class="unitInfoWrap">
+                                    <div class="title"><strong>[OUTLET] 컬렉션 DRESS UP&DOWN</strong></div>
+                                    <div class="sub">2021.04.16 ~ 2021.05.31</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <script>
+                        var unitListSwiper_recentThisProductContents = new Swiper('#unitListSwiper-recentThisProductContents', {
+                            spaceBetween: 4,
+                        });
+                    </script>
+                </div>
+            </section>
+            <button class="btn-close" onclick="location.href='../02_main/mc_02_MU01_M_0101.html'">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

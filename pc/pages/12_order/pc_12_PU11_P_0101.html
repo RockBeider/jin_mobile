@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        .cont + .cont {margin-left:20px}
+    </style>
+</head>
+<body>
+    <div class="layerPop open" id="">
+        <div class="cont w-400">
+            <h1 class="layerTitle">개인정보 제공 동의 필수</h1>
+            <div class="layerBody">
+                <div class="notice-box">
+                  <ul class="list-group number font-s14">
+                    <li><span class="no">1.</span>제공받는 자 : NHN한국사이버결제㈜</li>
+                    <li><span class="no">2.</span>제공항목 : CI</li>
+                    <li><span class="no">3.</span>제공목적 : 본인 명의 결제수단 인증</li>
+                    <li><span class="no">4.</span>보유 및 이용기간 : 바바페이 등록, 비밀번호 변경, 결제, 해지 시에만 이용하며 별도 보유하지 않음</li>
+                  </ul>
+                </div>
+                <div class="btn-bottom-group">
+                    <button type="button" class="btn">취소</button>
+                    <button type="button" class="btn primary">동의</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>레이아웃 탭</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        .swiper-sample{height:200px;padding: 20px;}
+        .swiper-slide{background: #333;color: #fff;}
+        .swiper-scrollbar{bottom: -20px;}
+    </style>
+</head>
+<body>
+    <div class="swiper-container swiper-sample">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+          <div class="swiper-slide">Slide 10</div>
+          <div class="swiper-slide">Slide 11</div>
+          <div class="swiper-slide">Slide 12</div>
+          <div class="swiper-slide">Slide 13</div>
+          <div class="swiper-slide">Slide 14</div>
+          <div class="swiper-slide">Slide 15</div>
+          <div class="swiper-slide">Slide 16</div>
+          <div class="swiper-slide">Slide 17</div>
+          <div class="swiper-slide">Slide 18</div>
+          <div class="swiper-slide">Slide 19</div>
+          <div class="swiper-slide">Slide 20</div>
+          <div class="swiper-slide">Slide 21</div>
+          <div class="swiper-slide">Slide 22</div>
+          <div class="swiper-slide">Slide 23</div>
+          <div class="swiper-slide">Slide 24</div>
+          <div class="swiper-slide">Slide 25</div>
+          <div class="swiper-slide">Slide 26</div>
+          <div class="swiper-slide">Slide 27</div>
+          <div class="swiper-slide">Slide 28</div>
+          <div class="swiper-slide">Slide 29</div>
+          <div class="swiper-slide">Slide 30</div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-sample', {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+            freeMode: true,
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                dragSize: '150px',
+            },
+        });
+    </script>
+
+
+
+
+    <!-- 툴팁 start -->
+    <h1>툴팁</h1>
+    <div class="tooltip">
+        <a class="tipIcon" href="javascript:void(0)">?</a>
+        <div class="tipCont">
+            툴팁
+        </div>
+    </div>
+    <!-- 툴팁 end -->
+
+    <!-- 탭 start -->
+    <h1>탭</h1>
+    <div class="tab-a tab-ui">
+        <ul>
+            <li class="on"><a href="javascript:void(0)">All</a></li>
+            <li><a href="javascript:void(0)">Fashion</a></li>
+            <li><a href="javascript:void(0)">Beauty</a></li>
+            <li><a href="javascript:void(0)">Health</a></li>
+        </ul>
+    </div>
+    <div class="tab-cont">
+        <div class="on">tabCont1</div>
+        <div>tabCont2</div>
+        <div>tabCont3</div>
+        <div>tabCont4</div>
+    </div>
+
+    <!-- 탭 end -->
+
+    <!-- 아코디언 start -->
+
+    <div class="accordion-title"><h2 class="title-a">아코디언</h2><button>열림</button></div>
+    <div class="accordion-panel">
+        <div>
+            아코디언 내용
+        </div>
+    </div>
+    <div class="accordion-title open"><h2 class="title-a">아코디언</h2><button>열림</button></div>
+    <div class="accordion-panel">
+        <div>
+            아코디언 열린상태
+        </div>
+    </div>
+    <div class="accordion-title type2">아코디언 type2<button>열림</button></div>
+    <div class="accordion-panel">
+        <div>
+            아코디언 type2 내용
+        </div>
+    </div>
+    
+    <!-- 아코디언 end -->
+
+    <!-- 셀렉트박스 start -->
+    <h1>셀렉트박스</h1>
+    <div class="selectbox">
+        <a class="title" href="javascript:void(0)">셀렉트title</a>
+        <ul class="cont">
+            <li><a href="javascript:void(0)">메뉴1</a></li>
+            <li><a href="javascript:void(0)">메뉴2</a></li>
+            <li><a href="javascript:void(0)">메뉴3</a></li>
+            <li><a href="javascript:void(0)">메뉴4</a></li>
+        </ul>
+    </div>
+    <!-- 셀렉트박스 end -->
+
+</body>
+</html>

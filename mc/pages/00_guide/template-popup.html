@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>팝업 샘플</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <button onclick="popOpen('layerPop-test')"><span>팝업열기</span></button>
+    <div class="layerPop full-size" id="layerPop-test">
+        <div class="cont">
+            <h1 class="layer-title">팝업 타이틀</h1>
+            <section>
+                팝업내용
+            </section>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

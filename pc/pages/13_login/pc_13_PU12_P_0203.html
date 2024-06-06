@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        .cont + .cont {margin-left:20px}
+    </style>
+</head>
+<body>
+    <div class="layerPop open" id="lyLogin">
+        <!-- 아이디 찾기 결과 - 회원정보 있음 -->
+        <div class="cont w-400">
+            <h1 class="layerTitle">아이디 찾기 결과</h1>
+            <div class="layerBody">
+                <p class="info-txt">
+                    <strong class="font-w300">입력하신 정보와<br>일치하는 아이디는 아래와 같습니다.</strong>
+                </p>
+                <p class="info-id">0101234****</p>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn w-half">비밀번호 찾기</button>
+                    <button type="button" type="button" class="btn primary w-half">로그인 하기</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+
+        <!-- 아이디 찾기 결과 - 회원정보 없음 -->
+        <div class="cont w-300">
+            <h1 class="layerTitle">아이디 찾기 결과</h1>
+            <div class="layerBody">                
+                <p class="info-txt">
+                    <strong class="font-w300">입력하신 정보와 일치하는<br>회원 정보가 없습니다.</strong>
+                </p>
+                <p class="">확인 후 다시 입력해 주세요.</p>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+
+    </div>
+</body>
+</html>

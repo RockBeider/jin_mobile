@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        .cont + .cont {margin-left:20px}
+    </style>
+</head>
+<body>
+    <div class="layerPop open" id="lyCart">
+        <!-- 상품 옵션 select 타입 -->
+        <div class="cont w-400">
+            <h1 class="layerTitle">옵션선택/변경</h1>
+            <div class="layerBody">
+                <div class="scroll-wrap">
+                    <div class="prd-opt-box">
+                        <h6 class="opt-title">모델명1</h6>
+                        <ul class="select">
+                            <li>            
+                                <div class="form-box">
+                                    <label for="sel-1">모델명</label>
+                                    <select id="sel-1" >
+                                        <option>캐시미어 100% H라인 코트</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-box">
+                                    <label>선택 <span class="num">1</span>. 사이즈 : <span class="num">55</span></label>
+                                    <ul class="size">
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" id="ra1" name="ra" checked>
+                                                <label for="ra1">44</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" id="ra2" name="ra">
+                                                <label for="ra2">55</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" id="ra3" name="ra">
+                                                <label for="ra3">66</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="radio">
+                                                <input type="radio" id="ra4" name="ra" disabled>
+                                                <label for="ra4">77</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>            
+                                <div class="form-box">
+                                    <label for="sel-2">색상</label>
+                                    <select id="sel-2" >
+                                        <option>베이지</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li>            
+                                <div class="form-box">
+                                    <label for="sel-3">사이즈</label>
+                                    <select id="sel-3" class="placeholderOn" ><!--//[P] placeholderOn Class추가-->
+                                        <option disabled selected hidden>선택해주세요</option>
+                                        <option>옵션1</option>
+                                        <option>옵션2</option>
+                                        <option>옵션3</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-area">
+                    <dl>
+                        <dt>상품 금액</dt>
+                        <dd><span class="num font-w700">6,426,000</span>원</dd>
+                    </dl>
+                    <!-- <span class="c-secondary">[품절임박] 잔여 8</span> -->
+                </div>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn">취소</button>
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+
+        <!-- 상품 옵션 썸네일 타입 
+        <div class="cont w-500">
+            <h1 class="layerTitle">옵션선택/변경</h1>
+            <div class="layerBody">
+                <div class="prd-opt-box">
+                    <h2>선택 <span class="num">1</span>. 모델명: 캐시미어 100% H라인 코트</h2>
+                    <ul class="thumnail">
+                        <li class="on"><a href="#"><img src="../../img/prd_img_thum.jpg" alt="제품 썸네일 이미지"></a></li>
+                        <li><a href="#"><img src="../../img/prd_img_thum.jpg" alt="제품 썸네일 이미지"></a></li>
+                        <li><a href="#"><img src="../../img/prd_img_thum.jpg" alt="제품 썸네일 이미지"></a></li>
+                    </ul>
+
+                    <h2>선택 <span class="num">2</span>. 사이즈: <span class="num">55</span></h2>
+                    <ul class="size">
+                        <li><a href="#">44</a></li>
+                        <li class="on"><a href="#">55</a></li>
+                        <li class="soldout"><a href="#">66</a></li>
+                        <li><a href="#">77</a></li>
+                    </ul>
+                </div>
+                <div class="price-area">
+                    <dl>
+                        <dt>상품 금액</dt>
+                        <dd><span class="num font-w700">6,426,000</span>원</dd>
+                    </dl>
+                </div>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn">취소</button>
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div> //[P] 사용X -->
+
+        <!-- 상품 옵션 컬러칩 타입-->
+        <div class="cont w-400">
+            <h1 class="layerTitle">옵션선택/변경</h1>
+            <div class="layerBody">
+                <div class="prd-opt-box">
+                    <!--
+                    <h2>선택1. 색상 : 베이지</h2>
+                    <ul class="color-chip">
+                        <li><a href="#" style="background:#111;"></a></li>
+                        <li><a href="#" style="background:#e3e3e3;"></a></li>
+                        <li class="on"><a href="#" style="background:#e5d5c7;"></a></li>
+                        <li><a href="#" style="background:#942727;"></a></li>
+                        <li class="soldout"><a href="#" style="background:#9ec4a8;"></a></li>
+                        <li><a href="#" style="background:#7d8520;"></a></li>
+                        <li><a href="#" style="background:#ffc600;"></a></li>
+                        <li><a href="#" style="background:#c777d3;"></a></li>
+                        <li><a href="#" style="background:#fcc9f2;"></a></li>
+                        <li><a href="#" style="background:#3788d3;"></a></li>
+                    </ul>
+                    
+                    <h2>선택 <span class="num">1</span>. 사이즈 : <span class="num">55</span></h2>
+                    <ul class="size">
+                        <li><a href="#">44</a></li>
+                        <li><a href="#">55</a></li>
+                        <li><a href="#">66</a></li>
+                        <li><a href="#">77</a></li>
+                    </ul>
+                    -->
+                    <ul class="select">
+                        <li>            
+                            <div class="form-box">
+                                <label for="sel-2">색상</label>
+                                <select id="sel-2" class="placeholderOn selected">
+                                    <option disabled selected hidden>선택해주세요</option>
+                                    <option selected>베이지</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>            
+                            <div class="form-box">
+                                <label for="sel-3">사이즈</label>
+                                <select id="sel-3" class="placeholderOn" ><!--//[P] placeholderOn Class추가-->
+                                    <option disabled selected hidden>선택해주세요</option>
+                                    <option>옵션1</option>
+                                    <option>옵션2</option>
+                                    <option>옵션3</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price-area">
+                    <dl>
+                        <dt>상품 금액</dt>
+                        <dd><span class="num font-w700">6,426,000</span>원</dd>
+                    </dl>
+                </div>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn">취소</button>
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div> 
+    </div>
+</body>
+</html>

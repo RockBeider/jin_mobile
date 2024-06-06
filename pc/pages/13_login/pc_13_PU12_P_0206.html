@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        .cont + .cont {margin-left:20px}
+    </style>
+</head>
+<body>
+    <div class="layerPop open" id="lyLogin">
+        <!-- 비밀번호 찾기 결과 - 인증 완료 -->
+        <div class="cont w-400">
+            <h1 class="layerTitle">비밀번호 찾기 결과</h1>
+            <div class="layerBody">
+                <p class="info-txt"><strong class="font-w300">인증이 완료되었습니다.<br>새로운 비밀번호를 등록해 주세요.</strong></p>
+                <div class="form-wrap">
+                    <div class="form-row">
+                        <div class="form-box">
+                            <input type="password" value=""  id="result-pw1-1" placeholder="새 비밀번호"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-box">
+                            <input type="password" value=""  id="result-pw1-2" placeholder="새 비밀번호 확인"/>
+                        </div>
+                    </div>
+                    <ul class="list-group dash">
+                        <li>영문, 숫자, 특수문자 포함 8자리 이상</li>
+                        <li>사용 가능한 특수문자는 ~!@#$%^&* 입니다.</li>
+                    </ul>
+                </div>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+
+        <!-- 비밀번호 찾기 결과 - 회원정보 없음 -->
+        <div class="cont w-300">
+            <h1 class="layerTitle">비밀번호 찾기 결과</h1>
+            <div class="layerBody">                
+                <p class="info-txt">
+                    <strong class="font-w300">입력하신 정보와 일치하는<br>회원 정보가 없습니다.</strong>
+                </p>
+                <p class="">확인 후 다시 입력해 주세요.</p>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+
+    </div>
+</body>
+</html>

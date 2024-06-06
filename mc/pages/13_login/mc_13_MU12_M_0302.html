@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 회원가입</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back" onclick="location.href='../13_login/mc_13_MU12_M_0301.html'">뒤로가기</button>
+            <h1 class="page-title">회원가입</h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니</button>
+        </div>
+    </header>
+    <section>
+
+        <div class="recommend-message">
+            <strong>김바바님</strong>의 소개로 방문하셨군요.<br>
+            가입 완료 후 <strong><span>1,000</span>P</strong>를 바로 적립해 드립니다.
+        </div>
+
+        <!-- join-section -->
+        <div class="join-section">
+            <h2 class="title-a">01. 휴대폰 본인인증 *</h2>
+			
+			<!-- 20220509 PASS 인증 UI 디자인 변경 -->
+            <!-- PASS 인증의 경우 -->
+            
+            <!-- 20230706 #3762 [FO] 본인인증_PASS 인증 화면 개선 -->
+            <div class="message">
+                PASS 앱에서 인증을 진행하시고<br>
+                아래 확인 버튼을 눌러주세요.
+            </div>
+            <div class="btnWrap">
+                <button class="btn-basicM blackSolid">확인</button>
+            </div>
+            <ul class="tip-wrap">
+                <li class="tip">PUSH 알림이 오지 않거나, PASS인증이 어려우실 경우 ‘확인’ 버튼을 누르시면 문자로 인증하실 수 있습니다.</li>
+            </ul>
+
+            <div class="message sizeS" style="margin-top:40px">
+                만약 앱 인증이 정상적으로 진행되지 않을 경우에는<br>
+                문자본인확인을 이용해 주세요.
+            </div>
+            <div class="btnWrap">
+                <button class="btn-basicM black">문자로 인증하기</button>
+            </div>
+            <!-- //20230706 #3762 [FO] 본인인증_PASS 인증 화면 개선 -->
+            
+             <div class="passapp-box">
+				<div class="tab-h tab-ui">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0)">PASS 인증하기</a></li>
+                        <li class=""><a href="javascript:void(0)">문자(SNS) 인증하기</a></li>
+                    </ul>
+                </div>
+                 <div class="tab-cont">
+                    <!-- PASS 인증하기 -->
+                    <div class="on">
+	                    <p class="message">PASS 앱에서 인증을 진행하시고 아래 확인 버튼을<br>눌러주세요.</p>
+			            <div class="btnWrap">
+			                <button class="btn-basicM blackSolid">확인</button>
+			            </div>
+                    </div>
+                    <!-- 문자(SNS) 인증하기 -->
+                    <div>
+	                    <p class="message">만약 앱 인증이 정상적으로 진행되지 않을 경우에는<br>문자본인확인을 이용해 주세요.</p>
+			            <div class="btnWrap">
+			                <button class="btn-basicM blackSolid">확인</button>
+			            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //PASS 인증의 경우 -->
+            <!-- //20220509 PASS 인증 UI 디자인 변경 -->
+
+            <!-- form-input -->
+            <ul class="form-input">
+                <li class="form-flex">
+                    <div class="form-flex-cell">
+                        <input type="text" placeholder="이름 입력">
+                    </div>
+                    <div class="form-flex-select">
+                        <select>
+                            <option>내국인</option>
+                            <option>외국인</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="form-flex">
+                    <div class="form-flex-cell">
+                        <input type="text" placeholder="생년월일 입력 (8자리)">
+                    </div>
+                    <div class="form-flex-select">
+                        <select>
+                            <option>남자</option>
+                            <option>여자</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="form-flex">
+                    <div class="form-flex-cell">
+                        <input type="text" placeholder="휴대폰 번호 입력 ( ‘-’ 제외)">
+                    </div>
+                    <div class="form-flex-select">
+                        <select>
+                            <option>SKT</option>
+                            <option>KT</option>
+                            <option>LGU+</option>
+                            <option>알뜰폰SKT</option> <!-- 20221021 본인확인 이용약관 항목 추가 -->
+                            <option>알뜰폰LGU+</option> <!-- 20221024 본인확인 이용약관 항목 추가 수정 -->
+                        </select>
+                    </div>
+                </li>
+                <li class="form-flex">
+                    <div class="form-flex-cell">
+                        <div class="verify-num">
+                            <input type="text" placeholder="인증번호 입력">
+                            <span>02:00</span>
+                            <button type="button">인증번호 재전송</button>
+                        </div>
+                        <div class="verify-message">
+                            인증 시간이 경과했습니다. 인증번호 재전송을 통해 인증을 다시 진행해 주세요.
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- //form-input -->
+
+            <!-- accordionBox -->
+            <div class="accordionBox">
+                <div class="accordion-title type2">
+                    <label>
+                        <input type="checkbox" class="type2">
+                        <span>본인 인증을 위한 약관 모두 동의</span>
+                    </label>
+                    <button>열림</button>
+                </div>
+                <div class="accordion-panel">
+                    <div>
+                        <ul class="form-check">
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) 개인정보 수집 및 이용 동의</span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) 고유식별정보 처리 동의</span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) 통신사 이용약관</span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) 서비스 이용약관</span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <!-- 20221021 본인확인 이용약관 항목 추가 -->
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) (알뜰폰) 개인정보 제 3자 제공 동의</span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <!-- //20221021 본인확인 이용약관 항목 추가 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //accordionBox -->
+            <!-- 20230828 #4172 [FO] 본인인증 화면 개선(2차) -->
+            <!--  <div class="btnWrap">
+                <button class="btn-basicM fill">인증번호 전송</button>
+            </div> -->
+            <div class="btnWrap full_btn"><!-- class="full_btn"추가 -->
+                <button class="btn-basicM fill">문자(SMS)로 인증</button>
+                <button class="btn-basicM black">PASS로 인증</button>
+            </div>
+            <!-- //20230828 #4172 [FO] 본인인증 화면 개선(2차) -->
+        </div>
+        <!-- //join-section -->
+
+        <!-- join-section -->
+        <div class="join-section">
+            <h2 class="title-a">02. 기본정보 입력 *</h2>
+
+            <div class="tab-cont">
+
+                <div class="on">
+                    <!-- form-input -->
+                    <ul class="form-input">
+                        <li><input type="text" placeholder="아이디 입력 (휴대폰 번호)" value="01012345678" disabled></li>
+                        <li><input type="password" placeholder="비밀번호 입력"></li>
+                        <li><input type="password" placeholder="비밀번호 확인"></li>
+                    </ul>
+                    <!-- //form-input -->
+
+                    <!-- tip-wrap -->
+                    <ul class="tip-wrap">
+                        <li class="tip type3">영문, 숫자, 특수문자 포함 8자리 이상</li>
+                        <li class="tip type3">사용 가능한 특수문자는 ~!@#$%^&amp;* 입니다.</li>
+                    </ul>
+                    <!-- //tip-wrap -->
+
+                    <!-- form-input -->
+                    <ul class="form-input">
+                        <li><input type="text" placeholder="이메일 주소 입력 (@ 포함)"></li>
+                    </ul>
+                    <!-- //form-input -->
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- //join-section -->
+
+        <!-- join-section -->
+        <div class="join-section">
+            <h2 class="title-a">03. 약관동의</h2>
+
+            <!-- accordionBox -->
+            <div class="accordionBox">
+                <div class="accordion-title type2">
+                    <label>
+                        <input type="checkbox" class="type2">
+                        <span>약관 모두 동의</span>
+                    </label>
+                    <button>열림</button>
+                </div>
+                <div class="accordion-panel">
+                    <div>
+                        <!-- form-check -->
+                        <ul class="form-check">
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) 웹사이트 이용약관</span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) 멤버십 이용약관 </span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(필수) 개인 정보처리방침 </span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>
+                                        (선택) 장기 미접속 시에도 계정 유지<br>
+                                        <em class="tip">미동의시 1년 미접속 회원탈퇴 전환</em><br>
+                                        <em class="tip">장기 계정 유지 동의 시 마일리지 1,000M 증정!</em>
+                                    </span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                            <li>
+                                <label class="chk-agree">
+                                    <input type="checkbox">
+                                    <span>(선택) 마케팅 정보 수신 전체 동의</span>
+                                </label>
+                                <button>보기</button>
+                            </li>
+                        </ul>
+                        <!-- //form-check -->
+                    </div>
+                </div>
+            </div>
+            <!-- //accordionBox -->
+
+            <!-- tip-wrap -->
+            <ul class="tip-wrap">
+                <li class="tip type3">선택항목에 동의하지 않으셔도 가입을 진행하실 수 있습니다.</li>
+            </ul>
+            <!-- //tip-wrap -->
+
+        </div>
+        <!-- //join-section -->
+
+        <div class="btnWrap">
+            <button class="btn-basicL">가입하기</button>
+        </div>
+
+
+
+
+
+
+    </section>
+    <footer></footer>
+</body>
+</html>

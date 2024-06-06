@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>팝업 샘플</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <button onclick="popOpen('ly-mybaba-lawyers03')"><span>팝업열기</span></button>
+
+    <!-- 20230201 #2941 제휴_로이어스클럽 회원 추가 : 마이페이지 > 팝업(로이어스클럽 회원) 추가 -->
+    <!-- 3. 승인 완료 -->
+    <div class="layerPop open" id="ly-mybaba-lawyers03">
+        <div class="cont w-400"><!--[P].w-500(width:500px)-->
+            <h1 class="layerTitle"></h1>
+            <div class="layerBody">                
+                <p class="info-txt type2 align-c">
+                    로이어스 클럽 승인 회원입니다.<br><br>
+                    로이어스 클럽 회원만을 위한 특별한<br>
+                    혜택을 이용해보세요!
+                </p>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn primary w-full">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('ly-mybaba-lawyers03')">팝업닫기</button>
+        </div>
+    </div>
+   <!-- //20230201 #2941 제휴_로이어스클럽 회원 추가 : 마이페이지 > 팝업(로이어스클럽 회원) 추가 -->
+</body>
+</html>

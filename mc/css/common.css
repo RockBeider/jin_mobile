@@ -1,0 +1,783 @@
+@charset "utf-8";
+
+/*webfont(Noto Sans KR)*/ /*고객사 요청으로 font-weight 300짜리 400으로 적용*/
+@font-face {
+	font-family:'Noto Thin';
+	font-style:normal;
+	font-weight:300;
+	src:url(../font/noto-sans-kr-v13-korean-100.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:100;
+	src:url(../font/noto-sans-kr-v13-korean-300.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:300;
+	src:url(../font/noto-sans-kr-v13-korean-400.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:500;
+	src:url(../font/noto-sans-kr-v13-korean-500.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:700;
+	src:url(../font/noto-sans-kr-v13-korean-700.woff) format('woff');
+}
+@font-face {
+	font-family:'Noto Sans KR';
+	font-style:normal;
+	font-weight:900;
+	src:url(../font/noto-sans-kr-v13-korean-900.woff) format('woff');
+}
+
+/*webfont(Montserrat)*/
+@font-face {
+    font-family: 'Montserrat';
+    unicode-range:'U+0041-005A','U+0061-007A','U+0030-0039';
+    src: url(../font/Montserrat-Light.woff2) format('woff2');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Montserrat';
+    unicode-range:'U+0041-005A','U+0061-007A','U+0030-0039';
+    src: url(../font/Montserrat-Regular.woff2) format('woff2');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Montserrat';
+    unicode-range:'U+0041-005A','U+0061-007A','U+0030-0039';
+    src: url(../font/Montserrat-Medium.woff2) format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    unicode-range:'U+0041-005A','U+0061-007A','U+0030-0039';
+    src: url(../font/Montserrat-SemiBold.woff2) format('woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat';
+    unicode-range:'U+0041-005A','U+0061-007A','U+0030-0039';
+    src: url(../font/Montserrat-Bold.woff2) format('woff2');
+    font-weight: 900;
+}
+
+
+
+html,body,h1,h2,h3,h4,h5,h6,ol,ul,li,dl,dt,dd,p,span{margin:0;padding:0}
+html{font-family:'Montserrat', 'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif;/* background: #f5f5f5; */color: #111;line-height: 1.25;font-weight: 300;}
+
+html.noDragRefresh{overflow: hidden;}
+html.layerPopOpen{overflow: hidden;}
+html.bottomFloating-on body{padding-bottom: 71px;}
+html.topMenuAdnFilter-on .prd-list-filter{top:100px}
+html.topMenuAdnFilter-on header,
+html.categorySelectUi-on header{position:relative}
+html.categorySelectUi-on .categorySelectUi{position:sticky;top: 0;}
+html.categorySelectUi-on .prd-list-filter{top: 40px !important;}
+/* html.topMenuAdnFilter-on header{position:relative}  *//* 바바패션관 관련 추가 */
+
+
+html.brandSearch header{position:relative;top:auto !important;}
+html.brandSearch .tab-brandSearch{position: sticky;top: 0;background: #fff;z-index: 2;padding-top: 0 !important;margin-top: 10px;}
+html.brandSearch .tab-brandSearch + .tab-cont{min-height:500px}
+html.brandSearch .brand-search-keyword{top:63px}
+
+html.scrollUp header{top: -56px;}
+html.scrollUp .topMenuNav.sticky{top: 0;}
+html.scrollUp .topMenuNav-sub{top: 50px;}
+/* html.scrollUp .bottomFloating{transform: translateY(101%);} */
+html.scrollUp.topMenuAdnFilter-on .prd-list-filter{top: 35px;}
+
+html.main.scrollUp.searchWrapHide > body > header{transform: translateY(-56px);}
+/* html.scrollUp.searchWrapHide .mainNav{transform: translateY(-56px);} */
+
+
+html.main.pageLoadComple > body > header{display:block}
+html.main .btn-footerPrev{display:none}
+html.main.scrollUp header{top:0;}
+
+/* html.scrollUp .utilsFloating{bottom: 20px} */
+html.goTop-visible .utilsFloating .btn-goTop{display:block;transform: scale(1);height: 44px;margin-top: 10px;}
+.utilsFloating .btn-footerLive.on + .btn-goTop {margin-top: 20px}
+html.bottomFloating-on .utilsFloating{bottom: 90px/* bottom: 122px */}
+
+
+html.scrollUp .prd-list-filter{top: -1px;}
+html.mainHeaderFix section .main-hedaer{position:fixed}
+
+html,body,section{height: auto;}
+
+body {/* iOS safe area padding */
+	/*iOS 11.0 버전*/padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+    /*iOS 11.2 이상*/padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
+body > section{position: relative;padding: 0 20px 0; /* z-index: 1; *//* box-sizing: border-box; *//* height: 100%; */}
+body > section > .member-benefit,
+body > section > * > .tab-b{margin-left:-20px;margin-right:-20px}
+body > section > div:last-of-type{margin-bottom: 15px;align-self: center;}
+body > section > div.banner:last-of-type{margin-bottom:0}
+body > section > div .bottomFloating-button{margin-top:0}
+body > section > .prd-list-filter:first-child{margin-top: 0;}
+body > section > .txtInfoBox-b {padding:20px 0}
+
+li{list-style:none;}
+ol > li{list-style:decimal}
+button{cursor:pointer;border:0;font-family: 'Montserrat', 'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif;background-color:transparent;padding:0;margin:0;}
+i,em{font-style: normal;}
+*{outline:none}
+a{text-decoration:none;color:inherit;}
+img{vertical-align:top}
+strong{font-weight: 500;}
+
+button:disabled{pointer-events:none}
+
+input::placeholder,
+textarea::placeholder,
+::placeholder{color: #999;font-size: 14px;font-family: 'Montserrat', 'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif;font-weight: 300;}
+
+input{font-family: 'Montserrat';}
+input[type="text"],input[type="password"],input[type="tel"],input[type="number"]{height:45px;border:0;border-bottom: 1px solid #e3e3e3;width:100%;padding: 10px;box-sizing: border-box;font-family: 'Montserrat', 'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif;font-size: 14px;font-weight: 300;}
+input[type="text"]:read-only:focus,input[type="password"]:read-only:focus,input[type="tel"]:read-only:focus,input[type="number"]:read-only:focus,
+input[type="text"]:read-only,input[type="password"]:read-only,input[type="tel"]:read-only,input[type="number"]:read-only,
+input[type="text"]:disabled,input[type="password"]:disabled,input[type="tel"]:disabled,input[type="number"]:disabled{background:#f5f5f5;border-bottom:0;}
+input[type="text"]:focus,input[type="password"]:focus,input[type="tel"]:focus,input[type="number"]:focus{border-bottom:1px solid #111;}
+
+input[type='checkbox']{appearance: none;-webkit-appearance: none;width: 17px;height: 17px;vertical-align: middle;border-radius: 2px;margin: 0;cursor: pointer;border: 1px solid #999;background: #fff url(../img/check.png) no-repeat center;background-position-y: -10px;background-size: 10px auto;}
+input[type='checkbox']:checked{background-position-y: 4px;background-color: #fff;border: 1px solid #111;}
+input[type='checkbox']:disabled{opacity:.1;pointer-events: none;}
+label input[type='checkbox']{margin-right: 6px;vertical-align: middle;}
+label input[type='checkbox'] + span{vertical-align:middle;font-size: 12px;}
+input[type='checkbox'].type2{background:#e3e3e3;border:1px solid #e3e3e3;width:20px;height:20px;border-radius: 4px;background: #e3e3e3 url(../img/check2.png) no-repeat center 4px;background-size: 10px auto;background-position-y: -10px;}
+input[type='checkbox'].type2:checked{border: 1px solid #111;background-position-y: 5px;background-color: #111;}
+input[type='checkbox'].check-push{width: 30px;height: 30px;background: url(../img/icon-push.png) no-repeat;background-size: 30px auto;border: 0;background-position-y:-30px}
+input[type='checkbox'].check-push:checked{background-position-y:0}
+
+input[type='radio']{appearance: none;-webkit-appearance: none;width: 20px;height: 20px;border: 1px solid #111;vertical-align: middle;border-radius: 50%;margin: 0;cursor: pointer;background: url(../img/check-radio.png) no-repeat center;background-position-y: -10px;background-size: 10px auto;}
+input[type='radio']:checked{background-position-y: 5px;}
+label input[type='radio']{margin-right: 6px;vertical-align: middle;}
+label input[type='radio'] + span{/* display: flex; */vertical-align:middle;font-size: 12px;/* align-items: center; */}
+input[type='radio'].type2{border:1px solid #e3e3e3;width:20px;height:20px;border-radius: 50%;background: #e3e3e3 url(../img/check2.png) no-repeat center 4px;background-size: 10px auto;background-position-y: -10px;}
+input[type='radio'].type2:checked{border: 1px solid #111;background-position-y: 5px;background-color: #111;}
+
+input[type='checkbox'].check-like{border:0;width: 40px;height: 40px;background: url(../img/like.png) no-repeat center;background-size: 21px auto;opacity: .3;z-index: 10;}
+input[type='checkbox'].check-like + span{font-weight:500}
+input[type='checkbox']:checked.check-like{opacity:1}
+
+.check-like-label{font-size:12px;display: inline-flex;align-items: center;}
+.check-like-label input[type='checkbox']{border:0;width:21px;height: 21px;background: url(../img/like.png);background-size: 21px auto;opacity:.2;z-index: 10;margin-right: 0;}
+.check-like-label input[type='checkbox'] + span{opacity:.2;margin-left: 5px;}
+.check-like-label input[type='checkbox']:checked{opacity:1}
+.check-like-label input[type='checkbox']:checked + span{opacity:1}
+input[type='checkbox'].check-alram{display: inline-block;border:0;width: 35px;height: 35px;background: #fff url(../img/check-alram.png) no-repeat center;background-size: 35px auto;border-radius:50%;overflow:hidden;}
+input[type='checkbox']:checked.check-alram{background: #fc2264 url(../img/check-alram-on.png) no-repeat center;background-size: 35px auto;}
+
+pre{white-space: pre-wrap;font-family: 맑은고딕, Malgun Gothic;}
+textarea{border:0;background:#f5f5f5;width:100%;padding:10px;box-sizing:border-box;color: #999;font-size: 14px;font-family: 'Montserrat', 'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif;font-weight: 300;}
+textarea:disabled,
+textarea:read-only{color:#a8a8a8;}
+select{height:46px;padding: 7px 30px 7px 10px;box-sizing:border-box;appearance:none;-webkit-appearance:none;background: url(../img/selectArr.png) no-repeat right 10px center;background-size: 11px auto;border: 0;border-bottom: 1px solid #e3e3e3;/* color: #999; */width: 100%;font-size: 14px;font-family: 'Montserrat', 'Noto Sans KR','맑은 고딕', 'Malgun Gothic', sans-serif;font-weight: 300;}
+select.placeholderOn{color:#a8a8a8}
+select:required:invalid {color: #666;}
+select:disabled{background-color: #f5f5f5;color: #a8a8a8;background-image: url(../img/selectArr-dis.png);opacity: 1;}
+select:focus{border-bottom:1px solid #111}
+select.type2{padding:0;font-size: 12px;border-bottom: 0;width: auto;min-width: 168px;padding-right: 18px;background: url(../img/dropdownArr2.png) no-repeat right center;background-size: 11px auto;height: 16px;color: #666;}
+select.type2.selected{color:#666}
+option[value=""][disabled] {display: none;}
+option {color: #111;}
+select.selected{color:#111;}
+select > option:disabled{color: #999;/* background: #000; */}
+select > option:hidden{color:#999}
+
+table {border-spacing:0;border-collapse:collapse;width: 100%;position: relative;}
+table.align-l td{text-align:left}
+table.align-r td{text-align:right}
+table > caption {font-size: 12px;position: absolute;right: 0;top: -20px;/* line-height:0; *//* height:0; */color: #999;font-size: 10px;}
+table th,table td{border: 1px solid #e3e3e3;padding: 10px 15px;height: 32px;box-sizing: border-box;}
+table th{background:#f5f5f5;font-size: 10px;font-weight: 300;}
+table td{background:#fff;font-size: 10px;/* color: #666; */text-align: center;font-weight: 300;}
+table td:first-child,table th:first-child{border-left:0;}
+table td:last-child,table th:last-child{border-right:0;}
+
+/*ratio*/
+[class *= 'ratio-'] {position:relative;}
+[class *= 'ratio-']::before{content:'';display:block;padding-top:var(--aspect-ratio);}
+[class *= 'ratio-'] > img {position:absolute;top:0;left:0;right: 0;bottom: 0;width:100%;height:100%;object-fit: cover;}
+[class *= 'ratio-'] > video {position:absolute;top:0;left:0;right: 0;bottom: 0;width:100%;height:100%;/* object-fit:cover; */}
+[class *= 'ratio-'] > a > img {position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;}
+[class *= 'ratio-'] > a{position:absolute;display:block;width:100%;height:100%;top:0;left:0}
+.ratio-1x1{--aspect-ratio:100%;}
+.ratio-4x3{--aspect-ratio: calc(4 / 3 * 100%);}
+.ratio-16x9{--aspect-ratio:calc(9 / 16 * 100%);}
+.ratio-21x9{--aspect-ratio:calc(9 / 21 * 100%);}
+.ratio-a{--aspect-ratio: calc(16 / 10.943 * 100%);} /* 316 x 462 */
+/*.ratio-b{}*/ /*ratio-1x1으로 치환 완료*/
+.ratio-c{--aspect-ratio: calc(16 / 19.8 * 100%);} /* 640 x 516 */
+.ratio-d{--aspect-ratio: calc(16 / 11.56 * 100%);} /* 317 x 439 */
+.ratio-e{--aspect-ratio: calc(16 / 25.6 * 100%);} /* 320 x 200 */
+
+/*Align*/
+.align-c {text-align: center;}
+.align-l {text-align: left;}
+.align-r {text-align: right;}
+
+/* ui */
+.tooltip .tipCont{display:none}
+.tooltip .tipIcon.on + .tipCont{display:block;}
+
+.selectbox > .cont{display:none}
+.selectbox.open > .cont{display:block}
+
+.title-a{position: relative;font-size: 16px;font-weight: 500;padding: 15px 0;min-height: 51px;box-sizing: border-box;}
+.title-a:before{position:absolute;bottom:0;content:"";display:block;height:1px;width:100%;background: url(../img/dotted.gif) repeat-x;background-size:4px auto}
+.title-a.payment{display:flex;justify-content:space-between;padding-right:35px}
+.title-a.payment .price{color:#fc2264;transition: .3s ease;}
+.title-a.payment .price .sale{color:#fc2264}
+
+.active, .accordion:hover {background-color: #ccc}
+.accordion-panel {background-color: white;overflow: hidden;height: 0;transition: .3s ease;box-sizing: border-box;}
+.accordion-title > .title-a:before{opacity:0;transition:.4s ease;}
+.accordion-title.open + .accordion-panel{height:auto;}
+.accordion-title.open > .title-a:before{opacity:1}
+.accordion-title.priceHideView.open .title-a.payment .price{opacity: 0;}
+.accordion-title {position: relative;transition:.3s ease;}
+.accordion-title > h2{position: relative;font-size: 16px;font-weight: 500;padding: 15px 0;}
+.accordion-title > .infoBox{margin-bottom: 15px;display: block;}
+.accordion-title > button{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height: 100%;font-size: 0;-webkit-tap-highlight-color: transparent;}
+.accordion-title:after{content:"";display:inline-block;position:absolute;top: 20px;right: 10px;background:url(../img/dropdownArr.png) no-repeat;width: 13px;height: 8px;background-size:13px auto;transform:rotate(180deg);pointer-events: none;}
+.accordion-title.open:after{transform:rotate(0)}
+.accordion-title label{position:relative;z-index:2}
+.accordion-panel + .accordion-title{border-top:1px solid #eee}
+.accordion-title.type2{background: #f5f5f5;padding: 15px 40px 15px 15px;font-size:12px;font-weight: 500;}
+.accordion-title.type2:after{right:17px}
+.accordion-title.type3{font-size: 12px;}
+.accordion-title.type3:after{top: 4px;background: url(../img/dropdownArr2.png) no-repeat;background-size: 10px auto;width: 10px;height: 6px;transform: rotate(180deg);}
+.accordion-title.type3.open:after{transform: rotate(0deg);}
+.accordion-title.type3 + .accordion-panel{background:transparent}
+.accordion-title.type3 + .accordion-panel > div{padding: 10px 0;font-weight: 100;color: #111;}
+.accordion-title.tagEdit{font-size:14px;font-weight:300}
+.accordion-title.tagEdit .title-option{margin:20px 0 10px 0;font-size: 14px;font-weight: 700;color: #111;}
+.accordion-title.tagEdit > button{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height: 45px;font-size: 0;-webkit-tap-highlight-color: transparent;}
+.accordion-title.tagEdit .tagEditor{margin-top:15px}
+.accordion-title.tagEdit .tagEditor .nodata{font-size: 12px;color:#666;}
+.accordion-panel + .accordion-title.type2{margin-top:10px}
+.accordion-panel > div > .enterRecommenderCode:first-child,
+.accordion-panel > div > .consentToPurchase:first-child,
+.accordion-panel > div > .couponePointList:first-child{margin-top:20px}
+
+.optionEditWrap > h3{font-size: 14px;font-weight: 700;margin: 10px 0;color: #111;}
+.optionEditWrap > h3:not(:first-child){margin-top:20px}
+.layerPop{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;z-index: 2000;background: rgba(0,0,0,0);visibility: hidden;display: flex;justify-content: center;align-items: center;overflow: hidden;transform: translateY(100%);align-content: center;}
+.layerPop.bg-gray > .cont{background:#f5f5f5;}
+.layerPop > .cont{position:relative;background: #fff;width: 100%;margin: 25px;}
+.layerPop .btn-close {position: absolute;top:12px;right:16px;font-size:0;width: 30px;height: 30px;background:url('../img/layerPopClosed.png') center center no-repeat;background-size: 15px auto;z-index: 101;}
+.layerPop.open{visibility: visible;background: rgba(0,0,0,.5);transform: translateY(0);}
+.layerPop.bottomFloating-on section{padding-bottom: 71px !important;}
+.layerPop.bottomFloating-on.layerPop-allMenu section{padding-bottom: 50px !important}
+.layerPop.bottomUp{transition: .5s ease;transform: translateY(0);}
+.layerPop.bottomUp > .cont{position: fixed;bottom: 0;margin: 0;padding: 20px;box-sizing: border-box;/* background: #f5f5f5; */transform: translateY(100%);transition: .5s ease;}
+.layerPop.bottomUp.open > .cont{transform:translateY(0);border-radius: 15px 15px 0 0;}
+.layerPop.full-size > .cont > section > h2{font-size:16px;font-weight:700}
+.layerPop.full-size > .cont > section > h2 + *{margin-top:22px}
+.layerPop.full-size > .cont > section > * + h2{margin-top:50px}
+/* 20220620 상품상세 > 쿠폰팝업 페이지 추가 */
+.layerPop.couponPop {text-align:center}
+.layerPop.couponPop .cont {margin:11.11vw; padding:4.86vw 0 35px; border-radius:15px; overflow:hidden}
+.layerPop.couponPop .ly_cpn_tit {margin-bottom:4.16vw; line-height:1.376em; font-weight:500; font-size:5vw}
+.layerPop.couponPop .ly_cpn_tit strong {font-weight:900}
+.layerPop.couponPop .ly_cpn_area {text-align:center}
+.layerPop.couponPop .ly_cpn_area .ly_cpn_inner {display:inline-block; width:45.83vw; height:26.38vw; padding:7.63vw 0 0 9.72vw; color:#000; background:url(https://image.babathe.com/static/img/pmg-img/bg_popup_cpn.png) 0 0 no-repeat; background-size:100% auto; box-sizing:border-box}
+.layerPop.couponPop .ly_cpn_area .ly_cpn_inner .cpn_sale_per {line-height:1em; font-weight:500; font-size:7.91vw}
+.layerPop.couponPop .ly_cpn_area .ly_cpn_inner .cpn_sale_per strong {font-weight:900; font-size:10.55vw}
+.layerPop.couponPop .ly_cpn_area .ly_cpn_inner .cpn_name {display:block; margin-top:3.47vw; font-size:2.5vw}
+.layerPop.couponPop .ly_cpn_area .btn_cpn_down {display:block; width:45.83vw; height:11.11vw; line-height:11.11vw; margin:4.16vw auto 0; font-size:3.61vw; color:#fff; background:#000}
+.layerPop.couponPop .ly_cpn_area .btn_cpn_down span {position:relative; padding-right:5.55vw}
+.layerPop.couponPop .ly_cpn_area .btn_cpn_down span:after {content:""; position:absolute; top:calc(50% - 1.11vw); right:0; width:1.38vw; height:2.22vw; background:url(https://image.babathe.com/static/img/pmg-img/ico_popup_cpn_arr.png) 50% 50% no-repeat; background-size:100% auto}
+.layerPop.couponPop .list_cpn_notice {margin:3.47vw 0; text-align:center}
+.layerPop.couponPop .list_cpn_notice ul {display:inline-block; padding-left:2.77vw; text-align:left}
+.layerPop.couponPop .list_cpn_notice ul li {position:relative; padding-left:1.38vw; line-height:1.45em; font-weight:200; font-size:2.22vw; color:#888}
+.layerPop.couponPop .list_cpn_notice ul li ~ li {margin-top:0.51vw}
+.layerPop.couponPop .list_cpn_notice ul li:after {content:"-"; position:absolute; top:0; left:0}
+.layerPop.couponPop .btnWrap {position:absolute; bottom:0; left:0; display:block; width:100%; height:35px; background:#f5f5f5}
+.layerPop.couponPop .btnWrap:after {content:""; display:block; clear:both}
+.layerPop.couponPop .btnWrap .stopWatchingToday {float:left; width:auto; line-height:35px; padding:0 15px; font-size:12px; color:#999; background:#f5f5f5}
+.layerPop.couponPop .btnWrap .close {float:right; width:auto; line-height:35px; padding:0 15px; font-size:12px; color:#000; background:#f5f5f5}
+
+.tab-cont > div{height: 0;overflow: hidden;transform: translateY(-100%);visibility:hidden;}
+.tab-cont > div.on{transform: translateY(0);height: auto;overflow: visible;visibility:visible;}
+
+/*Header*/
+
+header{position: sticky;top:0;background: #fff;z-index: 1004;transition: .3s ease;}
+header .sub-hedaer {display:flex;align-items: center;height:56px;padding: 0 16px;background: #fff;box-sizing: border-box;}
+header .page-title {flex:1;font-size:18px;color:#000;font-weight: 300;letter-spacing: -0.12px;line-height: 1;}
+header .btn-back + .page-title{margin-left: 6px;}
+.main-hedaer .welcome {flex:1;font-size:18px;color:#000;font-weight: 300;letter-spacing: -0.12px;line-height: 1;/* margin-left:12px; */}
+.main-hedaer .welcome > strong{font-weight: 500;}
+.main-hedaer .welcome > strong.logo {height: 22px;display:block;text-indent:-9999px;font:0;background:url('../img/logo_mo_white.png') no-repeat left center;background-size: auto 14px;}
+
+header .btn-back {background-image:url('../img/headerBack.png');background-size: 14px auto;}
+header button {display:inline-block;font-size:0;width:32px;height:32px;background-repeat:no-repeat;background-position: center center;background-size: contain;}
+header button + button {margin-left:8px;}
+.btn-home {background-image: url('../img/icon-home.png');background-size: 30px auto;}
+.btn-search {background-image: url('../img/icon-search.png');background-size: 30px auto;}
+.btn-cart {background-image:url('../img/headerCart.png');background-size: 30px auto;position:relative;}
+.btn-cart .num {position:absolute;top:0;right: -7px;min-width: 15px;height: 15px;border-radius: 50%;font-size:10px;text-align:center;line-height: 15px;font-weight: 500;background-color: #fc2264;color:#fff;}
+
+.main > body > header{position:fixed;width:100%;background:transparent;transition: .3s ease;display: none;}
+.main .welcome{color:#fff}
+
+.main-hedaer {display:flex;align-items: center;height: 56px;padding: 0 20px;box-sizing: border-box;position: absolute;top:0;width: 100%;}
+.main-hedaer button {display:inline-block;font-size:0;width:32px;height:32px;background-repeat:no-repeat;background-position: center center;background-size: contain;}
+.main-hedaer button + button {margin-left:8px;}
+.main-hedaer .btn-search{background-image: url('../img/icon-search-white.png');background-size: 30px auto;}
+.main-hedaer .btn-cart {background-image:url('../img/headerCart_white.png');background-size: 30px auto;position:relative;}
+
+/* .goodsDetail header{position: relative;top: auto !important;transition: none;} */
+
+.utilsFloating{display:flex;justify-content:space-between;position:fixed;/* bottom: 90px; */bottom: 122px;width:100%;box-sizing:border-box;z-index: 1005;align-items: flex-end;height: 0; padding-bottom:constant(safe-area-inset-bottom); padding-bottom:env(safe-area-inset-bottom)}
+.utilsFloating .left{display: flex;flex-direction: column;margin-left:20px}
+.utilsFloating .right{display: flex;flex-direction: column;margin-right:20px}
+.utilsFloating .left > *,
+.utilsFloating .right > *{margin-top:10px;}
+.utilsFloating .right > .btn-goTop{margin-top:0;}
+.utilsFloating .btn-footerLive.on + *{margin-top: 25px;}
+/* 20240514 #5675 [FO] PIP - 플로팅 배너 밑선 정렬 요청 > 채널톡 버튼 > 아이폰 노치로 인한 위치 관련 css 값 추가 */
+#ch-plugin .iNeKyV {padding-bottom:constant(safe-area-inset-bottom); padding-bottom:env(safe-area-inset-bottom)}
+
+.btn-goTop {font-size:0;width: 44px;height: 0;border-radius: 50%;background: rgba(0,0,0,0.4) url('../img/footerGotop.png') center no-repeat;background-size: 9px auto;box-shadow: 0 6px 9px 0 rgb(0 0 0 / 10%);z-index: 1002;/* display:none */transition: .3s ease;transform: scale(0);}
+.btn-goTop.white {background: rgba(255,255,255,1) url('../img/footerGotop-white.png') center no-repeat;background-size: 9px auto; box-shadow: 0 6px 9px 0 rgb(0 0 0 / 10%)}
+.btn-footerPrev{display:none; font-size:0;width: 44px;height: 44px;border-radius: 50%;box-shadow: 0 6px 9px 0 rgb(0 0 0 / 10%);background: #fff url('../img/footerPrev.png') center center no-repeat;background-size: 13px auto;z-index: 1002;}
+.btn-recentlyProducts{font-size:0;width: 44px;height: 44px;border-radius: 50%;background-size: cover;box-shadow: 0 6px 9px 0 rgb(0 0 0 / 10%);z-index: 1002;}
+/* 20210927 바바ON 플로팅 디자인 수정본 적용 */
+/* .btn-footerLive{position: relative;font-size:0;width: 50px;height: 50px;border-radius: 50%;background-image: url('../img/pmg-img/ico_fl_default.gif'); background-size: cover;box-shadow: 0 6px 9px 0 rgb(0 0 0 / 10%);z-index: 1002;}
+.btn-footerLive.on:after{position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 7px);display:inline-flex;align-items: center;content:"LIVE";height: 16px;padding: 0 5px;border-radius: 4px;color: #fff;background: #fc2264;box-sizing: border-box;font-size: 10px;} */
+.btn-footerLive{position: relative;font-size:0;width: 44px;height: 44px;border-radius: 50%; background-image: url(https://image.babathe.com/static/img/pmg-img/ico_fl_live_on_00.png); background-size: cover;box-shadow: 0 6px 9px 0 rgb(0 0 0 / 20%);z-index: 1002;}
+.btn-footerLive:before {content: ''; display:none}
+.btn-footerLive:after {content: ''; display:none}
+.btn-footerLive.on:before {content: ''; display:block; position:absolute; top:0; left:0; width:44px; height:52.8px; background:url(https://image.babathe.com/static/img/pmg-img/ico_fl_live_on_01.png) 50% 50% no-repeat; background-size: 44px auto}
+.btn-footerLive.on:after {content: ''; display:block; position:absolute; top:0; left:0; width:44px; height:52.8px; background:url(https://image.babathe.com/static/img/pmg-img/ico_fl_live_on_02.png) 50% 50% no-repeat; background-size: 44px auto; -webkit-animation: liveOn 1.2s infinite; -ms-animation: liveOn 1.2s infinite; -moz-animation: liveOn 1.2s infinite; animation: liveOn 1.2s infinite}
+/*Custom liveOn animation*/
+@keyframes liveOn{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes liveOn{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes liveOn{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-ms-keyframes liveOn{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*Footer*/
+footer {position: relative;z-index: 1001;background:#fff;overflow: hidden;padding-top: 80px;}
+footer .inner{padding: 38px 20px 50px 20px;display: flex;justify-content: space-between;flex-wrap: wrap;background: #e9e9e9;}
+footer .footer-menu{font-size:18px;font-weight: 500;flex: 1;}
+footer .footer-menu > li:not(:first-child){margin-top: 10px;}
+footer .footer-menu-sub{width: 100%;font-size:12px;color:#666;flex: 1;}
+footer .footer-menu-sub .footer-cs > li:not(:first-child){margin-top: 10px;}
+footer .footer-info{font-size: 10px;width: 100%;margin-top: 45px;color: #666;}
+footer .footer-info .footer-text{font-size:12px}
+footer .footer-info .footer-text > strong{display:block;font-size:16px;font-weight:500;color: #111;margin-bottom:5px}
+footer .footer-info > p > a{text-decoration:underline}
+footer .accordion-panel{background:transparent}
+.accordion-babathe{margin: 20px 0 10px 0;}
+.accordion-babathe .accordion-title{display:inline-block;padding:0 30px 0 0;}
+.accordion-babathe .accordion-title:after{top: 3px;}
+footer .footer-info .copyright{margin-top:15px}
+footer .utilBtns{display:flex;margin-top:20px}
+footer .utilBtns > *:not(:first-child){margin-left: 10px;}
+.snsIcon{display:inline-block;width:30px;height:30px;text-indent:-10000px;background: #111;border-radius: 50%;}
+.snsIcon.facebook{background: #111 url(../img/sns-facebook.png) no-repeat center;background-size: 30px auto;}
+.snsIcon.instar{background: #111 url(../img/sns-instar.png) no-repeat center;background-size: 30px auto;}
+.appDown{height:30px;line-height:30px;font-size:12px;padding:0 8px;background:#111;color:#fff;border-radius:5px;overflow: hidden;min-width: 94px;}
+
+footer .copyright{font-size:10px;color:#666}
+/*Bottom Floation*/
+.bottomFloating {
+position:fixed;z-index: 1002;bottom:0;left:0;width:100%;/* height:64px; */height:50px;display:flex;align-items: stretch;box-shadow: 0 -1px 0 0 #f5f5f5;background: #fff;
+-webkit-transform: translateZ(0);-webkit-backface-visibility:hidden; /*iOS 11.0 버전*/ padding-bottom: constant(safe-area-inset-bottom); /*iOS 11.2 이상*/padding-bottom:env(safe-area-inset-bottom);}
+
+.bottomFloating .btn {width:20%;display:block;font-size: 10px;line-height: 1;letter-spacing: -0.06px;text-align: center;color: #111;background:#fff;}
+.bottomFloating .btn::before {content:'';display:block;width: 24px;height: 24px;margin:0 auto 4px;background-repeat: no-repeat;background-size: 22px auto;background-position: center;}
+.bottomFloating .btn.channel::before{background-position-x:-24px}
+.bottomFloating .btn.care::before{background-image:url('../img/bg-bottomFloating-care.png');}
+.bottomFloating .btn.home{position: relative;}
+.bottomFloating .btn.home::before{position: relative;z-index: 1;background-image:url('../img/bg-bottomFloating-home_on.png');}
+.bottomFloating .btn.home::after{position: absolute;left: 50%;top: 50%;right: auto;z-index: 0; transform: translate(-50%,-50%); content: "";display: block;width: 42px;height: 42px;border-radius: 50%;background-color: #000;}
+.bottomFloating .btn.home span {display: none;}
+.bottomFloating .btn.mybaba::before{background-image:url('../img/bg-bottomFloating-mybaba.png');}
+.bottomFloating .btn.menu::before{background-image:url('../img/bg-bottomFloating-menu.png');}
+.bottomFloating .btn.history::before{background-image:url('../img/bg-bottomFloating-history.png');}
+
+.bottomFloating .btn.care.on::before{background-image:url('../img/bg-bottomFloating-care_on.png');}
+/* .bottomFloating .btn.home.on::before{background-image:url('../img/bg-bottomFloating-home_on.png');} */
+.bottomFloating .btn.mybaba.on::before{background-image:url('../img/bg-bottomFloating-mybaba_on.png');}
+.bottomFloating .btn.menu.on::before{background-image:url('../img/bg-bottomFloating-menu_on.png');}
+.bottomFloating .btn.history.on::before{background-image:url('../img/bg-bottomFloating-history_on.png');}
+
+.bottomFloating .btn.on::after {content:'';position: absolute;right: 0; background-color: #000;}
+
+/* .bottomFloating .btn.on::before{background-position-y: -24px} */
+.bottomFloating .btn.brand::before {content:''; background-image:url('../img/bg-bottomFloating-brand.png');background-repeat: no-repeat;background-size: auto 17px; background-position:50% 50%}
+.bottomFloating .btn.brand.on::before {content:''; background-image:url('../img/bg-bottomFloating-brand-on.png');background-repeat: no-repeat;background-size: auto 17px; background-position:50% 50%}
+
+
+
+
+.main .tab-a > ul > li{font-size:16px}
+.main .mainHeaderContainer + .tab-a{margin-top:30px}
+.main .tab-a + *{margin-top:20px}
+.main .banner{margin: 0 -20px;}
+.main * + .banner{margin-top: 55px;}
+
+.mainHeaderContainer{position:relative;margin:0 -20px;overflow:hidden; padding-bottom:55px}
+.mainHeaderContainer .mainNav{position: absolute;bottom: 0;width: 100%;height:55px;background:rgba(0,0,0,1);width: 100%;padding: 0 20px;z-index: 1000;box-sizing: border-box;overflow: hidden;transition: transform .3s ease;}
+.mainHeaderContainer .mainNav .swiper-wrapper{height:100%}
+
+.mainVisual{position:relative;}
+.mainVisual li{position:relative}
+.mainVisual .imgWrap{background: #333;display: flex;align-items: center;justify-content: center;}
+.mainVisual .imgWrap:before{display:block;content:"";padding-bottom: 161.5%;}
+.mainVisual .imgWrap > .img > img{position:absolute;width:100%;}
+.mainVisual .imgWrap img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
+.mainVisual .videoWrap:before,
+.mainVisual .imgWrap:before{display:block;content:"";/* padding-bottom: 161.5%; */ padding-bottom:128%}
+.mainVisual .videoWrap{z-index:2;background: #333;}
+.mainVisual .videoWrap video{position:absolute;top: 0;height: 100%;}
+/* 20230609 #3800 [FO] PC/MO > 메인/럭셔리관/아울렛/바바ZINE/바바패션관 > 상단 배너영역 수정 요청 */
+.mainVisual .txtWrap{position:absolute;left:0;top:0;width:100%;height:100%;padding: 56px 20px 55px;box-sizing:border-box;display:flex;flex-direction: column-reverse;}
+.mainVisual .txtWrap > .txt{color:#fff}
+.mainVisual .txtWrap > .txt > *{display:block; width:100%; color:#fff; word-break:break-all; overflow:hidden; text-overflow:ellipsis}
+.mainVisual .txtWrap > .txt > * ~ * {margin-top:17px}
+.mainVisual .txtWrap > .txt > em,
+.mainVisual .txtWrap > .txt > span{font-size:15px;font-weight: 100; ; white-space:nowrap}
+.mainVisual .txtWrap > .txt > strong{letter-spacing:-0.02em;font-size:35px;font-weight: 300; line-height:1.2em; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2}
+.mainVisual .swiper-scrollbar{position:absolute;bottom:80px;margin: 0 80px 0 40px;width: calc(100%  - 120px);background:rgba(0,0,0,.5);}
+.mainVisual .swiper-scrollbar .swiper-scrollbar-drag{background:#fff}
+.mainVisual .swiper-pagination{position:absolute;top: auto;/* bottom:80px; */bottom:calc(4vw + 10px);margin: 0 80px 0 20px;width: calc(100%  - 60px);background: rgba(0,0,0,.25);height: 1px;overflow: hidden;}
+.mainVisual .swiper-pagination .swiper-scrollbar-drag{background:#fff;height: 1px;}
+.mainVisual .swiper-pagination .swiper-pagination-progressbar-fill{background:#fff;}
+.mainVisual .allView{width: 30px;height: 30px;text-indent: -10000px;background: url(../img/plus-white.png) no-repeat center;background-size: 10px auto;position: absolute;/* bottom: 61px; */ bottom:calc(4vw - 3px); right: 5px;z-index: 2;}
+.mainVisual .main-hedaer{z-index: 2;}
+/* 20220418 아울렛, 기획전 메인비주얼 팝업 추가 */
+.mainVisual.type2 .imgWrap:before{display:block;content:"";padding-bottom: 131.94%;}
+
+.main-hedaer.stickyMode{position:absolute;display: flex;align-items: center;width: 100%;background:#fff;opacity:0;pointer-events:none;}
+.main-hedaer.stickyMode .search-area{margin-top:0}
+.main-hedaer.stickyMode .btn-cart{background-image: url(../img/headerCart.png);}
+.main-hedaer .search-area{flex:1;margin-right:15px}
+.main-hedaer .search-area .search-btn{margin-right:-15px}
+.main-sticy .main-hedaer{display:none}
+.main-sticy .main-hedaer.stickyMode{position:fixed;top:0;/* display: flex; */ display: none; opacity:1;pointer-events: auto;z-index:1000; transition:.3s ease; /*iOS 11.0 버전*/ padding-top: constant(safe-area-inset-top); /*iOS 11.2 이상*/padding-top:env(safe-area-inset-top);}
+.main-sticy.main.scrollUp .main-hedaer {transform: translateY(-56px)}
+.main-sticy .mainNav{position:fixed;top: 0; /* background:#fff; */}
+/* .main-sticy .mainNav .swiper-slide > a{color:#111} */
+.main-sticy .mainNav .swiper-slide.on > a{border-color:#111}
+
+.mainNav .swiper-slide{width:auto;height: 100%;margin-right: 25px;}
+.mainNav .swiper-slide:last-child{margin-right:0}
+.mainNav .swiper-slide > a{display: flex;align-items: center;height: 100%;font-size:16px;color:#fff;font-weight:300;}
+.mainNav .swiper-slide.point > a{color:#fd3773}
+.mainNav .swiper-slide.on.point > a{border-color:#fd3773}
+
+.termsBox{font-size:14px}
+.termsAndConditions > .cont{margin-top:30px}
+.termsAndConditions > .cont > .termsBox{line-height:1.5em;font-size: 14px;}
+.termsAndConditions > .cont > .termsBox > h2{font-size:20px;font-weight: 500;}
+.termsAndConditions .selectWrap{margin-top:30px}
+
+/* 검색결과 > 컨텐츠 > 제목:소제목 ... 처리 */
+.unitInfoWrap .tx-ovf, .unitInfoWrap .tx-ovf > strong { display:block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; }
+
+/* 20230307 ##3197 FO_정보성 알림톡 앱푸시 전환 관련 디자인 요청 = 앱 푸시 알람 목록 페이지 신규 추가 */
+.app-notice-List {width:calc(100% + 40px); margin-left:-20px}
+.app-notice-List ul {display:block; width:100%; padding-bottom:15px; background:#f5f5f5}
+.app-notice-List ul li {padding:20px 10px; background:#fff; letter-spacing:-0.02em}
+.app-notice-List ul li a {display:block; width:100%; height:100%}
+.app-notice-List ul li a:nth-last-of-type(2) {padding-bottom:40px}
+.app-notice-List ul li ~ li {margin-top:15px}
+.app-notice-List ul li .info {position:relative; font-size:0; margin-bottom:10px; padding-right:20px}
+.app-notice-List ul li .info .label {position:relative; display:inline-block; padding:0 10px; vertical-align:top; line-height:18px; text-align:center; font-size:10px; color:#666; border:1px solid #666; border-radius:20px}
+.app-notice-List ul li .info .label.baba-on {color:#fc2264; border-color:#fc2264}
+.app-notice-List ul li .info .label + .label {margin-left:10px}
+.app-notice-List ul li.new .info .label:after {content:""; position:absolute; top:0; right:-13px; width:6px; height:6px; border-radius:100%; background:#111}
+.app-notice-List ul li .info .date {position:absolute; top:5px; right:0; font-size:9px; color:#666}
+.app-notice-List ul li .title {margin-bottom:10px; line-height:24px; font-size:16px; color:#111; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden}
+.app-notice-List ul li .cont {line-height:16px; font-size:12px; color:#666}
+.app-notice-List ul li .banner-wrap img {width:100%}
+
+/** 커스텀 셀렉트박스 영역 **/
+.custom_sel_box {display:inline}
+.custom_sel_box .cs_btn {position:relative; z-index:1; display:inline-block; width:55px; height:55px; line-height:55px; text-indent:-9999em}
+.custom_sel_box .cs_btn.on {background:#fff}
+.custom_sel_box .cs_btn:after {content:""; position:absolute; top:50%; left:50%; display:inline-block; width:13px; height:8px; margin:-4px 0 0 -6.5px; background:url(../img/dropdownArr.png) 50% 50% no-repeat; background-size:13px auto; transform:rotate(180deg); pointer-events:none}
+.custom_sel_box .cs_btn.on:after {content:""; transform:rotate(0)}
+.custom_sel_box .cs_sel_area {display:none; position:absolute; top:56px; left:0; width:100%; padding:10px 0; border-top:1px solid #999; border-bottom:1px solid #999; background:#fff; box-sizing:border-box}
+.custom_sel_box .cs_sel_area ul li ~ li {margin-top:2px}
+.custom_sel_box .cs_sel_area ul li a {display:block; height:40px; line-height:40px; text-align:left; font-size:18px; color:#000; padding:0 20px}
+.custom_sel_box .cs_sel_area ul li a:hover {background:#ededed}
+
+/* 20230524 #3651 테마기획전 리뉴얼 요청 > 테마기획전 메인 타이틀 추가 */
+.main-title-area + .main-section {margin-top:0 !important}
+.main-title-area + .main-section.trendyFashionLife {padding-top:20px}
+.main-title-area {padding:20px 0 40px}
+.main-title-area h2 {font-weight:500; font-size:26px}
+.main-title-area p {margin-top:6px; font-weight:300; font-size:16px; color:#666; word-break:keep-all}
+
+/* 210118 눈내리는 효과 추가 */
+/*
+body {position:relative}
+.snow_bg{position:absolute; top:0; bottom:0; left:0; right:0; z-index:1100; width:100%; height:100%; pointer-events:none; overflow:hidden; background-color:transparent; background-image: 
+url(//img.babathe.com/upload/specialDisplay/htmlImage/2020/baba_snow3_3.png),
+url(//img.babathe.com/upload/specialDisplay/htmlImage/2020/baba_snow3_1.png),
+url(//img.babathe.com/upload/specialDisplay/htmlImage/2020/baba_snow3_2.png);
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+@keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px
+    }
+}
+@-moz-keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px
+    }
+}
+@-webkit-keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0
+    }
+    50% {
+        background-color: #transparent;
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        
+    }
+}
+@-ms-keyframes snow {
+    0% {
+        background-position: 0 0, 0 0, 0 0
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px
+    }
+}
+*/
+
+/* 20230608 #3782 상품상세 이미지에 코디상품 버튼 추가 */
+.btn-cody {display:inline-block; z-index:15; text-align:center; line-height:38px}
+a.bg-black {color:#fff; border:1px solid #111; background:#111}
+.btn-cody span {position:relative; padding-left:24px}
+.btn-cody span::before {content:''; position:absolute; top:50%; left:0; width:18px; height:12px; background:url(../img/icon_cody.png) no-repeat; background-size:100% auto; transform:translateY(-50%); -webkit-transform:translateY(-50%)}
+
+/* 20230802 #3959 [FO] 상품 상세 내 쿠폰 고도화, 쿠폰 목록 화면 신설 */
+.btn-down span {position:relative; padding-right:17px}
+.btn-down span::before {content:''; position:absolute; top:50%; right:0; width:12px; height:12px; background:url(../img/icon_btn_down.png) no-repeat; background-size:12px auto; transform:translateY(-50%); -webkit-transform:translateY(-50%)}
+
+/* 20230920 #4325[FO] MO > 홈 (닷컴메인 / 패션관 / 럭셔리관 / 아울렛관 / 케어) 수정건 반영 요청 */
+/* 닷컴 > 홈 */
+.main [class *= 'unitList'] .thumb.ratio-a::before {content:""; /* padding-top:calc(200 / 158 * 100%); */ padding-top:133%}
+.main [class *= 'unitList'] .thumb.ratio-a > img {top:50%; left:50%; bottom:auto; right:auto; /* width:calc(100% + 2px); height:auto; object-fit:unset; */ object-fit:cover; transform:translate(-50%,-50%)}
+/* 바바패션관 > 홈 */
+/* .fashion-wrap.home [class *= 'unitList'] .thumb.ratio-a::before {content:""; padding-top:calc(200 / 158 * 100%)}
+.fashion-wrap.home [class *= 'unitList'] .thumb.ratio-a > img {top:50%; left:50%; bottom:auto; right:auto; object-fit:cover; transform:translate(-50%,-50%)} */
+/* 럭셔리관 > 홈 */
+.luxury-wrap.home [class *= 'unitList'] .thumb.ratio-a::before {content:""; /* padding-top:calc(200 / 158 * 100%); */ padding-top:133%}
+.luxury-wrap.home [class *= 'unitList'] .thumb.ratio-a > img {top:50%; left:50%; bottom:auto; right:auto; object-fit:cover; transform:translate(-50%,-50%)}
+/* 아울렛 > 홈 */
+/* .outlet-wrap.home [class *= 'unitList'] .thumb.ratio-a::before {content:""; padding-top:calc(200 / 158 * 100%)}
+.outlet-wrap.home [class *= 'unitList'] .thumb.ratio-a > img {top:50%; left:50%; bottom:auto; right:auto; object-fit:cover; transform:translate(-50%,-50%)} */
+/* 케어 > 홈 */
+section.section_care_renewal [class *= 'unitList'] .thumb.ratio-a::before {content:""; /* padding-top:calc(200 / 158 * 100%); */ padding-top:133%}
+section.section_care_renewal [class *= 'unitList'] .thumb.ratio-a > img {top:50%; left:50%; bottom:auto; right:auto; object-fit:cover; transform:translate(-50%,-50%)}
+
+/* 20240319 #5308 [FO]크리마핏 플로팅 위젯 추가 요청 */
+.utilsFloating .btn-footerFit{position: relative; width: 44px;
+height: 44px; border-radius: 50%; background-repeat: no-repeat; background-size: contain;  z-index: 1002; text-indent: -9999px}
+.utilsFloating .btn-footerFit::before{content: ''; width: 264.88px; height: 100%; background: url(../img/btn_open_fit.png) no-repeat; background-size: contain; opacity: 1; position: absolute; right: 0; top: 0; animation: opacity_eff01 1s linear forwards; animation-delay: 3s;}
+.utilsFloating .btn-footerFit.white::before{content: ''; width:218.24px; z-index:2; background: url(../img/btn_open_fit_white.png) no-repeat; background-size: contain; border-radius:44px; box-shadow: 0 6px 5px rgb(0 0 0 / 10%)}
+.utilsFloating .btn-footerFit.white::after{content: ''; position:absolute; top:0; right:0; z-index:1; opacity:0; width:44px; height:44px; border-radius:100%; background: url(../img/btn_basic_fit_white.png) no-repeat; box-shadow: 0 6px 5px rgb(0 0 0 / 10%); background-size: contain; animation: opacity_eff02 1s linear forwards; animation-delay: 3s}
+@keyframes opacity_eff01{
+    0%{opacity: 1;}
+    100%{opacity: 0; pointer-events: none; }
+}
+@keyframes opacity_eff02{
+    0%{opacity: 0;}
+    100%{opacity: 1}
+}
+/* 20240517 #5719 [FO] [신규] 바바페이(자체간편결제) 기능 추가(+KCP 화면 디자인 가이드 문서 첨부) */
+.contentsGroup.wide .accordion-panel {overflow:visible}
+.contentsGroup.wide .accordion-panel .sub-title {margin-bottom:10px}
+.contentsGroup.wide .accordion-panel .sub-title ~ .sub-title {margin-top:20px}
+.pay-form-area ~ .pay-form-area {margin-top:30px}
+.pay-form-area.on .swiper-baba-pay .swiper-slide.swiper-slide-active:after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; border:2px solid #000; border-radius:4px; pointer-events:none; box-sizing:border-box}
+.select-payment label > .item{display: flex;align-items: center;justify-content: center;height:48px;border-radius: 4px;border:1px solid #c7c7c7;padding: 0 10px;box-sizing: border-box;width: 100%;}
+.pay-form-area .select-payment label > input:checked + .item{background:transparent;border-color: #c7c7c7;}
+.pay-form-area .select-payment label > input:checked + .item > span > strong{color:#111}
+.pay-form-area.on .select-payment label > input:checked + .item{background:#111;border-color: #111;}
+.pay-form-area.on .select-payment label > input:checked + .item > span > strong{color:#fff}
+/* .select-payment label > input:checked + .item > span > em{display: inline-block;} */
+/* .swiper-baba-pay */
+.swiper-baba-pay {width:calc(100% + 40px); margin-left:-20px}
+.swiper-baba-pay .swiper-slide {position:relative; display:flex; justify-content:center; align-items:center; height:173px; border:1px solid #fff; border-radius:4px; background:#fff; cursor:pointer}
+.swiper-baba-pay .swiper-slide.register {border-color:#C7C7C7; background:#fff}
+.swiper-baba-pay .swiper-slide.register a {display:flex; justify-content:center; align-items:center; width:100%; height:100%}
+.swiper-baba-pay .swiper-slide.register .card-inner {padding-bottom:35px; background:url(../img/ico_baba_pay_plus.png)50% 100% no-repeat}
+.swiper-baba-pay .swiper-slide.register .card-inner .title {display:block; width:101px; height:30px; margin:0 auto 5px; font-size:0; text-indent:-999em; background:url(../img/logo_baba_pay.png)50% 50% no-repeat; background-size:auto 20px}
+.swiper-baba-pay .swiper-slide.register .card-inner p {font-weight:400; font-size:12px; color:#A8A8A8}
+.swiper-baba-pay .swiper-slide.register .card-inner p strong {font-weight:700; color:#111}
+.swiper-baba-pay .swiper-slide.card {padding:0 15px; border-color:#F5F5F5; background:#F5F5F5; box-sizing:border-box}
+.swiper-baba-pay .swiper-slide.card .card-inner {width:100%; padding-top:35px; box-sizing:border-box; background-position:0 0; background-repeat:no-repeat; background-size:auto 25px}
+.swiper-baba-pay .swiper-slide.card .card-inner .title {display:block; font-weight:400; font-size:12px; color:#111}
+.swiper-baba-pay .swiper-slide.card .card-inner .number {display:block; margin-top:5px; font-size:12px; color:#111}
+.swiper-baba-pay .swiper-slide.card .card-inner .form-box {margin-top:40px; border:1px solid #C7C7C7; border-radius:4px; background:#fff}
+.swiper-baba-pay .swiper-slide.card .card-inner .form-box select {pointer-events:none; height:40px; line-height:1em; font-size:12px; border-bottom:0; background:url('../img/form_select_baba_pay.png') calc(100% - 14px) 50% no-repeat; background-size:13px auto}
+.swiper-baba-pay .swiper-slide.card.swiper-slide-active .card-inner .form-box select {pointer-events:initial}
+.list-pay-benefit {padding:10px 15px; background:#F5F5F5}
+.list-pay-benefit ul li {padding-left:10px; text-indent:-8px; line-height:1.2em; font-size:12px; color:#666; word-break:keep-all}
+.list-pay-benefit ul li:before {content:"- "}
+.list-pay-benefit ul li ~ li {margin-top:3px}
+
+/* 카드사 로고 */
+.swiper-baba-pay .swiper-slide.card.cord_CCNH .card-inner {background-image:url(../img/card_baba_pay_logo_ccnh.png)}/* NH카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCSG .card-inner {background-image:url(../img/card_baba_pay_logo_ccsg.png)}/* 씨티카드(구 신세계한미) */
+.swiper-baba-pay .swiper-slide.card.cord_CCCT .card-inner {background-image:url(../img/card_baba_pay_logo_ccct.png)}/* 씨티카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCHM .card-inner {background-image:url(../img/card_baba_pay_logo_cchm.png)}/* 씨티카드(구. 한미카드) */
+.swiper-baba-pay .swiper-slide.card.cord_CCAM .card-inner {background-image:url(../img/card_baba_pay_logo_ccam.png)}/* 롯데아멕스카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCLO .card-inner {background-image:url(../img/card_baba_pay_logo_cclo.png)}/* 롯데카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCSS .card-inner {background-image:url(../img/card_baba_pay_logo_ccss.png)}/* 삼성카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCLG .card-inner {background-image:url(../img/card_baba_pay_logo_cclg.png)}/* 신한카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCKE .card-inner {background-image:url(../img/card_baba_pay_logo_ccke.png)}/* 하나카드(외환) */
+.swiper-baba-pay .swiper-slide.card.cord_CCDI .card-inner {background-image:url(../img/card_baba_pay_logo_ccdi.png)}/* 현대카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCSU .card-inner {background-image:url(../img/card_baba_pay_logo_ccsu.png)}/* 수협카드(자체발급) */
+.swiper-baba-pay .swiper-slide.card.cord_CCHN .card-inner {background-image:url(../img/card_baba_pay_logo_cchn.png)}/* 하나카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCCJ .card-inner {background-image:url(../img/card_baba_pay_logo_cccj.png)}/* 제주은행(자체발급) */
+.swiper-baba-pay .swiper-slide.card.cord_CCKJ .card-inner {background-image:url(../img/card_baba_pay_logo_cckj.png)}/* 광주은행(자체발급) */
+.swiper-baba-pay .swiper-slide.card.cord_CCKM .card-inner {background-image:url(../img/card_baba_pay_logo_cckm.png)}/* KB국민카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCBC .card-inner {background-image:url(../img/card_baba_pay_logo_ccbc.png)}/* BC카드 */
+.swiper-baba-pay .swiper-slide.card.cord_CCWR .card-inner {background-image:url(../img/card_baba_pay_logo_ccwr.png)}/* 우리카드 */
+/* 은행 로고 */
+.swiper-baba-pay .swiper-slide.card.cord_0002 .card-inner {background-image:url(../img/card_baba_pay_logo_0002.png)}/* KDB 산업은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0003 .card-inner {background-image:url(../img/card_baba_pay_logo_0003.png)}/* 기업은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0004 .card-inner {background-image:url(../img/card_baba_pay_logo_0004.png)}/* KB국민카드(자체) */
+.swiper-baba-pay .swiper-slide.card.cord_0006 .card-inner {background-image:url(../img/card_baba_pay_logo_0006.png)}/* 국민은행(BC) */
+.swiper-baba-pay .swiper-slide.card.cord_0007 .card-inner {background-image:url(../img/card_baba_pay_logo_0007.png)}/* 수협 */
+.swiper-baba-pay .swiper-slide.card.cord_0011 .card-inner {background-image:url(../img/card_baba_pay_logo_0011.png)}/* NH농협 */
+.swiper-baba-pay .swiper-slide.card.cord_0012 .card-inner {background-image:url(../img/card_baba_pay_logo_0012.png)}/* 지역농축협 */
+.swiper-baba-pay .swiper-slide.card.cord_0020 .card-inner {background-image:url(../img/card_baba_pay_logo_0020.png)}/* 우리은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0021 .card-inner {background-image:url(../img/card_baba_pay_logo_0021.png)}/* 신한은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0023 .card-inner {background-image:url(../img/card_baba_pay_logo_0023.png)}/* SC제일은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0031 .card-inner {background-image:url(../img/card_baba_pay_logo_0031.png)}/* 대구은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0032 .card-inner {background-image:url(../img/card_baba_pay_logo_0032.png)}/* 부산은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0034 .card-inner {background-image:url(../img/card_baba_pay_logo_0034.png)}/* 광주은행(자체) */
+.swiper-baba-pay .swiper-slide.card.cord_0035 .card-inner {background-image:url(../img/card_baba_pay_logo_0035.png)}/* 제주은행(자체) */
+.swiper-baba-pay .swiper-slide.card.cord_0036 .card-inner {background-image:url(../img/card_baba_pay_logo_0036.png)}/* 씨티은행(비씨) */
+.swiper-baba-pay .swiper-slide.card.cord_0038 .card-inner {background-image:url(../img/card_baba_pay_logo_0038.png)}/* 전북은행(국민) */
+.swiper-baba-pay .swiper-slide.card.cord_0039 .card-inner {background-image:url(../img/card_baba_pay_logo_0039.png)}/* 경남은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0040 .card-inner {background-image:url(../img/card_baba_pay_logo_0040.png)}/* 코나아이 */
+.swiper-baba-pay .swiper-slide.card.cord_0045 .card-inner {background-image:url(../img/card_baba_pay_logo_0045.png)}/* 새마을 */
+.swiper-baba-pay .swiper-slide.card.cord_0048 .card-inner {background-image:url(../img/card_baba_pay_logo_0048.png)}/* 신협은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0060 .card-inner {background-image:url(../img/card_baba_pay_logo_0060.png)}/* 페이코 */
+.swiper-baba-pay .swiper-slide.card.cord_0064 .card-inner {background-image:url(../img/card_baba_pay_logo_0064.png)}/* 산림조합중앙회 */
+.swiper-baba-pay .swiper-slide.card.cord_0071 .card-inner {background-image:url(../img/card_baba_pay_logo_0071.png)}/* 우체국 */
+.swiper-baba-pay .swiper-slide.card.cord_0081 .card-inner {background-image:url(../img/card_baba_pay_logo_0081.png)}/* KEB하나은행(자체) */
+.swiper-baba-pay .swiper-slide.card.cord_0095 .card-inner {background-image:url(../img/card_baba_pay_logo_0095.png)}/* 저축은행 */
+.swiper-baba-pay .swiper-slide.card.cord_0096 .card-inner {background-image:url(../img/card_baba_pay_logo_0096.png)}/* 케이뱅크 */
+.swiper-baba-pay .swiper-slide.card.cord_0332 .card-inner {background-image:url(../img/card_baba_pay_logo_0332.png)}/* 토스뱅크 */
+.swiper-baba-pay .swiper-slide.card.cord_0333 .card-inner {background-image:url(../img/card_baba_pay_logo_0333.png)}/* 나이스 */
+/* .admin-regist-card */
+.admin-regist-card {width:100%}
+.admin-regist-card li {position:relative; display:flex; justify-content:center; align-items:center; border:1px solid #fff; border-radius:4px; background:#fff; cursor:pointer}
+.admin-regist-card li ~ li {margin-top:10px}
+/* .admin-regist-card li.register.active:after,
+.admin-regist-card li.active:after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; border:2px solid #000; border-radius:4px; pointer-events:none; box-sizing:border-box} */
+.admin-regist-card li:not(.card) {height:60px; border-color:#C7C7C7; background:#fff}
+.admin-regist-card li:not(.card) a {display:flex; justify-content:left; align-items:center; width:100%; height:100%; padding:0 15px}
+.admin-regist-card li:not(.card) .card-inner {width:100%; padding-right:30px; background:url(../img/ico_baba_pay_plus.png)100% 50% no-repeat}
+.admin-regist-card li:not(.card) .card-inner p {line-height:20px; font-weight:400; font-size:14px; color:#A8A8A8}
+.admin-regist-card li:not(.card) .card-inner p strong {font-weight:400; color:#111}
+.admin-regist-card li.card {height:80px; padding:0 20px; border-color:#F5F5F5; background:#F5F5F5}
+.admin-regist-card li.card.active {pointer-events:none}
+.admin-regist-card li.card.active .delete {color:#A8A8A8}
+.admin-regist-card li.card .card-inner {width:100%; padding-top:30px; box-sizing:border-box; background-position:0 0; background-repeat:no-repeat; background-size:auto 25px}
+.admin-regist-card li.card .card-inner .title {font-weight:400; font-size:12px; color:#111}
+.admin-regist-card li.card .card-inner .number {padding-left:5px; font-size:12px; color:#111}
+.admin-regist-card li.card .delete {display:inline-block; font-size:12px; color:#111; white-space:nowrap}
+/* 카드사 로고 */
+.admin-regist-card li.card.card.cord_CCNH .card-inner {background-image:url(../img/card_baba_pay_logo_ccnh.png)}/* NH카드 */
+.admin-regist-card li.card.card.cord_CCSG .card-inner {background-image:url(../img/card_baba_pay_logo_ccsg.png)}/* 씨티카드(구 신세계한미) */
+.admin-regist-card li.card.card.cord_CCCT .card-inner {background-image:url(../img/card_baba_pay_logo_ccct.png)}/* 씨티카드 */
+.admin-regist-card li.card.card.cord_CCHM .card-inner {background-image:url(../img/card_baba_pay_logo_cchm.png)}/* 씨티카드(구. 한미카드) */
+.admin-regist-card li.card.card.cord_CCAM .card-inner {background-image:url(../img/card_baba_pay_logo_ccam.png)}/* 롯데아멕스카드 */
+.admin-regist-card li.card.card.cord_CCLO .card-inner {background-image:url(../img/card_baba_pay_logo_cclo.png)}/* 롯데카드 */
+.admin-regist-card li.card.card.cord_CCSS .card-inner {background-image:url(../img/card_baba_pay_logo_ccss.png)}/* 삼성카드 */
+.admin-regist-card li.card.card.cord_CCLG .card-inner {background-image:url(../img/card_baba_pay_logo_cclg.png)}/* 신한카드 */
+.admin-regist-card li.card.card.cord_CCKE .card-inner {background-image:url(../img/card_baba_pay_logo_ccke.png)}/* 하나카드(외환) */
+.admin-regist-card li.card.card.cord_CCDI .card-inner {background-image:url(../img/card_baba_pay_logo_ccdi.png)}/* 현대카드 */
+.admin-regist-card li.card.card.cord_CCSU .card-inner {background-image:url(../img/card_baba_pay_logo_ccsu.png)}/* 수협카드(자체발급) */
+.admin-regist-card li.card.card.cord_CCHN .card-inner {background-image:url(../img/card_baba_pay_logo_cchn.png)}/* 하나카드 */
+.admin-regist-card li.card.card.cord_CCCJ .card-inner {background-image:url(../img/card_baba_pay_logo_cccj.png)}/* 제주은행(자체발급) */
+.admin-regist-card li.card.card.cord_CCKJ .card-inner {background-image:url(../img/card_baba_pay_logo_cckj.png)}/* 광주은행(자체발급) */
+.admin-regist-card li.card.card.cord_CCKM .card-inner {background-image:url(../img/card_baba_pay_logo_cckm.png)}/* KB국민카드 */
+.admin-regist-card li.card.card.cord_CCBC .card-inner {background-image:url(../img/card_baba_pay_logo_ccbc.png)}/* BC카드 */
+.admin-regist-card li.card.card.cord_CCWR .card-inner {background-image:url(../img/card_baba_pay_logo_ccwr.png)}/* 우리카드 */
+/* 은행 로고 */
+.admin-regist-card li.card.card.cord_0002 .card-inner {background-image:url(../img/card_baba_pay_logo_0002.png)}/* KDB 산업은행 */
+.admin-regist-card li.card.card.cord_0003 .card-inner {background-image:url(../img/card_baba_pay_logo_0003.png)}/* 기업은행 */
+.admin-regist-card li.card.card.cord_0004 .card-inner {background-image:url(../img/card_baba_pay_logo_0004.png)}/* KB국민카드(자체) */
+.admin-regist-card li.card.card.cord_0006 .card-inner {background-image:url(../img/card_baba_pay_logo_0006.png)}/* 국민은행(BC) */
+.admin-regist-card li.card.card.cord_0007 .card-inner {background-image:url(../img/card_baba_pay_logo_0007.png)}/* 수협 */
+.admin-regist-card li.card.card.cord_0011 .card-inner {background-image:url(../img/card_baba_pay_logo_0011.png)}/* NH농협 */
+.admin-regist-card li.card.card.cord_0012 .card-inner {background-image:url(../img/card_baba_pay_logo_0012.png)}/* 지역농축협 */
+.admin-regist-card li.card.card.cord_0020 .card-inner {background-image:url(../img/card_baba_pay_logo_0020.png)}/* 우리은행 */
+.admin-regist-card li.card.card.cord_0021 .card-inner {background-image:url(../img/card_baba_pay_logo_0021.png)}/* 신한은행 */
+.admin-regist-card li.card.card.cord_0023 .card-inner {background-image:url(../img/card_baba_pay_logo_0023.png)}/* SC제일은행 */
+.admin-regist-card li.card.card.cord_0031 .card-inner {background-image:url(../img/card_baba_pay_logo_0031.png)}/* 대구은행 */
+.admin-regist-card li.card.card.cord_0032 .card-inner {background-image:url(../img/card_baba_pay_logo_0032.png)}/* 부산은행 */
+.admin-regist-card li.card.card.cord_0034 .card-inner {background-image:url(../img/card_baba_pay_logo_0034.png)}/* 광주은행(자체) */
+.admin-regist-card li.card.card.cord_0035 .card-inner {background-image:url(../img/card_baba_pay_logo_0035.png)}/* 제주은행(자체) */
+.admin-regist-card li.card.card.cord_0036 .card-inner {background-image:url(../img/card_baba_pay_logo_0036.png)}/* 씨티은행(비씨) */
+.admin-regist-card li.card.card.cord_0038 .card-inner {background-image:url(../img/card_baba_pay_logo_0038.png)}/* 전북은행(국민) */
+.admin-regist-card li.card.card.cord_0039 .card-inner {background-image:url(../img/card_baba_pay_logo_0039.png)}/* 경남은행 */
+.admin-regist-card li.card.card.cord_0040 .card-inner {background-image:url(../img/card_baba_pay_logo_0040.png)}/* 코나아이 */
+.admin-regist-card li.card.card.cord_0045 .card-inner {background-image:url(../img/card_baba_pay_logo_0045.png)}/* 새마을 */
+.admin-regist-card li.card.card.cord_0048 .card-inner {background-image:url(../img/card_baba_pay_logo_0048.png)}/* 신협은행 */
+.admin-regist-card li.card.card.cord_0060 .card-inner {background-image:url(../img/card_baba_pay_logo_0060.png)}/* 페이코 */
+.admin-regist-card li.card.card.cord_0064 .card-inner {background-image:url(../img/card_baba_pay_logo_0064.png)}/* 산림조합중앙회 */
+.admin-regist-card li.card.card.cord_0071 .card-inner {background-image:url(../img/card_baba_pay_logo_0071.png)}/* 우체국 */
+.admin-regist-card li.card.card.cord_0081 .card-inner {background-image:url(../img/card_baba_pay_logo_0081.png)}/* KEB하나은행(자체) */
+.admin-regist-card li.card.card.cord_0095 .card-inner {background-image:url(../img/card_baba_pay_logo_0095.png)}/* 저축은행 */
+.admin-regist-card li.card.card.cord_0096 .card-inner {background-image:url(../img/card_baba_pay_logo_0096.png)}/* 케이뱅크 */
+.admin-regist-card li.card.card.cord_0332 .card-inner {background-image:url(../img/card_baba_pay_logo_0332.png)}/* 토스뱅크 */
+.admin-regist-card li.card.card.cord_0333 .card-inner {background-image:url(../img/card_baba_pay_logo_0333.png)}/* 나이스 */
+/* .admin-baba-pay */
+.admin-baba-pay ul li a {position:relative; display:flex; justify-content:left; align-items:center; padding:0; line-height:45px; font-size:14px; color:#111}
+.admin-baba-pay ul li a:after {content:""; opacity:0.5; position:absolute; top:50%; right:5px; width:8px; height:8px; border-top:1px solid #000; border-right:1px solid #000; transform: rotate(45deg) translateY(-50%)}

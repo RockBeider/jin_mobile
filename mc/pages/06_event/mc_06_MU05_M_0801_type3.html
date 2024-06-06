@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 상품상세</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back">뒤로가기</button>
+            <h1 class="page-title">이벤트</h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니<span class="num">11</span></button>
+        </div>
+    </header>
+    <section>
+
+        <!-- contentsGroup -->
+        <div class="contentsGroup" style="background: pink;padding:268px 0;text-align: center;">
+            등록 컨텐츠 영역
+        </div>
+        <!-- //contentsGroup -->
+
+        <!-- contentsGroup -->
+        <div class="contentsGroup">
+
+            <!-- event-detail-title -->
+            <div class="event-detail-title">
+                이벤트 대타이틀 최대 1줄 노출
+            </div>
+            <div class="event-detail-title-sub">
+                소타이틀 최대 1줄 노출
+            </div>
+            <!-- //event-detail-title -->
+
+            <!-- event-detail-extra -->
+            <div class="event-detail-title-extra">
+                <div class="event-detail-date">2021-01-18 ~ 2021-01-24</div>
+                <div class="event-detail-share">
+                    <button class="share"><span class="for-a11y">공유하기</span></button>
+                </div>
+            </div>
+            <!-- //event-detail-extra -->
+
+            <!-- title-area -->
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h3 class="title sizeS center">알록달록<br> 내가 사랑하는 컬러는?</h3>
+                </div>
+            </div>
+            <!-- //title-area -->
+
+            <div class="swiper-vote-rect" id="vote1">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="thumb"><img src="../../img/temp/vote-1.jpg" alt=""></div>
+                        <div class="txt">귀여운 개나리가<br>생각나는 노란색</div>
+                        <input type="radio" class="type2" name="radio-vote1">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="thumb"><img src="../../img/temp/vote-2.jpg" alt=""></div>
+                        <div class="txt">빨간 장미가<br>생각나는 붉은색</div>
+                        <input type="radio" class="type2" name="radio-vote1">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="thumb"><img src="../../img/temp/vote-3.jpg" alt=""></div>
+                        <div class="txt">시원한 바다가<br>생각나는 파란색</div>
+                        <input type="radio" class="type2" name="radio-vote1">
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <script>
+                    var vote1 = new Swiper('#vote1',{
+                        slidesPerView: '2',
+                        watchOverflow: true,
+                        centeredSlides: true,
+                        spaceBetween: 20,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        }
+                    });
+                </script>
+            </div>
+
+            <div class="btnWrap">
+                <button class="btn-basicM blackSolid">투표하기</button>
+            </div>
+
+            <!-- title-area -->
+            <div class="title-area">
+                <div class="title-area-inner">
+                    <h3 class="title sizeS center">알록달록<br> 내가 사랑하는 컬러는?</h3>
+                </div>
+            </div>
+            <!-- //title-area -->
+            
+            <div class="swiper-vote-circle" id="vote2">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="txt">귀여운 개나리가<br>생각나는 노란색</div>
+                        <input type="radio" class="type2" name="radio-vote2">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="txt">빨간 장미가<br>생각나는 붉은색</div>
+                        <input type="radio" class="type2" name="radio-vote2">
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="txt">시원한 바다가<br>생각나는 파란색</div>
+                        <input type="radio" class="type2" name="radio-vote2">
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <script>
+                    var vote2 = new Swiper('#vote2',{
+                        slidesPerView: '2',
+                        watchOverflow: true,
+                        centeredSlides: true,
+                        spaceBetween: 20,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        },
+                    });
+                </script>
+            </div>
+
+            <div class="btnWrap">
+                <button class="btn-basicM blackSolid" disabled>투표완료</button>
+            </div>
+
+            <div class="tipList">
+                <strong>쿠폰 유의사항</strong>
+                <ul class="tip-wrap">
+                    <li class="tip type3">쿠폰 사용기간 내 정해진 조건충족 시 할인적용이 가능합니다.</li>
+                    <li class="tip type3">쿠폰 사용 시 최소구매금액과 최대할인금액을 확인하세요.</li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- //contentsGroup -->
+
+
+    </section>
+    <footer></footer>
+</body>
+</html>

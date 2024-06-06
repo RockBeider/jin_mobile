@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="tt">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+        </ul>
+    </div>
+    <div class="tab-cont">
+        <ul>
+            <li><a href="#">마이바바메뉴1</a></li>
+            <li><a href="#">마이바바메뉴2</a></li>
+            <li><a href="#">마이바바메뉴3</a></li>
+            <li><a href="#">마이바바메뉴4</a></li>
+            <li><a href="#">마이바바메뉴5</a></li>
+        </ul>
+    </div>
+    <div class="box">
+        박스
+    </div>
+    <ul>
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+
+    <script>
+        // 대상 node 선택
+        var target = document.getElementsByClassName('tab-cont')[0];
+
+        // 감시자 인스턴스 만들기
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if(mutation.type == 'attributes'){
+                    console.log(mutation.type);
+                }
+            });
+        });
+
+        // 감시자의 설정:
+        var config = { attributes: true, childList: true, subtree: true,characterData: true };
+
+        // 감시자 옵션 포함, 대상 노드에 전달
+        observer.observe(target, config);
+    </script>
+</body>
+</html>

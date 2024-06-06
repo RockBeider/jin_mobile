@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <!--<meta name="viewport" content="width=1440">-->
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="center-wrap">
+            <div class="brand-wrap">
+                <div class="page-top">
+                    <h2 class="page-title">브랜드</h2>
+                    <div class="form-search">
+                        <input type="text" placeholder="브랜드명을 입력하세요.">
+                        <button type="button" class="btn-del">삭제하기</button>
+                        <button type="button" class="btn-search">검색하기</button>
+                    </div>
+                    <button type="button" class="btn-refresh">전체</button>
+                </div>
+                <div class="like-brand">
+                    <!-- 로그인 후 관심 브랜드가 있는 회원 -->
+                    <div class="top-txt">
+                        <h3>김바바님의 관심 브랜드</h3>
+                        <!-- 로그인 후 관심 브랜드가 없는 회원 -->
+                        <!-- 구매 회원 -->
+                        <span class="font-s16">관심 브랜드가 없습니다. 구매 이력이 있는 브랜드를 추천해드립니다.</span>
+                        <!-- 비 구매 회원
+                        <span class="font-s16">관심 브랜드가 없습니다. 다른 분들이 많이 선택한 브랜드를 추천해드립니다.</span> -->
+                        <!-- // 로그인 후 관심 브랜드가 없는 회원 -->
+                    </div>
+                    <div class="swiper-wrap circle-slide">
+                        <div class="swiper-container">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>THE IZZAT COLLECTION</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>IZZAT BABA</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>JJ 지고트</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>NEKER</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>LOUIS VUITTON</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>LANCOME</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>ABIB</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>A.P.C</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>CELINE</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>THE TILBURY</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>COURONNE</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>GUCCI</p>
+                                    </a>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="javascript:void(0)">
+                                        <div class="brd-img">
+                                            <div class="ratio"><img src="../../img/img_brand_exhibition.jpg" alt="브랜드 이미지" /></div>
+                                        </div>
+                                        <p>PRADA</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 로그인 전 -->
+                    <div class="non-login">
+                        <a href="#">로그인</a> 후 관심브랜드를 등록해보세요.
+                    </div>
+                    <!-- // 로그인 전 -->
+                </div>
+                <div class="tab-container">
+                    <div class="tab-a tab-ui">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0)">오리지널</a></li>
+                            <li><a href="javascript:void(0)">럭셔리</a></li>
+                            <li><a href="javascript:void(0)">A-Z</a></li>
+                            <li><a href="javascript:void(0)">ㄱ-ㅎ</a></li>
+                            <li><a href="javascript:void(0)">기타</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div class="on">
+                            <ul class="brd-list">
+                            	<!-- 20211116 브랜드 홈 > 오리지널에 나오는 브랜드 순서 변경 -->
+                                <li>
+                                    <a href="#">
+                                        <strong>IZZAT BABA</strong>
+                                        <span>아이잗바바</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>THE IZZAT COLLECTION</strong>
+                                        <span>더아이잗컬렉션</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>JIGOTT</strong>
+                                        <span>지고트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>THE IZZAT NEWYORK</strong>
+                                        <span>더아이잗뉴욕</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>JJ JIGOTT</strong>
+                                        <span>JJ지고트</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>THE TILBURY</strong>
+                                        <span>더틸버리</span>
+                                    </a>
+                                </li>
+                                <!-- //20211116 브랜드 홈 > 오리지널에 나오는 브랜드 순서 변경 -->
+                            </ul>
+                        </div>
+                        <div>
+                        	<!-- 20210906 럭셔리 탭 영역 브랜드 배너 추가 -->
+                            <div class="banner-wrap">
+                                <ul class="banner-link">
+                                    <li><a href="#">
+                                        <img src="../../img/img_bnr_brand_01.jpg" alt="">
+                                    </a></li>
+                                    <li><a href="#">
+                                        <img src="../../img/img_bnr_brand_02.jpg" alt="">
+                                    </a></li>
+                                    <!-- <li><a href="#">
+                                        <img src="../../img/img_bnr_brand_03.jpg" alt="">
+                                    </a></li> -->
+                                </ul>
+                            </div>
+                        	<!-- //20210906 럭셔리 탭 영역 브랜드 배너 추가 -->
+                            <ul class="brd-list">
+                                <li>
+                                    <a href="#">
+                                        <strong>PRADA</strong>
+                                        <span>프라다</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>GUCCI</strong>
+                                        <span>구찌</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="anchor-tab">
+                                <div class="tab-box">
+                                    <ul>
+                                        <li class="on"><a href="javascript:void(0);">A</a></li>
+                                        <li><a href="javascript:void(0);">B</a></li>
+                                        <li><a href="javascript:void(0);">C</a></li>
+                                        <li><a href="javascript:void(0);">D</a></li>
+                                        <li><a href="javascript:void(0);">E</a></li>
+                                        <li><a href="javascript:void(0);">F</a></li>
+                                        <li><a href="javascript:void(0);">G</a></li>
+                                        <li><a href="javascript:void(0);">H</a></li>
+                                        <li><a href="javascript:void(0);">I</a></li>
+                                        <li><a href="javascript:void(0);">J</a></li>
+                                        <li><a href="javascript:void(0);">K</a></li>
+                                        <li><a href="javascript:void(0);">L</a></li>
+                                        <li><a href="javascript:void(0);">M</a></li>
+                                        <li><a href="javascript:void(0);">N</a></li>
+                                        <li><a href="javascript:void(0);">O</a></li>
+                                        <li><a href="javascript:void(0);">P</a></li>
+                                        <li><a href="javascript:void(0);">Q</a></li>
+                                        <li><a href="javascript:void(0);">R</a></li>
+                                        <li><a href="javascript:void(0);">S</a></li>
+                                        <li><a href="javascript:void(0);">T</a></li>
+                                        <li><a href="javascript:void(0);">U</a></li>
+                                        <li><a href="javascript:void(0);">V</a></li>
+                                        <li><a href="javascript:void(0);">W</a></li>
+                                        <li><a href="javascript:void(0);">X</a></li>
+                                        <li><a href="javascript:void(0);">Y</a></li>
+                                        <li><a href="javascript:void(0);">Z</a></li>
+                                    </ul>
+                                </div>
+                                <div class="anchor-box">
+                                    <div id="A">
+                                        <p class="tit">A</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>A.P.C</strong>
+                                                    <span>아페쎄</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>ACNE STUDIOS</strong>
+                                                    <span>아크네 스튜디오</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>A.P.C</strong>
+                                                    <span>아페쎄</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>ACNE STUDIOS</strong>
+                                                    <span>아크네 스튜디오</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>A.P.C</strong>
+                                                    <span>아페쎄</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>ACNE STUDIOS</strong>
+                                                    <span>아크네 스튜디오</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="B">
+                                        <p class="tit">B</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>BALENCIAGA</strong>
+                                                    <span>발렌시아가</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>BALMAIN</strong>
+                                                    <span>발망</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>BURBERRY</strong>
+                                                    <span>버버리</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="C">
+                                        <p class="tit">C</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>COLD PICNIC</strong>
+                                                    <span>콜드피크닉</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>CHANEL</strong>
+                                                    <span>샤넬</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>CATCHBALL</strong>
+                                                    <span>캐치볼</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>CONVERSE</strong>
+                                                    <span>컨버스</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>COLUMN</strong>
+                                                    <span>칼럼</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>CELINE</strong>
+                                                    <span>셀린느</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>CUSTOMELLOW</strong>
+                                                    <span>커스텀멜로우</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>COURONNE</strong>
+                                                    <span>쿠론</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>COMME DES GARCONS</strong>
+                                                    <span>꼼데가르송</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="D">
+                                        <p class="tit">D</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="E">
+                                        <p class="tit">E</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>A.P.C</strong>
+                                                    <span>아페쎄</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="F">
+                                        <p class="tit">F</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>BALENCIAGA</strong>
+                                                    <span>발렌시아가</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="G">
+                                        <p class="tit">G</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>COLD PICNIC</strong>
+                                                    <span>콜드피크닉</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="H">
+                                        <p class="tit">H</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="I">
+                                        <p class="tit">I</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="J">
+                                        <p class="tit">J</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="K">
+                                        <p class="tit">K</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="L">
+                                        <p class="tit">L</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="M">
+                                        <p class="tit">M</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="N">
+                                        <p class="tit">N</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="O">
+                                        <p class="tit">O</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="P">
+                                        <p class="tit">P</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="Q">
+                                        <p class="tit">Q</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="R">
+                                        <p class="tit">R</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="S">
+                                        <p class="tit">S</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="T">
+                                        <p class="tit">T</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="U">
+                                        <p class="tit">U</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="V">
+                                        <p class="tit">V</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="W">
+                                        <p class="tit">W</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="X">
+                                        <p class="tit">X</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="Y">
+                                        <p class="tit">Y</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="Z">
+                                        <p class="tit">Z</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>DIDIER DUBOT</strong>
+                                                    <span>디디에두보</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="anchor-tab">
+                                <div class="tab-box">
+                                    <ul>
+                                        <li class="on"><a href="javascript:void(0);">ㄱ</a></li>
+                                        <li><a href="javascript:void(0);">ㄴ</a></li>
+                                        <li><a href="javascript:void(0);">ㄷ</a></li>
+                                        <li><a href="javascript:void(0);">ㄹ</a></li>
+                                        <li><a href="javascript:void(0);">ㅁ</a></li>
+                                        <li><a href="javascript:void(0);">ㅂ</a></li>
+                                        <li><a href="javascript:void(0);">ㅅ</a></li>
+                                        <li><a href="javascript:void(0);">ㅇ</a></li>
+                                        <li><a href="javascript:void(0);">ㅈ</a></li>
+                                        <li><a href="javascript:void(0);">ㅊ</a></li>
+                                        <li><a href="javascript:void(0);">ㅋ</a></li>
+                                        <li><a href="javascript:void(0);">ㅌ</a></li>
+                                        <li><a href="javascript:void(0);">ㅍ</a></li>
+                                        <li><a href="javascript:void(0);">ㅎ</a></li>
+                                    </ul>
+                                </div>
+                                <div class="anchor-box">
+                                    <div id="1">
+                                        <p class="tit">ㄱ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>골든구스</strong>
+                                                    <span>GOLDEN GOOSE</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>구찌</strong>
+                                                    <span>GUCCI</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>끌로에</strong>
+                                                    <span>CHLOE</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>그라놀라지</strong>
+                                                    <span>GRANOLOGY</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="2">
+                                        <p class="tit">ㄴ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>뉴발란스</strong>
+                                                    <span>NEW BALANCE</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>네이티브 유니온</strong>
+                                                    <span>NATIVE UNION</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>나이키</strong>
+                                                    <span>NIKE</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="3">
+                                        <p class="tit">ㄷ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗컬렉션</strong>
+                                                    <span>THE IZZAT COLLECTION</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더 틸버리</strong>
+                                                    <span>THE TILBURY</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>디올</strong>
+                                                    <span>DIOR</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>돌체앤가바나</strong>
+                                                    <span>DOLCE&GABBANA</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>디메이든</strong>
+                                                    <span>DEMADEN</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>닥터마틴</strong>
+                                                    <span>DR.MARTINE</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong>단톤</strong>
+                                                    <span>DANTON</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>                                
+                                    <div id="4">
+                                        <p class="tit">ㄹ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="5">
+                                        <p class="tit">ㅁ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="6">
+                                        <p class="tit">ㅂ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="7">
+                                        <p class="tit">ㅅ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="8">
+                                        <p class="tit">ㅇ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="9">
+                                        <p class="tit">ㅈ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="10">
+                                        <p class="tit">ㅊ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="11">
+                                        <p class="tit">ㅋ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="12">
+                                        <p class="tit">ㅌ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="13">
+                                        <p class="tit">ㅍ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="14">
+                                        <p class="tit">ㅎ</p>
+                                        <ul class="brd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <strong>더아이잗뉴욕</strong>
+                                                    <span>THE IZZAT NEW YORK</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--결과 없을경우-->
+                    <div class="no-data">검색결과가 없습니다.</div><!--[P] 2021수정반영-->
+                </div>                
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    /*publishing UI only*/
+    /* anchor tab  */
+    $('.anchor-tab li a').click(function(){
+        var acT = $(this).closest('.anchor-tab').find('.tab-box >ul');
+        var idx = $(this).parent('li').index();
+        acT.find('li').removeClass('on');
+        $(this).parent('li').addClass('on');
+        var mvT = $(this).closest('.anchor-tab').find('.anchor-box > div').eq(idx);
+        $('html, body').animate({scrollTop : mvT.offset().top - 215}, 400);
+        return false;
+    });
+
+    var acPos = $('.brand-wrap').find('.tab-container').offset().top - 90;
+    $( window ).scroll( function(){
+        var sc = $(this).scrollTop();
+        console.log(acPos,sc)
+        if(sc > acPos ){
+            $('.brand-wrap').find('.tab-container').addClass('fixed');
+        } else {
+            $('.brand-wrap').find('.tab-container').removeClass('fixed');
+        }
+    });//tab fixed
+    /*swiper*/
+    var swiper = new Swiper('.circle-slide .swiper-container', {
+        slidesPerView: "auto",
+    });
+</script>
+</html>

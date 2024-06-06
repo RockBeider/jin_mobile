@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <!--<meta name="viewport" content="width=1440">-->
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="brd-titlebar">
+            <p>
+                <img src="../../img/img_brand_logo.png" alt="더아이잗컬렉션 로고" />
+                <button type="button" class="btn-wish">찜하기</button>
+            </p>
+        </div>
+        <div class="brand-wrap">
+            <div class="link-tab tab-ui">
+                <ul>
+                    <li class="on"><a href="#">브랜드홈</a></li>
+                    <li><a href="#">전체상품</a></li>
+                    <li><a href="#">기획전</a></li>
+                    <li><a href="#">콘텐츠</a></li>
+                </ul>
+            </div>
+            <div class="brand-info">
+                <strong>더아이잗컬렉션</strong>
+                <p>고급스럽고 세련된 룩에 트렌디한 요소와 클래식한 요소를 담아 고감도 소비자의<br>라이프 스타일을 충족시킬 수 있는 드레스업과 캐주얼 스타일을 표현한<br>고감도 테이스트풀 컨템포러리 캐주얼 캐릭터 브랜드</p>
+            </div>
+            <div class="brand-slide">
+                <p class="bg-txt">THE IZZAT<br>COLLECTION</p>
+
+                
+                <div class="brand-marquee">
+                    <div class="contents">
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                        <div class="tag"><a href="#"><img src="../../img/img_lookbook.jpg" alt="sampleImg" /></a></div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-wrap img-slider">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_lookbook.jpg" alt="더아이잗컬렉션 이미지" /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_lookbook.jpg" alt="더아이잗컬렉션 이미지" /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_lookbook.jpg" alt="더아이잗컬렉션 이미지" /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_lookbook.jpg" alt="더아이잗컬렉션 이미지" /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_lookbook.jpg" alt="더아이잗컬렉션 이미지" /></a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#"><img src="../../img/img_lookbook.jpg" alt="더아이잗컬렉션 이미지" /></a>
+                            </li>
+                        </ul>
+                        <!-- Add Arrows 
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <div class="video-area">
+                <div class="bg-video"><img src="../../img/bg_video.jpg" alt="동영상 배경이미지" /></div>
+                <div class="video" style="display:none;"><!-- 아래 video-thum 영역 클릭 시 display:block 처리되면서 동영상 자동재생 -->
+                    동영상 영역
+                </div>
+                <div class="video-thum">
+                    <a href="javascript:void(0);"><img src="../../img/thum_video.jpg" alt="동영상 썸네일 이미지" /></a> 
+                </div>
+            </div>
+
+            <!-- 관리자 에디터 등록 콘텐츠 영역 -->
+            <div class="admin-editor" style="text-align:center; line-height:300px; font-size:20px;">
+                HTML 관리자 등록 영역
+            </div>
+            <!-- // 관리자 에디터 등록 콘텐츠 영역  -->
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    $(document).ready(function(){
+    });  
+
+    
+
+    var swiper = new Swiper('.img-slider .swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 80,
+        centeredSlides: true,
+        speed: 6000,
+        autoplay: {
+            delay: 1,
+        },
+        loop: true,
+        allowTouchMove: false,
+        disableOnInteraction: true
+    });
+</script>
+</html>

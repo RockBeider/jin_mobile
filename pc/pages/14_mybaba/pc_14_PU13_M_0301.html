@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="center-wrap">
+            <div class="mybaba-wrap">
+                <div class="mybaba-header"></div>
+                <div class="contents">
+                    <!--lnb-->
+                    <div class="lnb-wrap">
+                        <nav class="lnb-list">
+                            <ul class="depth1">
+                                <li>
+                                    <a href="#">마이바바</a>
+                                    <ul class="depth2">
+                                        <li><a href="#">쇼핑정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#">주문/배송 조회</a></li>
+                                                <li><a href="#">취소/교환/반품 신청</a></li>
+                                                <li><a href="#">취소/교환/반품 조회</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="on">
+                                            <a href="#">혜택정보</a>
+                                            <ul class="depth3">
+                                                <li class="on"><a href="#">멤버십 혜택</a></li>
+                                                <li><a href="#">e포인트</a></li>
+                                                <li><a href="#">마일리지</a></li>
+                                                <li><a href="#">쿠폰</a></li>
+                                                <li><a href="#">임직원 혜택 현황</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">활동정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#">상품 문의 내역</a></li>
+                                                <li><a href="#">1:1 문의 내역</a></li>
+                                                <li><a href="#">나의 상품리뷰</a></li>
+                                                <li><a href="#">관심상품</a></li>
+                                                <li><a href="#">관심브랜드</a></li>
+                                                <li><a href="#">방송알림 신청 현황</a></li>
+                                                <li><a href="#">친구 추천</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">바바프리미엄</a>
+                                            <ul class="depth3">
+                                                <li><a href="#">바바프리미엄 혜택</a></li>
+                                                <li><a href="#">결제수단</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">바바패션리더</a>
+                                            <ul class="depth3">
+                                                <li><a href="#">바바패션리더 정보</a></li>
+                                                <li><a href="#">포스팅 관리</a></li>
+                                                <li><a href="#">나의 판매현황</a></li>
+                                                <li><a href="#">패션리더 활동가이드</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">회원정보</a>
+                                            <ul class="depth3">
+                                                <li><a href="#">배송지 관리</a></li>
+                                                <li><a href="#">회원정보 수정</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--//lnb-->
+                    <!--contents-->
+                    <div class="cont-wrap">
+                        <h2 class="page-title">멤버십 혜택</h2>
+                        <!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경 -->
+                        <div class="mylv-top">
+                            <div class="my-lv">
+                                <div class="tit">
+                                    <strong class="lv">GOLD</strong>
+                                    <a href="#" class="btn-pr">프리미엄 혜택 바로가기</a>
+                                </div> <!-- 21.06.17 반영 -->
+                                <p class="price">구매금액 :  1,824,700 원 (2020.01 ~ 2020.12)</p>
+                                <div class="graph"><span class="line" style="width:84.47%;"></span></div>
+                            </div>
+                            <div class="mybaba-util">
+                                <ul class="next-lv">
+                                    <li>
+                                        <dl class="m-lv lv3">
+                                            <dt>100만원 이상</dt>
+                                            <dd>GOLD</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="m-lv lv4">
+                                            <dt>300만원이상</dt>
+                                            <dd>BLACK</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //20240214 #4785 회원등급 및 혜택 변경 대응 > 변경 -->
+                        <div class="tab-a tab-ui">
+                            <ul>
+                                <li class="on"><a href="javascript:void(0)">일반회원</a></li>
+                                <li><a href="javascript:void(0)">바바프리미엄</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-cont">
+                            <!--일반회원-->
+                            <div class="on">
+                                <div class="membership-unit">
+                                    <h3 class="page-sub-title">회원등급별 혜택 보기</h3>
+	                                <table class="tb-default type2">
+	                                    <caption>회원등급별 혜택</caption>
+	                                    <colgroup>
+	                                        <col width="" />
+	                                        <col width="160px" />
+	                                        <col width="150px" />
+	                                        <col width="165px" />
+	                                        <col width="220px" />
+	                                        <col width="175px" />
+	                                    </colgroup>
+	                                    <thead>
+	                                        <tr>
+	                                            <th scope="col">회원등급</th>
+	                                            <th scope="col">누적금액확인</th>
+	                                            <th scope="col">할인</th>
+	                                            <th scope="col">적립e포인트</th>
+	                                            <th scope="col">생일쿠폰 10%할인</th>
+	                                            <th scope="col">무료배송</th>
+	                                        </tr>
+	                                    </thead>
+	                                    <tbody>
+	                                        <tr> 
+	                                            <td class="center"><strong>PLATINUM</strong></td>
+	                                            <td class="center">500만원</td>
+	                                            <td class="center">2%</td>
+	                                            <td class="center">3%</td>
+	                                            <td class="center">최대 5만원</td>
+	                                            <td class="center">무제한</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>BLACK</strong></td>
+	                                            <td class="center">300만원</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">2%</td>
+	                                            <td class="center">최대 3만원</td>
+	                                            <td class="center">월 3회</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>GOLD</strong></td>
+	                                            <td class="center">100만원</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">최대 2만원</td>
+	                                            <td class="center">월 2회</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>RED</strong></td>
+	                                            <td class="center">30만원</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">최대 2만원</td>
+	                                            <td class="center">월 1회</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>PINK</strong></td>
+	                                            <td class="center">-</td>
+	                                            <td class="center">-</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">최대 2만원</td>
+	                                            <td class="center">-</td>
+	                                        </tr>
+                                            <!-- //20230214 #3167 회원혜택 등급별 포인트 / 즉시할인율 변경 요청 -->
+	                                    </tbody>
+	                                </table>
+                                </div>
+                            </div>
+                            <!--//일반회원-->
+                            <!--바바프리미엄-->
+                            <div>
+                                <div class="membership-unit">
+                                    <h3 class="page-sub-title">회원등급별 혜택 보기</h3>
+	                                <table class="tb-default type2">
+	                                    <caption>회원등급별 혜택</caption>
+	                                    <colgroup>
+	                                        <col width="" />
+	                                        <col width="160px" />
+	                                        <col width="150px" />
+	                                        <col width="165px" />
+	                                        <col width="220px" />
+	                                        <col width="175px" />
+	                                    </colgroup>
+	                                    <thead>
+	                                        <tr>
+	                                            <th scope="col">회원등급</th>
+	                                            <th scope="col">누적금액확인</th>
+	                                            <th scope="col">할인</th>
+	                                            <th scope="col">적립e포인트</th>
+	                                            <th scope="col">생일쿠폰 10%할인</th>
+	                                            <th scope="col">무료배송</th>
+	                                        </tr>
+	                                    </thead>
+	                                    <tbody>
+	                                        <tr> 
+	                                            <td class="center"><strong>PLATINUM</strong></td>
+	                                            <td class="center">500만원</td>
+	                                            <td class="center">2%</td>
+	                                            <td class="center">3%</td>
+	                                            <td class="center">최대 5만원</td>
+	                                            <td class="center">무제한</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>BLACK</strong></td>
+	                                            <td class="center">300만원</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">2%</td>
+	                                            <td class="center">최대 3만원</td>
+	                                            <td class="center">월 3회</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>GOLD</strong></td>
+	                                            <td class="center">100만원</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">2%</td>
+	                                            <td class="center">최대 2만원</td>
+	                                            <td class="center">월 3회</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>RED</strong></td>
+	                                            <td class="center">30만원</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">2%</td>
+	                                            <td class="center">최대 2만원</td>
+	                                            <td class="center">월 3회</td>
+	                                        </tr>
+	                                        <tr> 
+	                                            <td class="center"><strong>PINK</strong></td>
+	                                            <td class="center">-</td>
+	                                            <td class="center">1%</td>
+	                                            <td class="center">2%</td>
+	                                            <td class="center">최대 2만원</td>
+	                                            <td class="center">월 3회</td>
+	                                        </tr>
+	                                    </tbody>
+	                                </table>
+                                </div>
+                                <div class="membership-unit">
+                                    <h3 class="page-sub-title">바바프리미엄 공통 혜택</h3>
+                                    <div class="benefit-box">
+                                    	<!-- 20211207 프리미엄 혜택 추가 -->
+                                        <dl class="benefit-card premium">
+                                            <dt>웰컴 e포인트<span>(최초 가입 시 / 6개월마다)</span></dt>
+                                            <dd><strong>30,000P</strong></dd>
+                                        </dl>
+                                        <dl class="benefit-card premium">
+                                            <dt>웰컴 쿠폰 3종 패키지<span>(최초 가입 시 / 6개월마다)</span></dt>
+                                            <dd><strong>15%, 10%, 5%</strong></dd>
+                                        </dl>
+                                        <dl class="benefit-card premium">
+                                            <dt>BLACK 혜택 제공</dt><!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경 -->
+                                            <dd><strong>1%</strong> 할인, <strong>2%</strong> 적립</dd>
+                                        </dl>
+                                        <dl class="benefit-card premium">
+                                            <dt>추가 혜택 제공</dt>
+                                            <dd><strong>10%</strong> 할인쿠폰, 월<strong>2</strong>장</dd>
+                                        </dl>
+                                        <dl class="benefit-card premium">
+                                            <dt>무료 반품 쿠폰<span>(반품 회수 배송비 쿠폰)</span></dt>
+                                            <dd>월 <strong>2</strong>회</dd>
+                                        </dl>
+                                        <dl class="benefit-card premium">
+                                            <dt>무료 배송 쿠폰</dt>
+                                            <dd>월 <strong>3</strong>회</dd><!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경 -->
+                                        </dl>
+                                        <dl>
+                                            <ul class="list-group number">
+                                                <!-- 20230414 #3505 [FO] 프리미엄 혜택 문구 추가 및 변경 -->
+                                                <li><span class="no">*</span>[무료반품, 무료배송] 최대할인금액 1회 3,000원<br>제주도 및 도서산간지역은 추가 배송비가 발생됩니다.</li>
+                                                <!-- //20230414 #3505 [FO] 프리미엄 혜택 문구 추가 및 변경 -->
+                                                <li><span class="no">*</span>웰컴 e포인트 및 웰컴 쿠폰 3종 패키지는 바바프리미엄 최초 가입 시에 적립/발급되며, <br>이후 매 6개월마다 바바프리미엄 자격 갱신 시에도 적립/발급됩니다.</li>
+                                                <li><span class="no">*</span>웰컴 쿠폰 패키지는 발급 이후 30일 이내에 사용하셔야 하며, <br>다음과 같이 총 3종이 일괄 지급됩니다.
+                                                    <!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경 -->
+                                                    <ul class="list-group dash">
+                                                        <li>15% 할인 쿠폰 (15만원 이상 구매 시 / 최대 10만원 할인)</li>
+                                                        <li>10% 할인 쿠폰 (15만원 이상 구매 시 / 최대 10만원 할인)</li>
+                                                        <li>5% 할인 쿠폰 (15만원 이상 구매 시 / 최대 10만원 할인)</li>
+                                                    </ul>
+                                                    <!-- //20240214 #4785 회원등급 및 혜택 변경 대응 > 변경 -->
+                                                </li>
+                                            </ul>
+                                        </dl>
+                                        <!-- //20211207 프리미엄 혜택 추가 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//바바프리미엄-->
+                        </div>
+                        <div class="membership-unit">
+                            <h3 class="page-sub-title">멤버십 공통 혜택</h3>
+                            <!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+                            <div class="benefit-box ev-benefit">
+                                <!-- <dl class="benefit-card">
+                                    <dt>마일리지 적립</dt>
+                                    <dd><strong>1%</strong></dd>
+                                </dl>
+                                <dl class="benefit-card">
+                                    <dt>신규 가입 쿠폰<span>(최초 1회)</span></dt>
+                                    <dd>최대 <strong>15%</strong></dd>
+                                </dl>
+                                <dl class="benefit-card">
+                                    <dt>APP 다운로드 시 e포인트<span>(최초 1회)</span></dt>
+                                    <dd><strong>3,000P</strong></dd>
+                                </dl>
+                                <dl class="benefit-card">
+                                    <dt>첫구매 감사 쿠폰<span>(최초 1회)</span></dt>
+                                    <dd><strong>5,000</strong>원</dd>
+                                </dl> -->
+                                <ul class="col3-list">
+                                    <li>
+                                        <dl class="benefit-card">
+                                            <dt>신규 가입 쿠폰<span>(최초 1회)</span></dt>
+                                            <dd>최대 <strong>15%</strong></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="benefit-card">
+                                            <dt>APP 다운로드 시 e포인트<span>(최초 1회)</span></dt>
+                                            <dd><strong>3,000P</strong></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl class="benefit-card">
+                                            <dt>첫구매 감사 쿠폰<span>(최초 1회)</span></dt>
+                                            <dd><strong>5,000</strong>원</dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notice-box c-bgff">
+                                <dt>멤버십 공동혜택 안내</dt>
+                                <dd>
+                                    <ul class="list-group dash">
+                                        <!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 삭제 -->
+                                        <!-- <li>마일리지는 실 결제금액의 1%가 적립됩니다.</li>
+                                        <li>e포인트는 온라인 전용 포인트로서, 온라인 구매 시에만 사용 가능합니다.</li> -->
+                                        <!-- //20240214 #4785 회원등급 및 혜택 변경 대응 > 삭제 -->
+                                        <li>멤버십 공통 혜택은 이벤트 여부에 따라 변동될 수 있습니다.</li>
+                                    </ul>
+                                </dd>
+                            </div>
+                            <!-- //20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+                        </div>
+                    </div>
+                    <!--//contents-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+
+    <!--
+    <div class="layerPop" id="lyMybaba4">
+        <div class="cont">
+            <h1 class="layerTitle">멤버십 혜택</h1>
+            <div class="layerBody">
+                <div class="ly-membership">
+                    <div class="scroll-wrap">
+                        <div><p style="background-color: #eee; text-align:center; padding:70px 0;;">메인 UI변경으로 <br>수정 예정</p></div>
+                        <div class="ly-mbenefit">
+                            <h3 class="title">회원등급별 혜택 보기</h3>
+                            <div class="tab-a tab-ui">
+                                <ul>
+                                    <li class="on"><a href="javascript:void(0)">일반회원</a></li>
+                                    <li><a href="javascript:void(0)">바바프리미엄</a></li>
+                                </ul>
+                            </div>                        
+                            <div class="tab-cont" >
+                                <div class="on">
+                                    <div class="membership-box">
+                                        
+                                        <div class="right">
+                                            <h4>멤버십 공통혜택</h4>
+                                            
+                                            <ul class="list-group number">
+                                                <li><span class="no">*</span>마일리지는 오프라인 매장 구매 시에도 1%가 적립됩니다.</li>
+                                                <li><span class="no">*</span>신규 가입 쿠폰은 온라인(최대 할인금액 2만원) 및 오프라인 매장(최대할인금액 10만원)에서 모두 사용 가능하며, 오리지널 브랜드는 10%, 셀렉티드 브랜드는 5% 할인이 적용됩니다.</li>
+                                                <li><span class="no">*</span> e포인트는 온라인 전용 포인트로서, 온라인 구매 시에만 사용 가능합니다.</li>
+                                                <li><span class="no">*</span> 첫구매 감사쿠폰은 온라인(5만원 이상 구매 시 5천원 할인) 및<br>오프라인 매장(10만원 이상 구매 시 1만원 할인)에서 모두 사용 가능합니다.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="membership-box">
+                                        <table class="tb-default">
+                                            <caption>회원등급별 혜택</caption>
+                                            <colgroup>
+                                                <col width="" />
+                                                <col width="80px" />
+                                                <col width="60px" />
+                                                <col width="60px" />
+                                                <col width="80px" />
+                                                <col width="80px" />
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">회원등급</th>
+                                                    <th scope="col">누적<br>금액확인</th>
+                                                    <th scope="col">할인</th>
+                                                    <th scope="col">적립<br>e포인트</th>
+                                                    <th scope="col">생일쿠폰<br>10%할인</th>
+                                                    <th scope="col">등급쿠폰</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr> 
+                                                    <td class="center" rowspan="2"><strong>DIAMOND</strong></td>
+                                                    <td class="center rowspan">2,000만원</td>
+                                                    <td class="center rowspan">4%</td>
+                                                    <td class="center rowspan">3%</td>
+                                                    <td class="center rowspan">최대 10만원</td>
+                                                    <td class="center rowspan">무제한</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        DIAMOND 고객님께는 연 1회 감사선물<br>(30만원 상당, 연말 발송)을 드립니다.
+                                                    </td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="center"><strong>PLATINUM</strong></td>
+                                                    <td class="center">1,000만원</td>
+                                                    <td class="center">4%</td>
+                                                    <td class="center">3%</td>
+                                                    <td class="center">최대 10만원</td>
+                                                    <td class="center">무제한</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="center"><strong>VVIP</strong></td>
+                                                    <td class="center">500만원</td>
+                                                    <td class="center">3%</td>
+                                                    <td class="center">2%</td>
+                                                    <td class="center">최대 5만원</td>
+                                                    <td class="center">월 3회</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="center"><strong>VIP</strong></td>
+                                                    <td class="center">300만원</td>
+                                                    <td class="center">3%</td>
+                                                    <td class="center">2%</td>
+                                                    <td class="center">최대 5만원</td>
+                                                    <td class="center">월 2회</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="center"><strong>GOLD</strong></td>
+                                                    <td class="center">100만원</td>
+                                                    <td class="center">2%</td>
+                                                    <td class="center">1%</td>
+                                                    <td class="center">최대 5만원</td>
+                                                    <td class="center">월 2회</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="center"><strong>SILVER</strong></td>
+                                                    <td class="center">70만원</td>
+                                                    <td class="center">2%</td>
+                                                    <td class="center">1%</td>
+                                                    <td class="center">최대 2만원</td>
+                                                    <td class="center">월 1회</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="center"><strong>RED</strong></td>
+                                                    <td class="center">30만원</td>
+                                                    <td class="center">1%</td>
+                                                    <td class="center">1%</td>
+                                                    <td class="center">최대 2만원</td>
+                                                    <td class="center">월 1회</td>
+                                                </tr>
+                                                <tr> 
+                                                    <td class="center"><strong>FAMILY</strong></td>
+                                                    <td class="center">-</td>
+                                                    <td class="center">1%</td>
+                                                    <td class="center">-</td>
+                                                    <td class="center">최대 2만원</td>
+                                                    <td class="center">-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="right">
+                                            <h4>바바프리미엄 공통혜택</h4>
+                                            <div class="benefit-box premium">
+                                                <dl class="benefit-card">
+                                                    <dt>웰컴 e포인트<br><span>(최초가입 시 / 6개월마다)</span></dt>
+                                                    <dd><strong>30,000P</strong></dd>
+                                                </dl>
+                                                <dl class="benefit-card">
+                                                    <dt>신규 가입 쿠폰<br><span>(최초 1회)</span></dt>
+                                                    <dd>월 <strong>2</strong>회</dd>
+                                                </dl>
+                                                <dl class="benefit-card w-full">
+                                                    <dt>웰컴 쿠폰 3종 패키지<br><span>(최초 가입 시 / 6개월마다)</span></dt>
+                                                    <dd>최대 <strong>15%</strong></dd>
+                                                </dl>
+                                            </div>
+                                            <h4>멤버십 공통혜택</h4>
+                                            <div class="benefit-box">
+                                                <dl class="benefit-card">
+                                                    <dt>마일리지 적립<br><span>(오프라인 구매 시에도 적립)</span></dt>
+                                                    <dd><strong>1%</strong></dd>
+                                                </dl>
+                                                <dl class="benefit-card">
+                                                    <dt>신규 가입 쿠폰<br><span>(최초 1회)</span></dt>
+                                                    <dd>최대 <strong>10%</strong></dd>
+                                                </dl>
+                                                <dl class="benefit-card">
+                                                    <dt>APP 다운로드 시 e포인트<br><span>(최초 1회)</span></dt>
+                                                    <dd><strong>5,000P</strong></dd>
+                                                </dl>
+                                                <dl class="benefit-card">
+                                                    <dt>첫구매 감사 쿠폰<br><span>(최초 1회)</span></dt>
+                                                    <dd><strong>5,000</strong>원</dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="notice-box">
+                                        <dl>
+                                            <dt>바바프리미엄 공통혜택 안내</dt>
+                                            <dd>
+                                                <ul class="list-group number">
+                                                    <li><span class="no">*</span>웰컴 e포인트 및 웰컴 쿠폰 3종 패키지는 바바프리미엄 최초 가입 시에 적립/발급되며, 이후 매 6개월마다 바바프리미엄 자격 갱신 시에도 적립/발급됩니다.</li>
+                                                    <li><span class="no">*</span>웰컴 쿠폰 패키지는 발급 이후 30일 이내에 사용하셔야 하며, 다음과 같이 총 3종이 일괄 지급됩니다.
+                                                        <ul class="list-group dash">
+                                                            <li>15% 할인 쿠폰 (15만원 이상 구매 시 / 최대 30만원 할인)</li>
+                                                            <li>10% 할인 쿠폰 (10만원 이상 구매 시 / 최대 30만원 할인)</li>
+                                                            <li>5% 할인 쿠폰 (5만원 이상 구매 시 / 최대 15만원 할인)</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="notice-box">
+                                        <dl>
+                                            <dt>멤버십 공동혜택 안내</dt>
+                                            <dd>
+                                                <ul class="list-group number">
+                                                    <li><span class="no">*</span>마일리지는 오프라인 매장 구매 시에도 1%가 적립됩니다.</li>
+                                                    <li><span class="no">*</span>신규 가입 쿠폰은 온라인(최대 할인금액 2만원) 및 오프라인 매장(최대할인금액 10만원)에서 모두 사용 가능하며, 오리지널 브랜드는 10%, <br>셀렉티드 브랜드는 5% 할인이 적용됩니다.</li>
+                                                    <li><span class="no">*</span> e포인트는 온라인 전용 포인트로서, 온라인 구매 시에만 사용 가능합니다.</li>
+                                                    <li><span class="no">*</span> 첫구매 감사쿠폰은 온라인(5만원 이상 구매 시 5천원 할인) 및 오프라인 매장(10만원 이상 구매 시 1만원 할인)에서 모두 사용 가능합니다.</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('lyMybaba4')">팝업닫기</button>
+        </div>
+    </div>
+    [P] 2021.05.04 사용X-->
+</body>
+<script>    
+    $(document).ready(function(){
+        /*publishing UI only*/
+        $('.mybaba-header').load('inc_maybaba_header.html');//mybabaheader load
+    });    
+</script>
+</html>

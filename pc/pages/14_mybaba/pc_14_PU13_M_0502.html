@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <link rel="stylesheet" href="../../css/babathe.css">
+</head>
+<body>
+    <header></header>
+    <section class="container">
+    <div class="center-wrap">
+        <div class="mybaba-wrap">
+            <div class="mybaba-header"></div>
+            <div class="contents">
+                <!--lnb-->
+                <div class="lnb-wrap">
+                    <nav class="lnb-list">
+                        <ul class="depth1">
+                            <li>
+                                <a href="#">마이바바</a>
+                                <ul class="depth2">
+                                    <li><a href="#">쇼핑정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">주문/배송 조회</a></li>
+                                            <li><a href="#">취소/교환/반품 신청</a></li>
+                                            <li><a href="#">취소/교환/반품 조회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">혜택정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">멤버십 혜택</a></li>
+                                            <li><a href="#">e포인트</a></li>
+                                            <li><a href="#">마일리지</a></li>
+                                            <li><a href="#">쿠폰</a></li>
+                                            <li><a href="#">임직원 혜택 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">활동정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">상품 문의 내역</a></li>
+                                            <li><a href="#">1:1 문의 내역</a></li>
+                                            <li><a href="#">나의 상품리뷰</a></li>
+                                            <li><a href="#">관심상품</a></li>
+                                            <li><a href="#">관심브랜드</a></li>
+                                            <li><a href="#">방송알림 신청 현황</a></li>
+                                            <li><a href="#">친구 추천</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="on">
+                                        <a href="#">회원정보</a>
+                                        <ul class="depth3">
+                                            <li><a href="#">배송지 관리</a></li>
+                                            <li class="on"><a href="#">회원정보 수정</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--//lnb-->
+                <!--contents-->
+                <div class="cont-wrap">
+                    <h2 class="page-title">회원정보 수정</h2>
+                    <div class="myinfo-unit">
+                        <div class="myorder-top">
+                            <h3 class="title">아이디 / 비밀번호</h3>
+                        </div>
+                        <div class="member-info">
+                            <table class="tb-order">
+                                <caption></caption>
+                                <colgroup>
+                                    <col width="170px">
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">아이디</th>
+                                        <td>01012345678</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">비밀번호</th>
+                                        <td>
+                                            <span class="w150">**********</span>
+                                            <button type="button" class="btn sm primary"><span class="font-w500">비밀번호 변경</span></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="myinfo-unit">
+                        <div class="myorder-top">
+                            <h3 class="title">기본정보</h3>
+                        </div>
+                        <div class="member-info">
+                            <table class="tb-order">
+                                <caption></caption>
+                                <colgroup>
+                                    <col width="170px">
+                                    <col>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">이름</th>
+                                        <td>김바바</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">성별</th>
+                                        <td>여성</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">법정생년월일</th>
+                                        <td>2020-01-01</td>
+                                     
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">휴대폰 번호</th>
+                                        <td>
+                                            <span class="w150">010-1234-5678</span>
+                                            <button type="button" class="btn sm primary "><span class="font-w500">휴대폰 번호 변경</span></button>
+                                            <div class="join-area mg-t-20">
+                                                <div class="phone-verify">
+                                                    <div class="form-row">
+                                                        <div class="form-col">
+                                                            <div class="form-box">
+                                                                <input type="text" value="김바바" id="join1-1" placeholder="이름 입력">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-col">
+                                                            <div class="form-box">
+                                                                <select id="join1-2">
+                                                                    <option selected>내국인</option>
+                                                                    <option>외국인</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-col">
+                                                            <div class="form-box">
+                                                                <input type="text" value="" id="join1-3" placeholder="생년월일 입력 (8자리)">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-col">
+                                                            <div class="form-box">
+                                                                <select id="join1-4">
+                                                                    <option selected>남자</option>
+                                                                    <option>여자</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="form-col">
+                                                            <div class="form-box"> 
+                                                                <input type="text" value="" id="join1-5" placeholder="휴대폰 번호 입력 ('-'제외하고 숫자만 입력)">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-col">
+                                                            <div class="form-box">
+                                                                <select id="join1-6">
+                                                                    <option>통신사</option>
+                                                                    <option selected>SKT</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pers-idx-guide">
+                                                        <div class="acd-box">
+                                                            <div class="accordion-title">
+                                                                <div class="ttile">
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" id="certiAgree1" checked disabled>
+                                                                        <label for="certiAgree1"><span class="font-s16 c-gray1">본인 인증을 위한 약관 모두 동의</span></label>
+                                                                    </div>
+                                                                </div>
+                                                                <button>열림</button>
+                                                            </div>
+                                                            <div class="accordion-panel" style="height: 0px;">
+                                                                <div>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <div class="checkbox black"> 
+                                                                                <input type="checkbox" id="certiAgree1-1" checked disabled>
+                                                                                <label for="certiAgree1-1">(필수) 개인정보 수집 및 이용 동의</label>
+                                                                            </div>
+                                                                            <a href="#" class="tx-link">보기</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="checkbox black">
+                                                                                <input type="checkbox" id="certiAgree1-2" checked disabled>
+                                                                                <label for="certiAgree1-2">(필수) 고유식별정보 처리 동의</label>
+                                                                            </div>
+                                                                            <a href="#" class="tx-link">보기</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="checkbox black">
+                                                                                <input type="checkbox" id="certiAgree1-3" checked disabled>
+                                                                                <label for="certiAgree1-3">(필수) 통신사 이용약관</label>
+                                                                            </div>
+                                                                            <a href="#" class="tx-link">보기</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="checkbox black">
+                                                                                <input type="checkbox" id="certiAgree1-4" checked disabled>
+                                                                                <label for="certiAgree1-4">(필수) 서비스 이용약관</label>
+                                                                            </div>
+                                                                            <a href="#" class="tx-link">보기</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="btn primary black">인증번호 전송</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이메일 주소</th>
+                                        <td>
+                                            <div class="form-box email">
+                                                <input type="text" value="Babath@abc.com" id="inp-1">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- 20210930 환불계좌 항목 및 변경 기능 추가 -->
+                    <div class="myinfo-unit">
+                        <div class="myorder-top">
+                            <h3 class="title">환불계좌</h3>
+                        </div>
+                        <div class="member-info">
+                            <table class="tb-order">
+                                <caption></caption>
+                                <colgroup>
+                                    <col width="170px">
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">등록 된 계좌</th>
+                                        <td>
+                                            <span class="">우리은행 000******000</span>
+                                            <button type="button" class="btn sm primary"><span class="font-w500">환불 계좌 등록</span></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- //20210930 환불계좌 항목 및 변경 기능 추가 -->
+                    
+                    <div class="myinfo-unit">
+                        <div class="myorder-top">
+                            <h3 class="title">마케팅 정보 수신 동의<span class="sub-tx bottom">바바더닷컴을 포함하여 ㈜바바패션, ㈜비제이티인터내셔날, 바바인터내셔날을 “바바그룹”으로 관리하고 있습니다.<br>수신 동의 시, 바바그룹의 신제품 및 이벤트 소식을 안내 받으실 수 있습니다. </span></h3>
+                        </div>
+                        <div class="myinfo-box">
+                            <div class="info-edit">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="chk11"><label for="chk11">전체</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="chk12"><label for="chk12">카카오톡<span class="date">2020.12.24 수신 동의</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="chk12"><label for="chk12">SMS<span class="date">2020.12.24 수신 동의</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="chk13"><label for="chk13">이메일<span class="date">2020.12.24 수신 거부</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="chk14"><label for="chk14">DM<span class="date">2020.12.24 수신 거부</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notice-box">
+                            <ul class="list-group dash">
+                                <li>마케팅 정보 수신 동의를 하지 않더라도 회원 서비스를 이용할 수 있습니다. 다만, 쿠폰 문자 및 이벤트 소식을 안내 받으실 수 없습니다.</li>
+                                <li>회원가입, 주문 배송, 계약상 지급의 의무가 있는 쿠폰이나 마일리지, 회사 주요 정책 관련 정보는 수신 동의와 관계없이 모든 회원에게 발송됩니다.</li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="myinfo-unit">
+                        <div class="myorder-top">
+                            <h3 class="title">개인 정보 유효기간 선택<span class="sub-tx">2020.12.24 업데이트</span></h3>
+                            <a href="#" class="btn-more">내용보기</a>
+                        </div>
+                        <div class="myinfo-box">
+                            <div class="info-edit">
+                                <div class="radio black">
+                                    <input type="radio" id="ra11" name="ra1" checked><label for="ra11">1년</label>
+                                </div>
+                                <div class="radio black">
+                                    <input type="radio" id="ra12" name="ra1"><label for="ra12">통합회원 탈퇴 시까지</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="notice-box">
+                            <ul class="list-group dash">
+                                <li>선택한 개인 정보 유효기간 동안 이력이 없는 경우, 휴면 상태로 전환되어 전자상거래법률 등에 따라 일정기간 보관 후 파기가 진행됩니다.</li>
+                                <li>‘통합회원탈퇴 시까지’를 선택하더라도, 회원탈퇴를 원하실 경우 회원탈퇴 및 개인정보 파기가 진행됩니다.</li>
+                            </ul>
+                        </div>
+                        <div class="btn-group mg-t-20">
+                            <button type="button" class="btn primary sm">수정</button>
+                        </div><!--//21.04.28 추가-->
+                    </div>
+                    <div class="myinfo-unit">
+                        <div class="myorder-top">
+                            <h3 class="title">SNS 로그인 연결</h3>
+                        </div>
+                        <div class="myinfo-box">
+                            <div class="info-edit sns-join">
+                                <div class="sns naver"><a href="#" class="btn btn-tx">연결설정</a></div>
+                                <div class="sns kakao"><a href="#" class="btn btn-tx">연결설정</a></div>
+                                <div class="sns facebook on">
+                                    <p>
+                                        <!--babakim@abc.com<br>-->2020.12.24 연결 <br>
+                                        <a href="#" class="btn btn-tx">연결해제</a>
+                                    </p>
+                                    
+                                </div>
+                                <!-- <div class="sns instar"><a href="#" class="btn btn-tx">연결설정</a></div> -->
+                                <div class="sns apple"><a href="#" class="btn btn-tx">연결설정</a></div>
+                            </div>
+                        </div>
+                        <div class="tb-util mg-t-40">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-tx">바바프리미엄 해지</a>
+                                <a href="#" class="btn btn-tx">회원탈퇴</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//contents-->
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer></footer>
+</body>
+<script>    
+    $(document).ready(function(){
+        /*publishing UI only*/
+        $('.mybaba-header').load('inc_maybaba_header.html');//mybabaheader load
+    });    
+</script>
+</html>

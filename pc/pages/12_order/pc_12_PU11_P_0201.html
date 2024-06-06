@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyOrder1">
+        <div class="cont w-440">
+            <h1 class="layerTitle">배송지 목록</h1>
+            <div class="layerBody ">
+                <div class="ly-addr-area">
+                    <div class="recent">
+                        <div class="addr-info">
+                            <span class="name">김바바 (집)<span class="tag">최근배송지</span></span>
+                            <span class="phone">010.1234.5678</span>
+                            <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                            <div class="btn-group">
+                                <button class="btn sm ">수정</button>
+                                <button class="btn sm primary">선택</button>
+                            </div>
+                            <a href="#" class="btn-del">삭제</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="basic-addr">
+                        <!--
+                        <div class="d-flex align-items-center">
+                            <h3>기본배송지</h3>
+                            <button type="button" class="btn btn-form sm">배송지 추가</button>
+                        </div>
+                        --><!--//21.03.22 버튼 추가-->
+                        <!-- 배송지 있을 경우 -->
+                        <div class="scroll-wrap">
+                            <ul>
+                                <li>
+                                    <div class="addr-info">
+                                        <span class="name">김바바 (집)<span class="tag">대표배송지</span></span>
+                                        <span class="phone">010.1234.5678</span>
+                                        <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                                        <div class="btn-group">
+                                            <button class="btn sm ">수정</button>
+                                            <button class="btn sm primary">선택</button>
+                                        </div>
+                                        <a href="#" class="btn-del">삭제</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="addr-info">
+                                        <span class="name">김바바 (집)</span>
+                                        <span class="phone">010.1234.5678</span>
+                                        <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                                        <div class="btn-group">
+                                            <button class="btn sm ">수정</button>
+                                            <button class="btn sm primary">선택</button>
+                                        </div>
+                                        <a href="#" class="btn-del">삭제</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="addr-info">
+                                        <span class="name">김바바 (집)</span>
+                                        <span class="phone">010.1234.5678</span>
+                                        <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                                        <div class="btn-group">
+                                            <button class="btn sm ">수정</button>
+                                            <button class="btn sm primary">선택</button>
+                                        </div>
+                                        <a href="#" class="btn-del">삭제</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="addr-info">
+                                        <span class="name">김바바 (집)</span>
+                                        <span class="phone">010.1234.5678</span>
+                                        <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                                        <div class="btn-group">
+                                            <button class="btn sm ">수정</button>
+                                            <button class="btn sm primary">선택</button>
+                                        </div>
+                                        <a href="#" class="btn-del">삭제</a>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="addr-info">
+                                        <span class="name">김바바 (집)</span>
+                                        <span class="phone">010.1234.5678</span>
+                                        <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                                        <div class="btn-group">
+                                            <button class="btn sm ">수정</button>
+                                            <button class="btn sm primary">선택</button>
+                                        </div>
+                                        <a href="#" class="btn-del">삭제</a>
+                                    </div> 
+                                </li>
+                                <li>
+                                    <div class="addr-info">
+                                        <span class="name">김바바 (집)</span>
+                                        <span class="phone">010.1234.5678</span>
+                                        <span class="addr"><span class="zipcode">[06531]</span> 서울특별시 서초구 신반포로 339 (논현빌딩) 바바패션 6층</span>
+                                        <div class="btn-group">
+                                            <button class="btn sm ">수정</button>
+                                            <button class="btn sm primary">선택</button>
+                                        </div>
+                                        <a href="#" class="btn-del">삭제</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn primary black w-full">배송지 추가</button>
+                        </div>
+                         <!-- // 배송지 있을 경우 -->
+                    </div>
+                </div>    
+            </div>
+            <button class="btn-close" onclick="popClose('lyOrder1')">팝업닫기</button>
+        </div>
+        <div class="cont w-440" style="margin-left:100px;">
+            <h1 class="layerTitle">배송지 목록</h1>
+            <div class="layerBody ">
+                <div class="ly-addr-area">
+                    <div class="recent">
+                        <div class="no-data">최근배송지가 없습니다.</div>
+                    <!-- <hr>
+                    <div class="basic-addr">
+                        <h3>기본배송지</h3>
+                        <div class="no-data">기본배송지가 없습니다.</div>
+                    </div> -->
+                    <div class="btn-group">
+                        <button type="button" class="btn primary black w-full">배송지 추가</button>
+                    </div>
+                </div>    
+            </div>
+            <button class="btn-close" onclick="popClose('lyOrder1')">팝업닫기</button>
+        </div>
+    </div>
+    
+</body>
+</html>

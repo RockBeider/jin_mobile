@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+    <script src="../../js/ResizeSensor.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="detail-wrap">
+            <!--
+            <ul class="location-bar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">DEPTH 1</a></li>
+                <li><a href="#">DEPTH 2</a></li>
+                <li><a href="#">DEPTH 3</a></li>
+                <li><a href="#">DEPTH 4</a></li>
+                <li><a href="#">DEPTH 5</a></li>
+            </ul>
+            -->
+            <div class="prd-wrap">
+                <div class="img-area">
+                   <!-- Swiper -->
+                    <div class="swiper-wrap">
+                        <!--top Image-->
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div><img src="https://image.babathe.com/goods/G278763821/G278763821_1.jpg/babathe/optimize" alt="상품 이미지" /></div><!--//[P] #952수정반영 class삭제-->
+                                </div>
+                                <div class="swiper-slide">
+                                    <div><img src="https://image.babathe.com/goods/G278763821/G278763821_2.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div><img src="https://image.babathe.com/goods/G278763821/G278763821_3.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div><img src="https://image.babathe.com/goods/G278763821/G278763821_4.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div><img src="https://image.babathe.com/goods/G278763821/G278763821_5.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <!-- 영상 -->
+                                <div class="swiper-slide">
+                                    <div class="video-wrap">
+                                        <!-- <video id="videoSample" src='http://www.tomodevel.jp/material/video/disneyTour.mp4' controls autoplay muted>
+                                            해당 브라우저는 video 태그를 지원하지 않습니다.
+                                        </video> -->
+                                        <!-- <iframe width="100%" height="854" src="https://shoppinglive.naver.com/replays/80815?title=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
+
+                                        <!-- 20220922 상품상세 > 영상영역 테스트 -->
+                                        <!-- video : 가로 -->
+                                        <!-- <video src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220915_festa_main_video_pc_01.mp4" poster="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220915_festa_main_pc_poster_00.jpg" autoplay loop muted controls playsinline>해당 브라우저는 video 태그를 지원하지 않습니다.</video> -->
+                                        <!-- video : 세로 -->
+                                        <video src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220915_festa_main_video_m_01.mp4#t=0,10" poster="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220915_festa_main_m_poster_00.jpg" autoplay loop muted controls playsinline>해당 브라우저는 video 태그를 지원하지 않습니다.</video>
+
+                                    </div>
+                                </div>
+                                <!-- 영상 -->
+                            </div>
+                        </div>
+                        <!--//top Image-->
+                        <!--thumm Image-->
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="ratio"><img src="https://image.babathe.com/goods/G278763821/G278763821_1.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ratio"><img src="https://image.babathe.com/goods/G278763821/G278763821_2.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ratio"><img src="https://image.babathe.com/goods/G278763821/G278763821_3.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ratio"><img src="https://image.babathe.com/goods/G278763821/G278763821_4.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ratio"><img src="https://image.babathe.com/goods/G278763821/G278763821_5.jpg/babathe/optimize" alt="상품 이미지" /></div>
+                                </div>
+                                <!-- 영상 썸네일 -->
+                                <div class="swiper-slide">
+                                    <div class="video-thum">
+                                        <i></i>
+                                        <div class="ratio"><img src="../../img/img_prd.jpg" alt="영상 썸네일 이미지" /></div>
+                                    </div>
+                                </div>
+                                <!-- 영상 썸네일 -->
+                            </div>
+                        </div>
+                        <!--//thumm Image-->
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- 20230608 #3782 상품상세 이미지에 코디상품 버튼 추가 -->
+                        <a class="btn primary black btn-cody btn-anchor" href="#codyWrap"><span>코디상품</span></a>
+                        <!-- //20230608 #3782 상품상세 이미지에 코디상품 버튼 추가 -->
+                    </div>
+                    <!-- //Swiper -->
+                </div>
+                <div class="info-area">
+                    <div class="detail-top">
+                        <div class="brd-thum"><a href="#">
+                            <span class="img"><img src="../../img/temp_brand_thum.jpg" alt="브랜드 썸네일 이미지" /></span>
+                            <p>
+                                <span class="tx-eng">THE IZZAT COLLECTION</span>
+                                더아이잗컬렉션
+                            </p>
+                        </a></div>
+                        <div class="btn-group">
+                            <button type="button" class="btn-share">공유하기</button>
+                            <button type="button" class="btn-wish">찜하기</button>
+                        </div>
+                    </div>
+                    <div class="name">
+                        <span class="selling-point">얼리버드할인 온라인단독</span>
+                        캐시미어 100% H라인 코트
+                    </div>
+                    <div class="rating">
+                        <div class="grade">
+                            <span class="star">
+                                <span style="width:60%"></span>
+                            </span>
+                            <span class="g-num">3.0</span>
+                        </div>
+                        <!-- <a href="#" class="btn-tx sm">상품리뷰 117</a> -->
+                    </div>
+                    <div class="prd-price">
+                        <div class="price">1,234,567원</div>
+                        <div class="discount">10%</div>
+                        <div class="price-org">1,065,960원</div>
+                    </div>
+                    <div class="coupon-price">
+                        <div class="price">1,065,960원</div>
+                        <label class="btn sm btn-form on">10% 할인쿠폰</label>
+                    </div>
+                    <div class="pers-idx-benefit">
+                        <!-- 20230802 #3959 [FO] 상품 상세 내 쿠폰 고도화, 쿠폰 목록 화면 신설 > 쿠폰 받기 버튼 추가 -->
+                        <dl class="row sp-price">
+                            <dt>쿠폰</dt>
+                            <dd>
+                                <button type="button" class="btn primary black btn-down"><span>쿠폰받기</span></button>
+                            </dd>
+                        </dl>
+                        <!-- //20230802 #3959 [FO] 상품 상세 내 쿠폰 고도화, 쿠폰 목록 화면 신설 > 쿠폰 받기 버튼 추가 -->
+                        <dl class="row sp-price">
+                            <dt>등급별혜택가</dt>
+                            <dd>
+                                <strong class="price">1,807,000원</strong>
+                            </dd>
+                        </dl>
+                        <dl class="row sp-price premium">
+                            <dt>프리미엄가</dt>
+                            <dd>
+                                <strong class="price">1,807,000원</strong>
+                            </dd>
+                        </dl>
+                        <dl class="row sp-price secret">
+                            <dt>시크릿가</dt>
+                            <dd>
+                                <strong class="price">8,807,000원
+                                    <span class="discount">80%</span><!-- 20240213 #5227 [FO] PC/MO > 상품목록유닛/상품상세 > 시크릿 할인가에 할인율 표기 추가 반영 요청 -->
+                                </strong>
+                                <div class="tooltip">
+                                    <button type="button" class="btn-tooltip">등급별혜택가 보기</button>
+                                    <div class="ly-tooltip">
+                                        <h3>등급별혜택가</h3>
+                                        <div class="tooltip-conts">
+                                            <ul class="mem-ranking">
+                                                <li>
+                                                    <span>DIAMOND</span>
+                                                    <span>2,056,320원</span>
+                                                </li>
+                                                <li>
+                                                    <span>PLATINUM</span>
+                                                    <span>2,056,320원</span>
+                                                </li>
+                                                <li class="select">
+                                                    <span>VVIP</span>
+                                                    <span>2,077,740원</span>
+                                                </li>
+                                                <li>
+                                                    <span>VIP</span>
+                                                    <span>2,077,740원</span>
+                                                </li>
+                                                <li>
+                                                    <span>GOLD</span>
+                                                    <span>2,099,160원</span>
+                                                </li>
+                                                <li>
+                                                    <span>SILVER</span>
+                                                    <span>2,099,160원</span>
+                                                </li>
+                                                <li>
+                                                    <span>RED</span>
+                                                    <span>2,120,580원</span>
+                                                </li>
+                                                <li>
+                                                    <span>FAMILY</span>
+                                                    <span>2,120,580원</span>
+                                                </li>
+                                                <!-- 임직원가 -->
+                                                <li class="member">
+                                                    <span>임직원가</span>
+                                                    <span>2,070,000원</span>
+                                                </li>
+                                                <!-- // 임직원가 -->
+                                            </ul>
+                                            <!-- 버튼 -->
+                                            <div class="align-c">
+                                                <a href="#" class="btn-arrow">신규 회원가입</a>
+                                            </div>
+                                            <!-- // 버튼 -->
+                                            <!-- 프리미엄 -->
+                                            <div class="premium">
+                                                <ul class="mem-ranking">
+                                                    <li>
+                                                        <span>프리미엄 가</span>
+                                                        <span>2,056,320원</span>
+                                                    </li>
+                                                </ul>
+                                                <!-- 버튼 -->
+                                                <div class="align-c">
+                                                    <a href="#" class="btn-arrow">바바프리미엄 가입</a>
+                                                </div>
+                                                <!-- // 버튼 -->
+                                            </div>
+                                            <!-- // 프리미엄 -->
+                                        </div>
+                                        <button type="button" class="btn-closed">도움말 닫기</button>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="row sp-price member">
+                            <dt>임직원가</dt>
+                            <dd>
+                                <strong class="price">1,807,000원</strong>
+                            </dd>
+                        </dl>
+                        <dl class="row">
+                            <dt>회원 혜택</dt>
+                            <dd>
+                                <div class="acd-box">
+                                    <div class="accordion-title open"><!-- 20210927 회원혜택 풀어서 노출로 변경 > class="open"추가 -->
+                                        <div class="title">김바바님을 위한 특별한 회원 혜택</div>
+                                        <button>닫힘</button>
+                                    </div>
+                                    <div class="accordion-panel">
+                                        <div>
+                                            <div class="pers-point">
+                                            	<!-- 비회원 시 노출 -->
+												<dl><dt>신규 가입 시 웰컴 쿠폰 증정</dt><dd>최대 15% 할인</dd></dl><!-- 20211007 신규가입 회원 혜택 할인율 변경 요청 -->
+                                                <dl>
+                                                    <dt>
+                                                        최대 적립 e포인트
+                                                        <div class="tooltip">
+                                                            <button type="button" class="btn-tooltip">등급별 최대 적립 e포인트 보기</button>
+                                                            <div class="ly-tooltip">
+                                                                <h3>회원등급별 적립 e포인트</h3>
+                                                                <div class="tooltip-conts">
+                                                                    <ul class="mem-ranking">
+                                                                        <li>
+                                                                            <span>DIAMOND</span>
+                                                                            <span>3%</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>PLATINUM</span>
+                                                                            <span>3%</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>VVIP</span>
+                                                                            <span>2%</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>VIP</span>
+                                                                            <span>2%</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>GOLD</span>
+                                                                            <span>1%</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>SILVER</span>
+                                                                            <span>1%</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>RED</span>
+                                                                            <span>1%</span>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span>FAMILY</span>
+                                                                            <span>-</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <button type="button" class="btn-closed">도움말 닫기</button>
+                                                            </div>
+                                                        </div>
+                                                    </dt>
+                                                    <dd>50,489P</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        최대 적립 마일리지
+                                                        <div class="tooltip">
+                                                            <button type="button" class="btn-tooltip">등급별 최대 적립 마일리지 보기</button>
+                                                            <div class="ly-tooltip">
+                                                                <h3>회원등급별 적립 마일리지</h3>
+                                                                <div class="tooltip-conts">
+                                                                    상품 구매 시 마일리지 적립은 회원 등급과 무관하게 결제 금액의 1%가 적립됩니다.
+                                                                </div>
+                                                                <button type="button" class="btn-closed">도움말 닫기</button>
+                                                            </div>
+                                                        </div>
+                                                    </dt>
+                                                    <dd>16,829P</dd>
+                                                </dl>
+                                            </div>
+                                            <div class="idx-premium">
+                                                <span>바바프리미엄 가입 시 포인트, 할인 쿠폰, <br>추가 할인/적립 등 다양한 혜택이 지급됩니다.</span>
+                                                <a href="#" class="btn btn-tx">바바프리미엄 가입</a>
+                                            </div>
+                                            <a href="#" class="btn btn-tx mg-t-20">카드사 혜택 자세히 보기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="row">
+                            <dt>
+                                배송비
+                                <div class="tooltip">
+                                    <button type="button" class="btn-tooltip sm">도움말</button>
+                                    <div class="ly-tooltip">
+                                        <h3>배송비 조건 안내</h3>
+                                        <div class="tooltip-conts">
+                                            50,000원 이상 구매 시 무료배송<br>50,000원 미만 구매 시 2,500원<br><br>
+                                            ※ 제주/도서산간 지역 추가 배송비<br><br>
+                                            제주/도서산간 배송지의 경우 추가 운송비를 지불하여야 합니다.
+                                        </div>
+                                        <button type="button" class="btn-closed">도움말 닫기</button>
+                                    </div>
+                                </div>
+                            </dt>
+                            <dd>50,000원 이상 구매 시 무료배송 / CJ대한통운</dd>
+                        </dl>
+                    </div>
+                    <!-- 옵션 영역 -->
+                    <div class="option-area">
+                        <div class="opt-color">
+                            <p class="tit">다른 색상은 어떠신가요?</p>
+                            <div class="opt-clist">
+                                <ul class="">
+                                    <li class="on"><a href="javascript:void(0);"><img src="https://image.babathe.com/goods/G278763821/G278763821_1.jpg/babathe/resize/120x176" alt="컬러옵션" /></a></li>
+                                    <li><a href="javascript:void(0);"><img src="https://image.babathe.com/goods/G296764873/G296764873_1.jpg/babathe/resize/120x176" alt="컬러옵션" /></a></li>
+                                    <li><a href="javascript:void(0);"><img src="https://image.babathe.com/goods/G296764873/G296764873_1.jpg/babathe/resize/120x176" alt="컬러옵션" /></a></li>
+                                    <li><a href="javascript:void(0);"><img src="../../img/img_prd_color.jpg" alt="컬러옵션" /></a></li>
+                                    <li><a href="javascript:void(0);"><img src="../../img/img_prd_color.jpg" alt="컬러옵션" /></a></li>
+                                    <li><a href="javascript:void(0);"><img src="../../img/img_prd_color.jpg" alt="컬러옵션" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="opt-basic">
+                            <p class="tit">옵션/수량 선택</p><!--//[P] 04.21 타이틀 수정-->
+                            <div class="opt-group">
+                                <!-- <h3 class="opt-title">모델명1</h3> -->
+                                <!-- 20230508 #3559 [FO] 상품상세_2차 옵션선택 버튼 디자인 추가 적용 -->
+                                <dl class="prd-opt-chk-type2">
+                                    <dt>색상</dt>
+                                    <dd>
+                                        <div class="radio">
+                                            <input type="radio" id="opt1-1" name="optC-1"><!-- 상품 옵션 활성화 > 체크 전 -->
+                                            <label for="opt1-1">블랙</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="opt1-2" name="optC-1" checked><!-- 상품 옵션 활성화 > 체크 후 -->
+                                            <label for="opt1-2">화이트</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="opt1-3" name="optC-1" disabled><!-- 상품 옵션 비활성화 -->
+                                            <label for="opt1-3">옵션1</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="opt1-4" name="optC-1" class="soldout" disabled><!-- 상품 품절되었을 때 -->
+                                            <label for="opt1-4">옵션2</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="prd-opt-chk-type2"><!-- 20230508 #3559 [FO] 상품상세_2차 옵션선택 버튼 디자인 추가 적용 > class="prd-opt-chk-type2" 추가 -->
+                                    <dt>사이즈</dt>
+                                    <dd>
+                                        <div class="radio">
+                                            <input type="radio" id="opt2-1" name="optD-1"><!-- 상품 옵션 활성화 > 체크 전 -->
+                                            <label for="opt2-1">S</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="opt2-2" name="optD-1" checked><!-- 상품 옵션 활성화 > 체크 후 -->
+                                            <label for="opt2-2">M</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="opt2-3" name="optD-1" disabled><!-- 상품 옵션 비활성화 -->
+                                            <label for="opt2-3">X</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="opt2-4" name="optD-1" class="soldout" disabled><!-- 상품 품절되었을 때 -->
+                                            <label for="opt2-4">XL</label>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <!-- //20230508 #3559 [FO] 상품상세_2차 옵션선택 버튼 디자인 추가 적용 -->
+                                <dl>
+                                    <dt><span>색상</span></dt>
+                                    <dd>
+                                        <div class="form-box">
+                                            <select id="" class="placeholderOn">
+                                                <option disabled selected hidden>옵선 선택</option>
+                                                <option>옵션1</option>
+                                                <option>옵션2</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt><span>사이즈</span></dt>
+                                    <dd>
+                                        <div class="form-box">
+                                            <select id="" class="placeholderOn">
+                                                <option disabled selected hidden>옵선 선택</option>
+                                                <option>옵션1</option>
+                                                <option>옵션2</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+                                </dl>
+                             </div>
+                        </div>
+                        
+                        <!-- 20210930 크리마 핏 영역 노출 추가 요청 > style="background:#eee"는 영역표시하기위해 넣은 것으로 실제 반영시 빼주셔도 됩니다-->
+                        <div class="opt-pit-size" style="width:100%; height:auto; background:#eee">크리마 핏 추가 영역 </div>
+                        <!-- //20210930 크리마 핏 영역 노출 추가 요청 -->
+                        
+                        <!--
+                        <div class="opt-selected">
+                            <ul>
+                                <li>
+                                    <span class="opt-txt">색상: 블랙 / 사이즈:44 / 추가옵션: 스카프</span>
+                                    <div class="prd-spinner">
+                                        <button type="button" class="btn-minus">수량감소</button>
+                                        <input type="text" value="1">
+                                        <button type="button" class="btn-plus">수량증가</button>
+                                    </div>
+                                    <span class="price">94,284,000원</span>
+                                    <button type="button" class="btn-del">옵션 삭제</button>
+                                </li>
+                                <li>
+                                    <span class="opt-txt">옵션명 텍스트는 한줄처리 / …처리</span>
+                                    <div class="prd-spinner">
+                                        <button type="button" class="btn-minus">수량감소</button>
+                                        <input type="text" value="1">
+                                        <button type="button" class="btn-plus">수량증가</button>
+                                    </div>
+                                    <span class="price">94,284,000원</span>
+                                    <button type="button" class="btn-del">옵션 삭제</button>
+                                </li>
+                            </ul>
+                        </div>
+                        -->
+                    </div>
+                    <!-- // 옵션 영역 -->
+                    <div class="price-area">
+                        <dl>
+                            <dt>총 2개</dt>
+                            <dd>총 주문금액 <strong>19,345,000</strong>원</dd>
+                        </dl>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn lg blackline">장바구니</button>
+                        <button type="button" class="btn lg primary">구매하기</button>
+                        <!-- 품절 시 -->
+                        <!--<button type="button" class="btn lg disabled w-full">SOLD OUT</button>-->
+                    </div>
+                </div>
+            </div>
+            <!-- 배너영역  -->
+            <div class="banner-slide">
+                <a href="#"><img src="../../img/full_banner.jpg" alt="배너"/></a>
+                <a href="#"><img src="../../img/full_banner.jpg" alt="배너"/></a>
+                <a href="#"><img src="../../img/full_banner.jpg" alt="배너"/></a>
+            </div>
+            <!-- // 배너영역 -->
+            <!--상품정보(탭)-->
+            <div class="detail-tab"><!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > class="tab-ui"삭제(탭 스크립트 전용) -->
+                <ul>
+                    <li><a href="#prdAnc01">상품정보</a></li><!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > class="on"삭제(탭 스크립트 전용) -->
+                    <li><a href="#prdAnc02">추천</a></li>
+                    <li><a href="#prdAnc03">상품리뷰 (117)</a></li>
+                    <li><a href="#prdAnc04">상품문의(20)</a></li>
+                </ul>
+            </div>
+            <div class="tab-container">
+                <div class="detail-tabcont aside-contents"><!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > class="tab-cont"삭제(탭 스크립트 전용) -->
+                    <!--상품정보-->
+                    <div id="prdAnc01"><!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > 각 해당 div에 id추가 (#prdAnc01 ~ #prdAnc04), class="on"삭제(탭 스크립트 전용) -->
+                        <!--펀딩-->
+                        <div class="prd-info-type">
+                            <div class="top">
+                                <h5 class="title">
+                                    <label class="flag">펀딩</label>
+                                </h5> 
+                            <p class="time-tx">6시간 34분 24초 남음</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar">
+                                    <div class="bar" style="width:99%;">99%</div>
+                                </div>
+                                <div class="progress-tx">99% 달성</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <span class="sub-tx">주문기간: 2020.11.21 ~ 2020.11.31</span>
+                                    <span class="sub-tx">배송안내: 2021.01.11 부터 순차적 발송시작</span>
+                                </div>
+                                <div class="right">
+                                    <span class="guide-tx">펀딩 상품 안내</span>
+                                    <button type="button" class="btn-notice">자세히보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//펀딩-->
+                        <div class="prd-notice c-bgf5">
+                            <div class="box"><div class="delivery">겨울선오더 상품으로 '10월 30일' 부터 순차적으로 발송됩니다.</div></div><!-- 텍스트일 경우 -->
+                            <div class="box">
+                                <div class="notice">
+                                    <strong>주문 전 유의사항</strong><br><br>
+                                    <p>
+                                        오프라인 매장과 동시 판매되는 상품으로, 결제 완료 후 또는 입고 확정 이후에도 품절/결품이 <br>발생 될 수 있으며, 재고 확인으로 인한 발송 지연도 발생 할 수 있습니다.<br>
+                                        위와 같은 상황이 발생한 경우, 문자서비스를 통해 회원님께 안내 드리고 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="gifts">
+                                    <div class="img">
+                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지"></div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="title">구매 사은품 안내</div>
+                                        <div class="name">반팔티셔츠</div>
+                                        <div class="txt">주문건 당 1개의 사은품 증정</div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div id="contentGoodsDtlNotiInfoDelivery" class="box"><div class="delivery"><img src="https://img.babathe.com/upload/specialDisplay/htmlImage/2020/20211221_ShippingNotice_banner_pc.jpg" alt="img"></div></div><!-- 이미지일 경우 -->
+
+                            <!-- 20240405 페스타 배너 html 샘플링 작업 -->
+                            <!-- <div class="box" id="contentGoodsDtlNotiInfoDelivery"><div class="delivery">
+                                <p style="text-align: center;" align="center">
+                                    <img src="https://image.babathe.com/editor/goods_desc/202403/1711679584258.jpg" alt="img">&nbsp;
+                                </p>
+                            </div></div> -->
+                            <div class="box" id="contentGoodsDtlNotiInfoDelivery"><div class="delivery">
+<div class="festa_banner_area">
+    <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20240408_FESTA_banner.jpg" alt="">
+    <div class="banner_wrap">
+        <span class="brand">브랜드명</span><!-- 브랜드명을 넣어주세요. -->
+        <!-- <strong class="percent">~70%</strong> --><!-- 할인율을 넣어주세요. -->
+    </div>
+    <a href="해당 링크"></a><!-- 해당 링크를 넣어주세요. -->
+    <style>
+        .festa_banner_area {position:relative; text-align:center}
+        .festa_banner_area .banner_wrap {position:absolute; top:40.8%; left:0; display:block; width:100%}
+        .festa_banner_area .banner_wrap > * {display:block}
+        .festa_banner_area .brand {font-weight:400; font-size:60px; color:#fff}
+        .festa_banner_area .percent {line-height:1.25em; font-size:100px; color:#FF0D0D}
+        .festa_banner_area a {position:absolute; bottom:47px; left:50%; width:400px; height:83px; transform:translateX(-50%)}
+    </style>
+</div>
+                            </div></div>
+                            <!-- //20240405 페스타 배너 html 샘플링 작업 -->
+
+                        </div>
+                        
+						<div class="prd-notice c-bgf5">
+
+                            <!-- 20220329 페스타 배너영역 추가 -->
+                            <dt class="bnr-img">
+                                <a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=15840#eventSect01" target="_blank">
+                                    <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230403_FESTA_banner.jpg" alt="페스타 쿠폰 다운">
+                                </a>
+                            </dt>
+                            <!-- //20220329 페스타 배너영역 추가 -->
+                            
+                            <!-- 20220316 이미지 배너영역 추가 (해외직구 안내 등) -->
+		                	<div class="bnr-img"><!-- 20220316 이미지 배너영역 추가 (해외직구 안내 등) > class="bnr-img" 추가 -->
+		                		<img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220314_OverseasNotice_banner_pc.jpg" alt="">
+		                		<a class="bnr-img-link oversea" href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank"><img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220314_OverseasNotice_link_pc.png" alt=""></a>
+	                		</div>
+	                        <!-- 20220316 이미지 배너영역 추가 (해외직구 안내 등) -->
+                            
+                            <!-- 20230221 #3188 당일출고 기능 추가 요청 > 당일출고 배너 추가 -->
+                            <div class="bnr-img">
+                                <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230220_same_day_delivery_banner_pc.jpg" alt="">
+                            </div>
+                            <!-- //20230221 #3188 당일출고 기능 추가 요청 > 당일출고 배너 추가 -->
+                            
+		                </div>
+                        
+                        <!--상품상세정보
+                        <div class="detail-unit">
+                            <h3 class="unit-title">DETAIL</h3>
+                            <p>얇고 가벼운 쉬폰 소재로 자연스럽게 주름이 연출되는 플레어 스커트입니다.</p>
+                            <ul class="list-group dash">
+                                <li>밑단 레이스와 메쉬 소재가 배색된 디자인</li>
+                                <li>맵시를 더하는 사이드 버튼 장식과 허리 벨트 디테일</li>
+                                <li>탈착의가 간편한 사이드 지퍼 클로징</li>
+                                <li>허벅지까지 안감 처리</li>
+                                <li>30(화이트)컬러는 이너 스커트 세트 구성</li>
+                            </ul>
+                        </div>
+                        //상품상세정보-->
+						<!-- 20210826 주문 전 유의사항 추가 -->
+						<div class="order-notice">
+							<strong class="tit-notice">주문 전 유의사항</strong>
+							<p>
+								오프라인 매장과 동시 판매되는 상품으로, 결제 완료 후 또는 입고 확정 이후에도 품절/결품이 발생될 수 있으며,<br>
+								재고 확인으로 인한 발송 지연도 있을 수 있습니다.<br>
+								결제 완료 이후 품절/결품이 발생한 경우, 고객님께 문자 서비스를 통해 품절/결품 안내를 드리고 있습니다.<br><br> 
+								
+								아울렛 상품은 할인율이 높은 상품으로 부속품이 없을 수 있으므로 구매 시 유의하여 주시기 바랍니다.<br> <!-- 20210902 주문 전 유의사항 문구수정 -->
+								이로 인한 무료반품은 불가하오니 이점 양해 바랍니다.
+							</p>
+						</div>
+						<!-- //20210826 주문 전 유의사항 추가 -->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">DETAIL</h3>
+                            <div class="prd-detail">
+                                <div class="img-box more">
+                                    <div class="dt-note">
+                                        얇고 가벼운 쉬폰 소재로 자연스럽게 주름이 연출되는 플레어 스커트입니다.
+                                        <br>
+                                        - 밑단 레이스와 메쉬 소재가 배색된 디자인
+                                        <br>
+                                        - 맵시를 더하는 사이드 버튼 장식과 허리 벨트 디테일
+                                        <br>
+                                        - 탈착의가 간편한 사이드 지퍼 클로징
+                                        <br>
+                                        - 허벅지까지 안감 처리
+                                        <br>
+                                        - 30(화이트)컬러는 이너 스커트 세트 구성
+                                    </div>
+                                    <div>
+                                        <img src="https://img.babathe.com/productimage/R0wzTTBUQzk=GL3M0TC9197_1_682x1000.jpg" alt="상세이미지"  style="display: block; width:100%;"/>
+                                        <img src="https://img.babathe.com/productimage/R0wzTTBUQzk=GL3M0TC9197_5_682x1000.jpg" alt="상세이미지"  style="display: block; width:100%;" />
+                                        <img src="https://img.babathe.com/productimage/R0wzTTBUQzk=GL3M0TC9197_11_682x1000.jpg" alt="상세이미지"  style="display: block; width:100%;" />
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-more">더보기</button>
+                            </div>
+                        </div>
+                        <!--실측사이즈-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">실측 사이즈</h3>
+                            <div class="prd-size">
+                                <h4 class="unit-sub-tit w-full">상의 사이즈 1</h4>
+                                <div class="img">
+                                    <img src="https://img.babathe.com/static/kr/image/realsize/TYPE05_JK01.png" alt="실측사이즈" />
+                                </div>
+                                <div class="info">
+                                    <div class="tb-top">(CM)</div>
+                                    <div class="tb-wrap">
+                                        <ul class="tb-colCustom">
+                                            <li>
+                                                <span class="th">구분</span>
+                                                <span>A 어깨넓이</span>
+                                                <span>B 가슴둘레</span>
+                                                <span>C 허리둘레</span>
+                                                <span>D 소매길이</span>
+                                                <span>F 총 길이</span>
+                                                <span>G 밑단둘레</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">55</span>
+                                                <span>38</span>
+                                                <span>104</span>
+                                                <span>109</span>
+                                                <span>63</span>
+                                                <span>108</span>
+                                                <span>116</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">66</span>
+                                                <span>39</span>
+                                                <span>110</span>
+                                                <span>115</span>
+                                                <span>64</span>
+                                                <span>109</span>
+                                                <span>116</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prd-size">
+                                <h4 class="unit-sub-tit w-full">상의 사이즈 1</h4>
+                                <div class="img">
+                                    <img src="https://img.babathe.com/static/kr/image/realsize/TYPE05_JK01.png" alt="실측사이즈" />
+                                </div>
+                                <div class="info">
+                                    <div class="tb-top">(CM)</div>
+                                    <div class="tb-wrap">
+                                        <ul class="tb-colCustom">
+                                            <li>
+                                                <span class="th">구분</span>
+                                                <span>A 어깨넓이</span>
+                                                <span>B 가슴둘레</span>
+                                                <span>C 허리둘레</span>
+                                                <span>D 소매길이</span>
+                                                <span>F 총 길이</span>
+                                                <span>G 밑단둘레</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">55</span>
+                                                <span>38</span>
+                                                <span>104</span>
+                                                <span>109</span>
+                                                <span>63</span>
+                                                <span>108</span>
+                                                <span>116</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">66</span>
+                                                <span>39</span>
+                                                <span>110</span>
+                                                <span>115</span>
+                                                <span>64</span>
+                                                <span>109</span>
+                                                <span>116</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">77</span>
+                                                <span>38</span>
+                                                <span>104</span>
+                                                <span>109</span>
+                                                <span>63</span>
+                                                <span>108</span>
+                                                <span>116</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">88</span>
+                                                <span>39</span>
+                                                <span>110</span>
+                                                <span>115</span>
+                                                <span>64</span>
+                                                <span>109</span>
+                                                <span>116</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">99</span>
+                                                <span>38</span>
+                                                <span>104</span>
+                                                <span>109</span>
+                                                <span>63</span>
+                                                <span>108</span>
+                                                <span>116</span>
+                                            </li>
+                                            <li>
+                                                <span class="th">110</span>
+                                                <span>39</span>
+                                                <span>110</span>
+                                                <span>115</span>
+                                                <span>64</span>
+                                                <span>109</span>
+                                                <span>116</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="list-group star">
+                                <li>사이즈는 원단 측정 방법에 따라 2-3cm 오차 가능성이 있습니다.</li>
+                                <li>상품에 부착된 케어라벨 사이즈는 일반 표준 사이즈 기준으로 기재되어 본 제품의 실측사이즈와 
+                                    무관합니다.</li>
+                                <li>위 사항들은 교환 및 반품, 환불의 사유가 될 수 없으며, 회원님의 단순 변심으로 분류됩니다.</li>
+                            </ul>
+                        </div>
+                        <!--//실측사이즈-->
+                        <!--실측사이즈-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">추가 정보</h3>
+                            <table class="tb-default">
+                                <caption>실측 사이즈</caption>
+                                <colgroup>
+                                    <col width="">
+                                    <col width="144px">
+                                    <col width="144px">
+                                    <col width="144px">
+                                    <col width="144px">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">착용시기</th>
+                                        <td class="center"><span class="c-gray1">봄</span></td>
+                                        <td class="center"><span class="c-gray9">여름</span></td>
+                                        <td class="center"><span class="c-gray9">가을</span></td>
+                                        <td class="center"><span class="c-gray9">겨울</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">신축성</th>
+                                        <td class="center"><span class="c-gray9">없음</span></td>
+                                        <td class="center"><span class="c-gray1">있음</span></td>
+                                        <td class="center"></td>
+                                        <td class="center"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">비침</th>
+                                        <td class="center"><span class="c-gray1">없음</span></td>
+                                        <td class="center"><span class="c-gray9">조금비침</span></td>
+                                        <td class="center"><span class="c-gray9">많이비침</span></td>
+                                        <td class="center"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">안감</th>
+                                        <td class="center"><span class="c-gray1">없음</span></td>
+                                        <td class="center"><span class="c-gray9">일부</span></td>
+                                        <td class="center"><span class="c-gray9">전체</span></td>
+                                        <td class="center"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">포켓</th>
+                                        <td class="center"><span class="c-gray9">없음</span></td>
+                                        <td class="center"><span class="c-gray1">있음</span></td>
+                                        <td class="center"></td>
+                                        <td class="center"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//실측사이즈-->
+                        <!--삼품고시정보-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">상품고시정보</h3>
+                            <table class="tb-default">
+                                <caption>상품고시정보</caption>
+                                <colgroup>
+                                    <col width="244px">
+                                    <col width="">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">제품코드</th>
+                                        <td>BKAA0CT5254</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">제품소재</th>
+                                        <td>겉감: 캐시미어 100% / 안감: 폴리에스터 52%, 레이온 48% /<br>안감 2: 레이온 52%, 폴리에스터 48% / 주머니: 견 100%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">색상</th>
+                                        <td>540(CAMEL)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">치수</th>
+                                        <td>55, 66</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">제조자·수입자</th>
+                                        <td>(주)바바패션</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">제조국</th>
+                                        <td>대한민국</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">세탁방법 및 취급시주의사항</th>
+                                        <td>반드시 단독, 석유계 드라이하세요.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">제조년월</th>
+                                        <td>2020-10</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">품질보증기준</th>
+                                        <td>공정거래위원회 고시 소비자 분쟁해결 기준에 따름</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">AS 책임자 전화번호</th>
+                                        <td>1644-0100</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//삼품고시정보-->
+                        <!--배송/교환/반품/환불 안내-->
+                    <div class="detail-guide acd-box">
+                        <div class="accordion-title">
+                            <div class="title">배송/교환/반품/환불 안내</div>
+                            <button>닫힘</button>
+                        </div>
+                        <div class="accordion-panel">
+                            <!-- <table class="tb-default">
+                                <caption>상품고시정보</caption>
+                                <colgroup>
+                                    <col width="244px">
+                                    <col width="">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">배송정보</th>
+                                        <td>
+                                            <ul class="list-group dash">
+                                                <li>상품별로 상품 특성 및 배송지에 따라 배송유형 및 소요기간이 달라집니다.</li>
+                                                <li>일부 주문상품 또는 예약상품의 경우 기본 배송일 외에 추가 배송 소요일이 발생될 수 있습니다.</li>
+                                                <li>동일 브랜드의 상품이라도 상품별 출고일시가 달라 각각 배송될 수 있습니다.</li>
+                                                <li>택배 배송기일은 재고상황, 택배사 사정 및 배송지(해외 상품, 제주/도서산간지역)에 따라 약간의 지연이 발생할 수 있습니다.</li>
+                                                <li>상품의 배송비는 공급업체의 정책에 따라 다르며, 공휴일 및 휴일은 배송이 불가합니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">취소/반품/교환 안내</th>
+                                        <td>
+                                            <ul class="list-group dash">
+                                                <li>상품하자 이외 사이즈, 색상교환 등 단순 변심에 의한 교환/반품 택배비는 고객부담으로 왕복택배비가 발생합니다. (전자상거래 등에서의 소비자보호에 관한 법률 제18조(청약 철회등)9항에 의거 소비자의 사정에 의한 청약 철회 시 택배비는 소비자 부담입니다.)</li>
+                                                <li>결제완료 직후 즉시 주문취소는 ＂마이바바 > 취소/교환/반품 신청"에서 직접 처리 가능합니다.</li>
+                                                <li>주문완료 후 재고 부족 등으로 인해 주문 취소 처리가 될 수도 있는 점 양해 부탁드립니다.</li>
+                                                <li>주문상태가 상품준비중인 경우 취소신청이 불가능합니다.</li>
+                                                <li>교환 신청은 최초 1회에 한하며, 교환 배송 완료 후에는 추가 교환 신청은 불가합니다.</li>
+                                                <li>반품/교환은 미사용 제품에 한해 배송완료 후 7일 이내입니다.</li>
+                                                <li>임의반품은 불가하오니 반드시 고객센터나 ＂마이바바 > 주문취소/교환/반품 신청"을 통해서 신청접수를 하시기 바랍니다.</li>
+                                                <li>상품하자, 오배송의 경우 택배비 무료로 교환/반품이 가능하지만 모니터의 색상차이, 착용감, 사이즈의 개인의 선호도는 상품의 하자 사유가 아닙니다.</li>
+                                                <li>고객 부주의로 상품이 훼손, 변경된 경우 교환/반품이 불가능 합니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">반품/교환 불가능한 경우</th>
+                                        <td>
+                                            <ul class="list-group dash">
+                                                <li>제품을 사용 또는 훼손한 경우, 사은품 누락, 상품 TAG, 보증서, 상품 부자재가 제거 혹은 분실된 경우</li>
+                                                <li>밀봉포장을 개봉했거나 내부 포장재를 훼손 또는 분실한 경우(단, 제품확인을 위한 개봉 제외)</li>
+                                                <li>시간이 경과되어 재판매가 어려울 정도로 상품가치가 상실된 경우</li>
+                                                <li>고객님의 요청에 따라 주문 제작되어 고객님 외에 사용이 어려운 경우</li>
+                                                <li>배송된 상품이 설치가 완료된 경우(가전, 가구 등)</li>
+                                                <li>기타 전자상거래 등에서의 소비자보호에 관한 법률이 정하는 청약철회 제한사유에 해당하는 경우</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">A/S 안내</th>
+                                        <td>
+                                            <ul class="list-group dash">
+                                                <li>A/S 기준이나 가능여부는 브랜드와 상품에 따라 다르므로 관련 문의는 고객센터를 통해 부탁드립니다.</li>
+                                                <li>상품불량에 의한 반품, 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자분쟁해결기준(공정거래위원회 고시)에 따라 받으실 수 있습니다.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> -->
+                            <table class="tb-default">
+                                <colgroup>
+                                    <col width="18%">
+                                    <col width="">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">배송</th>
+                                        <td>
+                                            <ul class="list-group dash">
+                                                <li>당일 <mark>오전 9시 이후 주문</mark>건의 경우 <mark>익일 주문서 확인</mark> 후 배송이 이루어집니다.</li>
+                                                <li>빠른 배송을 위해 준비되는 상품부터 <mark>부분 발송</mark> 진행 될 수 있습니다.</li>
+                                                <li>당사 계약택배는 CJ대한통운이며, 배송비는 5만원 이상 구매 시 배송비는 무료이나, 도서 산간은 추가 배송비/도선료가 발생합니다.</li>
+                                                <li>결제완료 후 평균 3~5일(토요일 및 공휴일 제외) 이내에 배송 시작되며, 매장 수급 제품의 경우에는 7~10일정도 소요될 수 있습니다.</li>
+                                                <li>일부 상품의 경우 <mark>매장에서 직접 배송</mark>이 이루어지며 <mark>대한통운 외 타택배로 배송</mark>이 이루어집니다. </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">교환/반품</th>
+                                        <td>
+                                            <ul class="list-group dash">
+                                                <li>주문취소는 '주문접수' 상태에서만 가능합니다.</li>
+                                                <li>교환/반품 접수는 <mark>수령 후 익일부터 사이트에서 직접 접수</mark> 가능하며, 제품 <mark>수령일로부터 7일 이내</mark>에만 가능합니다.</li>
+                                                <li>사이트 접수시 자동 CJ대한통운 회수 진행되며, 타택배 착불로 보내주시는경우 자동 반송됩니다.
+                                                    <br>(<mark>반송지: 경기도 여주시 점동면 장여로 545(원부리 204-6번지) 바바패션 물류센터</mark>)</li>
+                                                <li>교환은 동일한 제품의 한하여 색상과 사이즈만 가능합니다.</li>
+                                                <li><mark>맞교환은 불가능</mark>하며, 수령하신 상품이 반송지로 입고된 후 요청하신 교환상품이 배송됩니다.</li>
+                                                <li>제품의 불량, 오배송으로 인한 교환/반품 시 택배비는 본사에서 부담하며, 상품 확인 후 처리해드리고 있습니다.
+                                                    <br>(수령 후 3일 내 고객센터 또는 1:1게시판으로 신청해주시기 바랍니다.)</li>
+                                                <li class="tit">교환/반품이 불가능한 경우</li>
+                                                <li>교환/반품 가능 기간을 초과하였을 경우</li>
+                                                <li>고객님의 귀책 사유로 상품이 훼손된 경우</li>
+                                                <li>시간의 경과 또는 일부 소비에 의해 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소된 경우</li>
+                                                <li>상품의 TAG, 스티커, 케이스 등을 훼손 및 분실한 경우</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">환불</th>
+                                        <td>
+                                            <ul class="list-group dash">
+                                                <li><mark>현금</mark> 결제 시 : 주문취소 확인 후 영업일 기준 1일~3일내 요청계좌로 환불되며 '한국사이버결제(KCP)'로 입금됩니다.</li>
+                                                <li><mark>카드</mark> 결제 시 : 주문취소 확인 후 카드사 매출 취소까지 영업일 기준 3일~5일정도 소요됩니다. (해당 카드사 사정에 따라 지연될 수 있습니다.)</li>
+                                             </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 에디터 사용 시 -->
+                            <!-- <div>
+                                <div class="c-bgf5">
+                                    <h6>배송 안내</h6>
+                                    <ul class="list-group dash">
+                                        <li>당일 오전 9시 이후 주문건의 경우 익일 주문서 확인 후 배송이 이루어집니다.</li>
+                                        <li>빠른 배송을 위해 준비되는 상품부터 부분 발송 진행 될 수 있습니다.</li>
+                                        <li>결제완료 후 평균 3~5일(토요일 및 공휴일 제외) 이내에 배송 시작되며, 매장 수급 제품의 경우에는 7-10일 정도 소요될 수 있습니다.</li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="c-bgf5">
+                                    <h6>취소/교환/반품 안내</h6>
+                                    <ul class="list-group dash">
+                                        <li>주문취소는 ‘주문접수’ 또는 ‘상품준비중’ 까지만 가능합니다.</li>
+                                        <li>교환/반품은 제품 수령일로부터 7일 이내 에만 가능합니다.</li>
+                                        <li>교환/반품 신청은 수령 후 익일부터 사이트에서 직접 접수 가능합니다.</li>
+                                        <li>교환은 동일한 제품에 한하여 색상과 사이즈만 가능합니다.</li>
+                                        <li>맞교환은 불가하며, 수령하신 상품이 반송지로 입고된 후 교환상품이 배송됩니다.</li>
+                                        <li>제품의 불량, 오배송으로 인한 교환/반품 시 택배비는 본사에서 부담하며, 상품 확인 후 처리해드리고 있습니다. (수령 후 3일 내 고객센터 또는 1:1게시판으로 신청해주세요.)</li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!--//배송/교환/반품/환불 안내-->
+                    <!--판매자 정보-->
+                    <div class="detail-guide acd-box">
+                        <div class="accordion-title">
+                            <div class="title">판매자 정보</div>
+                            <button>닫힘</button>
+                        </div>
+                        <div class="accordion-panel">
+                            <div>
+                                <table class="tb-default">
+                                    <caption>판매자 정보</caption>
+                                    <colgroup>
+                                        <col width="144px">
+                                        <col width="">
+                                        <col width="144px">
+                                        <col width="">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">판매자명</th>
+                                            <td>주식회사OOO</td>
+                                            <th scope="row">상호/대표자</th>
+                                            <td>홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">연락처</th>
+                                            <td>070-1234-1234</td>
+                                            <th scope="row">응대가능시간</th>
+                                            <td>10시 ~ 17시</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">E-mail</th>
+                                            <td><a href="mailto:baba@gmail.com">baba@gmail.com</a>                                    </td>
+                                            <th scope="row">FAX</th>
+                                            <td>02-5678-5678</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">사업자 등록번호</th>
+                                            <td>123-45-67890</td>
+                                            <th scope="row">통신판매업 신고</th>
+                                            <td>2020-서울서울-1234</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">영업소재지</th>
+                                            <td colspan="3">서울특별시 강남구 논현동 어딘가</td>
+                                        
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--//판매자 정보-->
+                    </div>
+                    <!--//상품정보-->
+                    <!--추천-->
+                    <div id="prdAnc02"> <!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > 각 해당 div에 id추가 (#prdAnc01 ~ #prdAnc04) -->
+                        <!-- 함께 코디한 상품 -->
+                        <!-- 20220804 상품상세 코디상품 영역 위치 변경건 -->
+                        <!-- 20230608 #3782 상품상세 이미지에 코디상품 버튼 추가 > 해당 div에 id추가 (#codyWrap) -->
+                        <div id="codyWrap" class="detail-unit">
+                            <h3 class="unit-title">이 상품과 함께 코디해보세요</h3>
+                            <div class="swiper-wrap prd-other04">
+                                <div class="swiper-container">
+                                    <ul class="prd-list thum col-4 swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="swiper-scrollbar"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //20220804 상품상세 코디상품 영역 위치 변경건 -->
+                        <!-- //함께 코디한 상품 -->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">이 상품 연관 검색어</h3>
+                            <div class="hashtag-list">
+                                <a href="#" class="tag"># 윤아패딩</a>
+                                <a href="#" class="tag"># 2020연말세일</a>
+                                <a href="#" class="tag"># 에센스</a>
+                                <a href="#" class="tag"># 비타민</a>
+                                <a href="#" class="tag"># 원피스</a>
+                                <a href="#" class="tag"># 풀오버니트</a>
+                                <a href="#" class="tag"># 이지룩</a>
+                                <a href="#" class="tag"># 캐쥬얼</a>
+                                <a href="#" class="tag"># 오버핏</a>
+                                <a href="#" class="tag"># 브이넥</a>
+                                <a href="#" class="tag"># 캐쥬얼</a>
+                                <a href="#" class="tag"># 데일리룩코트</a>
+                            </div>
+                        </div>
+                        <!--사이즈 추천-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">사이즈 추천</h3>
+                            <div>
+                                <!--솔루션영역-->
+                                크리마 핏 솔루션 영역
+                                <!--//솔루션영역-->
+                            </div>
+                        </div>
+                        <!--//사이즈 추천-->
+                        <!--AI가 추천하는 상품-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">이 상품들은 어때요?</h3>
+                            <div class="swiper-wrap prd-other01">
+                                <div class="swiper-container">
+                                    <ul class="prd-list thum col-4 swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- Add Scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div><!--//솔루션사용-->
+                        </div>
+                        <!--//AI가 추천하는 상품-->
+                        <!--함께 구매한 상품-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">AI가 다른 고객님들이 함께 본 상품을 추천드려요.</h3>
+                            <div class="swiper-wrap prd-other02">
+                                <div class="swiper-container">
+                                    <ul class="prd-list thum col-4 swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- Add Scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div> <!--//솔루션사용-->                           
+                        </div>
+                        <!--//함께 구매한 상품-->
+                        <!--다음에 구매할 상품-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">AI가 분석한 다음에 보실 상품을 추천드려요.</h3>
+                            <div class="swiper-wrap prd-other03">
+                                <div class="swiper-container">
+                                    <ul class="prd-list thum col-4 swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="javascript:void(0)">
+                                                <div class="prd-img ">
+                                                    <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">THE IZZAT COLLECTION</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">2021 신상품 </div>
+                                                        <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>1,234,567</strong>원</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- Add Scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div><!--//솔루션사용-->
+                        </div>
+                        <!--//다음에 구매할 상품-->
+                        <!--관련 콘텐츠-->
+                        <div class="detail-unit">
+                            <h3 class="unit-title">이 상품 관련 콘텐츠</h3>
+                            <div class="exh-list swiper-wrap">
+                                <div class="swiper-container">
+                                    <ul class="swiper-wrapper">
+                                    	<!-- 20211026 관련 콘텐츠 영역 내 패션리더 콘텐츠 추가 -->
+                                    	<li class="swiper-slide">
+                                            <a href="#">
+                                                <span class="badge">바바패션리더</span>
+                                                <div class="img">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="../../img/img_brand_exhibition.jpg" alt="기획전 썸네일">
+                                                        <span class="event-bdg"><img src="../../img/thumb-badge-event.jpg" alt=""></span><!-- 20230511 #3613 [BO]상품 메인 기획전 개발요청 > 기획전 목록 썸네일 영역 기획전 관련 뱃지 추가 -->
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <!-- <div class="date">2020.12.24 ~ 2021.01.24</div> -->
+                                                    <span class="title">바바패션리더 - ssangzhy12345345345345 345345</span>
+                                                    <span class="txt">예쁜 바바 더 틸버리 점프수트 입고 다리 더 길어보이기는 덤덤덤덤덤덤덤덤덤덤덤덤</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    	<!-- //20211026 관련 콘텐츠 영역 내 패션리더 콘텐츠 추가 -->
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <span class="badge">기획전</span>
+                                                <div class="img">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="../../img/img_brand_exhibition.jpg" alt="기획전 썸네일">
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="date">2020.12.24 ~ 2021.01.24</div>
+                                                    <span class="title">Weekend Sale! 최대 60% 할인 + 10%쿠폰</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <span class="badge">이벤트</span>
+                                                <div class="img">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="../../img/img_brand_exhibition.jpg" alt="기획전 썸네일">
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="date">2020.12.24 ~ 2021.01.24</div>
+                                                    <span class="title">Weekend Sale! 최대 60% 할인 + 10%쿠폰</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="img">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="../../img/img_brand_exhibition.jpg" alt="기획전 썸네일">
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="date">2020.11.20</div>
+                                                    <span class="title">컬렉션과 봄의 왈츠</span>
+                                                    <span class="txt">컬렉션과 함께하는 따스하고 감성적인 봄의 왈츠에 몸을 맡겨보자.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <a href="#">
+                                                <div class="img">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img src="../../img/img_brand_exhibition.jpg" alt="기획전 썸네일">
+                                                    </div>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="date">2020.11.20</div>
+                                                    <span class="title">컬렉션과 봄의 왈츠</span>
+                                                    <span class="txt">컬렉션과 함께하는 따스하고 감성적인 봄의 왈츠에 몸을 맡겨보자.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                    <!-- Add Scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                    <!-- Add Arrows -->
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//관련 콘텐츠-->
+                    </div>
+                    <!--//추천-->
+                    <!--상품리뷰-->
+                    <div id="prdAnc03"> <!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > 각 해당 div에 id추가 (#prdAnc01 ~ #prdAnc04) -->
+                        <div>
+                            <p style="height:600px;">크리마 리뷰 솔루션 영역</p>
+                        </div>
+                    </div>
+                    <!--//상품리뷰-->
+                    <!--상품문의-->
+                    <div id="prdAnc04"> <!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > 각 해당 div에 id추가 (#prdAnc01 ~ #prdAnc04) -->
+                        <div class="detail-unit">
+                            <div class="d-flex align-items-center">
+                                <h3 class="unit-title">상품문의</h3>
+                                <button class="btn sm primary">상품문의 작성하기</button>
+                            </div>
+                            <ul class="qna-list">
+                                <li>
+                                    <div class="top-info">
+                                        <div class="info">
+                                            <label class="flag wait">답변대기</label>
+                                            <span class="name">0101234****</span>
+                                            <span class="date">2020.02.05</span>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn-tx">수정</button>
+                                            <button type="button" class="btn-tx">삭제</button>
+                                        </div>
+                                    </div>
+                                    <div class="acd-box">
+                                        <div class="accordion-title open">
+                                            <div class="title"><span class="ico-en">Q.</span>상품 문의드립니다.</div>
+                                            <button>닫힘</button>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <div>사이즈 차트에 보면 55, 66 사이즈 모두 총 기장이 동일 하게 표기되어 있는데 정확하게 기재된 것이 맞는지 다시 한번 확인해 주세요.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-info">
+                                        <div class="info">
+                                            <label class="flag wait">답변대기</label>
+                                            <span class="name">0101234****</span>
+                                            <span class="date">2020.02.05</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-locked"><i class="icon-locked">비밀글</i>비밀글입니다.</div>
+                                </li>
+                                <li>
+                                    <div class="top-info">
+                                        <div class="info">
+                                            <label class="flag end">답변완료</label>
+                                            <span class="name">0101234****</span>
+                                            <span class="date">2020.02.05</span>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn-tx">삭제</button>
+                                        </div>
+                                    </div>
+                                    <div class="acd-box">
+                                        <div class="accordion-title open">
+                                            <div class="title"><span class="ico-en">Q.</span>상품 문의드립니다.</div>
+                                            <button>닫힘</button>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <div>사이즈 차트에 보면 55, 66 사이즈 모두 총 기장이 동일 하게 표기되어 있는데 정확하게 기재된 것이 맞는지 다시 한번 확인해 주세요.</div>
+                                            <div class="re-box c-bgf5">
+                                                <div class="top-info">
+                                                    <div class="info">
+                                                        
+                                                        <!--<label class="flag re">답변</label>-->
+                                                        <span class="name">0101234****</span>
+                                                        <!--<span class="date">2020.02.05</span>-->
+                                                    </div>
+                                                </div>
+                                                <div class="re-cont"><span class="ico-en">A.</span>회원님 문의주신 내용 다시 확인해본 결과 총 기장이 미세한 차이는 있으나 문의주신 두 사이즈 모두 동일하다고 보시는 것이 좋을 것 같습니다. 전체 사이즈 조정 시 미세하게 생기는 차이입니다. 감사합니다.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-info">
+                                        <div class="info">
+                                            <label class="flag wait">답변대기</label>
+                                            <span class="name">0101234****</span>
+                                            <span class="date">2020.02.05</span>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn-tx">수정</button>
+                                            <button type="button" class="btn-tx">삭제</button>
+                                        </div>
+                                    </div>
+                                    <div class="acd-box">
+                                        <div class="accordion-title open">
+                                            <div class="title"><span class="ico-en">Q.</span>상품 문의드립니다.</div>
+                                            <button>닫힘</button>
+                                        </div>
+                                        <div class="accordion-panel">
+                                            <div>사이즈 차트에 보면 55, 66 사이즈 모두 총 기장이 동일 하게 표기되어 있는데 정확하게 기재된 것이 맞는지 다시 한번 확인해 주세요.</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="top-info">
+                                        <div class="info">
+                                            <label class="flag wait">답변대기</label>
+                                            <span class="name">0101234****</span>
+                                            <span class="date">2020.02.05</span>
+                                        </div>
+                                    </div>
+                                    <div class="title-locked"><i class="icon-locked">비밀글</i>비밀글입니다.</div>
+                                </li>
+                            </ul>
+                            <!--paging-->
+                            <div class="paging">
+                                <a href="#" class="prev"><span>이전</span></a>
+                                <a href="#" class="on">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">7</a>
+                                <a href="#">8</a>
+                                <a href="#">9</a>
+                                <a href="#">10</a>
+                                <a href="#" class="next"><span>다음</span></a>
+                            </div>
+                            <!--//paging-->
+                        </div>
+                    </div>
+                    <!--//상품문의-->
+                </div>
+                <aside class="aside-wrap">
+                    <div class="scroll-wrap">
+                        <div class="acd-box">
+                            <div class="accordion-title open">
+                                <div class="title">옵션/수량 선택</div><!--//[P] 04.21 타이틀 수정-->
+                                <button>닫힘</button>
+                            </div>
+                            <div class="accordion-panel">
+                                <div>
+                                    
+                                    <div class="opt-basic">
+                                        <div class="opt-group">
+                                            <!-- <h3 class="opt-title">모델명 1</h3> -->
+                                            <dl>
+                                                <dd>
+                                                    <div class="form-box">
+                                                        <select id="" class="placeholderOn">
+                                                            <option disabled selected hidden>색상 선택</option>
+                                                            <option>옵션1</option>
+                                                            <option>옵션2</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd>
+                                                    <div class="form-box">
+                                                        <select id="" class="placeholderOn">
+                                                            <option disabled selected hidden>사이즈 선택</option>
+                                                            <option>옵션1</option>
+                                                            <option>옵션2</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd>
+                                                    <div class="form-box">
+                                                        <select id="" class="placeholderOn">
+                                                            <option disabled selected hidden>색상 선택</option>
+                                                            <option>옵션1</option>
+                                                            <option>옵션2</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd>
+                                                    <div class="form-box">
+                                                        <select id="" class="placeholderOn">
+                                                            <option disabled selected hidden>사이즈 선택</option>
+                                                            <option>옵션1</option>
+                                                            <option>옵션2</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd>
+                                                    <div class="form-box">
+                                                        <select id="" class="placeholderOn">
+                                                            <option disabled selected hidden>색상 선택</option>
+                                                            <option>옵션1</option>
+                                                            <option>옵션2</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd>
+                                                    <div class="form-box">
+                                                        <select id="" class="placeholderOn">
+                                                            <option disabled selected hidden>사이즈 선택</option>
+                                                            <option>옵션1</option>
+                                                            <option>옵션2</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <dl>
+                                                <dd>
+                                                    <div class="form-box">
+                                                        <select id="" class="placeholderOn">
+                                                            <option disabled selected hidden>색상 선택</option>
+                                                            <option>옵션1</option>
+                                                            <option>옵션2</option>
+                                                        </select>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <div class="opt-selected">
+                                        <ul>
+                                            <li>
+                                                <span class="opt-txt">색상: 블랙 / 사이즈:44 / 추가옵션: 스카프</span>
+                                                <div class="prd-spinner">
+                                                    <button type="button" class="btn-minus">수량감소</button>
+                                                    <input type="text" value="1">
+                                                    <button type="button" class="btn-plus">수량증가</button>
+                                                </div>
+                                                <span class="price"><strong>94,284,000</strong>원</span>
+                                                <button type="button" class="btn-del">옵션 삭제</button>
+                                            </li>
+                                            <li>
+                                                <span class="opt-txt">옵션명 텍스트는 한줄처리</span>
+                                                <div class="prd-spinner">
+                                                    <button type="button" class="btn-minus">수량감소</button>
+                                                    <input type="text" value="1">
+                                                    <button type="button" class="btn-plus">수량증가</button>
+                                                </div>
+                                                <span class="price"><strong>94,284,000</strong>원</span>
+                                                <button type="button" class="btn-del">옵션 삭제</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    -->
+                                    <div class="price-list">
+                                        <dl class="total">
+                                            <dt>총 <strong>2</strong>개</dt>
+                                            <dd><span class="tx-sm">총 주문금액</span>  <strong>19,345,666</strong><span class="tx-sm">원</span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn lg ">장바구니</button>
+                        <button type="button" class="btn lg primary black">구매하기</button>
+                        <!--<button type="button" class="btn lg w-full disabled" disabled>SOLD OUT</button> //[P] Sold out-->
+                    </div>
+                </aside>
+            </div>
+            <!--상품정보(탭)-->
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+    /*publishing UI only*/         
+    $('.tooltip').find('.btn-tooltip').on('click', function(){
+        //$(this).toggleClass('on');
+        var acdbox = $(this).closest('.acd-box');
+        var num = acdbox.find('.btn-tooltip.on').length;
+        if($(this).hasClass('on')){
+            $(this).removeClass('on');
+            acdbox.find('.accordion-panel').removeClass('visible');
+        } else {
+            acdbox.find('.btn-tooltip').removeClass('on');
+            $(this).addClass('on');
+            acdbox.find('.accordion-panel').addClass('visible');
+        }
+    }); // tooltip toggle Class
+    $('.tooltip').find('.btn-closed').on('click', function(){
+        $(this).closest('.tooltip').find('.btn-tooltip').removeClass('on');
+        $(this).closest('.accordion-panel').removeClass('visible');
+    }); // tooltip Closed
+    $('.pers-idx-guide').find('.accordion-title').on('click', function(){
+        if(!($(this).hasClass('open'))){
+            $(this).next('.accordion-panel').find('.btn-tooltip').removeClass('on');
+            $(this).next('.accordion-panel').removeClass('visible');
+        }
+    });
+    $('.btn-wish').on('click', function(){
+        $(this).toggleClass('on');
+    });//wish toggleClass
+    
+    var prevVideo;
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 14,
+        slidesPerView: 5,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      navigation: {
+        nextEl: '.img-area .swiper-button-next',
+        prevEl: '.img-area  .swiper-button-prev',
+      },     
+      thumbs: {
+        swiper: galleryThumbs
+      },
+      on :{
+        slideChange :function(swiper){
+            $('.gallery-top .swiper-slide').find('video').each(function(){
+                this.pause();
+            });
+        },
+        slideChangeTransitionStart : function(){
+            $('.gallery-top .swiper-slide-active').find('video').each(function(){
+                this.play();
+            });
+        },
+      }
+    });
+
+
+    $('.prd-detail').find('.btn-more').on('click', function(){
+        $(this).hide();
+        $(this).closest('.prd-detail').find('.img-box').removeClass('more');
+    });// 더보기 버튼
+
+    $('.opt-basic').find('ul > li > a').on('click', function(){
+        var optbox = $(this).closest('ul');
+        optbox.find('li').removeClass('on');
+        $(this).parent('li').addClass('on');
+    });//option select
+    
+   	$(".detail-tab a").click(function(e){
+   		e.preventDefault();
+    	$("html, body").scrollTop($(this.hash).offset().top - 154);
+    });//20210927 상품상세 > 탭영역 > 앵커 이벤트 추가
+    
+    $(window).scroll(function(e){
+   		e.preventDefault();
+   		
+   		var docScrTop = $(document).scrollTop(); 
+   		var tabOffset01 = $('#prdAnc01').eq(0).offset().top - 155;
+   		var tabOffset02 = $('#prdAnc02').eq(0).offset().top - 155;
+   		var tabOffset03 = $('#prdAnc03').eq(0).offset().top - 155;
+   		var tabOffset04 = $('#prdAnc04').eq(0).offset().top - 155;
+   		
+   		if(docScrTop >= tabOffset01 && docScrTop < tabOffset02){
+   			$('.detail-tab ul').children("li").eq(0).addClass('on').siblings().removeClass("on");
+		}else if(docScrTop >= tabOffset02 && docScrTop < tabOffset03){
+   			$('.detail-tab ul').children("li").eq(1).addClass('on').siblings().removeClass("on");
+		}else if(docScrTop >= tabOffset03 && docScrTop < tabOffset04){
+   			$('.detail-tab ul').children("li").eq(2).addClass('on').siblings().removeClass("on");
+		}else if(docScrTop >= tabOffset04){
+   			$('.detail-tab ul').children("li").eq(3).addClass('on').siblings().removeClass("on");
+		}else{
+			$('.detail-tab ul').children("li").eq(0).addClass('on').siblings().removeClass("on");
+		}
+    });//20210927 상품상세 > 탭영역 > 스크롤 이벤트 추가
+    
+    // 배너
+    var swiperbn = new Swiper('.banner-slide .swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+        },
+    });
+
+    var swiper1 = new Swiper('.prd-other01 .swiper-container', {
+        scrollbar: {
+            el: '.prd-other01 .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.prd-other01 .swiper-button-next',
+            prevEl: '.prd-other01 .swiper-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+    });
+    var swiper2 = new Swiper('.prd-other02 .swiper-container', {
+        scrollbar: {
+            el: '.prd-other02 .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.prd-other02 .swiper-button-next',
+            prevEl: '.prd-other02 .swiper-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+    });
+    var swiper3 = new Swiper('.prd-other03 .swiper-container', {
+        scrollbar: {
+            el: '.prd-other03 .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.prd-other03 .swiper-button-next',
+            prevEl: '.prd-other03 .swiper-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+    });
+    var swiper4 = new Swiper('.prd-other04 .swiper-container', {
+        scrollbar: {
+            el: '.prd-other04 .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 4, /* 20220804 상품상세 코디상품 영역 위치 변경건 관련 속성 변경 */
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.prd-other04 .swiper-button-next',
+            prevEl: '.prd-other04 .swiper-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+    });
+    
+    var swiperEv = new Swiper('.exh-list .swiper-container', {
+        scrollbar: {
+            el: '.exh-list .swiper-scrollbar',
+            dragSize: '200px',
+        },
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.exh-list .swiper-button-next',
+            prevEl: '.exh-list .swiper-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+    });
+
+    // $(window, document).on('resize load',function(){
+    //     asideSetHeight();
+    // })
+</script>
+</html>

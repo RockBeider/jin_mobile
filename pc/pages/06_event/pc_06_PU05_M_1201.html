@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <!--<meta name="viewport" content="width=1440">-->
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="center-wrap ">
+            <!-- 배너 -->
+            <div class="swiper-wrap full-banner">
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div><img src="../../img/img_evt_banner.jpg" alt="이벤트 배너"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div><img src="../../img/img_evt_banner.jpg" alt="이벤트 배너"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div><img src="../../img/img_evt_banner.jpg" alt="이벤트 배너"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div><img src="../../img/img_evt_banner.jpg" alt="이벤트 배너"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div><img src="../../img/img_evt_banner.jpg" alt="이벤트 배너"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div><img src="../../img/img_evt_banner.jpg" alt="이벤트 배너"></div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div><img src="../../img/img_evt_banner.jpg" alt="이벤트 배너"></div>
+                        </li>
+                    </ul>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!-- // 배너 -->
+            <div class="event-wrap">
+                <div class="tab-b tab-ui">
+                    <ul>
+                        <li><a href="javascript:void(0);">기획전</a></li>
+                        <li><a href="javascript:void(0);">이벤트</a></li>
+                        <li><a href="javascript:void(0);">타임특가</a></li>
+                        <li><a href="javascript:void(0);">펀딩</a></li>
+                        <li><a href="javascript:void(0);">프리미엄</a></li>
+                        <li><a href="javascript:void(0);">혜택</a></li>
+                        <li class="on"><a href="javascript:void(0);">쿠폰</a></li><!-- 20230801 #3959 [FO] 상품 상세 내 쿠폰 고도화, 쿠폰 목록 화면 신설 -->
+                    </ul>
+                </div>
+                <div class="list-area tab_content event_sub coupon_list" id="couponList" style=""><!-- 20230801 #3959 [FO] 상품 상세 내 쿠폰 고도화, 쿠폰 목록 화면 신설 -->
+                    <!-- 쿠폰 있을 경우 -->
+                    <div class="ev-benefit">
+                        <div class="title">
+                            <h3 class="page-sub-title">장바구니 쿠폰으로 더 큰 혜택을 받아보세요.</h3>
+                            <button type="button" class="btn primary black">쿠폰 모두 받기</button><!-- 쿠폰 모두 받기 완료 시 class="all-complete"추가 -->
+                        </div>
+                        <ul class="col3-list">
+                            <li>
+                                <div class="cpn_type02 basket"><!-- 장바구니 쿠폰 시 class="basket" 추가 -->
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10</strong>%</div>
+                                            <p class="name">[바바더프라이스 전용] 12% 쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span> <span>최대할인금액 100,000원</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02 complete"><!-- 쿠폰 다운완료 시 class="complete" 추가 -->
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10,000</strong>원</div>
+                                            <p class="name">[더아이잗컬렉션 OUTLET] 주말쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02 basket complete">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10</strong>%</div>
+                                            <p class="name">[바바더프라이스 전용] 12% 쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span> <span>최대할인금액 100,000원</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10,000</strong>원</div>
+                                            <p class="name">[더아이잗컬렉션 OUTLET] 주말쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10</strong>%</div>
+                                            <p class="name">[바바더프라이스 전용] 12% 쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span> <span>최대할인금액 100,000원</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10,000</strong>원</div>
+                                            <p class="name">[더아이잗컬렉션 OUTLET] 주말쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10,000</strong>원</div>
+                                            <p class="name">[더아이잗컬렉션 OUTLET] 주말쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10</strong>%</div>
+                                            <p class="name">[바바더프라이스 전용] 12% 쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span> <span>최대할인금액 100,000원</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cpn_type02">
+                                    <div class="inner-box">
+                                        <div class="info">
+                                            <div class="discount"><strong>10,000</strong>원</div>
+                                            <p class="name">[더아이잗컬렉션 OUTLET] 주말쿠폰</p>
+                                            <p class="date">2020.12.01 ~ 2020.12.31</p>
+                                            <p class="txt"><span>50,000원 이상 구매 시</span></p>
+                                        </div>
+                                        <button type="button" class="btn-down">다운로드</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="notice-box c-bgff">
+                            <dl>
+                                <dt>쿠폰 유의사항</dt>
+                                <dd>
+                                    <ul class="list-group dash">
+                                        <li>발급받은 쿠폰은 마이페이지에서 확인할 수 있습니다.</li>
+                                        <li>모든 쿠폰은 일부 브랜드, 상품에서 적용이 제외 될 수 있습니다.</li>
+                                        <li>장바구니 쿠폰은 주문 당 1개만 적용가능합니다.</li>
+                                        <li>쿠폰 행사는 당사 사정에 따라 조기 종료 또는 변경될 수 있습니다.</li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- //쿠폰 있을 경우 -->
+                    <!-- 쿠폰 없을 경우 -->
+                    <div class="ev-benefit">
+                        <p class="benefit_notice">더 좋은 혜택을 드리기 위해 준비 중입니다.<br>조금만 기다려 주세요.</p>
+                    </div>
+                    <!-- //쿠폰 없을 경우 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+
+    /*swiper*/
+    var swiper = new Swiper('.full-banner .swiper-container', {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: '.full-banner .swiper-button-next',
+            prevEl: '.full-banner .swiper-button-prev',
+        },
+    });
+    
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <style>
+        .cont + .cont {margin-left:20px}
+    </style>
+</head>
+<body>
+    <div class="layerPop open" id="lyMybaba">
+        <div class="cont w-400">
+            <h1 class="layerTitle">결제 비밀번호 초기화</h1>
+            <div class="layerBody">
+                <p class="info-txt align-c">비밀번호를 초기화하면 기존에 등록하신<br>모든 결제수단이 삭제되어 재등록하셔야합니다.<br>비밀번호를 초기화 하시겠습니까?</p>
+                <div class="btn-bottom-group">
+                    <button type="button" class="btn">취소</button>
+                    <button type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-test')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="target-densitydpi=device-dpi, user-scalable=0, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <!--<meta name="viewport" content="width=1440">-->
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header></header>
+    <section class="container">
+        <div class="center-wrap">
+            <div class="care-wrap">
+            	<!-- 메인비주얼 -->
+				<div class="care-banner" style="height:390px">
+					<!-- 20220512 케어페이지 상단 화보 이미지 교체 -->
+                    <!-- <div class="imgWrap"><img src="../../img/main_Visual_care.jpg" alt="케어 배너 이미지"></div> -->
+                    <div class="imgWrap"><img src="https://image.babathe.com/static/img/pmg-img/img_care_main_Visual_pc.jpg" alt="케어 배너 이미지"></div>
+					<!-- //20220512 케어페이지 상단 화보 이미지 교체 -->
+                    <div class="txtWrap">
+                        <div class="txt">
+                            <span class="sub_tit" style="opacity:0">AI가 추천하는 맞춤 쇼핑 솔루션</span>
+                            <strong class="main_tit">바바 <span>케어프렌드</span></strong>
+                            <p class="tit_cont">간단한 설정으로 상품을 추천 받는 <span>맞춤 케어 서비스</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //메인비주얼 -->
+                <!-- 비로그인시 -->
+                <div class="page-top align-items-start">
+                    <h2 class="page-title">케어프렌드 설정 EVENT</h2>
+                </div>
+                <div class="dot-list">
+                    <p class="no-data">최초 케어프렌드 설정 시 <strong>개인화 맞춤 상품 추천</strong>과 <strong>바바캐시 코드 발급</strong> 및 바바더닷컴 쇼핑에 사용할 수 있는 소정의 <strong>E-포인트</strong>를 선물로 드립니다!</p><!-- 20230314 #3287 FO/BO_바바코드(구 패션리더코드) 사용 관련 작업 요청 > 문구 추가 -->
+                </div>
+                <button type="button" class="btn-setting care-set">케어프렌드 설정 바로하기</button> <!-- 20211119 케어프렌드 설정 바로하기 > 인터렉션 추가 > class="care-set" -->
+                <div class="dot-list">
+                    <p class="no-data"><strong>※ 케어프렌드 설정 시 바바캐시 코드가 생성됩니다.</strong></p><!-- 20230404 #3447 [PC] 케어_로그아웃 페이지 내, 안내 문구 추가 -->
+                </div>
+                <!-- 20230612 #3791 케어 페이지 내, 바바캐시 안내 추가 -->
+                <div class="cash-code-wrap">
+                    <div class="page-top align-items-center">
+                        <h2 class="page-title">케어프렌드가 제공하는 또 하나의 단독 혜택</h2>
+                    </div>
+                    <div class="code-wrap-inner">
+                        <ul>
+                            <li>
+                                <div class="cash-code-title title-code"><strong>나의 바바캐시 코드</strong></div>
+                                <p>케어프렌드 설정 시 바바캐시 코드가 생성됩니다.</p>
+                            </li>
+                            <li>
+                                <div class="cash-code-title title-benefit"><strong>무제한 1% 즉시 할인 + 1% 적립</strong></div>
+                                <a class="btn primary black arrow-white" href="https://pc.babathe.com/event/indexEventDetail?eventNo=12482">바바캐시 혜택</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // 20230612 #3791 케어 페이지 내, 바바캐시 안내 추가 -->
+                <!-- //비로그인시 -->
+
+                <!-- 20240213 #4751 케어 개선 1.5 ver_최근본상품 그루비 API 적용 -->
+                <div class="care-cont recent">
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title"><strong class="name">바바</strong>님이 최근 본 스타일</h2>
+                        </div>
+                        <div class="care-recent-area">
+                            <div class="unit-recent">
+                                <div class="ly-pimg-list swiper-wrap">
+                                    <div class="swiper-container">
+                                        <ul class=" swiper-wrapper">
+                                            <li class="swiper-slide on">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="ratio">
+                                                        <img src="../../img/prd_img.jpg" alt="sampleImg"/>
+                                                    </div>
+                                                </a>
+                                                <!-- <button type="button" class="btn-delete">삭제</button> -->
+                                            </li>
+                                        </ul>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="unit-recent">
+                                <h3 class="unit-title">비슷한 스타일의 아이템을 찾아봤어요</h3>
+                                <div class="ly-recent-list swiper-wrap">
+                                    <div class="swiper-container">
+                                        <ul class="prd-list thum swiper-wrapper">
+                                            <li class="swiper-slide rec_prd"><!-- 내가 본 상품일 경우 .swiper-slide에 class="rec_prd" -->
+                                                <a href="javascript:void(0)">
+                                                    <!-- <div class="badge-group">
+                                                        <span class="badge">내가 본 상품</span>
+                                                    </div> -->
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- Add Scrollbar -->
+                                        <!--  <div class="swiper-scrollbar"></div> -->
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-refresh">다른 추천 상품 보기 <span>1/4</span></button>
+                    </div>
+                </div>
+                <!-- //20240213 #4751 케어 개선 1.5 ver_최근본상품 그루비 API 적용 -->
+                
+                <div class="care-cont common">
+                	<!-- 01. 요즘 최고로 핫한 상품이에요! -->
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title">요즘 최고로 핫한 상품이에요!</h2>
+                        </div>
+                        <div class="swiper-wrap recomm-prd6">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum col-6 ">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                	</div>
+                	<!-- //01. 요즘 최고로 핫한 상품이에요! -->
+                	
+                	<!-- 02. 다른 분들은 최근 이런 상품을 많이 구매하셨네요! -->
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title">다른 분들은 최근 이런 상품을 많이 구매하셨네요!</h2>
+                        </div>
+                        <div class="swiper-wrap recomm-prd6">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum col-6 ">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                	</div>
+                	<!-- //02. 다른 분들은 최근 이런 상품을 많이 구매하셨네요! -->
+                </div>
+                <div class="tab-a tab-ui">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);">여성</a></li>
+                        <li><a href="javascript:void(0);">남성</a></li>
+                    </ul>
+                </div>
+                <div class="care-cont">
+                	<!-- 01. 트렌디한 패션스타일을 추천드려요 -->
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title">트렌디한 패션스타일을 추천드려요</h2>
+                            <a href="#" class="btn-arrow" target="_blank">전체보기</a>
+                        </div>
+                        <!-- 상품 없을경우 -->
+                        <!-- 
+                        <div class="no-data">
+                        	<p><strong>케어프렌드 설정</strong>하고 나만의 맞춤 상품을 추천받으세요!</p>
+                        	<a href="javascript:void(0)" class="btn-setting">케어프렌드 설정하기</a>
+                        </div>
+                         -->
+                        <!-- // 상품 없을경우 -->
+                        <div class="swiper-wrap recomm-prd2">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum perview-auto">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //01. 트렌디한 패션스타일을 추천드려요 -->
+                    
+                    <!-- 02. 완벽한 당신에게 빠질 수 없는 디테일 -->
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title">완벽한 당신에게 빠질 수 없는 디테일</h2>
+                            <a href="#" class="btn-arrow" target="_blank">전체보기</a>
+                        </div>
+                        <!-- 상품 없을경우 -->
+                        <!-- 
+                        <div class="no-data">
+                        	<p><strong>케어프렌드 설정</strong>하고 나만의 맞춤 상품을 추천받으세요!</p>
+                        	<a href="javascript:void(0)" class="btn-setting">케어프렌드 설정하기</a>
+                        </div>
+                         -->
+                        <!-- // 상품 없을경우 -->
+                        <div class="swiper-wrap recomm-prd3">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum perview-auto">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //02. 완벽한 당신에게 빠질 수 없는 디테일 -->
+                    
+                    <!-- 03. 건강한 하루를 생각하는 당신을 위해 -->
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title">건강한 하루를 생각하는 당신을 위해</h2>
+                            <a href="#" class="btn-arrow" target="_blank">전체보기</a>
+                        </div>
+                        <!-- 상품 없을경우 -->
+                        <!-- 
+                        <div class="no-data">
+                        	<p><strong>케어프렌드 설정</strong>하고 나만의 맞춤 상품을 추천받으세요!</p>
+                        	<a href="javascript:void(0)" class="btn-setting">케어프렌드 설정하기</a>
+                        </div>
+                         -->
+                        <!-- // 상품 없을경우 -->
+                        <div class="swiper-wrap recomm-prd3">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum perview-auto">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">THE IZZAT COLLECTION</div>
+                                                <div class="name">
+                                                    <div class="tx-ovf">2021 신상품 </div>
+                                                    <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                </div>
+                                                <div class="prd-price">
+                                                    <div class="price"><strong>1,234,567</strong>원</div>
+                                                    <div class="discount">10%</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //03. 건강한 하루를 생각하는 당신을 위해 -->
+                	
+                    <!-- 04. 쇼핑하기 좋은 날 이런 상품 어떠세요? -->
+                    <div class="unit-box">
+                        <div class="d-flex">
+                            <div class="left">
+                                <h2 class="page-title">쇼핑하기 좋은 날<br>이런 상품 어떠세요?</h2>
+                                <h3 class="page-sub-title">분위기 여신으로<br>만들어주는 <strong>원피스</strong></h3>
+                                <div class="info">상품 추천기준
+                                    <div class="tooltip">
+                                        <button type="button" class="btn-tooltip">도움말</button>
+                                        <div class="ly-tooltip">
+                                            <!-- <h3></h3> -->
+                                            <div class="tooltip-conts">로그인 사용자의 나이/성별 등을 AI솔루션을<br>통해 분석하여 최적화된 주제와 상품으로<br>추천 드립니다.</div>
+                                            <button type="button" class="btn-closed">도움말 닫기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="swiper-wrap recomm-prd4-1">
+                                    <div class="swiper-container">
+                                        <ul class="swiper-wrapper prd-list thum col-5 ">
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0)">
+                                                    <div class="prd-img ">
+                                                        <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">THE IZZAT COLLECTION</div>
+                                                        <div class="name">
+                                                            <div class="tx-ovf">2021 신상품 </div>
+                                                            <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>1,234,567</strong>원</div>
+                                                            <div class="discount">10%</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- Add Scrollbar -->
+                                        <!-- <div class="swiper-scrollbar"></div> -->
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-refresh">다른 추천도 볼게요 <span>1/3</span></button>
+                    </div>
+                    <!-- //04. 쇼핑하기 좋은 날 이런 상품 어떠세요? -->
+                	
+                	<!-- 05. # 놓칠 수 없겠죠? 요즘 뜨고 있는 상품 -->
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title"># 놓칠 수 없겠죠? 요즘 뜨고 있는 상품</h2>
+                        </div>
+                        <div>
+							<ul class="prd-list thum col-4">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn-refresh">추천 상품 더 보기</button>
+                    </div>
+                    <!-- //05. # 놓칠 수 없겠죠? 요즘 뜨고 있는 상품 -->
+                    
+                	<!-- 06. # 어머 어머 지금 이 상품을 놓치겠다구요? 다시 이만한 가격 오지 않을 상품 -->
+                    <div class="unit-box">
+                        <div class="page-top align-items-center">
+                            <h2 class="page-title"># 어머 어머 지금 이 상품을 놓치겠다구요? 다시 이만한 가격 오지 않을 상품</h2>
+                        </div>
+                        <div>
+							<ul class="prd-list thum col-4">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">2021 신상품 </div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn-refresh">추천 상품 더 보기</button>
+                    </div>
+                    <!-- //06. # 어머 어머 지금 이 상품을 놓치겠다구요? 다시 이만한 가격 오지 않을 상품 -->
+                    
+                    <!-- 07. 이 상품을 본 분들의 취향저격 상품이에요. -->
+                    <div class="unit-box">
+                        <div class="page-top">
+                            <h2 class="page-title">이 상품을 본 분들의 취향저격 상품이에요.</h2>
+                        </div>
+                        <!-- 상품 없을경우 -->
+                        <!-- 
+                        <div class="no-data">
+                        	<p><strong>케어프렌드 설정</strong>하고 나만의 맞춤 상품을 추천받으세요!</p>
+                        	<a href="javascript:void(0)" class="btn-setting">케어프렌드 설정하기</a>
+                        </div>
+                         -->
+                        <!-- // 상품 없을경우 -->
+                        <div class="swiper-wrap recomm-prd6">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum col-6 ">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //07. 이 상품을 본 분들의 취향저격 상품이에요. -->
+                    
+                    <!-- 08. 최근 본 상품과 비슷한 스타일을 추천드려요. -->
+                    <div class="unit-box">
+                        <div class="page-top">
+                            <h2 class="page-title">최근 본 상품과 비슷한 스타일을 추천드려요.</h2>
+                        </div>
+                        <!-- 상품 없을경우 -->
+                        <!-- 
+                        <div class="no-data">
+                        	<p><strong>케어프렌드 설정</strong>하고 나만의 맞춤 상품을 추천받으세요!</p>
+                        	<a href="javascript:void(0)" class="btn-setting">케어프렌드 설정하기</a>
+                        </div>
+                         -->
+                        <!-- // 상품 없을경우 -->
+                        <div class="swiper-wrap recomm-prd6">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum col-6 ">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //08. 최근 본 상품과 비슷한 스타일을 추천드려요. -->
+                    
+                    <!-- 09. # 이런 상품은 어떠세요? -->
+                    <div class="unit-box">
+                        <div class="page-top">
+                            <h2 class="page-title"># 이런 상품은 어떠세요?</h2>
+                        </div>
+                        <!-- 상품 없을경우 -->
+                        <!-- 
+                        <div class="no-data">
+                        	<p><strong>케어프렌드 설정</strong>하고 나만의 맞춤 상품을 추천받으세요!</p>
+                        	<a href="javascript:void(0)" class="btn-setting">케어프렌드 설정하기</a>
+                        </div>
+                         -->
+                        <!-- // 상품 없을경우 -->
+                        <div class="swiper-wrap recomm-prd4-0">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper prd-list thum col-4 ">
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="javascript:void(0)">
+                                            <div class="prd-img ">
+                                                <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" /></div>
+                                            </div>
+	                                        <div class="prd-info">
+	                                            <div class="brand">THE IZZAT COLLECTION</div>
+	                                            <div class="name">
+	                                                <div class="tx-ovf">2021 신상품 </div>
+	                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+	                                            </div>
+	                                            <div class="prd-price">
+	                                                <div class="price"><strong>1,234,567</strong>원</div>
+	                                                <div class="discount">10%</div>
+	                                            </div>
+	                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //09. 최근 본 상품과 비슷한 스타일을 추천드려요. -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script>
+/*publishing UI only*/
+$('.tooltip').find('.btn-tooltip').on('click', function(){
+    $(this).toggleClass('on')
+}); // tooltip toggle Class
+$('.tooltip').find('.btn-closed').on('click', function(){
+    $(this).closest('.tooltip').find('.btn-tooltip').removeClass('on')
+}); // tooltip Closed
+
+/* 20240208 #4751 케어 개선 1.5 ver_최근본상품 그루비 API 적용 */
+/*swiper*/
+var swiperPimgList = new Swiper('.ly-pimg-list .swiper-container', {
+    slidesPerView: 13,
+    spaceBetween: 12,
+    freeMode: true,
+    navigation: {
+        nextEl: '.ly-pimg-list .swiper-button-next',
+        prevEl: '.ly-pimg-list .swiper-button-prev',
+    }
+});
+var swiperPrd01 = new Swiper('.ly-recent-list .swiper-container', {
+    scrollbar: {
+        el: '.ly-recent-list .swiper-scrollbar',
+        //dragSize: '200px',
+    },
+    slidesPerView: 6,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.ly-recent-list .swiper-button-next',
+        prevEl: '.ly-recent-list .swiper-button-prev',
+    },
+    observer: true,
+    observeParents: true,
+});
+/* //20240208 #4751 케어 개선 1.5 ver_최근본상품 그루비 API 적용 */
+
+var swiper1_1 = new Swiper('.recomm-prd1-1 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // dragSize: '200px',
+    // },
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.recomm-prd1-1 .swiper-button-next',
+        prevEl: '.recomm-prd1-1 .swiper-button-prev',
+    },
+});
+
+var swiper2 = new Swiper('.recomm-prd2 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // dragSize: '200px',
+    // },
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.recomm-prd2 .swiper-button-next',
+        prevEl: '.recomm-prd2 .swiper-button-prev',
+    },
+});
+
+var swiper3 = new Swiper('.recomm-prd3 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // dragSize: '200px',
+    // },
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.recomm-prd3 .swiper-button-next',
+        prevEl: '.recomm-prd3 .swiper-button-prev',
+    },
+});
+
+var swiper4_0 = new Swiper('.recomm-prd4-0 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // dragSize: '200px',
+    // },
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.recomm-prd4-0 .swiper-button-next',
+        prevEl: '.recomm-prd4-0 .swiper-button-prev',
+    },
+});
+
+var swiper4_1 = new Swiper('.recomm-prd4-1 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // dragSize: '200px',
+    // },
+    slidesPerView: 5,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.recomm-prd4-1 .swiper-button-next',
+        prevEl: '.recomm-prd4-1 .swiper-button-prev',
+    },
+});
+
+var swiper5 = new Swiper('.recomm-prd5 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // dragSize: '200px',
+    // },
+    slidesPerView: 6,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.recomm-prd5 .swiper-button-next',
+        prevEl: '.recomm-prd5 .swiper-button-prev',
+    },
+});
+
+var swiper6 = new Swiper('.recomm-prd6 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     // dragSize: '200px',
+    // },
+    slidesPerView: 6,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.recomm-prd6 .swiper-button-next',
+        prevEl: '.recomm-prd6 .swiper-button-prev',
+    },   
+});
+var swiper7 = new Swiper('.like-prd .swiper-container', {
+    // scrollbar: {
+    //     el: '.like-prd .swiper-scrollbar',
+    //     dragSize: '200px',
+    // },
+    slidesPerView: 5,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.like-prd .swiper-button-next',
+        prevEl: '.like-prd .swiper-button-prev',
+    },
+});
+
+var swiper8 = new Swiper('.click-prd.prd1 .swiper-container', {
+    // scrollbar: {
+    //     el: '.click-prd.prd1 .swiper-scrollbar',
+    //     dragSize: '200px',
+    // },
+    slidesPerView: 4,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: '.click-prd.prd1 .swiper-button-next',
+        prevEl: '.click-prd.prd1 .swiper-button-prev',
+    },
+});
+
+var swiper9 = new Swiper('.swiper-prd1 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-prd1 .swiper-scrollbar',
+    //     dragSize: '200px',
+    // },
+    slidesPerView: 6,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-prd1 .swiper-button-next',
+        prevEl: '.swiper-prd1 .swiper-button-prev',
+    },
+});
+
+var swiper10 = new Swiper('.click-prd.prd2 .swiper-container', {
+    // scrollbar: {
+    //     el: '.click-prd.prd2 .swiper-scrollbar',
+    //     dragSize: '200px',
+    // },
+    slidesPerView: 4,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: '.click-prd.prd2 .swiper-button-next',
+        prevEl: '.click-prd.prd2 .swiper-button-prev',
+    },
+});
+
+var swiper11 = new Swiper('.swiper-prd2 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-prd2 .swiper-scrollbar',
+    //     dragSize: '200px',
+    // },
+    slidesPerView: 6,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-prd2 .swiper-button-next',
+        prevEl: '.swiper-prd2 .swiper-button-prev',
+    },
+});
+
+var swiper12 = new Swiper('.swiper-prd3 .swiper-container', {
+    // scrollbar: {
+    //     el: '.swiper-prd3 .swiper-scrollbar',
+    //     dragSize: '200px',
+    // },
+    slidesPerView: 6,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-prd3 .swiper-button-next',
+        prevEl: '.swiper-prd3 .swiper-button-prev',
+    },
+});
+</script>
+</html>

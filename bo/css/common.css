@@ -1,0 +1,104 @@
+@charset 'utf-8';
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+.wth40 {width:40px !important;}
+.wth50 {width:50px !important;}
+.wth80 {width:80px !important;}
+.wth90 {width:90px !important;}
+.wth100 {width:100px !important;}
+.wth120 {width: 130px !important;}
+.wth150 {width:150px !important;}
+.wth200 {width:200px !important;}
+.wth250 {width:250px !important;}
+.wth260 {width:260px !important;}
+.wth300 {width:300px !important;}
+.wth350 {width:350px !important;}
+.wth400 {width:400px !important;}
+.wth425 {width:425px !important;}
+.wth450 {width:450px !important;}
+.wth500 {width:500px !important;}
+.wth550 {width:550px !important;}
+.wth600 {width:600px !important;}
+.wth650 {width:650px !important;}
+.wth700 {width:700px !important;}
+.wthAll {width:98% !important;}
+.wthEditor {width:97% !important;}
+.wthTa {width:95% !important;}
+
+.wthMin60 {min-width: 60px;}
+
+.hgt40 {height:40px !important;}
+.hgt80 {height:80px !important;}
+
+.mg5 {margin-top:5px !important; margin-bottom:5px !important;}
+
+.ml2 {margin-left:2px !important;}
+.ml5 {margin-left:5px !important;}
+.ml10 {margin-left:10px !important;}
+.ml20 {margin-left:20px !important;}
+.ml40 {margin-left:40px !important;}
+
+.mr5 {margin-right:5px !important;}
+.mr10 {margin-right:10px !important;}
+.mr20 {margin-right:20px !important;}
+.mr40 {margin-right:40px !important;}
+
+.mb0 {margin-bottom:0 !important;}
+.mb2 {margin-bottom:2px !important;}
+.mb5 {margin-bottom:5px !important;}
+.mb10 {margin-bottom:10px !important;}
+.mb15 {margin-bottom:15px !important;}
+.mb20 {margin-bottom:20px !important;}
+.mb25 {margin-bottom:25px !important;}
+.mb30 {margin-bottom:30px !important;}
+.mb35 {margin-bottom:35px !important;}
+.mb40 {margin-bottom:40px !important;}
+
+.mt0 {margin-top:0 !important;}
+.mt2 {margin-top:2px !important;}
+.mt5 {margin-top:5px !important;}
+.mt10 {margin-top:10px !important;}
+.mt15 {margin-top:15px !important;}
+.mt20 {margin-top:20px !important;}
+.mt25 {margin-top:25px !important;}
+.mt30 {margin-top:30px !important;}
+.mt35 {margin-top:35px !important;}
+.mt40 {margin-top:40px !important;}
+.mt50 {margin-top:50px !important;}
+
+.red {color: red; padding-left:3px !important;}
+.blue {color: blue; padding-left:3px !important;}
+.readonly { background-color: #eaeaea; }
+.ui-datepicker{ z-index: 9999 !important;}
+
+.left {text-align:left !important;}
+.center {text-align:center !important;}
+.right {text-align:right !important;}
+.pointer { cursor:pointer !important;}
+.fontbold { font-weight:bold !important;}
+
+.dlvra_new { display:none;}
+
+.underline { text-decoration: underline;}
+.linethrough { text-decoration: line-through;}
+.phoneNumber { width : 100px;}
+
+.ui-widget {
+	/* font-family:'Nanum Gothic','Malgun Gothic','ë‹ì›€',dotum, Arial, sans-serif !important; */
+	font-size:100% !important;
+}
+
+.ui-tabs-vertical { min-height:480px; padding:2px; border : none;}
+.ui-tabs-vertical .ui-tabs-nav { padding: 2px; float: left; width: 100px; position:absolute; top:2px; left:2px; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 2px 2px 2px 120px; width: auto; }
+
+/*
+.ui-jqgrid .ui-jqgrid-htable th {
+    height: 2em !important;
+}
+*/
+.ui-jqgrid tr.jqgrow td{
+    height: 40px !important;
+}

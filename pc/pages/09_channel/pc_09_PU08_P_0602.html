@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>팝업 샘플</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <button onclick="popOpen('ly-babaon-alarm02')"><span>팝업열기</span></button>
+
+    <!-- 20220916 바바ON, 마이채널 페이지 알림 받기 팝업 추가 -->
+    <!-- 2. 방송 알림 해제 -->
+    <div class="layerPop open" id="ly-babaon-alarm02">
+        <div class="cont w-440"><!--[P].w-500(width:500px)-->
+            <h1 class="layerTitle">방송 알림 해제</h1>
+            <div class="layerBody">
+                <p class="info-txt type2"><strong>브랜드명브랜드명브랜드명브랜드명</strong> 브랜드의<br>방송 알림을 해제하시겠습니까?</p>
+                <div class="btn-bottom-group">
+                    <button type="button" type="button" class="btn">취소</button>
+                    <button type="button" type="button" class="btn primary">확인</button>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('ly-babaon-alarm02')">팝업닫기</button>
+        </div>
+    </div>
+    <!-- //20220916 바바ON, 마이채널 페이지 알림 받기 팝업 추가 -->
+    
+</body>
+</html>

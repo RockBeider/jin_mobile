@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop open" id="lyMybaba">
+        <div class="cont w-880">
+            <h1 class="layerTitle">관련상품 검색</h1>
+            <div class="layerBody">
+                <div class="ly-mylf">
+                	<div class="unit-box">
+                        <h3 class="ly-title search_result"><strong class="keyword">원피스</strong>의 검색결과</h3>
+                        <div class="prd-top">
+                            <!-- 총카운트 -->
+                            <!-- 아래부터 화면 작업 시작 하면 됨. -->
+                            <div class="total" id="goodsTcnt" style="display: block;"><span>30</span> ITEMS</div>
+                            <div class="prd-option">
+                                <select id="searchSort">
+                                    <option value="SYS_REG_DTM">최신순</option>
+                                    <option value="HITS_CNT">조회순</option>
+                                    <option value="ORDER_CNT">판매순</option>
+                                    <option value="SALE_AMT_ASC">낮은가격순</option>
+                                    <option value="SALE_AMT_DESC">높은가격순</option>
+                                    <option value="REVIEW_CNT">리뷰많은순</option>
+                                    <option value="REVIEW_SCORE">평가많은순</option>
+                                </select> 
+                                <select id="displaySize" style="display:none">
+                                    <option value="50">50개씩</option>
+                                    <option value="100">100개씩</option>
+                                    <option value="150">150개씩</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-wrap scroll-wrap">
+                        	<!-- 검색 결과 없을 시 -->
+                        	<!-- <div class="no-data">검색 결과가 없습니다.</div> -->
+                        	<!-- //검색 결과 없을 시 -->
+                            <ul class="prd-list thum col-3">
+                                <li>
+                                    <label for="prd-chk01">
+										<input type="radio" id="prd-chk01" name="prd-chk" class="prd-list-chk">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">셀링포인트 : 없으면 미노출</div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="price-org">1,065,960 원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                            <div class="tag-group">
+                                                <span class="tag">NEW</span>
+                                                <span class="tag">BEST</span>
+                                                <span class="tag">10%할인</span>
+                                                <span class="tag">무료배송</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="prd-chk02">
+										<input type="radio" id="prd-chk02" name="prd-chk" class="prd-list-chk">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">셀링포인트 : 없으면 미노출</div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="price-org">1,065,960 원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                            <div class="tag-group">
+                                                <span class="tag">NEW</span>
+                                                <span class="tag">BEST</span>
+                                                <span class="tag">10%할인</span>
+                                                <span class="tag">무료배송</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="prd-chk03">
+										<input type="radio" id="prd-chk03" name="prd-chk" class="prd-list-chk">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">셀링포인트 : 없으면 미노출</div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="price-org">1,065,960 원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                            <div class="tag-group">
+                                                <span class="tag">NEW</span>
+                                                <span class="tag">BEST</span>
+                                                <span class="tag">10%할인</span>
+                                                <span class="tag">무료배송</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="prd-chk04">
+										<input type="radio" id="prd-chk04" name="prd-chk" class="prd-list-chk">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">셀링포인트 : 없으면 미노출</div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="price-org">1,065,960 원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                            <div class="tag-group">
+                                                <span class="tag">NEW</span>
+                                                <span class="tag">BEST</span>
+                                                <span class="tag">10%할인</span>
+                                                <span class="tag">무료배송</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="prd-chk05">
+										<input type="radio" id="prd-chk05" name="prd-chk" class="prd-list-chk">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">셀링포인트 : 없으면 미노출</div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="price-org">1,065,960 원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                            <div class="tag-group">
+                                                <span class="tag">NEW</span>
+                                                <span class="tag">BEST</span>
+                                                <span class="tag">10%할인</span>
+                                                <span class="tag">무료배송</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="prd-chk06">
+										<input type="radio" id="prd-chk06" name="prd-chk" class="prd-list-chk">
+                                        <div class="prd-img ">
+                                            <div class="ratio"><img src="../../img/temp_prd_img.jpg" alt="상품이미지" class="vertical"></div>
+                                        </div>
+                                        <div class="prd-info">
+                                            <div class="brand">THE IZZAT COLLECTION</div>
+                                            <div class="name">
+                                                <div class="tx-ovf">셀링포인트 : 없으면 미노출</div>
+                                                <div class="tx-ovf">밍크 체인 장식 코트형 트위드 자켓</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>1,234,567</strong>원</div>
+                                                <div class="price-org">1,065,960 원</div>
+                                                <div class="discount">10%</div>
+                                            </div>
+                                            <div class="tag-group">
+                                                <span class="tag">NEW</span>
+                                                <span class="tag">BEST</span>
+                                                <span class="tag">10%할인</span>
+                                                <span class="tag">무료배송</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+		                </div>
+						<div class="btn-bottom-group">
+		                    <button type="button" class="btn">취소</button>
+		                    <!-- 상품 선택시 버튼 활성화 class="primary" 추가 -->
+		                    <!-- <button type="button" class="btn">상품 추가</button> -->
+		                    <button type="button" class="btn primary">상품 추가</button>
+		                    <!-- 상품 선택시 버튼 활성화 class="primary" 추가 -->
+		                </div>
+		            </div>
+                </div>
+            </div>
+            <button class="btn-close" onclick="popClose('lyMybaba')">팝업닫기</button>
+        </div>
+    </div>
+</body>
+<script>    
+    $(document).ready(function(){
+        /*publishing UI only*/
+        $('#datePickInput-start').datepicker({
+            dateFormat: 'yy-mm-dd',
+            showOn: 'both',
+            buttonImage: '../../img/icon_calendar.png',
+            buttonImageOnly: true,
+        }); // datepicker
+        $('#datePickInput-end').datepicker({
+            dateFormat: 'yy-mm-dd',
+            showOn: 'both',
+            buttonImage: '../../img/icon_calendar.png',
+            buttonImageOnly: true
+        }); // datepicker
+    });
+</script>
+</html>
