@@ -518,7 +518,7 @@ table th, table td { height: 42px; padding: 10px 8px; font-size: 12px; }
 .side_menu .brand-search-keyword-new ul { width: 32px; padding: 4px 0; background: #f8f8f8; border-radius: 100px;}
 .side_menu .brand-search-keyword-new li:not(:last-child)::after { content: ''; display: block; width: 2px; height: 2px; margin: -1px auto 0; background: #999; }
 .side_menu .brand-search-keyword-new li a { display: flex; align-items: center; justify-content: center; width: 100%; padding: 12px 0; color: #999; }
-.side_menu .brand-search-keyword-new li.is_active a { color: #111; font-weight: 700;} 
+.side_menu .brand-search-keyword-new li a.is_active { color: #111; font-weight: 700;} 
 
 
 .side_menu .search-area.line_type  { margin: 0 20px; padding-top: 32px; }
