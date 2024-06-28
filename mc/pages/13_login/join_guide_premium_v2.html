@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- <html lang="ko" class="memJoin-guide premium festa"> --><!-- 20230324 #3342 페스타 프리미엄 개발건 > class="festa" 추가 -->
+<html lang="ko" class="memJoin-guide premium">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 마이바바</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/join_guide.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../../js/jquery-3.5.1.min.js"></script><!-- 퍼블 화면 확인용 jquery 추가 > 개발 적용X-->
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <button type="button" class="btn-back">뒤로가기</button>
+            <h1 class="page-title"></h1>
+            <button type="button" class="btn-search">검색</button>
+            <button type="button" class="btn-cart">장바구니</button>
+        </div>
+    </header>
+    <section>
+       
+        <!-- 20220411 상단 프리미엄 화보 교체  -->
+        <div class="visual-bg">
+            <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/bg_premium_main_visual_m.jpg" alt="babathe.com - PREMIUM 따라올 수 없는 놀라운 혜택">
+        </div>
+       <!-- //20220411 상단 프리미엄 화보 교체  -->
+
+        <!-- 20230324 #3342 페스타 프리미엄 개발건 > 프리미엄 회원 가이드 페스타 관련 영역 추가 -->
+        <!--  
+        <div class="memJoin-cont festa_area">
+            <div class="visual-bg">
+                <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230331_FESTA_Premium_m_01.jpg">
+            </div>
+            <div class="sect_cont cont1">
+                <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230331_FESTA_Premium_m_02.jpg" alt="">
+                <div class="countdown">
+                    <div class="countdown_timer button-success js-countdown-timer2"></div>
+                </div>
+            </div>
+            <div class="sect_cont cont2">
+                <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230331_FESTA_Premium_m_03.jpg" alt="">
+                <ul class="link_area">
+                    <li class="li01"><a href="javascript:void(0)"></a></li>
+                </ul>
+            </div>
+            <div class="sect_cont cont2 tooltip_box">
+                <div class="sub_cont">
+                    <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230331_FESTA_Premium_m_04.jpg" alt="">
+                    <a class="tooltip_btn" href="#none">
+                        <img class="tt_off" src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230403_FESTA_btn_tooltip_wht_off.png" alt="">
+                        <img class="tt_on" src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230403_FESTA_btn_tooltip_wht_on.png" alt="">
+                    </a>
+                </div>
+                <div class="tooltip_cont">
+                    <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230331_FESTA_Premium_m_05.jpg" alt="">
+                </div>
+                <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230331_FESTA_Premium_m_06.jpg" alt="">
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+        <script>
+            $(".js-countdown-timer2").countdown("2023/04/10 10:00:00", function(event) {
+                $(this).text(event.strftime('%D%H%M%S'));
+                $('.js-countdown-timer2.countdown_timer').html(function(i, html) {
+                    var chars = $.trim(html).split("");
+                    return '<span class="">' + chars.join('</span><span class="">') + '</span>';
+                });
+            });
+
+            //툴팁 이벤트
+            //accordion
+            //$('.tooltip_btn').addClass('on').parent().next('.tooltip_cont').addClass('on').stop().show(300);
+            $('.tooltip_btn').on("click",function(e){
+                e.preventDefault();
+                if($(this).hasClass("on")){
+                    $(this).removeClass('on').parent().next('.tooltip_cont').removeClass('on').stop().slideUp(300);
+                }else{
+                    $(this).addClass('on').parent().next('.tooltip_cont').addClass('on').stop().slideDown(300);
+                }
+            });
+        </script>
+        -->
+        <!-- //20230324 #3342 페스타 프리미엄 개발건 > 프리미엄 회원 가이드 페스타 관련 영역 추가 -->
+        
+        <!-- 20230517 #3694 프리미엄 페이지 리뉴얼 문구 추가 건 -->
+        <div class="memJoin-cont" style="padding-bottom:0;">
+            <div class="cont">
+                <div class="txt" style="margin-bottom:0;">
+                    <strong><span>프리미엄 멤버십</span>이란?</strong>
+                    <p>
+                        더 품격 있는 쇼핑을 위한<br>
+                        <em>바바더닷컴만의 유료 멤버십 서비스</em>입니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //20230517 #3694 프리미엄 페이지 리뉴얼 문구 추가 건 -->
+
+        <div class="memJoin-cont" style="padding-bottom: 60px;">
+            <div class="cont">
+                <div class="txt">
+                    <em>혜택 1</em>
+                    <strong>프리미엄은 다르니까<br>처음부터 더 특별하게</strong>
+                    <p>
+                        가입 즉시<br>
+                        <em>30,000 e포인트 적립 혜택</em>
+                    </p>
+                </div>
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/premium-coupone-1.png" alt="">
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg.jpg" alt="">
+        </div>
+
+        <div class="memJoin-cont" style="padding-bottom: 60px;">
+            <div class="cont">
+                <div class="txt">
+                    <em>혜택 2</em>
+                    <strong>우리의 첫만남을<br>환영하는 마음으로</strong>
+                    <p>
+                        가입 즉시<br>
+                        <em>5%,10%,15% 쿠폰 혜택</em>
+                    </p>
+                </div>
+                <div class="visual">
+                    <div class="coupone swiper">
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../img/memjoin_guide/20240701/premium-coupone-2-1_1.png" alt=""><!-- 20240624 #6177 [FO] 프리미엄 혜택 안내 변경 > 변경 -->
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../img/memjoin_guide/20240701/premium-coupone-2-2_1.png" alt=""><!-- 20240624 #6177 [FO] 프리미엄 혜택 안내 변경 > 변경 -->
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../img/memjoin_guide/20240701/premium-coupone-2-3_1.png" alt=""><!-- 20240624 #6177 [FO] 프리미엄 혜택 안내 변경 > 변경 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg.jpg" alt="">
+        </div>
+
+        <div class="memJoin-cont">
+            <div class="cont">
+                <div class="txt">
+                    <em>혜택 3</em>
+                    <strong>상시 할인과<br>적립 동시에</strong>
+                    <p>
+                        BLACK 회원 등급과 동일한<br><!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+                        무제한 1% 상시할인,<br>
+                        <em>무제한 2% 적립</em>해드립니다.
+                    </p>
+                </div>
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/premium-visual-1.png" alt="">
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg.jpg" alt="">
+        </div>
+        
+        <!-- 20211207 프리미엄 혜택 추가 -->
+        <div class="memJoin-cont">
+            <div class="cont">
+                <div class="txt">
+                    <em>혜택 4</em>
+                    <strong>살까 말까 망설여 진다면?<br>12% 쿠폰 서비스!</strong>
+                    <p>
+                        <em>매월 2장 지급</em>
+                    </p>
+                </div>
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/20240701/premium-visual-4_1.png" alt="12% 쿠폰 서비스, 매월 2장 지급"><!-- 20240624 #6177 [FO] 프리미엄 혜택 안내 변경 > 변경 -->
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg.jpg" alt="">
+        </div>
+        <!-- //20211207 프리미엄 혜택 추가 -->
+
+        <div class="memJoin-cont benefit-5"><!-- 20231106 #4530 프리미엄 페이지 모바일 버전 추가 구좌 요청 건 > class="benefit-5" 추가 -->
+            <div class="cont">
+                <div class="txt">
+                    <em>혜택 5</em><!-- 20211207 프리미엄 혜택 추가 -->
+                    <strong>사이즈 고민이 된다면?<br>무료 피팅 서비스?</strong>
+                    <p>
+                        <em>매월 회원 등급별 혜택</em>
+                    </p>
+                </div>
+                <div class="visual">
+                    <img src="../../img/memjoin_guide/premium-visual-2.png" alt="최대 무제한 무료 배송, 월2회반품 무료 배송"><!-- 20240214 #4785 회원등급 및 혜택 변경 대응 > 변경/삭제 -->
+                </div>
+                <!-- 20230414 #3505 [FO] 프리미엄 혜택 문구 추가 및 변경 -->
+                <div class="tipList">
+                    <ul class="tip-wrap">
+                        <li class="tip type3">-[무료반품, 무료배송] 최대할인금액 1회 3,000원</li>
+                        <li class="tip type3">-제주도 및 도서산간지역은 추가 배송비가 발생됩니다.</li>
+                    </ul>
+                </div>
+                <!-- //20230414 #3505 [FO] 프리미엄 혜택 문구 추가 및 변경 -->
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg.jpg" alt="">
+        </div>
+
+         <!-- 20231106 #4530 프리미엄 페이지 모바일 버전 추가 구좌 요청 건 -->
+        <div class="memJoin-cont secret-exhibit"><!-- 20231106 #4530 프리미엄 페이지 모바일 버전 추가 구좌 요청 건 > class="secret-exhibit" 추가 -->
+            <div class="cont">
+                <div class="txt">
+                    <em>시크릿</em>
+                    <strong>바바프리미엄 전용 기획전</strong>
+                    <p>
+                        <em>프리미엄 회원</em>만<br>
+                        누릴 수 있는 시크릿 가격
+                    </p>
+                </div>
+                <div class="link">
+                    <img src="../../img/memjoin_guide/premium-exhibit.png" alt="">
+                    <ul class="link_area">
+                        <!-- <li class="li01"><a href="javascript:openExhibitionDetail('14526', 'Y')"></a></li>
+                        <li class="li02"><a href="javascript:openExhibitionDetail('14513', 'Y')"></a></li>
+                        <li class="li03"><a href="javascript:openExhibitionDetail('14527', 'Y')"></a></li>
+                        <li class="li04"><a href="javascript:openExhibitionDetail('16552', 'Y')"></a></li>
+                        <li class="li05"><a href="javascript:openExhibitionDetail('16551', 'Y')"></a></li>
+                        <li class="li06"><a href="javascript:openExhibitionDetail('16553', 'Y')"></a></li> -->
+                        <li class="li01"><a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=14526"></a></li>
+                        <li class="li02"><a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=14513"></a></li>
+                        <li class="li03"><a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=14527"></a></li>
+                        <li class="li04"><a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=16552"></a></li>
+                        <li class="li05"><a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=16551"></a></li>
+                        <li class="li06"><a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=16553"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <img src="../../img/memjoin_guide/memJoin-guide-bg3.jpg" alt="">
+        </div>
+        <!-- //20231106 #4530 프리미엄 페이지 모바일 버전 추가 구좌 요청 건 -->
+
+        <div class="memJoin-cont bestCtg">
+            <div class="cont">
+                <div class="visual">
+                    <!-- 20231106 #4530 프리미엄 페이지 모바일 버전 추가 구좌 요청 건 -->
+                    <!-- <img src="../../img/memjoin_guide/premium-best-title.png" alt="바바더닷컴 대표 카테고리"> -->
+                    <img src="../../img/memjoin_guide/premium-best-subtitle.png" alt="프리미엄 멤버쉽">
+                    <!-- //20231106 #4530 프리미엄 페이지 모바일 버전 추가 구좌 요청 건 -->
+                    <img src="../../img/memjoin_guide/premium-best-cont-1.png" alt="가입비 60,000원">
+                    <img src="../../img/memjoin_guide/premium-best-cont-2.png" alt="이용기간 가입일로부터 6개월 (180일)">
+                </div>
+            </div>
+        </div>
+        
+        <div class="btnWrap">
+            <button class="btn-basicL blackSolid">바바프리미엄 가입하기</button>
+        </div>
+    </section>
+    <script>
+        var swiper = new Swiper('.coupone.swiper',{
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        var slideUp = {
+            distance: '100px',
+            origin: 'bottom',
+            duration: 2000,
+            opacity: 1,
+        };
+         ScrollReveal().reveal('.memJoin-cont .cont .link > *, .memJoin-cont .cont .visual > *, .memJoin-cont .cont .txt > *,.list-babaCategory > ul > li, .memJoin-cont .cont .tipList',slideUp);/* 20230414 #3505 [FO] 프리미엄 혜택 문구 추가 및 변경 */
+    </script>
+</body>
+</html>

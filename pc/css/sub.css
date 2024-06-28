@@ -2768,6 +2768,10 @@ slide-prd-list
 
 .channel-wrap .editorial-visual {margin:40px -46px 0;}
 .channel-wrap .editorial-visual img{display: block; margin:0 auto}
+/* crop img */
+.channel-wrap .editorial-visual.crop {position: relative; margin-left:auto; margin-right:auto; width:600px;}
+.channel-wrap .editorial-visual.crop::after {content:''; display: block; padding-top: 100%;}
+.channel-wrap .editorial-visual.crop img {position: absolute; top:0; left:0; max-width:none; object-fit: cover; object-position: center top; width:100%; height:100%;}
 
 .shopplay-list {display:flex; align-items: stretch;}
 .shopplay-list li {width:100%;}

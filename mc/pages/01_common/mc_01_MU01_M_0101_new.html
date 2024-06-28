@@ -12,22 +12,85 @@
     <link rel="stylesheet" href="../../css/templateC.css">
     <link rel="stylesheet" href="../../css/templateD.css">
     <link rel="stylesheet" href="../../css/renewer.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
     <script src="../../js/swiper-bundle.min.js"></script>
     <script src="../../js/layout.js"></script>
 </head>
 <body>
     <header>
-        <div class="sub-hedaer">
-            <button type="button" class="btn-back">뒤로가기</button>
-            <h1 class="page-title">서브화면명</h1>
-            <button type="button" class="btn-search">검색</button>
-            <button type="button" class="btn-alarm new">알람</button>
-            <button type="button" class="btn-cart">장바구니<span class="num">36</span></button>
+        <div class="main-hedaer">
+            <!-- <div class="welcome"><strong>김바바님</strong> 안녕하세요</div> -->
+            <!-- 미로그인 시 -->
+            <div class="left">
+                <div class="welcome"><strong class="logo">BABATHE.COM</strong></div>
+            </div>
+            <div class="right">
+                <button type="button" class="btn-search">검색</button>
+                <button type="button" class="btn-alarm new">알람</button>
+                <button type="button" class="btn-cart" onclick="location.href='../12_order/mc_12_MU10_M_0101_test.html'">장바구니<span class="num">36</span></button>
+            </div>
         </div>
     </header>
+    <header>
+        <div class="sub-hedaer">
+            <div class="left">
+                <button type="button" class="btn-back">뒤로가기</button>
+                <h1 class="page-title">서브화면명</h1>
+            </div>
+            <div class="right">
+                <button type="button" class="btn-search">검색</button>
+                <button type="button" class="btn-alarm new">알람</button>
+                <button type="button" class="btn-cart">장바구니<span class="num">36</span></button>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="sub-hedaer">
+            <div class="left">
+                <button type="button" class="btn-back">뒤로가기</button>
+                <div class="search-area header_type">
+                    <input type="text" class="search-input" placeholder="인플루언서가 추천하는 봄 스타일">
+                    <button class="del" onclick="searchArea_control.del()">삭제</button>
+                </div>
+            </div>
+            <div class="right">
+                <button type="button" class="btn-search">검색</button>
+            </div>
+        </div>
+    </header>
+
+    <header>
+        <div class="sub-hedaer">
+            <div class="left">
+                <button type="button" class="btn-back">뒤로가기</button>
+                <button type="button" class="btn-home">홈</button>
+            </div>
+            <div class="right">
+                <button type="button" class="btn-search">검색</button>
+                <button type="button" class="btn-alarm new">알람</button>
+                <button type="button" class="btn-cart">장바구니<span class="num">36</span></button>
+            </div>
+        </div>
+    </header>
+    <header>
+        <div class="sub-hedaer">
+            <div class="left">
+                <button type="button" class="btn-back">뒤로가기</button>
+                <a href="#none" class="noline_select md">가디건·베스트</a>
+            </div>
+            <div class="right">
+                <button type="button" class="btn-search">검색</button>
+                <button type="button" class="btn-cart">장바구니<span class="num">36</span></button>
+            </div>
+        </div>
+    </header>
+
+
     <section>
         
     </section>
+
+    
     <footer>
         <div class="footer-top">
             <ul class="inner">
@@ -44,17 +107,30 @@
                 <li><a href="#">이용약관</a></li>
                 <li><a href="#">회사소개</a></li>
             </ul>
-            <div class="footer-info-new">
-                <p>서울특별시 서초구 신반포로 339, 논현빌딩  (대표이사 : 문인식)</p>
-                <p>사업자 등록번호 569-86-01308</p>
-                <p>통신판매업신고번호 제 2019 - 서울 서초 - 1268호</p>
-                <p>개인정보관리책임자 : 김효영</p>
+            <div class="footer-call">
+                <p class="tit">대표번호 : <a class="tel" href="tel:1644-0100">1644-0100</a></p>
+                <p class="info">평일 10:00 ~ 17:00 (점심 12:30 ~ 14:00), 주말/공휴일 휴무</p>
             </div>
+            
+            <div class="">
+                <div class="accordion-title txt-expand">(주)바바더닷컴<button>열림</button></div>
+                <div class="accordion-panel">
+                    <div class="footer-info-new">
+                        <p>서울특별시 서초구 신반포로 339, 논현빌딩  (대표이사 : 문인식)</p>
+                        <p>사업자 등록번호 569-86-01308</p>
+                        <p>통신판매업신고번호 제 2019 - 서울 서초 - 1268호</p>
+                        <p>개인정보관리책임자 : 김효영</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-txt">고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한 NHN KCP의 구매안전 서비스를 이용하실 수 있습니다. <a href="#;" class="underline">가입사실확인</a></p>
+            <p class="footer-txt">일부 상품의 경우 ㈜바바더닷컴은 통신판매의 당사자가 아닌 통신판매중개자로서 거래당사자가 아니며, 입점 판매사가 등록한 상품정보 및 거래 등의 책임은 해당 판매자에게 있습니다.
+            </p>
             <div class="utilBtns-new">
-                <button class="snsIcon youtube">페이스북</button>
                 <button class="snsIcon facebook">페이스북</button>
                 <button class="snsIcon instar">인스타그램</button>
-                <button class="snsIcon app">앱스토어</button>
+                <button class="app">APP 다운로드</button>
             </div>
             <p class="copyright-new">ⓒ BABATHE.COM all rights reserved</p>
         </div>
@@ -68,13 +144,15 @@
             <button type="button" class="btn-footerLive" style="background-image: url(../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg);">라이브</button>
             <button type="button" class="btn-recentlyProducts" onclick="location.href='../02_main/mc_02_MU01_P_0104.html'" style="background-image: url(../../img/temp/SUw2UDFQTzA=IL6P1PO0551_1_310x455.jpg);">최근 본 상품</button>
             <button type="button" class="btn-goTop white" onclick="window.scrollTo(0,0)">페이지 상단으로 가기</button>
+            <button type="button" class="btn-consult">바바더닷컴 상담 버튼</button>
         </div>
     </div>
 
+    
     <div class="bottomFloating">
         <button type="button" class="btn menu">메뉴</button>
         <button type="button" class="btn chat">스타일챗</button>
-        <button type="button" class="btn home">홈</button>
+        <button type="button" class="btn home on">HOME</button>
         <button type="button" class="btn mybaba">마이바바</button>
         <button type="button" class="btn history">히스토리</button>
     </div>

@@ -108,7 +108,7 @@ html.main.scrollUp header{top:0;}
 /* html.scrollUp .utilsFloating{bottom: 20px} */
 html.goTop-visible .utilsFloating .btn-goTop{display:block;transform: scale(1);height: 44px;margin-top: 10px;}
 .utilsFloating .btn-footerLive.on + .btn-goTop {margin-top: 20px}
-html.bottomFloating-on .utilsFloating{bottom: 90px/* bottom: 122px */}
+html.bottomFloating-on .utilsFloating{/*bottom: 90px*/ bottom: 122px; }
 
 
 html.scrollUp .prd-list-filter{top: -1px;}
@@ -420,8 +420,8 @@ position:fixed;z-index: 1002;bottom:0;left:0;width:100%;/* height:64px; */height
 .bottomFloating .btn.channel::before{background-position-x:-24px}
 .bottomFloating .btn.care::before{background-image:url('../img/bg-bottomFloating-care.png');}
 .bottomFloating .btn.home{position: relative;}
-.bottomFloating .btn.home::before{position: relative;z-index: 1;background-image:url('../img/bg-bottomFloating-home_on.png');}
-.bottomFloating .btn.home::after{position: absolute;left: 50%;top: 50%;right: auto;z-index: 0; transform: translate(-50%,-50%); content: "";display: block;width: 42px;height: 42px;border-radius: 50%;background-color: #000;}
+.bottomFloating .btn.home::before{position: relative;z-index: 1;background-image:url('../img/bg-bottomFloating-home_on.png'); position: relative; top:5px;}
+.bottomFloating .btn.home::after{position: absolute;left: 50%;top: 50%;right: auto;z-index: 0; transform: translate(-50%,-50%); content: "";display: block;width: 42px;height: 42px;border-radius: 50%;background-color: #111;}
 .bottomFloating .btn.home span {display: none;}
 .bottomFloating .btn.mybaba::before{background-image:url('../img/bg-bottomFloating-mybaba.png');}
 .bottomFloating .btn.menu::before{background-image:url('../img/bg-bottomFloating-menu.png');}
@@ -655,64 +655,67 @@ height: 44px; border-radius: 50%; background-repeat: no-repeat; background-size:
 .swiper-baba-pay .swiper-slide.register .card-inner p {font-weight:400; font-size:12px; color:#A8A8A8}
 .swiper-baba-pay .swiper-slide.register .card-inner p strong {font-weight:700; color:#111}
 .swiper-baba-pay .swiper-slide.card {padding:0 15px; border-color:#F5F5F5; background:#F5F5F5; box-sizing:border-box}
-.swiper-baba-pay .swiper-slide.card .card-inner {width:100%; padding-top:35px; box-sizing:border-box; background-position:0 0; background-repeat:no-repeat; background-size:auto 25px}
+/* .swiper-baba-pay .swiper-slide.card .card-inner {width:100%; padding-top:35px; box-sizing:border-box; background-position:0 0; background-repeat:no-repeat; background-size:auto 25px} */
+.swiper-baba-pay .swiper-slide.card .card-inner {width:100%; box-sizing:border-box}
+.swiper-baba-pay .swiper-slide.card .card-inner .logo {height:25px; margin-bottom:10px}
+.swiper-baba-pay .swiper-slide.card .card-inner .logo img {height:100%}
 .swiper-baba-pay .swiper-slide.card .card-inner .title {display:block; font-weight:400; font-size:12px; color:#111}
 .swiper-baba-pay .swiper-slide.card .card-inner .number {display:block; margin-top:5px; font-size:12px; color:#111}
 .swiper-baba-pay .swiper-slide.card .card-inner .form-box {margin-top:40px; border:1px solid #C7C7C7; border-radius:4px; background:#fff}
 .swiper-baba-pay .swiper-slide.card .card-inner .form-box select {pointer-events:none; height:40px; line-height:1em; font-size:12px; border-bottom:0; background:url('../img/form_select_baba_pay.png') calc(100% - 14px) 50% no-repeat; background-size:13px auto}
 .swiper-baba-pay .swiper-slide.card.swiper-slide-active .card-inner .form-box select {pointer-events:initial}
-.list-pay-benefit {padding:10px 15px; background:#F5F5F5}
+.list-pay-benefit {margin-bottom:20px; padding:10px 15px; background:#F5F5F5}
 .list-pay-benefit ul li {padding-left:10px; text-indent:-8px; line-height:1.2em; font-size:12px; color:#666; word-break:keep-all}
 .list-pay-benefit ul li:before {content:"- "}
 .list-pay-benefit ul li ~ li {margin-top:3px}
-
+.list-pay-benefit + .chkWrap {margin-top:0 !important}
 /* 카드사 로고 */
-.swiper-baba-pay .swiper-slide.card.cord_CCNH .card-inner {background-image:url(../img/card_baba_pay_logo_ccnh.png)}/* NH카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCSG .card-inner {background-image:url(../img/card_baba_pay_logo_ccsg.png)}/* 씨티카드(구 신세계한미) */
-.swiper-baba-pay .swiper-slide.card.cord_CCCT .card-inner {background-image:url(../img/card_baba_pay_logo_ccct.png)}/* 씨티카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCHM .card-inner {background-image:url(../img/card_baba_pay_logo_cchm.png)}/* 씨티카드(구. 한미카드) */
-.swiper-baba-pay .swiper-slide.card.cord_CCAM .card-inner {background-image:url(../img/card_baba_pay_logo_ccam.png)}/* 롯데아멕스카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCLO .card-inner {background-image:url(../img/card_baba_pay_logo_cclo.png)}/* 롯데카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCSS .card-inner {background-image:url(../img/card_baba_pay_logo_ccss.png)}/* 삼성카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCLG .card-inner {background-image:url(../img/card_baba_pay_logo_cclg.png)}/* 신한카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCKE .card-inner {background-image:url(../img/card_baba_pay_logo_ccke.png)}/* 하나카드(외환) */
-.swiper-baba-pay .swiper-slide.card.cord_CCDI .card-inner {background-image:url(../img/card_baba_pay_logo_ccdi.png)}/* 현대카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCSU .card-inner {background-image:url(../img/card_baba_pay_logo_ccsu.png)}/* 수협카드(자체발급) */
-.swiper-baba-pay .swiper-slide.card.cord_CCHN .card-inner {background-image:url(../img/card_baba_pay_logo_cchn.png)}/* 하나카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCCJ .card-inner {background-image:url(../img/card_baba_pay_logo_cccj.png)}/* 제주은행(자체발급) */
-.swiper-baba-pay .swiper-slide.card.cord_CCKJ .card-inner {background-image:url(../img/card_baba_pay_logo_cckj.png)}/* 광주은행(자체발급) */
-.swiper-baba-pay .swiper-slide.card.cord_CCKM .card-inner {background-image:url(../img/card_baba_pay_logo_cckm.png)}/* KB국민카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCBC .card-inner {background-image:url(../img/card_baba_pay_logo_ccbc.png)}/* BC카드 */
-.swiper-baba-pay .swiper-slide.card.cord_CCWR .card-inner {background-image:url(../img/card_baba_pay_logo_ccwr.png)}/* 우리카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCNH .card-inner {background-image:url(../img/card_baba_pay_logo_ccnh.png)} */ /* NH카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCSG .card-inner {background-image:url(../img/card_baba_pay_logo_ccsg.png)} */ /* 씨티카드(구 신세계한미) */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCCT .card-inner {background-image:url(../img/card_baba_pay_logo_ccct.png)} */ /* 씨티카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCHM .card-inner {background-image:url(../img/card_baba_pay_logo_cchm.png)} */ /* 씨티카드(구. 한미카드) */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCAM .card-inner {background-image:url(../img/card_baba_pay_logo_ccam.png)} */ /* 롯데아멕스카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCLO .card-inner {background-image:url(../img/card_baba_pay_logo_cclo.png)} */ /* 롯데카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCSS .card-inner {background-image:url(../img/card_baba_pay_logo_ccss.png)} */ /* 삼성카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCLG .card-inner {background-image:url(../img/card_baba_pay_logo_cclg.png)} */ /* 신한카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCKE .card-inner {background-image:url(../img/card_baba_pay_logo_ccke.png)} */ /* 하나카드(외환) */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCDI .card-inner {background-image:url(../img/card_baba_pay_logo_ccdi.png)} */ /* 현대카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCSU .card-inner {background-image:url(../img/card_baba_pay_logo_ccsu.png)} */ /* 수협카드(자체발급) */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCHN .card-inner {background-image:url(../img/card_baba_pay_logo_cchn.png)} */ /* 하나카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCCJ .card-inner {background-image:url(../img/card_baba_pay_logo_cccj.png)} */ /* 제주은행(자체발급) */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCKJ .card-inner {background-image:url(../img/card_baba_pay_logo_cckj.png)} */ /* 광주은행(자체발급) */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCKM .card-inner {background-image:url(../img/card_baba_pay_logo_cckm.png)} */ /* KB국민카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCBC .card-inner {background-image:url(../img/card_baba_pay_logo_ccbc.png)} */ /* BC카드 */
+/* .swiper-baba-pay .swiper-slide.card.cord_CCWR .card-inner {background-image:url(../img/card_baba_pay_logo_ccwr.png)} */ /* 우리카드 */
 /* 은행 로고 */
-.swiper-baba-pay .swiper-slide.card.cord_0002 .card-inner {background-image:url(../img/card_baba_pay_logo_0002.png)}/* KDB 산업은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0003 .card-inner {background-image:url(../img/card_baba_pay_logo_0003.png)}/* 기업은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0004 .card-inner {background-image:url(../img/card_baba_pay_logo_0004.png)}/* KB국민카드(자체) */
-.swiper-baba-pay .swiper-slide.card.cord_0006 .card-inner {background-image:url(../img/card_baba_pay_logo_0006.png)}/* 국민은행(BC) */
-.swiper-baba-pay .swiper-slide.card.cord_0007 .card-inner {background-image:url(../img/card_baba_pay_logo_0007.png)}/* 수협 */
-.swiper-baba-pay .swiper-slide.card.cord_0011 .card-inner {background-image:url(../img/card_baba_pay_logo_0011.png)}/* NH농협 */
-.swiper-baba-pay .swiper-slide.card.cord_0012 .card-inner {background-image:url(../img/card_baba_pay_logo_0012.png)}/* 지역농축협 */
-.swiper-baba-pay .swiper-slide.card.cord_0020 .card-inner {background-image:url(../img/card_baba_pay_logo_0020.png)}/* 우리은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0021 .card-inner {background-image:url(../img/card_baba_pay_logo_0021.png)}/* 신한은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0023 .card-inner {background-image:url(../img/card_baba_pay_logo_0023.png)}/* SC제일은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0031 .card-inner {background-image:url(../img/card_baba_pay_logo_0031.png)}/* 대구은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0032 .card-inner {background-image:url(../img/card_baba_pay_logo_0032.png)}/* 부산은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0034 .card-inner {background-image:url(../img/card_baba_pay_logo_0034.png)}/* 광주은행(자체) */
-.swiper-baba-pay .swiper-slide.card.cord_0035 .card-inner {background-image:url(../img/card_baba_pay_logo_0035.png)}/* 제주은행(자체) */
-.swiper-baba-pay .swiper-slide.card.cord_0036 .card-inner {background-image:url(../img/card_baba_pay_logo_0036.png)}/* 씨티은행(비씨) */
-.swiper-baba-pay .swiper-slide.card.cord_0038 .card-inner {background-image:url(../img/card_baba_pay_logo_0038.png)}/* 전북은행(국민) */
-.swiper-baba-pay .swiper-slide.card.cord_0039 .card-inner {background-image:url(../img/card_baba_pay_logo_0039.png)}/* 경남은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0040 .card-inner {background-image:url(../img/card_baba_pay_logo_0040.png)}/* 코나아이 */
-.swiper-baba-pay .swiper-slide.card.cord_0045 .card-inner {background-image:url(../img/card_baba_pay_logo_0045.png)}/* 새마을 */
-.swiper-baba-pay .swiper-slide.card.cord_0048 .card-inner {background-image:url(../img/card_baba_pay_logo_0048.png)}/* 신협은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0060 .card-inner {background-image:url(../img/card_baba_pay_logo_0060.png)}/* 페이코 */
-.swiper-baba-pay .swiper-slide.card.cord_0064 .card-inner {background-image:url(../img/card_baba_pay_logo_0064.png)}/* 산림조합중앙회 */
-.swiper-baba-pay .swiper-slide.card.cord_0071 .card-inner {background-image:url(../img/card_baba_pay_logo_0071.png)}/* 우체국 */
-.swiper-baba-pay .swiper-slide.card.cord_0081 .card-inner {background-image:url(../img/card_baba_pay_logo_0081.png)}/* KEB하나은행(자체) */
-.swiper-baba-pay .swiper-slide.card.cord_0095 .card-inner {background-image:url(../img/card_baba_pay_logo_0095.png)}/* 저축은행 */
-.swiper-baba-pay .swiper-slide.card.cord_0096 .card-inner {background-image:url(../img/card_baba_pay_logo_0096.png)}/* 케이뱅크 */
-.swiper-baba-pay .swiper-slide.card.cord_0332 .card-inner {background-image:url(../img/card_baba_pay_logo_0332.png)}/* 토스뱅크 */
-.swiper-baba-pay .swiper-slide.card.cord_0333 .card-inner {background-image:url(../img/card_baba_pay_logo_0333.png)}/* 나이스 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0002 .card-inner {background-image:url(../img/card_baba_pay_logo_0002.png)} */ /* KDB 산업은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0003 .card-inner {background-image:url(../img/card_baba_pay_logo_0003.png)} */ /* 기업은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0004 .card-inner {background-image:url(../img/card_baba_pay_logo_0004.png)} */ /* KB국민카드(자체) */
+/* .swiper-baba-pay .swiper-slide.card.cord_0006 .card-inner {background-image:url(../img/card_baba_pay_logo_0006.png)} */ /* 국민은행(BC) */
+/* .swiper-baba-pay .swiper-slide.card.cord_0007 .card-inner {background-image:url(../img/card_baba_pay_logo_0007.png)} */ /* 수협 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0011 .card-inner {background-image:url(../img/card_baba_pay_logo_0011.png)} */ /* NH농협 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0012 .card-inner {background-image:url(../img/card_baba_pay_logo_0012.png)} */ /* 지역농축협 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0020 .card-inner {background-image:url(../img/card_baba_pay_logo_0020.png)} */ /* 우리은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0021 .card-inner {background-image:url(../img/card_baba_pay_logo_0021.png)} */ /* 신한은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0023 .card-inner {background-image:url(../img/card_baba_pay_logo_0023.png)} */ /* SC제일은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0031 .card-inner {background-image:url(../img/card_baba_pay_logo_0031.png)} */ /* 대구은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0032 .card-inner {background-image:url(../img/card_baba_pay_logo_0032.png)} */ /* 부산은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0034 .card-inner {background-image:url(../img/card_baba_pay_logo_0034.png)} */ /* 광주은행(자체) */
+/* .swiper-baba-pay .swiper-slide.card.cord_0035 .card-inner {background-image:url(../img/card_baba_pay_logo_0035.png)} */ /* 제주은행(자체) */
+/* .swiper-baba-pay .swiper-slide.card.cord_0036 .card-inner {background-image:url(../img/card_baba_pay_logo_0036.png)} */ /* 씨티은행(비씨) */
+/* .swiper-baba-pay .swiper-slide.card.cord_0038 .card-inner {background-image:url(../img/card_baba_pay_logo_0038.png)} */ /* 전북은행(국민) */
+/* .swiper-baba-pay .swiper-slide.card.cord_0039 .card-inner {background-image:url(../img/card_baba_pay_logo_0039.png)} */ /* 경남은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0040 .card-inner {background-image:url(../img/card_baba_pay_logo_0040.png)} */ /* 코나아이 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0045 .card-inner {background-image:url(../img/card_baba_pay_logo_0045.png)} */ /* 새마을 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0048 .card-inner {background-image:url(../img/card_baba_pay_logo_0048.png)} */ /* 신협은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0060 .card-inner {background-image:url(../img/card_baba_pay_logo_0060.png)} */ /* 페이코 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0064 .card-inner {background-image:url(../img/card_baba_pay_logo_0064.png)} */ /* 산림조합중앙회 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0071 .card-inner {background-image:url(../img/card_baba_pay_logo_0071.png)} */ /* 우체국 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0081 .card-inner {background-image:url(../img/card_baba_pay_logo_0081.png)} */ /* KEB하나은행(자체) */
+/* .swiper-baba-pay .swiper-slide.card.cord_0095 .card-inner {background-image:url(../img/card_baba_pay_logo_0095.png)} */ /* 저축은행 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0096 .card-inner {background-image:url(../img/card_baba_pay_logo_0096.png)} */ /* 케이뱅크 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0332 .card-inner {background-image:url(../img/card_baba_pay_logo_0332.png)} */ /* 토스뱅크 */
+/* .swiper-baba-pay .swiper-slide.card.cord_0333 .card-inner {background-image:url(../img/card_baba_pay_logo_0333.png)} */ /* 나이스 */
 /* .admin-regist-card */
 .admin-regist-card {width:100%}
 .admin-regist-card li {position:relative; display:flex; justify-content:center; align-items:center; border:1px solid #fff; border-radius:4px; background:#fff; cursor:pointer}
@@ -727,57 +730,61 @@ height: 44px; border-radius: 50%; background-repeat: no-repeat; background-size:
 .admin-regist-card li.card {height:80px; padding:0 20px; border-color:#F5F5F5; background:#F5F5F5}
 .admin-regist-card li.card.active {pointer-events:none}
 .admin-regist-card li.card.active .delete {color:#A8A8A8}
-.admin-regist-card li.card .card-inner {width:100%; padding-top:30px; box-sizing:border-box; background-position:0 0; background-repeat:no-repeat; background-size:auto 25px}
+/* .admin-regist-card li.card .card-inner {width:100%; padding-top:30px; box-sizing:border-box; background-position:0 0; background-repeat:no-repeat; background-size:auto 25px} */
+.admin-regist-card li.card .card-inner {width:100%; box-sizing:border-box}
+.admin-regist-card li.card .card-inner .logo {height:25px; margin-bottom:10px}
+.admin-regist-card li.card .card-inner .logo img {height:100%}
 .admin-regist-card li.card .card-inner .title {font-weight:400; font-size:12px; color:#111}
 .admin-regist-card li.card .card-inner .number {padding-left:5px; font-size:12px; color:#111}
 .admin-regist-card li.card .delete {display:inline-block; font-size:12px; color:#111; white-space:nowrap}
 /* 카드사 로고 */
-.admin-regist-card li.card.card.cord_CCNH .card-inner {background-image:url(../img/card_baba_pay_logo_ccnh.png)}/* NH카드 */
-.admin-regist-card li.card.card.cord_CCSG .card-inner {background-image:url(../img/card_baba_pay_logo_ccsg.png)}/* 씨티카드(구 신세계한미) */
-.admin-regist-card li.card.card.cord_CCCT .card-inner {background-image:url(../img/card_baba_pay_logo_ccct.png)}/* 씨티카드 */
-.admin-regist-card li.card.card.cord_CCHM .card-inner {background-image:url(../img/card_baba_pay_logo_cchm.png)}/* 씨티카드(구. 한미카드) */
-.admin-regist-card li.card.card.cord_CCAM .card-inner {background-image:url(../img/card_baba_pay_logo_ccam.png)}/* 롯데아멕스카드 */
-.admin-regist-card li.card.card.cord_CCLO .card-inner {background-image:url(../img/card_baba_pay_logo_cclo.png)}/* 롯데카드 */
-.admin-regist-card li.card.card.cord_CCSS .card-inner {background-image:url(../img/card_baba_pay_logo_ccss.png)}/* 삼성카드 */
-.admin-regist-card li.card.card.cord_CCLG .card-inner {background-image:url(../img/card_baba_pay_logo_cclg.png)}/* 신한카드 */
-.admin-regist-card li.card.card.cord_CCKE .card-inner {background-image:url(../img/card_baba_pay_logo_ccke.png)}/* 하나카드(외환) */
-.admin-regist-card li.card.card.cord_CCDI .card-inner {background-image:url(../img/card_baba_pay_logo_ccdi.png)}/* 현대카드 */
-.admin-regist-card li.card.card.cord_CCSU .card-inner {background-image:url(../img/card_baba_pay_logo_ccsu.png)}/* 수협카드(자체발급) */
-.admin-regist-card li.card.card.cord_CCHN .card-inner {background-image:url(../img/card_baba_pay_logo_cchn.png)}/* 하나카드 */
-.admin-regist-card li.card.card.cord_CCCJ .card-inner {background-image:url(../img/card_baba_pay_logo_cccj.png)}/* 제주은행(자체발급) */
-.admin-regist-card li.card.card.cord_CCKJ .card-inner {background-image:url(../img/card_baba_pay_logo_cckj.png)}/* 광주은행(자체발급) */
-.admin-regist-card li.card.card.cord_CCKM .card-inner {background-image:url(../img/card_baba_pay_logo_cckm.png)}/* KB국민카드 */
-.admin-regist-card li.card.card.cord_CCBC .card-inner {background-image:url(../img/card_baba_pay_logo_ccbc.png)}/* BC카드 */
-.admin-regist-card li.card.card.cord_CCWR .card-inner {background-image:url(../img/card_baba_pay_logo_ccwr.png)}/* 우리카드 */
+/* .admin-regist-card li.card.card.cord_CCNH .card-inner {background-image:url(../img/card_baba_pay_logo_ccnh.png)} */ /* NH카드 */
+/* .admin-regist-card li.card.card.cord_CCSG .card-inner {background-image:url(../img/card_baba_pay_logo_ccsg.png)} */ /* 씨티카드(구 신세계한미) */
+/* .admin-regist-card li.card.card.cord_CCCT .card-inner {background-image:url(../img/card_baba_pay_logo_ccct.png)} */ /* 씨티카드 */
+/* .admin-regist-card li.card.card.cord_CCHM .card-inner {background-image:url(../img/card_baba_pay_logo_cchm.png)} */ /* 씨티카드(구. 한미카드) */
+/* .admin-regist-card li.card.card.cord_CCAM .card-inner {background-image:url(../img/card_baba_pay_logo_ccam.png)} */ /* 롯데아멕스카드 */
+/* .admin-regist-card li.card.card.cord_CCLO .card-inner {background-image:url(../img/card_baba_pay_logo_cclo.png)} */ /* 롯데카드 */
+/* .admin-regist-card li.card.card.cord_CCSS .card-inner {background-image:url(../img/card_baba_pay_logo_ccss.png)} */ /* 삼성카드 */
+/* .admin-regist-card li.card.card.cord_CCLG .card-inner {background-image:url(../img/card_baba_pay_logo_cclg.png)} */ /* 신한카드 */
+/* .admin-regist-card li.card.card.cord_CCKE .card-inner {background-image:url(../img/card_baba_pay_logo_ccke.png)} */ /* 하나카드(외환) */
+/* .admin-regist-card li.card.card.cord_CCDI .card-inner {background-image:url(../img/card_baba_pay_logo_ccdi.png)} */ /* 현대카드 */
+/* .admin-regist-card li.card.card.cord_CCSU .card-inner {background-image:url(../img/card_baba_pay_logo_ccsu.png)} */ /* 수협카드(자체발급) */
+/* .admin-regist-card li.card.card.cord_CCHN .card-inner {background-image:url(../img/card_baba_pay_logo_cchn.png)} */ /* 하나카드 */
+/* .admin-regist-card li.card.card.cord_CCCJ .card-inner {background-image:url(../img/card_baba_pay_logo_cccj.png)} */ /* 제주은행(자체발급) */
+/* .admin-regist-card li.card.card.cord_CCKJ .card-inner {background-image:url(../img/card_baba_pay_logo_cckj.png)} */ /* 광주은행(자체발급) */
+/* .admin-regist-card li.card.card.cord_CCKM .card-inner {background-image:url(../img/card_baba_pay_logo_cckm.png)} */ /* KB국민카드 */
+/* .admin-regist-card li.card.card.cord_CCBC .card-inner {background-image:url(../img/card_baba_pay_logo_ccbc.png)} */ /* BC카드 */
+/* .admin-regist-card li.card.card.cord_CCWR .card-inner {background-image:url(../img/card_baba_pay_logo_ccwr.png)} */ /* 우리카드 */
 /* 은행 로고 */
-.admin-regist-card li.card.card.cord_0002 .card-inner {background-image:url(../img/card_baba_pay_logo_0002.png)}/* KDB 산업은행 */
-.admin-regist-card li.card.card.cord_0003 .card-inner {background-image:url(../img/card_baba_pay_logo_0003.png)}/* 기업은행 */
-.admin-regist-card li.card.card.cord_0004 .card-inner {background-image:url(../img/card_baba_pay_logo_0004.png)}/* KB국민카드(자체) */
-.admin-regist-card li.card.card.cord_0006 .card-inner {background-image:url(../img/card_baba_pay_logo_0006.png)}/* 국민은행(BC) */
-.admin-regist-card li.card.card.cord_0007 .card-inner {background-image:url(../img/card_baba_pay_logo_0007.png)}/* 수협 */
-.admin-regist-card li.card.card.cord_0011 .card-inner {background-image:url(../img/card_baba_pay_logo_0011.png)}/* NH농협 */
-.admin-regist-card li.card.card.cord_0012 .card-inner {background-image:url(../img/card_baba_pay_logo_0012.png)}/* 지역농축협 */
-.admin-regist-card li.card.card.cord_0020 .card-inner {background-image:url(../img/card_baba_pay_logo_0020.png)}/* 우리은행 */
-.admin-regist-card li.card.card.cord_0021 .card-inner {background-image:url(../img/card_baba_pay_logo_0021.png)}/* 신한은행 */
-.admin-regist-card li.card.card.cord_0023 .card-inner {background-image:url(../img/card_baba_pay_logo_0023.png)}/* SC제일은행 */
-.admin-regist-card li.card.card.cord_0031 .card-inner {background-image:url(../img/card_baba_pay_logo_0031.png)}/* 대구은행 */
-.admin-regist-card li.card.card.cord_0032 .card-inner {background-image:url(../img/card_baba_pay_logo_0032.png)}/* 부산은행 */
-.admin-regist-card li.card.card.cord_0034 .card-inner {background-image:url(../img/card_baba_pay_logo_0034.png)}/* 광주은행(자체) */
-.admin-regist-card li.card.card.cord_0035 .card-inner {background-image:url(../img/card_baba_pay_logo_0035.png)}/* 제주은행(자체) */
-.admin-regist-card li.card.card.cord_0036 .card-inner {background-image:url(../img/card_baba_pay_logo_0036.png)}/* 씨티은행(비씨) */
-.admin-regist-card li.card.card.cord_0038 .card-inner {background-image:url(../img/card_baba_pay_logo_0038.png)}/* 전북은행(국민) */
-.admin-regist-card li.card.card.cord_0039 .card-inner {background-image:url(../img/card_baba_pay_logo_0039.png)}/* 경남은행 */
-.admin-regist-card li.card.card.cord_0040 .card-inner {background-image:url(../img/card_baba_pay_logo_0040.png)}/* 코나아이 */
-.admin-regist-card li.card.card.cord_0045 .card-inner {background-image:url(../img/card_baba_pay_logo_0045.png)}/* 새마을 */
-.admin-regist-card li.card.card.cord_0048 .card-inner {background-image:url(../img/card_baba_pay_logo_0048.png)}/* 신협은행 */
-.admin-regist-card li.card.card.cord_0060 .card-inner {background-image:url(../img/card_baba_pay_logo_0060.png)}/* 페이코 */
-.admin-regist-card li.card.card.cord_0064 .card-inner {background-image:url(../img/card_baba_pay_logo_0064.png)}/* 산림조합중앙회 */
-.admin-regist-card li.card.card.cord_0071 .card-inner {background-image:url(../img/card_baba_pay_logo_0071.png)}/* 우체국 */
-.admin-regist-card li.card.card.cord_0081 .card-inner {background-image:url(../img/card_baba_pay_logo_0081.png)}/* KEB하나은행(자체) */
-.admin-regist-card li.card.card.cord_0095 .card-inner {background-image:url(../img/card_baba_pay_logo_0095.png)}/* 저축은행 */
-.admin-regist-card li.card.card.cord_0096 .card-inner {background-image:url(../img/card_baba_pay_logo_0096.png)}/* 케이뱅크 */
-.admin-regist-card li.card.card.cord_0332 .card-inner {background-image:url(../img/card_baba_pay_logo_0332.png)}/* 토스뱅크 */
-.admin-regist-card li.card.card.cord_0333 .card-inner {background-image:url(../img/card_baba_pay_logo_0333.png)}/* 나이스 */
+/* .admin-regist-card li.card.card.cord_0002 .card-inner {background-image:url(../img/card_baba_pay_logo_0002.png)} */ /* KDB 산업은행 */
+/* .admin-regist-card li.card.card.cord_0003 .card-inner {background-image:url(../img/card_baba_pay_logo_0003.png)} */ /* 기업은행 */
+/* .admin-regist-card li.card.card.cord_0004 .card-inner {background-image:url(../img/card_baba_pay_logo_0004.png)} */ /* KB국민카드(자체) */
+/* .admin-regist-card li.card.card.cord_0006 .card-inner {background-image:url(../img/card_baba_pay_logo_0006.png)} */ /* 국민은행(BC) */
+/* .admin-regist-card li.card.card.cord_0007 .card-inner {background-image:url(../img/card_baba_pay_logo_0007.png)} */ /* 수협 */
+/* .admin-regist-card li.card.card.cord_0011 .card-inner {background-image:url(../img/card_baba_pay_logo_0011.png)} */ /* NH농협 */
+/* .admin-regist-card li.card.card.cord_0012 .card-inner {background-image:url(../img/card_baba_pay_logo_0012.png)} */ /* 지역농축협 */
+/* .admin-regist-card li.card.card.cord_0020 .card-inner {background-image:url(../img/card_baba_pay_logo_0020.png)} */ /* 우리은행 */
+/* .admin-regist-card li.card.card.cord_0021 .card-inner {background-image:url(../img/card_baba_pay_logo_0021.png)} */ /* 신한은행 */
+/* .admin-regist-card li.card.card.cord_0023 .card-inner {background-image:url(../img/card_baba_pay_logo_0023.png)} */ /* SC제일은행 */
+/* .admin-regist-card li.card.card.cord_0031 .card-inner {background-image:url(../img/card_baba_pay_logo_0031.png)} */ /* 대구은행 */
+/* .admin-regist-card li.card.card.cord_0032 .card-inner {background-image:url(../img/card_baba_pay_logo_0032.png)} */ /* 부산은행 */
+/* .admin-regist-card li.card.card.cord_0034 .card-inner {background-image:url(../img/card_baba_pay_logo_0034.png)} */ /* 광주은행(자체) */
+/* .admin-regist-card li.card.card.cord_0035 .card-inner {background-image:url(../img/card_baba_pay_logo_0035.png)} */ /* 제주은행(자체) */
+/* .admin-regist-card li.card.card.cord_0036 .card-inner {background-image:url(../img/card_baba_pay_logo_0036.png)} */ /* 씨티은행(비씨) */
+/* .admin-regist-card li.card.card.cord_0038 .card-inner {background-image:url(../img/card_baba_pay_logo_0038.png)} */ /* 전북은행(국민) */
+/* .admin-regist-card li.card.card.cord_0039 .card-inner {background-image:url(../img/card_baba_pay_logo_0039.png)} */ /* 경남은행 */
+/* .admin-regist-card li.card.card.cord_0040 .card-inner {background-image:url(../img/card_baba_pay_logo_0040.png)} */ /* 코나아이 */
+/* .admin-regist-card li.card.card.cord_0045 .card-inner {background-image:url(../img/card_baba_pay_logo_0045.png)} */ /* 새마을 */
+/* .admin-regist-card li.card.card.cord_0048 .card-inner {background-image:url(../img/card_baba_pay_logo_0048.png)} */ /* 신협은행 */
+/* .admin-regist-card li.card.card.cord_0060 .card-inner {background-image:url(../img/card_baba_pay_logo_0060.png)} */ /* 페이코 */
+/* .admin-regist-card li.card.card.cord_0064 .card-inner {background-image:url(../img/card_baba_pay_logo_0064.png)} */ /* 산림조합중앙회 */
+/* .admin-regist-card li.card.card.cord_0071 .card-inner {background-image:url(../img/card_baba_pay_logo_0071.png)} */ /* 우체국 */
+/* .admin-regist-card li.card.card.cord_0081 .card-inner {background-image:url(../img/card_baba_pay_logo_0081.png)} */ /* KEB하나은행(자체) */
+/* .admin-regist-card li.card.card.cord_0095 .card-inner {background-image:url(../img/card_baba_pay_logo_0095.png)} */ /* 저축은행 */
+/* .admin-regist-card li.card.card.cord_0096 .card-inner {background-image:url(../img/card_baba_pay_logo_0096.png)} */ /* 케이뱅크 */
+/* .admin-regist-card li.card.card.cord_0332 .card-inner {background-image:url(../img/card_baba_pay_logo_0332.png)} */ /* 토스뱅크 */
+/* .admin-regist-card li.card.card.cord_0333 .card-inner {background-image:url(../img/card_baba_pay_logo_0333.png)} */ /* 나이스 */
 /* .admin-baba-pay */
 .admin-baba-pay ul li a {position:relative; display:flex; justify-content:left; align-items:center; padding:0; line-height:45px; font-size:14px; color:#111}
 .admin-baba-pay ul li a:after {content:""; opacity:0.5; position:absolute; top:50%; right:5px; width:8px; height:8px; border-top:1px solid #000; border-right:1px solid #000; transform: rotate(45deg) translateY(-50%)}
+.admin-baba-pay ul li.disabled a {opacity:0.5; pointer-events:none}

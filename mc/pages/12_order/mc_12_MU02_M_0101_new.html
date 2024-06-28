@@ -18,12 +18,11 @@
 <body>
     <header>
         <div class="sub-hedaer">
-            <div>
+            <div class="left">
                 <button type="button" class="btn-back">뒤로가기</button>
                 <button type="button" class="btn-home">홈</button>
             </div>
-            <!-- <h1 class="page-title">서브화면명</h1> -->
-            <div>
+            <div class="right">
                 <button type="button" class="btn-search">검색</button>
                 <button type="button" class="btn-alarm new">알람</button>
                 <button type="button" class="btn-cart">장바구니<span class="num">36</span></button>
@@ -67,11 +66,9 @@
                 -->
             </ul>
             <div class="swiper-scrollbar"></div>
-            <!-- <a class="btn-anchor btn-cody btn-basicS bg-black" href="#codyWrap"><span>코디상품</span></a> -->
             <a href class="btn_new_black ico_cody" href="#codyWrap">코디상품</a>
             <div class="btn_set">
                 <a href class="btn_new_black ico_play" href="#;"><span class="for-a11y">재생</span></a>
-                <a href class="btn_new_black ico_plus" href="#;"><span class="for-a11y">확대보기</span></a>
             </div>
             <script>
                 var prevVideo;
@@ -100,7 +97,7 @@
         <!-- 상품정보 -->
         <div class="prd_info_detail">
             <div class="prd_title">
-                <a href="#none" class="prd_brand btn_ico_go">THE TILBURY</a>
+                <a href="#none" class="prd_brand">THE TILBURY</a>
                 <p class="prd_info">[FW 단독 프리오픈] 슬릿 펄버튼 배색 니트 슬릿 펄버튼 배색 니트</p>
             </div>
             <div class="star_wrap">
@@ -113,7 +110,7 @@
             <div class="price_wrap">
                 <div class="price">
                     <span class="original">189,000</span>
-                    <spsan class="desc">( 5% 자동쿠폰 적용 )</spsan>
+                    <!-- <spsan class="desc">( 5% 자동쿠폰 적용 )</spsan> --><!-- 고객요청 삭제 -->
                 </div>
                 <div class="price result">
                     <span class="discount_per">30%</span>
@@ -153,8 +150,8 @@
                     <button class="btn-close">툴팁닫기</button>
                 </div>
                 <script>
-                    $('.tipCont.login').on('click', function() {
-                        $(this).hide();
+                    $('.tipCont.login').on('click','.btn-close', function() {
+                        $('.tipCont.login').hide();
                     })
                 </script>
             </div>
@@ -563,7 +560,7 @@
                 <script>
                     var swiper = new Swiper('#unitListSwiper-stylist', {
                         slidesPerView: 2.4,
-                        spaceBetween: 8,
+                        spaceBetween: 4, //고객요청 8->4px
                     });
                 </script>
             </div>
@@ -575,11 +572,13 @@
         </a>
         <!-- 상세설명 -->
         <div class="section_wrap">
-            <div class="line_tabs sticky">
-                <a href="javascript:void(0)" class="list on">상세설명</a></li>
-                <a href="javascript:void(0)" class="list">사이즈</a></li>
-                <a href="javascript:void(0)" class="list">리뷰<span class="num">123</span></a></li>
-                <a href="javascript:void(0)" class="list">추천</a></li>
+            <div class="line_tabs full_type sticky">
+                <ul>
+                    <li class="list on"><a href="javascript:void(0)">상세설명</a></li>
+                    <li class="list"><a href="javascript:void(0)">사이즈</a></li>
+                    <li class="list"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
+                    <li class="list"><a href="javascript:void(0)">추천</a></li>
+                </ul>
             </div>
             <div class="section_item">
 
@@ -635,6 +634,39 @@
                         </dl>
                     </div>
                 </div>
+
+                <div class="guide_box">
+                    <p class="noti">주문 전 유의사항</p>
+                    <p class="desc">오프라인 매장과 동시 판매되는 상품으로, 결제 완료 후 또는 입고 확정 이후에도 품절/결품이 발생될 수 있으며, 재고 확인으로 인한 발송 지연도 있을 수 있습니다. 
+                    결제 완료 이후 품절/결품이 발생한 경우, 고객님께 문자 서비스를 통해 품절/결품 안내를 드리고 있습니다.
+                    <br/><br/>
+                    아울렛 상품은 할인율이 높은 상품으로 부속품이 없을 수 있으므로 구매 시 유의하여 주시기 바랍니다.
+                    이로 인한 무료반품은 불가하오니 이점 양해 바랍니다.</p>
+                </div>
+
+                <div class="shipping_banner">
+                    <p class="tit">재고 실사로 인한 배송 안내</p>
+                    <p class="desc">24.03.27(수) 9시 이전 주문건까지 발송<br/>
+                        이후주문 24.04.01(월) 순차발송
+                    </p>
+                </div>
+
+                <div class="prd_info_txt">
+                    <p class="tit">DETAIL</p>
+                    <p class="desc">군더더기 없이 간결하게 일자 실루엣이 연출되며 여유로운 핏으로 부담없는 데님 팬츠입니다.
+                        허리 안쪽 밴딩 구성되어 탄탄하게 핏을 잡아주며 장시간 편안하게 착용할 수 있는 아이템입니다.
+                        <br/><br/>
+                        - 쾌적한 착용감의 코튼 블렌드 소재
+                        - 캐주얼한 감각의 스티치 디테일
+                        - 여밈라인 버튼과 지퍼 클로징 방식
+                        - 수납 가능한 양 사이드와 힙 포켓
+                        <br/><br/>
+                        - 모델사이즈 : 키 168 / 신체사이즈 32-24-33 in / 
+                        55 사이즈 착용
+                    </p>
+                </div>
+
+
                 <div class="img_expand_area closed">
                     <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
                     <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
@@ -719,11 +751,13 @@
         <!-- //상세설명 -->
         <!-- 사이즈 -->
         <div class="section_wrap">
-            <div class="line_tabs sticky">
-                <a href="javascript:void(0)" class="list">상세설명</a></li>
-                <a href="javascript:void(0)" class="list on">사이즈</a></li>
-                <a href="javascript:void(0)" class="list">리뷰<span class="num">123</span></a></li>
-                <a href="javascript:void(0)" class="list">추천</a></li>
+            <div class="line_tabs full_type sticky">
+                <ul>
+                    <li class="list"><a href="javascript:void(0)">상세설명</a></li>
+                    <li class="list on"><a href="javascript:void(0)">사이즈</a></li>
+                    <li class="list"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
+                    <li class="list"><a href="javascript:void(0)">추천</a></li>
+                </ul>
             </div>
             <div class="section_item">
                 <div style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; color: #999;">크리마 핏 영역</div>
@@ -827,11 +861,13 @@
         <!-- //사이즈 -->
         <!-- 리뷰 -->
         <div class="section_wrap">
-            <div class="line_tabs sticky">
-                <a href="javascript:void(0)" class="list">상세설명</a></li>
-                <a href="javascript:void(0)" class="list">사이즈</a></li>
-                <a href="javascript:void(0)" class="list on">리뷰<span class="num">123</span></a></li>
-                <a href="javascript:void(0)" class="list">추천</a></li>
+            <div class="line_tabs full_type sticky">
+                <ul>
+                    <li class="list"><a href="javascript:void(0)">상세설명</a></li>
+                    <li class="list"><a href="javascript:void(0)">사이즈</a></li>
+                    <li class="list on"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
+                    <li class="list"><a href="javascript:void(0)">추천</a></li>
+                </ul>
             </div>
             <div class="section_item">
                 <div style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; color: #999;">리뷰 영역</div>
@@ -840,11 +876,13 @@
         <!-- //리뷰 -->
         <!-- 추천 -->
         <div class="section_wrap">
-            <div class="line_tabs sticky">
-                <a href="javascript:void(0)" class="list">상세설명</a></li>
-                <a href="javascript:void(0)" class="list">사이즈</a></li>
-                <a href="javascript:void(0)" class="list">리뷰<span class="num">123</span></a></li>
-                <a href="javascript:void(0)" class="list on">추천</a></li>
+            <div class="line_tabs full_type sticky">
+                <ul>
+                    <li class="list"><a href="javascript:void(0)">상세설명</a></li>
+                    <li class="list"><a href="javascript:void(0)">사이즈</a></li>
+                    <li class="list"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
+                    <li class="list on"><a href="javascript:void(0)">추천</a></li>
+                </ul>
             </div>
             <div class="section_item">
                 <div class="title_area">
@@ -912,7 +950,7 @@
                     <script>
                         var swiper = new Swiper('#unitListSwiper-basicB', {
                             slidesPerView: 2.3,
-                            spaceBetween: 2,
+                            spaceBetween: 4, //2->4
                         });
                     </script>
                 </div>
@@ -981,7 +1019,7 @@
                     <script>
                         var swiper = new Swiper('#unitListSwiper-basicB_2', {
                             slidesPerView: 2.3,
-                            spaceBetween: 2,
+                            spaceBetween: 4, //2->4
                         });
                     </script>
                 </div>
@@ -1053,7 +1091,7 @@
                     <script>
                         var swiper = new Swiper('#unitListSwiper-basicB_3', {
                             slidesPerView: 2.3,
-                            spaceBetween: 2,
+                            spaceBetween: 4, //2->4
                         });
                     </script>
                 </div>
@@ -1137,7 +1175,7 @@
                     <script>
                         var swiper = new Swiper('#unitListSwiper-basicB_4', {
                             slidesPerView: 2.3,
-                            spaceBetween: 2,
+                            spaceBetween: 4, //2->4
                         });
                     </script>
                 </div>
@@ -1190,7 +1228,7 @@
                     <script>
                         var swiper = new Swiper('#unitListSwiper-basicB_5', {
                             slidesPerView: 2.3,
-                            spaceBetween: 2,
+                            spaceBetween: 4, //2->4
                         });
                     </script>
                 </div>
@@ -1281,10 +1319,12 @@
         <!-- //문의 -->
         
         <div class="bottomFloating-button buying_new"> 
-            <label class="toggle-wish">
-                <input type="checkbox"><span class="for-ally">찜하기</span><span class="num">3,098</span>
-            </label>
-            <button class="btn_ico_share"><span class="for-a11y">공유하기</span></button>
+            <div class="icon_set">
+                <label class="toggle-wish">
+                    <input type="checkbox"><span class="for-ally">찜하기</span><span class="num">3,098</span>
+                </label>
+                <button class="btn_ico_share"><span class="for-a11y">공유하기</span></button>
+            </div>
             <button class="btn-basicL" onclick="popOpen('layerPop-goodsOptionSelect')">구매하기</button>
         </div>
 
@@ -1351,21 +1391,17 @@
     
     <script>
         $(function() {
-            // const detailtab = $(".line_tabs.sticky");
-            // detailtab.each(function(){
-            //     this.tab = $(".list",this)
-            //     console.log('this.tab',this.tab)
-            // })
             $('.line_tabs.sticky .list').on('click', function (e) {
                 var idx = $(this).index();
-                console.log('idx', idx)
+                // console.log('idx', idx)
                 var offset = $('.section_wrap').eq(idx).offset();
                 var $target = $('.section_wrap').eq(idx);
                 if( $('html').hasClass('scrollUp')) {
                     $('html').stop().animate({ scrollTop: offset.top }, 500 );
                 }
-                else  $('html').stop().animate({ scrollTop: offset.top - 56 }, 500 );
+                else  $('html').stop().animate({ scrollTop: offset.top - 50 }, 500 );
             });
+            
         })
     </script>
 </body>

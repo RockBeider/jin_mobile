@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 브랜드</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <link rel="stylesheet" href="../../css/renewer.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <div class="left">
+                <button type="button" class="btn-back">뒤로가기</button>
+                <h1 class="page-title">THE IZZAT</h1>
+            </div>
+            <div class="right">
+                <button type="button" class="btn-search">검색</button>
+                <button type="button" class="btn-cart">장바구니<span class="num">36</span></button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="sticky">
+            <nav class="line_tabs expand medium">
+                <ul>
+                    <li class="list"><button type="button">HOME</button></li>
+                    <li class="list on"><button type="button">ONLINE ONLY</button></li>
+                    <li class="list"><button type="button">OUTLET</button></li>
+                    <li class="list"><button type="button">린넨 ITEM</button></li>
+                    <li class="list"><button type="button">ABOUT</button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sticky">
+            <div class="tab_depth_box">
+                <div class="tab_depth on">
+                    <!-- <button type="button" class="btn_ico_refresh"><span class="for-a11y">새로고침</span></button> -->
+                    <div class="tab_sub">
+                        <button type="button" class="round_btn">FESTA</button>
+                        <button type="button" class="round_select">컬러</button>
+                        <button type="button" class="round_select">가격</button>
+                        <button type="button" class="round_select">브랜드</button>
+                        <button type="button" class="round_select">할인·혜택</button>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function tab () {
+                    $(document).on('click','.sticky .tab_sub button',function(){
+                        var This = $(this);
+                        var wrap = This.parent()
+                        var pos = This.offset().left + This.outerWidth() + wrap.scrollLeft() - wrap.outerWidth();
+
+                        $('.sticky .tab_sub button').removeClass('is_active')
+                        This.addClass('is_active')
+                        wrap.stop().animate({ 'scrollLeft': pos })
+                    })
+                
+                    $('.tab_scroll > li').each(function (index, item) {
+                        const _this = $(item);
+                        _this.click(function () {
+                            const $tab_id = _this.find('button').attr('data-tab');
+                            const $tab = _this.parent('.tab_scroll');
+                            const $tab_btns = $tab.find('li'); // 탭 버튼 전체
+                            const $tab_depth = $tab.siblings('.tab_depth_box').find('[ data-id="' + $tab_id + '"]');
+                            const $tab_depth_all = $tab.siblings('.tab_depth_box').find('.tab_depth');
+                            $tab_btns.removeClass('on');
+                            _this.addClass('on');
+
+                            $tab_depth_all.removeClass('on');
+                            $tab_depth.addClass('on');
+
+                            $('.tab_depth_box .tab_sub').scrollLeft(0)
+
+                            /* 탭 클릭 시 active 탭 중앙으로 이동 */
+                            var $tabActive = $tab.find('li.on');
+                            var myScrollPos = $tabActive.offset().left + $tabActive.outerWidth() / 2 + $tab.scrollLeft() - $tab.outerWidth() / 2;
+                            $tab.stop().animate({ 'scrollLeft': myScrollPos })
+
+                        });
+                    });
+                }
+                $(function() {
+                    tab();
+                })
+            </script>
+        </div>
+        <!-- detail_filter -->
+        <div class="detail_filter">
+            <div class="inner">
+                <div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="radio1" id="radio1_1">
+                        <label for="radio1_1">
+                            <span>품절제외</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <select class="noline_select">
+                        <option>최신순</option>
+                        <option>최신순</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- //detail_filter -->
+        <!-- product_list -->
+        <ul class="product_list list_2 expand">
+            <li>
+                <a href="#">
+                    <div class="thumb_area">
+                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                        <span class="bg_msg">SOLD OUT</span>
+                    </div>
+                    <div class="unit_info_area">
+                        <div class="title"><strong>JIGOTT</strong></div>
+                        <p class="info">펄버튼 프린지 트위드 재킷</p>
+                        <div class="priceWrap">
+                            <span class="original">421,000</span>
+                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                            <span class="saleInfo">임직원가</span>
+                        </div>
+                        <div class="tagSet white">
+                            <div class="inner">
+                                <span>타임특가</span>
+                                <span>타임특가</span>
+                            </div>
+                        </div>
+                        <div class="likes">
+                            <span class="ico_hearts">34</span>
+                            <span class="ico_likes">5.0<span class="">(66)</span></span>
+                        </div>
+                    </div>
+                </a>
+                <input type="checkbox" class="check-like" title="좋아요 체크">
+            </li>
+            <li>
+                <a href="#">
+                    <div class="thumb_area">
+                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                        <div class="badge_set">
+                            <span class="badge_s black">FESTA</span>
+                        </div>
+                    </div>
+                    <div class="unit_info_area">
+                        <div class="title"><strong>JIGOTT</strong></div>
+                        <p class="info">[데미지니모닉] ​​​​와플 크롭 베이지 가디건_ Waffle Crop</p>
+                        <div class="priceWrap">
+                            <span class="original">421,000</span>
+                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                        </div>
+                        <div class="tagSet white">
+                            <div class="inner">
+                                <span>BEST</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <input type="checkbox" class="check-like" title="좋아요 체크">
+            </li>
+            <li>
+                <a href="#">
+                    <div class="thumb_area">
+                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                        <div class="badge_set">
+                            <span class="badge_s black">FESTA</span>
+                        </div>
+                    </div>
+                    <div class="unit_info_area">
+                        <div class="title"><strong>JIGOTT</strong></div>
+                        <p class="info">[데미지니모닉] ​​​​와플 크롭 베이지 가디건_ Waffle Crop</p>
+                        <div class="priceWrap">
+                            <span class="price">79,000</span>
+                        </div>
+                        <div class="tagSet white">
+                            <div class="inner">
+                                <span>BEST</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <input type="checkbox" class="check-like" title="좋아요 체크">
+            </li>
+        </ul>
+        <!-- //product_list -->
+        
+
+    </section>
+    <footer>
+    </footer>
+
+    <div class="bottomFloating">
+        <button type="button" class="btn menu">메뉴</button>
+        <button type="button" class="btn chat">스타일챗</button>
+        <button type="button" class="btn home">HOME</button>
+        <button type="button" class="btn mybaba">마이바바</button>
+        <button type="button" class="btn history">히스토리</button>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 브랜드</title>
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <link rel="stylesheet" href="../../css/renewer.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script><!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > 테스트용 jquery-3.5.1.min.js 추가 > 운영에서는 header에서 따로 불러오기 때문에 추가 안하셔도 됩니다.-->
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="sub-hedaer">
+            <div class="left">
+                <button type="button" class="btn-back">뒤로가기</button>
+                <div class="search-area header_type">
+                    <input type="text" class="search-input" placeholder="인플루언서가 추천하는 봄 스타일" value="휴가 원피스">
+                    <button class="del" onclick="searchArea_control.del()">삭제</button>
+                </div>
+            </div>
+            <div class="right">
+                <button type="button" class="btn-search">검색</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="tab-ui line_tabs full_type">
+            <ul>
+                <li class="list on"><a href="javascript:void(0)">상품<span class="num">3,018</span></a></li>
+                <li class="list"><a href="javascript:void(0)">콘텐츠<span class="num">276</span></a></li>
+            </ul>
+        </div>
+
+        <!-- tab-cont -->
+        <div class="tab-cont">
+            <div class="on">
+                <div class="no_content pd40">
+                    검색된 상품이 없습니다.<br/><br/>
+
+                    검색어를 다시 입력하시거나,<br/>
+                    단어의 철자가 정확한지 확인해 주세요.
+                </div>
+                <div class="full_type bg_gray">
+                    <div class="title_area">
+                        <h3 class="tit_h2">검색한 #휴가 원피스 관련 추천 상품</h3>
+                    </div>
+
+                    <div class="unitList swiper expand-slider" id="history-swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="thumb_area">
+                                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                    </div>
+                                    <div class="unit_info_area">
+                                        <div class="title"><strong>JIGOTT</strong></div>
+                                        <div class="priceWrap">
+                                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="thumb_area">
+                                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                    </div>
+                                    <div class="unit_info_area">
+                                        <div class="title"><strong>JIGOTT</strong></div>
+                                        <div class="priceWrap">
+                                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="thumb_area">
+                                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                    </div>
+                                    <div class="unit_info_area">
+                                        <div class="title"><strong>JIGOTT</strong></div>
+                                        <div class="priceWrap">
+                                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="thumb_area">
+                                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                    </div>
+                                    <div class="unit_info_area">
+                                        <div class="title"><strong>JIGOTT</strong></div>
+                                        <div class="priceWrap">
+                                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="thumb_area">
+                                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                    </div>
+                                    <div class="unit_info_area">
+                                        <div class="title"><strong>JIGOTT</strong></div>
+                                        <div class="priceWrap">
+                                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <div class="thumb_area">
+                                        <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                    </div>
+                                    <div class="unit_info_area">
+                                        <div class="title"><strong>JIGOTT</strong></div>
+                                        <div class="priceWrap">
+                                            <span class="price"><em class="salePer">50%</em> 79,000</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <script>
+                            var rankSwiper = new Swiper('#history-swiper', {
+                                slidesPerView: 'auto',
+                                slidesPerView: 2.3,
+                                spaceBetween: 4, //1->4
+                            });
+                        </script>   
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="tab_depth on">
+                    <div class="tab_sub">
+                        <button type="button" class="is_active">전체<em class="num">276</em></button>
+                        <button type="button">기획전<em class="num">83</em></button>
+                        <button type="button">이벤트<em class="num">90</em></button>
+                        <button type="button">바바ZINE<em class="num">23</em></button>
+                    </div>
+                </div>
+                 <!-- product_list -->
+                 <ul class="product_list list_2 expand">
+                    <li>
+                        <a href="#">
+                            <div class="thumb_area">
+                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                            </div>
+                            <div class="unit_info_area">
+                                <div class="title"><strong>Easy-To-Wear</strong></div>
+                                <p class="info">바캉스룩도 편안하게!<br/>
+                                    1석 2조 스타일링 가이드</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb_area">
+                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                            </div>
+                            <div class="unit_info_area">
+                                <div class="title"><strong>주목할 여름 트렌드 ACC</strong></div>
+                                <p class="info">브랜드별 특가 + 추가 쿠폰</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb_area">
+                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                            </div>
+                            <div class="unit_info_area">
+                                <div class="title"><strong>Easy-To-Wear</strong></div>
+                                <p class="info">바캉스룩도 편안하게!<br/>
+                                    1석 2조 스타일링 가이드</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="thumb_area">
+                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                            </div>
+                            <div class="unit_info_area">
+                                <div class="title"><strong>주목할 여름 트렌드 ACC</strong></div>
+                                <p class="info">브랜드별 특가 + 추가 쿠폰</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- //product_list -->
+            </div>
+        </div>
+        <script>
+            function tab () {
+                $(document).on('click','.tab_sub button',function(){
+                    var This = $(this);
+                    var wrap = This.parent()
+                    var pos = This.offset().left + This.outerWidth() + wrap.scrollLeft() - wrap.outerWidth();
+
+                    $('.tab_sub button').removeClass('is_active')
+                    This.addClass('is_active')
+                    wrap.stop().animate({ 'scrollLeft': pos })
+                })
+                $('.tab_scroll > li').each(function (index, item) {
+                    const _this = $(item);
+                    _this.click(function () {
+                        const $tab = _this.parent('.tab_scroll');
+                        const $tab_btns = $tab.find('li'); // 탭 버튼 전체
+
+                        $tab_btns.removeClass('on');
+                        _this.addClass('on');
+
+                        var $tabActive = $tab.find('li.on');
+                       var myScrollPos = $tabActive.offset().left + $tabActive.outerWidth() / 2 + $tab.scrollLeft() - $tab.outerWidth() / 2;
+                       $tab.stop().animate({ 'scrollLeft': myScrollPos })
+                    });
+                     /* 탭 클릭 시 active 탭 중앙으로 이동 */
+                });
+            }
+            $(function() {
+                tab();
+            })
+        </script>
+     
+        
+       
+
+    </section>
+
+    <footer></footer>
+    <div class="bottomFloating">
+        <button type="button" class="btn menu">메뉴</button>
+        <button type="button" class="btn chat">스타일챗</button>
+        <button type="button" class="btn home">HOME</button>
+        <button type="button" class="btn mybaba">마이바바</button>
+        <button type="button" class="btn history">히스토리</button>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>BABATHE.COM - 공유하기</title>
+    <link rel="stylesheet" href="../../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/library.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/contents.css">
+    <link rel="stylesheet" href="../../css/templateB.css">
+    <link rel="stylesheet" href="../../css/templateC.css">
+    <link rel="stylesheet" href="../../css/templateD.css">
+    <link rel="stylesheet" href="../../css/renewer.css">
+    <script src="../../js/jquery-3.5.1.min.js"></script><!-- 20210927 상품상세 - 탭 메뉴 구성 변경 > 테스트용 jquery-3.5.1.min.js 추가 > 운영에서는 header에서 따로 불러오기 때문에 추가 안하셔도 됩니다.-->
+    <script src="../../js/swiper-bundle.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script> <!-- 추가 -->
+    <script src="../../js/jquery-ui.touch-punch.min.js"></script>
+    <script src="../../js/layout.js"></script>
+</head>
+<body>
+    <div class="layerPop bottomUp type_defualt open" id="layerPop-shareSns">
+        <div class="cont">
+            <div class="tab-ui">
+                <ul class="tab_scroll">
+                    <li class="on"><a href="javascript:void(0)" class="tab_btn">카테고리</a></li>
+                    <li class="dot"><a href="javascript:void(0)" class="tab_btn">컬러</a></li>
+                    <li><a href="javascript:void(0)" class="tab_btn">가격</a></li>
+                    <li><a href="javascript:void(0)" class="tab_btn">브랜드</a></li>
+                    <li><a href="javascript:void(0)" class="tab_btn">할인·혜택</a></li>
+                </ul>
+            </div>        
+            <div class="tab-cont scroll_area h_300">
+                <!-- 카테고리 -->
+                <div class="on">
+                    <ul class="tree_menu">
+                        <li>
+                            <div class="caret">
+                                <span class="txt"><span>여성</span><span class="num">(2,000)</span></span>
+                                <button class="btn_ico_del"><span class="for-a11y">삭제</span></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <span class="txt"><span>아우터</span><span class="num">(2,000)</span></span>
+                                <button class="btn_ico_del"><span class="for-a11y">삭제</span></button>
+                            </div>
+                            <ul class="nested">
+                                <li>
+                                    <div class="caret">
+                                        <span class="txt"><span>가디건·베스트</span><span class="num">(2,000)</span></span>
+                                        <button class="btn_ico_del"><span class="for-a11y">삭제</span></button>
+                                    </div>
+                                    <ul class="nested">
+                                        <li>
+                                            <div class="caret">
+                                                <span class="txt"><span>반팔가디건</span><span class="num">(2,000)</span></span>
+                                                <button class="btn_ico_del"><span class="for-a11y">삭제</span></button>
+                                            </div>
+                                            <ul class="nested">
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="txt"><span>라운드가디건</span><span class="num">(2,000)</span></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="txt"><span>브이넥가디건</span><span class="num">(2,000)</span></span>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label>
+                                                        <input type="checkbox">
+                                                        <span class="txt"><span>기본베스트</span><span class="num">(2,000)</span></span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="caret">
+                                        <span class="txt"><span>자켓</span><span class="num">(2,000)</span></span>
+                                        <button class="btn_ico_del"><span class="for-a11y">삭제</span></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="caret">
+                                        <span class="txt"><span>점퍼</span><span class="num">(2,000)</span></span>
+                                        <button class="btn_ico_del"><span class="for-a11y">삭제</span></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="caret">
+                                <span class="txt"><span>기타</span><span class="num">(2,000)</span></span>
+                                <button class="btn_ico_del"><span class="for-a11y">삭제</span></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <script>
+                        var toggler = $('.caret');
+                        toggler.each(function (index, item) {
+                            const _this = $(item);
+                            const _txt = _this.find('.txt');
+                            const _close = _this.find('.btn_ico_del');
+		                    _txt.click(function () {
+                                if(!_this.next().hasClass('is_active')) {//닫힘상태
+                                    _this.parent().siblings().addClass('hide')
+                                    _this.parent().find('li').removeClass('hide current');
+                                    _this.parent().addClass('current').find(' > .nested').addClass('is_active');
+                                    _this.find('.btn_ico_del').addClass('is_active');
+                                } 
+                                return;
+                            });
+                            _close.click(function() {
+                                _close.removeClass('is_active')
+                                _this.parent().find('.btn_ico_del').removeClass('is_active')
+                                _this.siblings().removeClass('is_active');
+                                _this.parent().find('.nested').removeClass('is_active');
+                                _this.parent().removeClass('current').siblings().removeClass('hide');
+                            });  
+                        })
+
+                        $(function () {
+                            $('.nested input:checkbox').click(function () {
+                                if($(this).attr("disabled")) return false;
+                                if($(this).is(':checked') == true) {
+                                    $(this).parent().addClass('checked');
+                                    $(this).next().find('button')
+                                } if($(this).is(':checked') == false) {
+                                    $(this).parent().removeClass('checked');
+                                    $(this).next().find('button')
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+                <!-- //카테고리 -->
+                <!-- 컬러 -->
+                <div>
+                    <ul class="color_chip opt_box">
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_1">
+                            <label for="color_1"><span style="background-color: #fff; border: 1px solid #ddd;"></span>화이트</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_2">
+                            <label for="color_2"><span style="background-color: #aaa;"></span>그레이</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_3">
+                            <label for="color_3"><span style="background-color: #000;"></span>블랙</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_4">
+                            <label for="color_4"><span style="background-color: #ddd;"></span>실버</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_5">
+                            <label for="color_5"><span style="background-color: #EFBC39;"></span>골드</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_6">
+                            <label for="color_6"><span style="background-color: #FFADE3;"></span>로즈골드</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_7">
+                            <label for="color_7"><span style="background-color: #F0E6BD;"></span>베이지</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_8">
+                            <label for="color_8"><span style="background-color: #F20000;"></span>레드</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_9">
+                            <label for="color_9"><span style="background-color: #F20084;"></span>핑크</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_10">
+                            <label for="color_10"><span style="background-color: #002F67;"></span>네이비</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_11">
+                            <label for="color_10"><span style="background-color: #0070F4;"></span>블루</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_12">
+                            <label for="color_12"><span style="background-color: #4CEDF8;"></span>스카이블루</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_13">
+                            <label for="color_13"><span style="background-color: #00F2C6;"></span>민트</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_14">
+                            <label for="color_14"><span style="background-color: #00B127;"></span>그린</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_15">
+                            <label for="color_15"><span style="background-color: #909D00;"></span>카키</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_16">
+                            <label for="color_16"><span style="background-color: #FFD600;"></span>옐로우</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_17">
+                            <label for="color_17"><span style="background-color: #FF7A00;"></span>오렌지</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_18">
+                            <label for="color_18"><span style="background-color: #A16A00;"></span>브라운</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_19">
+                            <label for="color_19"><span style="background-color: #8D004D;"></span>와인</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_20">
+                            <label for="color_20"><span style="background-color: #8110B6;"></span>퍼플</label>
+                        </li>
+                        <li class="chip">
+                            <input type="checkbox" name="chkColor" id="color_21">
+                            <label for="color_21"><span style="background-color: #CD73CA;"></span>라벤더</label>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <!-- //컬러 -->
+                <!-- 가격 -->
+                <div class="">
+                    <div class="opt_box">
+                        <div class="jqueryslider" data-event="jquerySlider">
+                            <div class="jqueryslider_price">
+                                <div class="left"><span data-event="slider-before">50</span><span class="unit">만원</span></div>
+                                <div class="right"><span data-event="slider-after">100</span><span class="unit">만원</span></div>
+                            </div>
+                            <div id="sliderRange" class="jqueryslider_range">
+                                <div class="bars"></div>
+                            </div>
+                        </div>
+
+                        <div class="tagSelector line_type">
+                            <div class="inner">
+                                <label><input type="radio" name="opt1"><span>1만원 이하</span></label>
+                                <label><input type="radio" name="opt1"><span>1~5만원</span></label>
+                                <label><input type="radio" name="opt1"><span>5~10만원</span></label>
+                                <label><input type="radio" name="opt1"><span>10~30만원</span></label>
+                                <label><input type="radio" name="opt1"><span>30~50만원</span></label>
+                                <label><input type="radio" name="opt1"><span>50~100만원</span></label>
+                                <label><input type="radio" name="opt1"><span>100만원 이상</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //가격 -->
+                <!-- 브랜드 -->
+                <div class="">
+                    <div class="search-area line_type">
+                        <input type="text" class="search-input" placeholder="브랜드명을 검색하세요.">
+                        <button class="del" onclick="searchArea_control.del()">삭제</button>
+                        <button type="button" class="search-btn"><span class="for-a11y">검색</span></button>
+                    </div>
+                    <div class="tab-ui tab_full_type">
+                        <ul>
+                            <li class="on"><a href="javascript:void(0)">인기브랜드</a></li>
+                            <li><a href="javascript:void(0)">A - Z</a></li>
+                            <li><a href="javascript:void(0)">ㄱ - ㅎ</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div class="on">
+                            <!-- brand-search-list : 인기브랜드 -->
+                            <div class="brand-search-list check_type">
+                                <div class="brand-search-item">
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div class="tit">
+                                                    <span>ACNE STUDIOS ACNE STUDIOS ACNE STUDIOS ACNE STUDIOS</span>
+                                                    <div class="tagSet type2">
+                                                        <div class="inner">
+                                                            <span class="">BEST</span>
+                                                            <span class="">NEW</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>THE IZZAT COLLECTION</span></div>
+                                                    <span class="sub">더 아이잗 컬렉션</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>JIGOTT</span></div>
+                                                    <span class="sub">지고트</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>THE IZZAT BABA YORK</span></div>
+                                                    <span class="sub">더 아이잗 뉴욕</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>JJ JIGOTT</span></div>
+                                                    <span class="sub">JJ 지고트</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>THE TILBURY</span></div>
+                                                    <span class="sub">더 틸버리</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>THE BEAUTIFUL FACTR</span></div>
+                                                    <span class="sub"></span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //brand-search-list : 인기브랜드 -->
+                        </div>
+                        <div class="brand-search-list-wrap">
+                            <!-- brand-search-list : A-Z -->
+                            <div class="brand-search-list check_type">
+                                <div class="brand-search-item" id="en1">
+                                    <div class="keyword">A</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit">
+                                                        <span>ACNE STUDIOS ACNE STUDIOS ACNE STUDIOS ACNE STUDIOS</span>
+                                                        <div class="tagSet type2">
+                                                            <div class="inner">
+                                                                <span class="">BEST</span>
+                                                                <span class="">NEW</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="sub">아크네 스튜디오</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="en2">
+                                    <div class="keyword">B</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>BOTTEGA VENETA</span></div>
+                                                    <span class="sub">보테가 베네타</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>BY WOOL</span></div>
+                                                    <span class="sub">바이울</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="en3">
+                                    <div class="keyword">C</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>CALVIN CLEIN</span></div>
+                                                    <span class="sub">캘빈 클라인</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>CELINE</span></div>
+                                                    <span class="sub">셀린느</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="en4">
+                                    <div class="keyword">D</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>DIDIER DUBOT</span></div>
+                                                    <span class="sub">디디에 두보</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>DIOR BEAUTY</span></div>
+                                                    <span class="sub">디올 뷰티</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>DOLCE &amp; GABBANA</span></div>
+                                                    <span class="sub">돌체 앤 가바나</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="en5">
+                                    <div class="keyword">E</div>
+                                </div>
+                                <div class="brand-search-item" id="en6">
+                                    <div class="keyword">F</div>
+                                </div>
+                                <div class="brand-search-item" id="en7">
+                                    <div class="keyword">G</div>
+                                </div>
+                                <div class="brand-search-item" id="en8">
+                                    <div class="keyword">H</div>
+                                </div>
+                                <div class="brand-search-item" id="en9">
+                                    <div class="keyword">I</div>
+                                </div>
+                                <div class="brand-search-item" id="en10">
+                                    <div class="keyword">J</div>
+                                </div>
+                                <div class="brand-search-item" id="en11">
+                                    <div class="keyword">K</div>
+                                </div>
+                                <div class="brand-search-item" id="en12">
+                                    <div class="keyword">L</div>
+                                </div>
+                                <div class="brand-search-item" id="en13">
+                                    <div class="keyword">M</div>
+                                </div>
+                                <div class="brand-search-item" id="en14">
+                                    <div class="keyword">N</div>
+                                </div>
+                                <div class="brand-search-item" id="en15">
+                                    <div class="keyword">O</div>
+                                </div>
+                                <div class="brand-search-item" id="en16">
+                                    <div class="keyword">P</div>
+                                </div>
+                                <div class="brand-search-item" id="en17">
+                                    <div class="keyword">Q</div>
+                                </div>
+                                <div class="brand-search-item" id="en18">
+                                    <div class="keyword">R</div>
+                                </div>
+                                <div class="brand-search-item" id="en19">
+                                    <div class="keyword">S</div>
+                                </div>
+                                <div class="brand-search-item" id="en20">
+                                    <div class="keyword">T</div>
+                                </div>
+                                <div class="brand-search-item" id="en21">
+                                    <div class="keyword">U</div>
+                                </div>
+                                <div class="brand-search-item" id="en22">
+                                    <div class="keyword">V</div>
+                                </div>
+                                <div class="brand-search-item" id="en23">
+                                    <div class="keyword">W</div>
+                                </div>
+                                <div class="brand-search-item" id="en24">
+                                    <div class="keyword">X</div>
+                                </div>
+                                <div class="brand-search-item" id="en25">
+                                    <div class="keyword">Y</div>
+                                </div>
+                                <div class="brand-search-item" id="en26">
+                                    <div class="keyword">Z</div>
+                                </div>
+                            </div>
+                            <!-- //brand-search-list : A-Z -->
+                            <div class="brand-search-keyword-wrap">
+                                <div class="brand-search-keyword-new" id="searchKeywordAtoZ">
+                                    <ul>
+                                        <li><a href="#en1" class="is_active">A</a></li>
+                                        <li><a href="#en2">B</a></li>
+                                        <li><a href="#en3">C</a></li>
+                                        <li><a href="#en4">D</a></li>
+                                        <li><a href="#en5">E</a></li>
+                                        <li><a href="#en6">F</a></li>
+                                        <li><a href="#en7">G</a></li>
+                                        <li><a href="#en8">H</a></li>
+                                        <li><a href="#en9">I</a></li>
+                                        <li><a href="#en10">J</a></li>
+                                        <li><a href="#en11">K</a></li>
+                                        <li><a href="#en12">L</a></li>
+                                        <li><a href="#en13">M</a></li>
+                                        <li><a href="#en14">N</a></li>
+                                        <li><a href="#en15">O</a></li>
+                                        <li><a href="#en16">P</a></li>
+                                        <li><a href="#en17">Q</a></li>
+                                        <li><a href="#en18">R</a></li>
+                                        <li><a href="#en19">S</a></li>
+                                        <li><a href="#en20">T</a></li>
+                                        <li><a href="#en21">U</a></li>
+                                        <li><a href="#en22">V</a></li>
+                                        <li><a href="#en23">W</a></li>
+                                        <li><a href="#en24">X</a></li>
+                                        <li><a href="#en25">Y</a></li>
+                                        <li><a href="#en26">Z</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brand-search-list-wrap">
+                            <!-- brand-search-list : ㄱ-ㅎ -->
+                            <div class="brand-search-list check_type">
+                                <div class="brand-search-item" id="kr1">
+                                    <div class="keyword">ㄱ</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>구찌</span></div>
+                                                    <span class="sub">GUCCI GUCCI GUCCI GUCCI GUCCI GUCCI GUCCI GUCCI GUCCI</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>골든구스</span></div>
+                                                    <span class="sub">GOLDEN GOOSE</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="kr2">
+                                    <div class="keyword">ㄴ</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>나이키</span></div>
+                                                    <span class="sub">NIKE</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="kr3">
+                                    <div class="keyword">ㄷ</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>디올</span></div>
+                                                    <span class="sub">DIOR</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>돌체 앤 가바나</span></div>
+                                                    <span class="sub">DOLCE &amp; GABBANA</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="kr4">
+                                    <div class="keyword">ㄹ</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>랑방</span></div>
+                                                    <span class="sub">LANVIN</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>루이비통</span></div>
+                                                    <span class="sub">LOUIS VUITTON</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="kr5">
+                                    <div class="keyword">ㅁ</div>
+                                    <ul>
+                                        <li>
+                                            <label>
+                                                <input type="checkbox">
+                                                <div>
+                                                    <div class="tit"><span>미음</span></div>
+                                                    <span class="sub">DIOR</span>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="brand-search-item" id="kr6">
+                                    <div class="keyword">ㅂ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr7">
+                                    <div class="keyword">ㅅ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr8">
+                                    <div class="keyword">ㅇ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr9">
+                                    <div class="keyword">ㅈ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr10">
+                                    <div class="keyword">ㅊ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr11">
+                                    <div class="keyword">ㅋ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr12">
+                                    <div class="keyword">ㅌ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr13">
+                                    <div class="keyword">ㅍ</div>
+                                </div>
+                                <div class="brand-search-item" id="kr14">
+                                    <div class="keyword">ㅎ</div>
+                                </div>
+                            </div>
+                            <!-- //brand-search-list : ㄱ-ㅎ -->
+                            <div class="brand-search-keyword-wrap">
+                                <div class="brand-search-keyword-new" id="searchKeywordKR">
+                                    <ul>
+                                        <li><a href="#kr1" class="is_active">ㄱ</a></li>
+                                        <li><a href="#kr2">ㄴ</a></li>
+                                        <li><a href="#kr3">ㄷ</a></li>
+                                        <li><a href="#kr4">ㄹ</a></li>
+                                        <li><a href="#kr5">ㅁ</a></li>
+                                        <li><a href="#kr6">ㅂ</a></li>
+                                        <li><a href="#kr7">ㅅ</a></li>
+                                        <li><a href="#kr8">ㅇ</a></li>
+                                        <li><a href="#kr9">ㅈ</a></li>
+                                        <li><a href="#kr10">ㅊ</a></li>
+                                        <li><a href="#kr11">ㅋ</a></li>
+                                        <li><a href="#kr12">ㅌ</a></li>
+                                        <li><a href="#kr13">ㅍ</a></li>
+                                        <li><a href="#kr14">ㅎ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="no_content">
+                        “가@ ” 로 검색된 브랜드가 없습니다.
+                    </div>
+                </div>
+                <!-- //브랜드 -->
+                <!-- 할인·혜택 -->
+                <div class="">
+                    <div class="opt_box">
+                        <h3 class="tit_h5">할인</h3>
+                        <div class="tagSelector line_type">
+                            <div class="inner">
+                                <label><input type="checkbox"><span>상품쿠폰</span></label>
+                                <label><input type="checkbox"><span>타임특가</span></label>
+                            </div>
+                        </div>
+                        <h3 class="tit_h5">혜택</h3>
+                        <div class="tagSelector line_type">
+                            <div class="inner">
+                                <label><input type="checkbox"><span>단독상품</span></label>
+                                <label><input type="checkbox"><span>무료배송</span></label>
+                                <label><input type="checkbox"><span>당일출고</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //할인·혜택 -->
+            </div>
+            <div class="selected_option">
+                <button type="button" class="btn_ico_refresh"><span class="for-a11y">새로고침</span></button>
+                <ul>
+                    <li><button type="button" class="delete"></button>핑크</li>
+                    <li><button type="button" class="delete"></button>라벤더</li>
+                    <li><button type="button" class="delete"></button>50~100만</li>
+                    <li><button type="button" class="delete"></button>더아이잗</li>
+                    <li><button type="button" class="delete"></button>JJ지고트</li>
+                    <li><button type="button" class="delete"></button>무료배송</li>
+                    <li><button type="button" class="delete"></button>당일출고</li>
+                </ul>
+            </div>
+            <div class="bottom_btns">
+                <button class="btn_new_reset">초기화</button>
+                <button class="btn_new_black"><span>2,689</span>개 상품보기</button>
+            </div>
+            <button class="btn-close" onclick="popClose('layerPop-shareSns')">팝업닫기</button>
+        </div>
+    </div>
+    <script>
+        var rangeSlider = function (minValue, maxValue, stepValue) {
+            $('#sliderRange').slider({
+                range: true,
+                step: maxValue / stepValue,
+                min: minValue,
+                max: maxValue,
+                values: [minValue, maxValue],
+                slide: showValues,
+            });
+            function showValues(event, ui) {
+                const $jquerySlider = $('[data-event="jquerySlider"]');
+                const $sliderTextLeft = $jquerySlider.find('[data-event="slider-before"]');
+                const $sliderTextRight = $jquerySlider.find('[data-event="slider-after"]');
+                $sliderTextLeft.text(inputNumberWithComma(ui.values[0]));
+                $sliderTextRight.text(inputNumberWithComma(ui.values[1]));
+                if (maxValue == ui.values[1]) {
+                    $('.jqueryslider_price .right .unit').text('만원')
+                } else {
+                    $('.jqueryslider_price .right .unit').text('만원')
+                }
+            }
+        }
+
+        // 천단위 이상의 숫자에 콤마( , )를 삽입하는 함수
+        function inputNumberWithComma(str) {
+            str = String(str).replace(/,/g, "");;
+            return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+        }
+        $(function() {
+            rangeSlider(50, 100, 50); //min값, max값, step순서
+        })
+
+        const makeNavLinksSmooth = () => {
+            $(".brand-search-keyword-new a").each(function () {
+                $(this).on("click", function (e) {
+                    e.preventDefault();
+                    const targetHash = $(this).attr("href");
+                    $(targetHash).get(0).scrollIntoView({
+                        behavior: "smooth",
+                    });
+
+                    $(".brand-search-keyword-new a").removeClass("is_active");
+                    $(this).addClass("is_active");
+                });
+            });
+        };
+        $(function() {
+            makeNavLinksSmooth();
+        })
+    </script>
+</body>
+</html>
