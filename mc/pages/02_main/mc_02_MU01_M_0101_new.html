@@ -225,12 +225,32 @@
             </script>
         </div>
         
-        <div class="slim_banner swiper" id="banners">
+        <div class="coupon_banner_system swiper" id="banners">
             <div class="swiper-wrapper">
-                <a href="#" class="swiper-slide"><img src="../../img/temp/main_slimbanner_new.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="../../img/temp/main_slimbanner_new.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="../../img/temp/main_slimbanner_new.jpg" alt=""></a>
-                <a href="#" class="swiper-slide"><img src="../../img/temp/main_slimbanner_new.jpg" alt=""></a>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <p>여름 신상! <span class="yellow">핫프라이스 최대  10% 할인</span></p>
+                        <span class="arrow"></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <p>여름 신상! <span class="yellow">핫프라이스 최대  20% 할인</span></p>
+                        <span class="arrow"></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <p>여름 신상! <span class="yellow">핫프라이스 최대  30% 할인</span></p>
+                        <span class="arrow"></span>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <p>여름 신상! <span class="yellow">핫프라이스 최대  40% 할인</span></p>
+                        <span class="arrow"></span>
+                    </a>
+                </div>
             </div>
             <script>
                 let options = {};
@@ -241,10 +261,10 @@
                 } else {
                     options = {
                         loop:true,
-                        autoplay: {
-                            delay: 3000,
-                            disableOnInteraction: false,
-                        },
+                        // autoplay: {
+                        //     delay: 3000,
+                        //     disableOnInteraction: false,
+                        // },
                     }
                 }
                 var swiper = new Swiper('#banners', options);
@@ -2011,7 +2031,7 @@
         <button type="button" class="btn menu">메뉴</button>
         <button type="button" class="btn chat">스타일챗</button>
         <button type="button" class="btn home on">HOME</button>
-        <button type="button" class="btn mybaba">마이바바</button>
+        <button type="button" class="btn mybaba">마이</button>
         <button type="button" class="btn history">히스토리</button>
     </div>
 

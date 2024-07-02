@@ -567,21 +567,46 @@
         </div>
         <!-- //다른컬러 / 코디상품 -->
         <!-- //코디상품 -->
-        <a href="#;" class="full_banner">
-            <img src="../../img/temp/main_slimbanner2_new.jpg" alt="">
-        </a>
-        <!-- 상세설명 -->
-        <div class="section_wrap">
-            <div class="line_tabs full_type sticky">
-                <ul>
-                    <li class="list on"><a href="javascript:void(0)">상세설명</a></li>
-                    <li class="list"><a href="javascript:void(0)">사이즈</a></li>
-                    <li class="list"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
-                    <li class="list"><a href="javascript:void(0)">추천</a></li>
-                </ul>
-            </div>
-            <div class="section_item">
 
+        <div class="full_banner swiper" id="banners">
+            <div class="swiper-wrapper">
+                <a href="#;" class="swiper-slide">
+                    <img src="../../img/temp/main_slimbanner2_new.jpg" alt="">
+                </a>
+                <a href="#;" class="swiper-slide">
+                    <img src="../../img/temp/main_slimbanner2_new.jpg" alt="">
+                </a>
+            </div>
+            <script>
+                let options = {};
+                if( $('#banners .swiper-slide').length == 1 ) {
+                    options = {
+                        loop: false,
+                    }
+                } else {
+                    options = {
+                        loop:true,
+                        autoplay: {
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        },
+                    }
+                }
+                var swiper = new Swiper('#banners', options);
+            </script>
+        </div>
+
+        <div class="line_tabs full_type sticky">
+            <ul>
+                <li class="list on"><a href="#detailTab1">상세설명</a></li>
+                <li class="list"><a href="#detailTab2">사이즈</a></li>
+                <li class="list"><a href="#detailTab3">리뷰<span class="num">123</span></a></li>
+                <li class="list"><a href="#detailTab4">추천</a></li>
+            </ul>
+        </div>
+        <!-- 상세설명 -->
+        <div class="section_wrap" id="detailTab1">
+            <div class="section_item small">
                 <div class="words_guide">
                     <div class="head">
                         <dl>
@@ -634,7 +659,82 @@
                         </dl>
                     </div>
                 </div>
+            </div>
+            <div class="section_item small">
+                <!-- MD공지_상품상세 공지 -->
+                <div class="noti_img">
+                    <div class="bnr-img">
+                        <a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=18268">
+                            <img src="https://image.babathe.com/display/27075/1719372001816.jpg">
+                        </a>
+                    </div>
+                    <!-- <div id="contentGoodsDtlNotiInfoDelivery"><strong><img src="https://img.babathe.com/upload/specialDisplay/htmlImage/2020/20211221_ShippingNotice_banner_m.jpg" alt="img"></strong></div> -->
+                    <!-- 이미지일 경우 -->
 
+                    <!-- 20240405 페스타 배너 html 샘플링 작업 -->
+                    <!-- <div id="contentGoodsDtlNotiInfoDelivery"><strong>
+                        <div style="text-align: center;">
+                            <img src="https://image.babathe.com/editor/goods_desc/202403/1711679591306.jpg" alt="img">
+                        </div>
+                        <p style="text-align: center; " align="center">&nbsp;</p>
+                    </strong></div> -->
+                    <div id="contentGoodsDtlNotiInfoDelivery"><strong>
+                        <div class="festa_banner_area">
+                            <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20240408_FESTA_banner.jpg" alt="">
+                            <div class="banner_wrap">
+                                <span class="brand">브랜드명</span><!-- 브랜드명을 넣어주세요. -->
+                                <!-- <strong class="percent">~70%</strong> --><!-- 할인율을 넣어주세요. -->
+                            </div>
+                            <a href="해당 링크"></a><!-- 해당 링크를 넣어주세요. -->
+                        </div>
+                        </strong>
+                    </div>
+                    <!-- //20240405 페스타 배너 html 샘플링 작업 -->
+                    <!-- 20220329 페스타 배너영역 추가 -->
+                    <div class="bnr-img">
+                        <a href="https://www.babathe.com/event/indexExhibitionDetail?exhbtNo=15840#eventSect01" target="_blank">
+                            <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230403_FESTA_banner.jpg" alt="페스타 쿠폰 다운">
+                        </a>
+                    </div>
+                    <!-- //20220329 페스타 배너영역 추가 -->
+                </div>
+                <!-- //MD공지_상품상세 공지 -->
+                <!-- 해외 직구 안내 -->
+                <div class="noti_img">
+                    <!-- 20220316 이미지 배너영역 추가 (해외직구 안내 등) -->
+                    <div class="bnr-img"><!-- 20220316 이미지 배너영역 추가 (해외직구 안내 등) > class="bnr-img" 추가 -->
+                        <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220314_OverseasNotice_banner_m.jpg" alt="바바더닷컴 해외 직구 안내">
+                        <a class="bnr-img-link oversea" href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank"><img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20220314_OverseasNotice_link_m.png" alt=""></a>
+                    </div>
+                    <!-- //20220316 이미지 배너영역 추가 (해외직구 안내 등) -->
+                </div>
+                <!-- //해외 직구 안내 -->
+                <!-- 당일 출고 안내 -->
+                <div class="noti_img">
+                    <div class="bnr-img"><!-- 20220316 이미지 배너영역 추가 (해외직구 안내 등) > class="bnr-img" 추가 -->
+                        <img src="https://image.babathe.com/upload/specialDisplay/htmlImage/2020/20230220_same_day_delivery_banner_m.jpg" alt="바바더닷컴 당일출고 안내">
+                    </div>
+                </div>
+                <!-- //당일 출고 안내 -->
+                <!-- 사은품 정보 -->
+                <div class="noti_img goods">
+                    <div class="thumb ratio-a">
+                        <img src="../../img/temp/VEw1TjBUUzE=TL5N0TS1030_11_310x455.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="inner">
+                            <strong>구매 사은품 안내</strong>
+                            <div class="txt">
+                                <strong>반팔티셔츠</strong>
+                                <em>주문건 당 1개의 사은품 증정</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //사은품 정보 -->
+               
+
+                <!-- 주문전 유의사항 -->
                 <div class="guide_box">
                     <p class="noti">주문 전 유의사항</p>
                     <p class="desc">오프라인 매장과 동시 판매되는 상품으로, 결제 완료 후 또는 입고 확정 이후에도 품절/결품이 발생될 수 있으며, 재고 확인으로 인한 발송 지연도 있을 수 있습니다. 
@@ -643,31 +743,32 @@
                     아울렛 상품은 할인율이 높은 상품으로 부속품이 없을 수 있으므로 구매 시 유의하여 주시기 바랍니다.
                     이로 인한 무료반품은 불가하오니 이점 양해 바랍니다.</p>
                 </div>
-
                 <div class="shipping_banner">
                     <p class="tit">재고 실사로 인한 배송 안내</p>
                     <p class="desc">24.03.27(수) 9시 이전 주문건까지 발송<br/>
                         이후주문 24.04.01(월) 순차발송
                     </p>
                 </div>
+                <!-- //주문전 유의사항 -->
+               
+            </div>
 
+            <!-- 상품 정보 영역 -->
+            <div class="section_item">
                 <div class="prd_info_txt">
                     <p class="tit">DETAIL</p>
                     <p class="desc">군더더기 없이 간결하게 일자 실루엣이 연출되며 여유로운 핏으로 부담없는 데님 팬츠입니다.
                         허리 안쪽 밴딩 구성되어 탄탄하게 핏을 잡아주며 장시간 편안하게 착용할 수 있는 아이템입니다.
                         <br/><br/>
-                        - 쾌적한 착용감의 코튼 블렌드 소재
-                        - 캐주얼한 감각의 스티치 디테일
-                        - 여밈라인 버튼과 지퍼 클로징 방식
+                        - 쾌적한 착용감의 코튼 블렌드 소재<br/>
+                        - 캐주얼한 감각의 스티치 디테일<br/>
+                        - 여밈라인 버튼과 지퍼 클로징 방식<br/>
                         - 수납 가능한 양 사이드와 힙 포켓
                         <br/><br/>
                         - 모델사이즈 : 키 168 / 신체사이즈 32-24-33 in / 
                         55 사이즈 착용
                     </p>
-                </div>
-
-
-                <div class="img_expand_area closed">
+                </div>                <div class="img_expand_area closed">
                     <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
                     <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
                     <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
@@ -750,15 +851,7 @@
         </div>
         <!-- //상세설명 -->
         <!-- 사이즈 -->
-        <div class="section_wrap">
-            <div class="line_tabs full_type sticky">
-                <ul>
-                    <li class="list"><a href="javascript:void(0)">상세설명</a></li>
-                    <li class="list on"><a href="javascript:void(0)">사이즈</a></li>
-                    <li class="list"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
-                    <li class="list"><a href="javascript:void(0)">추천</a></li>
-                </ul>
-            </div>
+        <div class="section_wrap"  id="detailTab2">
             <div class="section_item">
                 <div style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; color: #999;">크리마 핏 영역</div>
             </div>
@@ -860,30 +953,14 @@
         </div>
         <!-- //사이즈 -->
         <!-- 리뷰 -->
-        <div class="section_wrap">
-            <div class="line_tabs full_type sticky">
-                <ul>
-                    <li class="list"><a href="javascript:void(0)">상세설명</a></li>
-                    <li class="list"><a href="javascript:void(0)">사이즈</a></li>
-                    <li class="list on"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
-                    <li class="list"><a href="javascript:void(0)">추천</a></li>
-                </ul>
-            </div>
+        <div class="section_wrap" id="detailTab3">
             <div class="section_item">
                 <div style="height: 400px; background: #eee; display: flex; align-items: center; justify-content: center; color: #999;">리뷰 영역</div>
             </div>
         </div>
         <!-- //리뷰 -->
         <!-- 추천 -->
-        <div class="section_wrap">
-            <div class="line_tabs full_type sticky">
-                <ul>
-                    <li class="list"><a href="javascript:void(0)">상세설명</a></li>
-                    <li class="list"><a href="javascript:void(0)">사이즈</a></li>
-                    <li class="list"><a href="javascript:void(0)">리뷰<span class="num">123</span></a></li>
-                    <li class="list on"><a href="javascript:void(0)">추천</a></li>
-                </ul>
-            </div>
+        <div class="section_wrap" id="detailTab4">
             <div class="section_item">
                 <div class="title_area">
                     <h2 class="tit_h2">이 상품은 어때요?</h2>
@@ -1390,19 +1467,43 @@
     </section>
     
     <script>
-        $(function() {
-            $('.line_tabs.sticky .list').on('click', function (e) {
-                var idx = $(this).index();
-                // console.log('idx', idx)
-                var offset = $('.section_wrap').eq(idx).offset();
-                var $target = $('.section_wrap').eq(idx);
-                if( $('html').hasClass('scrollUp')) {
-                    $('html').stop().animate({ scrollTop: offset.top }, 500 );
-                }
-                else  $('html').stop().animate({ scrollTop: offset.top - 50 }, 500 );
+        $(document).ready(function() {
+            const tabContainerHeight = 126;
+            let currentId = null;
+            $('.line_tabs.full_type .list a').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: $($(this).attr('href')).offset().top - tabContainerHeight + 1
+                }, 600);
             });
-            
-        })
+
+            $(window).on('scroll resize', function() {
+                checkTabContainerPosition();
+                findCurrentTabSelector();
+                
+            });
+            function checkTabContainerPosition() {
+                const offset = $('.line_tabs.full_type').offset().top + $('.line_tabs.full_type').height() - tabContainerHeight;
+                // const isScrolled = $(window).scrollTop() > offset;
+                // $('.line_tabs.full_type').toggleClass('is_scrolled', isScrolled);
+            }
+            function findCurrentTabSelector() {
+                $('.line_tabs.full_type .list').each(function() {
+                    const id = $(this).find('a').attr('href');
+                    const offsetTop = $(id).offset().top - tabContainerHeight;
+                    const offsetBottom = $(id).offset().top + $(id).outerHeight() - tabContainerHeight;
+                    if ($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
+                        currentId = id;
+                        setSliderCss();
+                    }
+                });
+            }
+            function setSliderCss(tab = null) {
+                if (!tab) tab = $(`.line_tabs.full_type .list a[href="${currentId}"]`);
+                $('.line_tabs.full_type .list').removeClass('on')
+                tab.parent().addClass('on');
+            }
+        });
     </script>
 </body>
 </html>

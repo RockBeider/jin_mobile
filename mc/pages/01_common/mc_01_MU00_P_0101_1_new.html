@@ -75,8 +75,8 @@
                         <div class="content_expand">
                             <ul class="category">
                                 <li><span>의류</span><span>여성</span></li>
-                                <li><span>의류</span><span>여성</span><span>원피스</span></li>
-                                <li><span>럭셔리</span><span>여성</span><span>여성가방</span></li>
+                                <li><span>여성</span><span>원피스</span></li>
+                                <li><span>여성</span><span>여성가방</span></li>
                                 <li><span>럭셔리</span><span>여성</span></li>
                                 <li><span>가방/ACC</span><span>숄더백</span></li>
                                 <li><span>라이프</span><span>뷰티</span></li>
@@ -704,17 +704,17 @@
             </div>
         </div>
     </section>
+    <footer></footer>
     <div class="bottomFloating">
         <button type="button" class="btn menu on">메뉴</button>
         <button type="button" class="btn chat">스타일챗</button>
         <button type="button" class="btn home">HOME</button>
-        <button type="button" class="btn mybaba">마이바바</button>
+        <button type="button" class="btn mybaba">마이</button>
         <button type="button" class="btn history">히스토리</button>
     </div>
 
     <script>
 
-     
         const makeNavLinksSmooth = () => {
             $(".brand-search-keyword-new a").each(function () {
                 $(this).on("click", function (e) {
@@ -723,15 +723,7 @@
                     $(targetHash).get(0).scrollIntoView({
                         behavior: "smooth",
                     });
-                    var lastScroll 	= 0; 
-                    var scrollUp = 'scrollUp';
-                    $(window).on('scroll', function() {
-                        var currentScroll = $(window).scrollTop();
-                        if ( currentScroll > 150 && currentScroll > lastScroll && !$('html').hasClass(scrollUp)) { // scroll up
-                            $('html').stop().animate({ scrollTop: $(targetHash).offset().top - 50 })
-                        } 
-                        lastScroll = currentScroll;	
-                    })
+                    $('html').stop().animate({ scrollTop: $(targetHash).offset().top - 50 })
                     $(".brand-search-keyword-new a").removeClass("is_active");
                     $(this).addClass("is_active");
                 });
