@@ -1,0 +1,24 @@
+/************** 
+*
+* 상품리스트, 썸네일
+*
+***************/
+/* 세일 > 타임세일 다운*/
+.time_sale_area {margin-bottom: 60px;}
+.time_sale_area .title_area {justify-content: start; margin-bottom: 0; padding-bottom: 0; height: 50px;}
+.time_sale_area .title_area a.more {align-self: auto; margin-left: auto;}
+    /* countdown_timer */
+.time_sale_area .countdown_timer {display: flex; align-items: center; margin-left: 8px;}
+.time_sale_area .countdown_timer span {font-weight: 700; font-size: 18px; color: #111;}
+.time_sale_area .countdown_timer span:nth-of-type(even)::after {content: ':'; display: inline-block; margin:0 5px;}
+.time_sale_area .countdown_timer span:last-of-type::after {display: none;}
+
+.time_sale_area .unit_info_area {position: relative; padding:27px 12px 0}
+.time_sale_area .unit_info_area .title strong {font-weight: 600;}
+.time_sale_area .unit_info_area .priceWrap .salePer {position: absolute; top:-18px; left: 7px; z-index: 2; margin-right: 0; font-weight: 500; font-size: 24px; line-height: 1; color: #000;}
+.time_sale_area .unit_info_area .priceWrap .salePer strong {font-weight: 500; font-size: 32px;}
+/* 세일 > 장바구니 가격 다운*/
+.box_type1 {margin: 60px 0;}
+.product_list_wrap.no-mt {margin-top: 0;}
+.history_list + .btn_full_view {margin-top: 60px;}
+.sale_area [class *= 'unitList'] {margin-bottom: 0;}

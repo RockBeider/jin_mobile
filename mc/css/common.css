@@ -108,7 +108,7 @@ html.main.scrollUp header{top:0;}
 /* html.scrollUp .utilsFloating{bottom: 20px} */
 html.goTop-visible .utilsFloating .btn-goTop{display:block;transform: scale(1);height: 44px;margin-top: 10px;}
 .utilsFloating .btn-footerLive.on + .btn-goTop {margin-top: 20px}
-html.bottomFloating-on .utilsFloating{/*bottom: 90px*/ bottom: 122px; }
+html.bottomFloating-on .utilsFloating{/*bottom: 90px*/ bottom: 143px; } /* 122px -> 143px #6166 [FO]PC,MO 채널톡 버튼,배너 추가 */
 
 
 html.scrollUp .prd-list-filter{top: -1px;}
@@ -342,7 +342,7 @@ header button + button {margin-left:8px;}
 
 /* .goodsDetail header{position: relative;top: auto !important;transition: none;} */
 
-.utilsFloating{display:flex;justify-content:space-between;position:fixed;/* bottom: 90px; */bottom: 122px;width:100%;box-sizing:border-box;z-index: 1005;align-items: flex-end;height: 0; padding-bottom:constant(safe-area-inset-bottom); padding-bottom:env(safe-area-inset-bottom)}
+.utilsFloating{display:flex;justify-content:space-between;position:fixed;/* bottom: 90px; */bottom: 143px;width:100%;box-sizing:border-box;z-index: 1005;align-items: flex-end;height: 0; padding-bottom:constant(safe-area-inset-bottom); padding-bottom:env(safe-area-inset-bottom)}
 .utilsFloating .left{display: flex;flex-direction: column;margin-left:20px}
 .utilsFloating .right{display: flex;flex-direction: column;margin-right:20px}
 .utilsFloating .left > *,
@@ -657,7 +657,7 @@ height: 44px; border-radius: 50%; background-repeat: no-repeat; background-size:
 .swiper-baba-pay .swiper-slide.card {padding:0 15px; border-color:#F5F5F5; background:#F5F5F5; box-sizing:border-box}
 /* .swiper-baba-pay .swiper-slide.card .card-inner {width:100%; padding-top:35px; box-sizing:border-box; background-position:0 0; background-repeat:no-repeat; background-size:auto 25px} */
 .swiper-baba-pay .swiper-slide.card .card-inner {width:100%; box-sizing:border-box}
-.swiper-baba-pay .swiper-slide.card .card-inner .logo {height:25px; margin-bottom:10px}
+.swiper-baba-pay .swiper-slide.card .card-inner .logo {padding:5px 0; height:25px; margin-bottom:10px; box-sizing:border-box}
 .swiper-baba-pay .swiper-slide.card .card-inner .logo img {height:100%}
 .swiper-baba-pay .swiper-slide.card .card-inner .title {display:block; font-weight:400; font-size:12px; color:#111}
 .swiper-baba-pay .swiper-slide.card .card-inner .number {display:block; margin-top:5px; font-size:12px; color:#111}

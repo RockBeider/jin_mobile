@@ -123,7 +123,6 @@ function domload(e){
     }
 }
 // var hdFixed_bool;
-<<<<<<< .mine
 var headerFixedControl = {
     init: function(){
         window.addEventListener('scroll',function(){
@@ -144,7 +143,6 @@ var headerFixedControl = {
         }
     },
 }
-||||||| .r6350
 var headerFixedControl = {
     init: function(){
         window.addEventListener('scroll',function(){
@@ -161,8 +159,6 @@ var headerFixedControl = {
         }
     },
 }
-=======
->>>>>>> .r6536
 
 
 // var headerFixedControl = {

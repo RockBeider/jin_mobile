@@ -69,21 +69,28 @@
                         <div class="title-area">
                             <div class="title-area-inner">
                                 <h3 class="title">추천 카테고리</h3>
-                                <button class="open_btn"><em class="for-a11y">더보기</em></button>
+                                <!-- 삭제 -->
+                                <!-- <button class="open_btn"><em class="for-a11y">더보기</em></button> -->
                             </div>
                         </div>
                         <div class="content_expand">
-                            <ul class="category">
-                                <li><span>의류</span><span>여성</span></li>
-                                <li><span>여성</span><span>원피스</span></li>
-                                <li><span>여성</span><span>여성가방</span></li>
-                                <li><span>럭셔리</span><span>여성</span></li>
-                                <li><span>가방/ACC</span><span>숄더백</span></li>
-                                <li><span>라이프</span><span>뷰티</span></li>
-                            </ul>
-                            <div class="drag_control">
-                                <p class="drag_txt">순서 변경</p>
+                            <div class="category">
+                                <ul>
+                                    <li><span>의류</span><span>여성</span></li>
+                                    <li><span>여성</span><span>원피스</span></li>
+                                    <li><span>여성</span><span>여성가방 긴 텍스트 들어감</span></li>
+                                </ul>
                             </div>
+                            <div class="category">
+                                <ul>
+                                    <li><span>럭셔리</span><span>여성</span></li>
+                                    <li><span>가방/ACC</span><span>숄더백</span></li>
+                                    <li><span>라이프</span><span>뷰티</span></li>
+                                </ul>
+                            </div>
+                            <!-- <div class="drag_control">
+                                <p class="drag_txt">순서 변경</p>
+                            </div> -->
                         </div>
                     </div>
                     <script>
@@ -117,14 +124,38 @@
                                 }
                             });
                         }
-                        $(function () {
-                            contentExpand();
-                            $(function () {
-                                $('.content_expand .category').sortable({
-                                    //axis: 'x', // 가로 방향
-                                    tolerance: 'pointer' // 이동 중인 항목이 마우스 포인터 기준으로 다른 항목 위에 있는지 확인
+                        function syncScroll() {
+                            $(document).ready(function() {
+                                var categoryContainers = $('.category');
+                                categoryContainers.each(function() {
+                                    var container = $(this);
+                                    var ul = container.find('ul');
+                                    container.on('scroll', function() {
+                                        var scrollLeft = $(this).scrollLeft();
+                                        var totalWidth = (ul[0].scrollWidth + 40) - ul.parent().outerWidth(); //40은 양옆패딩
+                                        var scrollPercentage = scrollLeft / totalWidth;
+
+                                        categoryContainers.not(container).each(function() {
+                                            var otherContainer = $(this);
+                                            var otherUl = otherContainer.find('ul');
+                                            var otherTotalWidth = (otherUl[0].scrollWidth + 40) - otherUl.parent().outerWidth();
+                                            var scrollLeftToSet = scrollPercentage * otherTotalWidth;
+
+                                            otherContainer.scrollLeft(scrollLeftToSet);
+                                        });
+                                    });
                                 });
                             });
+                        }
+                        $(function () {
+                            // contentExpand(); //삭제
+                            syncScroll()
+                            // $(function () {
+                            //     $('.content_expand .category ul').sortable({
+                            //         //axis: 'x', // 가로 방향
+                            //         tolerance: 'pointer' // 이동 중인 항목이 마우스 포인터 기준으로 다른 항목 위에 있는지 확인
+                            //     });
+                            // });
                         });
                     </script>
                 </div>

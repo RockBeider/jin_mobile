@@ -5024,7 +5024,8 @@ button.btn-styleChat:active {background-color:#fff}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.right .time {margin-right:6px}
 .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area .guide {margin-bottom:14px; padding-left:22px; line-height:1.3em; font-size:14px; box-sizing:border-box}
 .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area .guide.recom_prod {background:url(../img/icon_baba_chat_zoom_type1.png) 0 50% no-repeat; background-size:18px auto}
-.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box + .recom_prod_area {margin-top:20px} 
+.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box + .recom_prod_area {margin-top:20px; margin-bottom: 40px;} 
+.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box + .recom_prod_area:last-child {margin-bottom: 0;}
 /* .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area [class *= 'ratio-']::before {content:""; padding-top:calc(200 / 158 * 100%)} */
 .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area [class *= 'unitList'] .thumb.ratio-a > img {object-fit:cover}
 .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area input[type='checkbox'].check-like {display:none}
@@ -5107,8 +5108,8 @@ section.section_care_renewal .care-banner .right_part a .img_box img{display: bl
 
 /* 20040610 #6031 스타일챗 베타 버전 표기 > 레이어팝업 -> 페이지로 변경 */
 .pop_style_chat.full {position: relative; left:-20px; padding-bottom:0; width:calc(100% + 40px);}
-.pop_style_chat.full .style_chat_area {height:calc(100vh - 110px);}
-.pop_style_chat.full .style_chat_area .chat_wrap_inner {padding-bottom:70px;}
+.pop_style_chat.full .style_chat_area {padding-bottom: 0; height:calc(100vh - 160px);}
+.pop_style_chat.full .style_chat_area .chat_wrap_inner {padding-bottom:50px;}
 .pop_style_chat.full .inp_wrap {bottom:50px;}
 /* 스타일챗 하단 플로팅 아이콘 추가 */
 .bottomFloating .btn {position: relative;}

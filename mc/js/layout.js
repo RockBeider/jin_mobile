@@ -486,6 +486,11 @@ var accordion = {
                 
                 btn.addEventListener("click", function() {
                     var acc_title = this.parentNode;
+
+                    if (acc_title.classList.contains('disabled')) { // 비활성화 상태
+                        return false; 
+                    }
+
                     var accordionPnnel = acc_title.nextElementSibling;
                     if(acc_title.classList.contains('orderProductInfo')){
                         acc_title.classList.toggle('open');
