@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes, viewport-fit=cover">
     <title>BABATHE.COM - 상세이미지 팝업</title>
     <link rel="stylesheet" href="../../css/library.css">
     <link rel="stylesheet" href="../../css/common.css">
@@ -39,12 +39,9 @@
 				</div>
 
 				<script>
-					function ToastClose() {
-						$('.view_guide').removeClass('is_active').one('transitionend', function () {
-							!$('.view_guide').hasClass('is_active') && $('.view_guide').removeClass('is_visible');
-						})
-					}
-					setTimeout(function () { ToastClose() }, 3000);
+					$('.detail_img_list, .view_guide').on('click', function () {
+						$('.view_guide').removeClass('is_active');
+					});
 				</script>
             </section>
             <button class="btn-close">팝업닫기</button>

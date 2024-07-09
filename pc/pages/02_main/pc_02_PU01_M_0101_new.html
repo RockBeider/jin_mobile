@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440">
+    <title>BABATHE.COM</title>
+    <link rel="stylesheet" href="../../css/babathe.css">
+    <link rel="stylesheet" href="../../css/main_renewer.css">
+    <script src="../../js/library.js"></script>
+    <script src="../../js/layout.js"></script>
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+    <!-- layout js -->
+    <script src="../../js/masonry.pkgd.min.js"></script>
+</head>
+<body>
+    <section id="wrapper" class="main">
+        <header>        
+        </header>
+        <section id="contents" class="main-contents">
+            <div class="main_layout">
+                <div class="main_visual">
+                    <!-- mainVisual -->
+                    <div class="mainVisual" id="mainVisual">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="imgWrap"><img src="../../img/temp/main_bnr1_new.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="imgWrap"><img src="../../img/temp/main_bnr2_new.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="imgWrap"><img src="../../img/temp/main_bnr3_new.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="imgWrap"><img src="../../img/temp/main_bnr4_new.png" alt=""></div>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="javascript:void(0)">
+                                    <div class="imgWrap"><img src="../../img/temp/main_bnr5_new.png" alt=""></div>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="swiper-pagination-custom"></button>
+                        <div class="badge_group">
+                            <div class="badge_set">	
+                                <div class="badge_item main"><p>HOT DEAL DAY</p></div>										
+                                <div class="badge_item"><p>핫딜 최대 70% OFF + 15% 쿠폰혜택</p></div>			
+                            </div>
+                            <div class="badge_set">	
+                                <div class="badge_item main"><p>러블리한 무드의 쎄무아듀</p></div>										
+                                <div class="badge_item"><p> 24 SUMMER NEW COLLECTION</p></div>			
+                            </div>
+                            <div class="badge_set">	
+                                <div class="badge_item main"><p>도심속의 힐링 스타일</p></div>										
+                                <div class="badge_item"><p>누르, 루피타, 투플리와 함께하는 2024 S/S 신상위크</p></div>			
+                            </div>
+                            <div class="badge_set">	
+                                <div class="badge_item main"><p>하객룩에 어울리는 클래식백</p></div>										
+                                <div class="badge_item"><p>벨류엣 단독 특가 +  30% 쿠폰  혜택</p></div>			
+                            </div>
+                            <div class="badge_set">	
+                                <div class="badge_item main"><p>키친 아이템 특별 기획전</p></div>										
+                                <div class="badge_item"><p>바바더닷컴 단독 할인 63% SALE, 할인쿠폰 발급</p></div>			
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        var badgeSlide = $('.badge_group > .badge_set')
+                        var mainVisual_swiper = new Swiper('#mainVisual', {
+                            slidesPerView: 'auto',
+                            watchOverflow: true,
+                            speed:400, //500->400
+                            loop:true,
+                            // autoplay: {
+                            //     delay: 3000, //5000 -> 3000
+                            //     disableOnInteraction: false,
+                            // },
+                            pagination: {
+                                el: '.swiper-pagination-custom',
+                                type: 'custom',
+                                renderCustom: function (swiper, current, total) {
+                                    return `<span class="current">${current}</span>/<span class="total">${total}</span>`; 
+                                }
+                            },
+                            on: {
+                                slideChange: function () {
+                                    badgeSlide.hide().eq(this.activeIndex % badgeSlide.length).show()
+                                },
+                            },
+                        });
+                    </script>
+                    <!-- mainVisual -->
+        
+                    <!-- slim_banner -->
+                    <div class="slim_banner swiper" id="banners">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <div class="slogan">여름 신상! <strong>핫프라이스 최대  30% 할인</strong></div>
+                                <img src="../../img/arrow_white.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div class="slogan">여름 신상! <strong>핫프라이스 최대  30% 할인</strong></div>
+                                <img src="../../img/arrow_white.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div class="slogan">여름 신상! <strong>핫프라이스 최대  30% 할인</strong></div>
+                                <img src="../../img/arrow_white.png" alt="">
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div class="slogan">여름 신상! <strong>핫프라이스 최대  30% 할인</strong></div>
+                                <img src="../../img/arrow_white.png" alt="">
+                            </a>
+                        </div>
+                        <script>
+                            let options = {};
+                            if( $('#banners .swiper-slide').length == 1 ) {
+                                options = {
+                                    loop: false,
+                                }
+                            } else {
+                                options = {
+                                    loop:true,
+                                    autoplay: {
+                                        delay: 3000,
+                                        disableOnInteraction: false,
+                                    },
+                                }
+                            }
+                            var swiper = new Swiper('#banners', options);
+                        </script>
+                    </div>
+                    <!-- slim_banner -->
+                </div>
+                <div class="main_conts_box">
+                <div class="main_conts_area">
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="page-top">
+                                <h3 class="page-sub-title">
+                                    바바님이 본 상품과
+                                    <br><strong>유사한 상품</strong>
+                                </h3>
+                                <div class="btn-group">
+                                    <a href="#" class="btn-more refresh">더보기</a>
+                                </div>
+                            </div>
+                            <div class="swiper n3">
+                                <ul class="prd-list swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="https://image.babathe.com/goods/G349610821/G349610821_1.jpg/babathe/resize/360x528/optimize" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">JIGOTT</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>245,800</strong></div>
+                                                <div class="discount"><strong>56%</strong></div>
+                                            </div>
+                                        </a>
+                                        <button type="button" class="btn-wish on">찜하기</button>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="https://image.babathe.com/goods/G345168431/G345168431_1.jpg/babathe/resize/360x528/optimize" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">Snug.U</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>136,800</strong></div>
+                                                <div class="discount"><strong>20%</strong></div>
+                                            </div>
+                                        </a>
+                                        <button type="button" class="btn-wish">찜하기</button>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="https://image.babathe.com/goods/G349610821/G349610821_1.jpg/babathe/resize/360x528/optimize" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">STONEHENgE</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>98,700</strong></div>
+                                                <div class="discount"><strong>15%</strong></div>
+                                            </div>
+                                        </a>
+                                        <button type="button" class="btn-wish">찜하기</button>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="https://image.babathe.com/goods/G345168431/G345168431_1.jpg/babathe/resize/360x528/optimize" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">JIGOTT</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>245,800</strong></div>
+                                                <div class="discount"><strong>56%</strong></div>
+                                            </div>
+                                        </a>
+                                        <button type="button" class="btn-wish">찜하기</button>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="https://image.babathe.com/goods/G349610821/G349610821_1.jpg/babathe/resize/360x528/optimize" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">Snug.U</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>136,800</strong></div>
+                                                <div class="discount"><strong>20%</strong></div>
+                                            </div>
+                                        </a>
+                                        <button type="button" class="btn-wish">찜하기</button>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="prd-img">
+                                                <div class="ratio">
+                                                    <img src="https://image.babathe.com/goods/G345168431/G345168431_1.jpg/babathe/resize/360x528/optimize" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="prd-info">
+                                                <div class="brand">STONEHENgE</div>
+                                            </div>
+                                            <div class="prd-price">
+                                                <div class="price"><strong>98,700</strong></div>
+                                                <div class="discount"><strong>15%</strong></div>
+                                            </div>
+                                        </a>
+                                        <button type="button" class="btn-wish">찜하기</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- NEED SPECIAL -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="page-top">
+                                <h3 class="page-sub-title">
+                                    NEED <br>
+                                    <strong>SPECIAL</strong>
+                                </h3>
+                            </div>
+                            <div class="exh-list swiper" id="prodBanner">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="img">
+                                                <div class="ratio">
+                                                    <img src="../../img/temp/event_brand_thumb00.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span class="tx-ovf">본격적인 여름 라운딩 준비</span>
+                                                </div>
+                                                <div class="txt">
+                                                    <span class="tx-ovf">24 SUMMER NEW COLLECTION</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#">
+                                            <div class="img">
+                                                <div class="ratio">
+                                                    <img src="../../img/temp/event_brand_thumb00.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <div class="title">
+                                                    <span class="tx-ovf">BEST OF BEST</span>
+                                                </div>
+                                                <div class="txt">
+                                                    <span class="tx-ovf">더아이잗, 올 여름 가장 사랑 받은 인기템 특가</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="swiper-scrollbar"></div>
+                                <div class="arrow swiper-button-prev"></div>
+                                <div class="arrow swiper-button-next"></div>
+                                <script>
+                                    var swiper = new Swiper('#prodBanner', {
+                                        slidesPerView: 1,
+                                        spaceBetween: 0, 
+                                        scrollbar: {
+                                            el: '.swiper-scrollbar',
+                                        },
+                                        navigation: {
+                                            nextEl: '.swiper-button-next',
+                                            prevEl: '.swiper-button-prev',
+                                        },
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //NEED SPECIAL -->
+                    <!-- TOP BRAND -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit gray-bg">
+                            <div class="page-top">
+                                <h3 class="page-sub-title">
+                                    TOP
+                                    <br><strong>BRAND</strong>
+                                </h3>
+                            </div>
+                            <div class="top_brand_list" id="brandNewsList-swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <a href="#;" class="thumb_area">
+                                            <img src="../../img/temp/top_brand1_new.jpg" alt="">
+                                        </a>
+                                        <div class="info_area">
+                                            <div class="main_title white">설화수 24 SUMMER</div>
+                                            <div class="sub white">단 3일, 주말에 만나는 브랜드 세일 50% 쿠폰</div>
+                                            <button type="button" class="btn_ico_download"></button>
+                                        </div>
+                                        <div class="top_brand_thumb swiper" data-swiper="swiperInner">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a href="#;" class="thumb_area">
+                                            <img src="../../img/temp/top_brand1_new.jpg" alt="">
+                                        </a>
+                                        <div class="info_area">
+                                            <div class="main_title white">설화수 24 SUMMER222</div>
+                                            <div class="sub white">단 3일, 주말에 만나는 브랜드 세일 50% 쿠폰222</div>
+                                            <button type="button" class="btn_ico_download"></button>
+                                        </div>
+                                        <div class="top_brand_thumb swiper" data-swiper="swiperInner">
+                                            <ul class="swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#none">
+                                                        <div class="thumb_area"><img src="../../img/temp/top_brand_snew_1.png" alt=""/></div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="swiper-scrollbar"></div>
+                                <div class="arrow swiper-button-prev"></div>
+                                <div class="arrow swiper-button-next"></div>
+                                <script>
+                                    var swiper = new Swiper('#brandNewsList-swiper', {
+                                        spaceBetween: 0,
+                                        scrollbar: {
+                                            el: '.swiper-scrollbar',
+                                        },
+                                        navigation: {
+                                            nextEl: '.swiper-button-next',
+                                            prevEl: '.swiper-button-prev',
+                                        },
+                                        observer: true,	
+                                        noSwipingClass: 'top_brand_thumb'
+                                    });
+
+                                    $('[data-swiper="swiperInner"]').each(function (index) {
+                                        var _this = $(this);
+                                        var swiperInner = undefined;
+                                        var slideInx = 0; //현재 슬라이드 index
+
+                                        sliderAct()
+                                        function sliderAct() { 
+                                            _this.attr('data-swiper', 'swiperInner'+ index)
+                                            if (swiperInner != undefined) { //슬라이드 초기화
+                                                swiperInner.destroy();
+                                                swiperInner = undefined;
+                                                return;
+                                            }
+                                            swiperInner = new Swiper('[data-swiper="swiperInner'+ index +'"]', {
+                                                slidesPerView: 4.5,
+                                                spaceBetween: 4, //1->4
+                                                threshold: 0,
+                                                ally: false,
+                                                nested: true,
+                                                
+                                                navigation: {
+                                                    nextEl: '[data-swiper="swiperInner'+ index +'"] .swiper-button-next',
+                                                    prevEl: '[data-swiper="swiperInner'+ index +'"] .swiper-button-prev',
+                                                },
+                                                on: {
+                                                    activeIndexChange: function () {
+                                                        slideInx = this.realIndex; //현재 슬라이드 index 갱신
+                                                    },
+                                                    reachEnd : function() {
+                                                        console.log(' end')
+                                                    }
+                                                },
+                                            });
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //TOP BRAND -->
+                    <!-- 유사브랜드 -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="page-top">
+                                <h3 class="page-sub-title">
+                                    바바님이 본 <span class="point_color">El NoreI</span>와 <br>
+                                    <strong>유사한 브랜드</strong>
+                                </h3>
+                            </div>
+                            <div class="brand_tabs">
+                                <ul>
+                                    <li class="list on">
+                                        <a href="javascript:void(0)" class="thumb_area"><img src="../../img/temp/brand_thumb_1.png" alt=""></a>
+                                        <p class="txt">KOLEAT</p>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)" class="thumb_area"><img src="../../img/temp/brand_thumb_2.png" alt=""></a>
+                                        <p class="txt">KELLY DONAHUE</p>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)" class="thumb_area"><img src="../../img/temp/brand_thumb_3.png" alt=""></a>
+                                        <p class="txt">KOLEAT</p>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)" class="thumb_area"><img src="../../img/temp/brand_thumb_4.png" alt=""></a>
+                                        <p class="txt">KOLEAT</p>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)" class="thumb_area"><img src="../../img/temp/brand_thumb_1.png" alt=""></a>
+                                        <p class="txt">KOLEAT</p>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)" class="thumb_area"><img src="../../img/temp/brand_thumb_2.png" alt=""></a>
+                                        <p class="txt">KELLY DONAHUE</p>
+                                    </li>
+                                    <li class="list">
+                                        <a href="javascript:void(0)" class="thumb_area"><img src="../../img/temp/brand_thumb_2.png" alt=""></a>
+                                        <p class="txt">KELLY DONAHUE</p>
+                                    </li>
+                                </ul>
+                                <a href="javascript:void(0)" class="tabs-arrow tabs-prev bg-wh">처음</a>
+                                 <a href="javascript:void(0)" class="tabs-arrow tabs-next">마지막</a>
+                            </div>
+                            <div class="swiper" id="similar-swiper">
+                                <ul class="prd-list swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperSmiliarInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperSmiliarInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperSmiliarInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperSmiliarInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperSmiliarInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn_full_more">Brand Shop More <img src="../../img/arrow_gray.png" alt=""></button>
+                                <div class="swiper-scrollbar"></div>
+                                <script>
+                                    var tabBrand =  $('.brand_tabs ul');
+                                    var similarSwiper = new Swiper('#similar-swiper', {
+                                        slidesPerView: 1,
+                                        scrollbar: {
+                                            el: '#similar-swiper .swiper-scrollbar',
+                                        },
+                                        observer: true,	 
+                                        on: {
+                                            slideChange: function () {
+                                                var tabSlide = $('.brand_tabs li')
+                                                var tabActive = tabBrand.find('li.on');
+                                                var myScrollPos = tabActive.offset().left + tabActive.outerWidth() / 2 + tabBrand.scrollLeft() - tabBrand.outerWidth() / 2;
+                                                tabSlide.removeClass('on').eq(this.activeIndex % tabSlide.length).addClass('on')
+                                                tabBrand.stop().animate({ 'scrollLeft': myScrollPos })
+                                            },
+                                        },
+                                    });
+                                    $(document).on('click','.brand_tabs li', function(){
+                                        var li = $(this);
+                                        var activeIndex = $(this).index();
+                                        var pos = li.offset().left + li.outerWidth() / 2 + tabBrand.scrollLeft() - tabBrand.outerWidth()/ 2;
+                                        similarSwiper.slideToLoop(activeIndex)
+                                        $('.brand_tabs li').removeClass('on')
+                                        li.addClass('on')
+                                        tabBrand.stop().animate({ 'scrollLeft': pos })
+                                    })
+                    
+                                    $('[data-swiper="swiperSmiliarInner"]').each(function (index) {
+                                        var _this = $(this);
+                                        var swiperSmiliarInner = undefined;
+                                        var slideInx = 0; //현재 슬라이드 index
+                    
+                                        sliderAct()
+                                        function sliderAct() { 
+                                            _this.attr('data-swiper', 'swiperSmiliarInner'+ index)
+                                            if (swiperSmiliarInner != undefined) { //슬라이드 초기화
+                                                swiperSmiliarInner.destroy();
+                                                swiperSmiliarInner = undefined;
+                                                return;
+                                            }
+                                            swiperSmiliarInner = new Swiper('[data-swiper="swiperSmiliarInner'+ index +'"]', {
+                                                slidesPerView: "auto",
+                                                spaceBetween: 4, //1->4
+                                                threshold: 0,
+                                                ally: false,
+                                                nested: true,
+                                                
+                                                navigation: {
+                                                    nextEl: '[data-swiper="swiperSmiliarInner'+ index +'"] .swiper-button-next',
+                                                    prevEl: '[data-swiper="swiperSmiliarInner'+ index +'"] .swiper-button-prev',
+                                                },
+                                                on: {
+                                                    activeIndexChange: function () {
+                                                        slideInx = this.realIndex; //현재 슬라이드 index 갱신
+                                                    },
+                                                    reachEnd : function() {
+                                                        console.log(' end')
+                                                    }
+                                                },
+                                            });
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //유사브랜드 -->
+                    <!-- BEST RANKING -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="page-top">
+                                <h3 class="page-sub-title">
+                                    BEST <br>
+                                    <strong>RANKING</strong>
+                                </h3>
+                            </div>
+                            <nav class="line_tabs gray">
+                                <ul>
+                                    <li class="list on"><a href="javascript:void(0)">전체</a></li>
+                                    <li class="list"><a href="javascript:void(0)">의류</a></li>
+                                    <li class="list"><a href="javascript:void(0)">가방</a></li>
+                                    <li class="list"><a href="javascript:void(0)">슈즈</a></li>
+                                    <li class="list"><a href="javascript:void(0)">액세서리</a></li>
+                                    <li class="list"><a href="javascript:void(0)">라운지웨어</a></li>
+                                    <li class="list"><a href="javascript:void(0)">언더웨어</a></li>
+                                    <li class="list"><a href="javascript:void(0)">스포츠</a></li>
+                                    <li class="list"><a href="javascript:void(0)">라이프</a></li>
+                                    <li class="list"><a href="javascript:void(0)">뷰티</a></li>
+                                </ul>
+                                <a href="javascript:void(0)" class="tabs-arrow tabs-prev bg-wh">처음</a>
+                                 <a href="javascript:void(0)" class="tabs-arrow tabs-next bg-wh">마지막</a>
+                            </nav>
+                    
+                            <div class="prd-list swiper right-expand" id="rank-swiper">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperTabInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">3</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">4</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">5</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">6</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperTabInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">3</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">4</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">5</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">6</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperTabInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">3</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">4</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">5</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">6</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div class="swiper n3 inner_swiper" data-swiper="swiperTabInner">
+                                            <ul class="prd-list swiper-wrapper">
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">1</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">2</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">3</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">4</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">5</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="swiper-slide">
+                                                    <a href="#">
+                                                        <div class="prd-img">
+                                                            <div class="ratio">
+                                                                <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                                <span class="badge num">6</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="prd-info">
+                                                            <div class="brand">JIGOTT</div>
+                                                        </div>
+                                                        <div class="prd-price">
+                                                            <div class="price"><strong>245,800</strong></div>
+                                                            <div class="discount"><strong>56%</strong></div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <script>
+                                    var tab =  $('.line_tabs.gray ul');
+                                    var rankSwiper = new Swiper('#rank-swiper', {
+                                        slidesPerView: 'auto',
+                                        spaceBetween: 20, //2->4
+                                        observer: true,	 
+                                        // noSwipingClass: 'inner_swiper',
+                                        on: {
+                                            slideChange: function () {
+                                                var tabSlide = $('.line_tabs.gray li')
+                                                var tabActive = tab.find('li.on');
+                                                var myScrollPos = tabActive.offset().left + tabActive.outerWidth() / 2 + tab.scrollLeft() - tab.outerWidth() / 2;
+                                                tabSlide.removeClass('on').eq(this.activeIndex % tabSlide.length).addClass('on')
+                                                tab.stop().animate({ 'scrollLeft': myScrollPos })
+                                            },
+                                        },
+                                    });
+                                    $(document).on('click','.line_tabs.gray li', function(){
+                                        var li = $(this);
+                                        var activeIndex = $(this).index();
+                                        var pos = li.offset().left + li.outerWidth() / 2 + tab.scrollLeft() - tab.outerWidth()/ 2;
+                                        rankSwiper.slideToLoop(activeIndex)
+                                        $('.line_tabs.gray li').removeClass('on')
+                                        li.addClass('on')
+                                        tab.stop().animate({ 'scrollLeft': pos })
+                                    })
+                    
+                                    $('[data-swiper="swiperTabInner"]').each(function (index) {
+                                        var _this = $(this);
+                                        var swiperTabInner = undefined;
+                                        var slideInx = 0; //현재 슬라이드 index
+                    
+                                        sliderAct()
+                                        function sliderAct() { 
+                                            _this.attr('data-swiper', 'swiperTabInner'+ index)
+                                            if (swiperTabInner != undefined) { //슬라이드 초기화
+                                                swiperTabInner.destroy();
+                                                swiperTabInner = undefined;
+                                                return;
+                                            }
+                                            swiperTabInner = new Swiper('[data-swiper="swiperTabInner'+ index +'"]', {
+                                                slidesPerView: "auto",
+                                                spaceBetween: 4, //1->4
+                                                threshold: 0,
+                                                ally: false,
+                                                nested: true,
+                                                
+                                                navigation: {
+                                                    nextEl: '[data-swiper="swiperTabInner'+ index +'"] .swiper-button-next',
+                                                    prevEl: '[data-swiper="swiperTabInner'+ index +'"] .swiper-button-prev',
+                                                },
+                                                on: {
+                                                    activeIndexChange: function () {
+                                                        slideInx = this.realIndex; //현재 슬라이드 index 갱신
+                                                    },
+                                                    reachEnd : function() {
+                                                        console.log(' end')
+                                                    }
+                                                },
+                                            });
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //BEST RANKING -->
+                    <!-- 트렌드 키워드 -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit gray-bg">
+                            <div class="page-top">
+                                <h3 class="page-sub-title">
+                                    바바님이 검색한 <span class="point_color"># 가죽자켓</span><br>
+                                    <strong>함께 보면 좋은 트렌드 키워드</strong>
+                                </h3>
+                            </div>
+                            <div class="round_tabs">
+                                <ul>
+                                    <li class="list on"><a href="javascript:void(0)">#트렌치코드</a></li>
+                                    <li class="list"><a href="javascript:void(0)">#원피스</a></li>
+                                    <li class="list"><a href="javascript:void(0)">#가디건</a></li>
+                                    <li class="list"><a href="javascript:void(0)">#봄에어울리는</a></li>
+                                    <li class="list"><a href="javascript:void(0)">#가을자켓</a></li>
+                                </ul>
+                                <a href="javascript:void(0)" class="tabs-arrow tabs-prev bg-g">처음</a>
+                                 <a href="javascript:void(0)" class="tabs-arrow tabs-next bg-g">마지막</a>
+                            </div>
+                            <div class="swiper" id="unitListSwiper-keywordRealTime">
+                                <ul class="prd-list swiper-wrapper">
+                                    <li class="n3 swiper-slide">
+                                        <ul class="prd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="n3 swiper-slide">
+                                        <ul class="prd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="n3 swiper-slide">
+                                        <ul class="prd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="n3 swiper-slide">
+                                        <ul class="prd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="n3 swiper-slide">
+                                        <ul class="prd-list">
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="prd-img">
+                                                        <div class="ratio">
+                                                            <img src="../../img/temp/R0w1UDBPUDQ=GL5P0OP4892_1_310x455.jpg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="prd-info">
+                                                        <div class="brand">JIGOTT</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>245,800</strong></div>
+                                                        <div class="discount"><strong>56%</strong></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="swiper-scrollbar"></div>
+                                <script>
+                                    var tabRound =  $('.round_tabs ul');
+                                    var swiperTagProduct = new Swiper('#unitListSwiper-keywordRealTime', {
+                                        slidesPerView: 1,
+                                        scrollbar: {
+                                            el: '.swiper-scrollbar',
+                                        },
+                                        on: {
+                                            slideChange: function () {
+                                                var tabSlide = $('.round_tabs li')
+                                                var tabActive = tabRound.find('li.on');
+                                                var myScrollPos = tabActive.offset().left + tabActive.outerWidth() / 2 + tabRound.scrollLeft() - tabRound.outerWidth() / 2;
+                                                tabSlide.removeClass('on').eq(this.activeIndex % tabSlide.length).addClass('on')
+                                                tabRound.stop().animate({ 'scrollLeft': myScrollPos })
+                                            },
+                                        },
+                                    });
+                                    $(document).on('click','.round_tabs li', function(){
+                                        var li = $(this);
+                                        var activeIndex = $(this).index();
+                                        var pos = li.offset().left + li.outerWidth() / 2 + tabRound.scrollLeft() - tabRound.outerWidth()/ 2;
+                                        swiperTagProduct.slideToLoop(activeIndex)
+                                        $('.round_tabs li').removeClass('on')
+                                        li.addClass('on')
+                                        tabRound.stop().animate({ 'scrollLeft': pos })
+                                    })
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //트렌드 키워드 -->
+
+                    <!-- EVENT LIST -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="event_list">
+                                <div class="thumb_area">
+                                    <img src="../../img/temp/event_brand_thumb01.jpg" alt="">
+                                </div>
+                                <div class="info_area">
+                                    <strong class="title">마가린핑거스<br/>22WINTER 컬렉션 5%</strong>
+                                    <p class="sub">단 3일, 주말과 함께 찾아온 ~50% 특가</p> 
+                                </div>
+                                <div class="product_list_wrap">
+                                    <ul class="prd-list row">
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //EVENT LIST -->
+                    <!-- EVENT LIST -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="event_list">
+                                <div class="thumb_area">
+                                    <img src="../../img/temp/event_brand_thumb02.jpg" alt="">
+                                    <div class="tag-group">
+                                        <span class="tag point">FESTA</span>
+                                        <span class="tag">COUPON</span>
+                                    </div>
+                                </div>
+                                <div class="info_area">
+                                    <strong class="title">주목할 여름 트렌드 ACC</strong>
+                                    <p class="sub">브랜드별 특가 + 추가 쿠폰</p> 
+                                </div>
+                                <ul class="round_tags">
+                                    <li class="list"><a href="javascript:void(0)"># 아이잗바바</a></li>
+                                    <li class="list"><a href="javascript:void(0)"># 여름모자</a></li>
+                                    <li class="list"><a href="javascript:void(0)"># 린넨</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //EVENT LIST -->
+                    <!-- EVENT LIST -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="event_list">
+                                <div class="thumb_area">
+                                    <img src="../../img/temp/event_brand_thumb03.jpg" alt="">
+                                </div>
+                                <div class="info_area">
+                                    <strong class="title">해브오프듀티 22FW 컬렉션</strong>
+                                    <p class="sub">24 S/S 컬렉션 상품들을 최대 30% 할인 혜택</p> 
+                                </div>
+                                <div class="product_list_wrap">
+                                    <ul class="prd-list row">
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //EVENT LIST -->
+                    <!-- EVENT LIST -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="event_list">
+                                <div class="thumb_area">
+                                    <img src="../../img/temp/event_brand_thumb04.jpg" alt="">
+                                </div>
+                                <div class="info_area">
+                                    <strong class="title">마가린핑거스<br/>22WINTER 컬렉션 5%</strong>
+                                    <p class="sub">단 3일, 주말과 함께 찾아온 ~50% 특가</p> 
+                                </div>
+                                <div class="product_list_wrap">
+                                    <ul class="prd-list row">
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //EVENT LIST -->
+                    <!-- EVENT LIST -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="event_list">
+                                <div class="thumb_area">
+                                    <img src="../../img/temp/event_brand_thumb05.jpg" alt="">
+                                </div>
+                                <div class="info_area">
+                                    <strong class="title">HOT DEAL DAY</strong>
+                                    <p class="sub">누르, 루피타, 투플리와 함께하는 2024 S/S 신상위크</p> 
+                                </div>
+                                <div class="product_list_wrap">
+                                    <ul class="prd-list row">
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //EVENT LIST -->
+                    <!-- EVENT LIST -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="event_list">
+                                <div class="thumb_area">
+                                    <img src="../../img/temp/event_brand_thumb07.jpg" alt="">
+                                </div>
+                                <div class="info_area">
+                                    <strong class="title">데일리한 여름슈즈의 정석</strong>
+                                    <p class="sub">포멜카멜레 프리 시즌오프, 25%쿠폰 혜택</p> 
+                                </div>
+                                <div class="product_list_wrap">
+                                    <ul class="prd-list row">
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="prd-img">
+                                                    <div class="ratio">
+                                                        <img src="../../img/temp/event_brand_thumb_sm01.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="prd-info">
+                                                    <div class="brand">ACNESTUDIOS</div>
+                                                    <div class="name">
+                                                        <div class="tx-ovf">SITP5133 아카이브 나염 반팔티_Ivory</div>
+                                                    </div>
+                                                    <div class="prd-price">
+                                                        <div class="price"><strong>36,900</strong></div>
+                                                        <div class="discount"><strong>23%</strong></div>
+                                                    </div>
+                                                </div>
+                                            </a>                                            
+                                            <button type="button" class="btn-wish">찜하기</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //EVENT LIST -->
+                    <!-- EVENT LIST -->
+                    <div class="main_unit_wrap">
+                        <div class="main_unit">
+                            <div class="event_list">
+                                <div class="thumb_area">
+                                    <img src="../../img/temp/event_brand_thumb06.jpg" alt="">
+                                    <div class="tag-group">
+                                        <span class="tag">패션</span>
+                                    </div>
+                                </div>
+                                <div class="info_area">
+                                    <strong class="title">인플루언서와 함께하는 <br>신상위크!</strong>
+                                    <p class="sub">누르, 루피타, 투플리와 함께하는 2024 S/S 신상위크</p> 
+                                </div>
+                                <ul class="round_tags">
+                                    <li class="list"><a href="javascript:void(0)"># 누르</a></li>
+                                    <li class="list"><a href="javascript:void(0)"># 루피타</a></li>
+                                    <li class="list"><a href="javascript:void(0)"># 신상위크</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //EVENT LIST -->
+                </div>
+            </div>
+        </section>
+        <footer>
+        </footer>
+    </section>
+</body>
+<script>
+    //layout grid js
+    var colWidth = $(".main_unit_wrap").width();
+
+    window.onresize = function(){
+    var colWidth = $(".main_unit_wrap").width();
+    }
+    console.log(colWidth);
+
+    var $grid = $(".main_conts_area").masonry({
+    // options
+    itemSelector: ".main_unit_wrap",
+    columnWidth: ".main_unit_wrap",
+    // percentPosition: true,
+    //gutter: 10,
+    fitWidth: false
+    });
+
+    //tab arrow click
+    $(document).ready(function (){
+        $("*[class*='_tabs']").each(function(){
+            var $tabs = $(this);
+            var pos1 =  $tabs.width();
+            var pos2 =  $tabs.children("ul").outerWidth();
+            var pos3 =  pos2 - pos1;
+            $tabs.find(".tabs-next").click(function(e){
+                e.preventDefault();
+                $(this).siblings("ul").css({'transform':'translateX(-'+pos3+'px)'});
+                $(this).hide();
+                $(this).prev("a").show();
+            });
+            $tabs.find(".tabs-prev").click(function(e){
+                e.preventDefault();
+                $(this).siblings("ul").css({'transform':'translateX(0)'});
+                $(this).hide();
+                $(this).next("a").show();
+            });
+        });
+    });
+
+	$(document).ready(function() {
+		var $window = $(window);  
+		var $sidebar = $(".main_visual"); 
+		var $sidebarHeight = $sidebar.innerHeight();   
+		var $footerOffsetTop = $("footer").offset().top-80; 
+		var $sidebarOffset = $sidebar.offset();
+
+		$window.scroll(function() {
+			if($window.scrollTop() > $sidebarOffset.top) {
+			  $sidebar.addClass("fixed");
+			} else {
+			  $sidebar.removeClass("fixed");
+			}    
+			if($window.scrollTop() + $sidebarHeight > $footerOffsetTop) {
+			  $sidebar.addClass("static");
+			} else {
+			  $sidebar.removeClass("static");
+			}    
+		});
+	});
+</script>
+</html>

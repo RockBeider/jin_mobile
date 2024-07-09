@@ -1,6 +1,6 @@
 /************** 
 *
-* 상품리스트, 썸네일
+* 세일
 *
 ***************/
 /* 세일 > 타임세일 다운*/
@@ -22,3 +22,22 @@
 .product_list_wrap.no-mt {margin-top: 0;}
 .history_list + .btn_full_view {margin-top: 60px;}
 .sale_area [class *= 'unitList'] {margin-bottom: 0;}
+
+/************** 
+*
+* 테마샵
+*
+***************/
+.concept_shop {}
+.concept_shop .mainVisual {margin-bottom: 40px;}
+.concept_shop .swiper-pagination-custom {bottom: 26px; display: flex; align-items: center; gap: 0 4px;}
+.concept_shop .swiper-pagination-custom span {margin: 0;}
+.concept_shop .swiper-pagination-custom::after {display: none;}
+
+.concept_shop .event_list .info_area {margin-top: 18px;}
+.concept_shop .event_list .info_area .sub {font-size: 14px; line-height: 1.42; letter-spacing: 0;}
+
+.concept_shop .full_type {margin: 80px 0;}
+.concept_shop .full_type:last-child {margin-bottom: 0;}
+.thumb_area {overflow: hidden;}
+.thumb_area img {object-position: center top;}

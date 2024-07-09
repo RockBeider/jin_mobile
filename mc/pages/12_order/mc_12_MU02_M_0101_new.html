@@ -38,32 +38,26 @@
                         <img src="../../img/temp/prd_detail_1.jpg" alt="">
                         <div class="timer_wrap has_icon">
                             <span class="dot">PRE-ORDER</span>
-                            <strong>20 : 38 : 26</strong>남음
+                            <strong>
+                                <span class="hour">20</span><span>:</span>
+                                <span class="minute">38</span><span>:</span> 
+                                <span class="second">26</span>
+                            </strong>
+                            남음
                         </div>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div class="videoWrap">
+                        <video src="https://image.babathe.com/goods_video/GB40243979/1714695188739.mp4" loop="" controls="" muted="">
+                            해당 브라우저는 video 태그를 지원하지 않습니다.
+                        </video>
                     </div>
                 </li>
                 <li class="swiper-slide"><div class="thumb_area"><img src="https://image.babathe.com/goods/G278763821/G278763821_2.jpg/babathe/optimize" alt=""></div></li>
                 <li class="swiper-slide"><div class="thumb_area"><img src="https://image.babathe.com/goods/G278763821/G278763821_3.jpg/babathe/optimizes" alt=""></div></li>
                 <li class="swiper-slide"><div class="thumb_area"><img src="https://image.babathe.com/goods/G278763821/G278763821_4.jpg/babathe/optimize" alt=""></div></li>
                 <li class="swiper-slide"><div class="thumb_area"><img src="https://image.babathe.com/goods/G278763821/G278763821_5.jpg/babathe/optimize" alt=""></div></li>
-                <!-- 
-                    <li class="swiper-slide"><img src="../../img/temp/thumb-700x700.jpg" alt=""></li>
-                    <li class="swiper-slide">
-                        <div class="videoWrap">
-                            <video src='http://www.tomodevel.jp/material/video/disneyTour.mp4' controls muted>
-                                해당 브라우저는 video 태그를 지원하지 않습니다.
-                            </video>
-                        </div>
-                    </li>
-                    
-                    <li class="swiper-slide">
-                        <div class="videoWrap">
-                            <video src='http://www.tomodevel.jp/material/video/disneyTour.mp4' controls muted>
-                                해당 브라우저는 video 태그를 지원하지 않습니다.
-                            </video>
-                        </div>
-                    </li>
-                -->
             </ul>
             <div class="swiper-scrollbar"></div>
             <a href class="btn_new_black ico_cody" href="#codyWrap">코디상품</a>
@@ -72,23 +66,31 @@
             </div>
             <script>
                 var prevVideo;
-                var swiper = new Swiper('#swiper-goodsDetail', {
+                var swiperDetailBnr = new Swiper('#swiper-goodsDetail', {
                     // loop: true,
                     scrollbar: {
                         el: '.swiper-scrollbar',
                     },
                     on: {
-                        slideChange: function (e) {
-                            var video = e.slides[e.activeIndex].querySelectorAll('video');
-                            prevVideo = video[0];
-                            if(video.length != 0){
+                        slideChange: function (swiper) {
+                            var video = $(swiper.slides[swiper.activeIndex]).find('video');
+                            if (prevVideo) {
+                                prevVideo.pause();
+                            }
+                            if (video.length) {
                                 video[0].play();
-                            }else{
-                                if(prevVideo){
-                                    prevVideo.pause();
-                                }
+                                prevVideo = video[0];
+                            } else {
+                                prevVideo = null;
                             }
                         }
+                    }
+                });
+                $('.ico_play').on('click', function(e) {
+                    e.preventDefault();
+                    var videoSlideIndex = $('#swiper-goodsDetail .swiper-slide').has('video').index();
+                    if (videoSlideIndex !== -1) {
+                        swiperDetailBnr.slideTo(videoSlideIndex);
                     }
                 });
             </script>
@@ -278,10 +280,10 @@
                                 <span class="tooltip tooltip_w">마일리지 (보유 :  20,000M)
                                     <a class="tipIcon" href="javascript:void(0)">?</a>
                                     <div class="tipCont">
-                                        <strong>e포인트 안내</strong>
+                                        <strong>마일리지 안내</strong>
                                         <ul class="tip-wrap indent">
-                                            <li class="tip type2">1,000P 부터 사용 가능합니다.</li>
-                                            <li class="tip type2">10P 단위로 사용 가능합니다.</li>
+                                            <li class="tip type2">1,000M 부터 사용 가능합니다.</li>
+                                            <li class="tip type2">10M 단위로 사용 가능합니다.</li>
                                             <li class="tip type2">최종 결제금액의  50% 까지만 사용 가능합니다.</li>
                                         </ul>
                                         <button class="btn-close">툴팁닫기</button>
@@ -298,11 +300,11 @@
                                 <span class="tooltip tooltip_w">바바캐시 1% 할인
                                     <a class="tipIcon" href="javascript:void(0)">?</a>
                                     <div class="tipCont">
-                                        <strong>e포인트 안내</strong>
+                                        <strong>바바캐시 안내</strong>
                                         <ul class="tip-wrap indent">
-                                            <li class="tip type2">1,000P 부터 사용 가능합니다.</li>
-                                            <li class="tip type2">10P 단위로 사용 가능합니다.</li>
-                                            <li class="tip type2">최종 결제금액의  50% 까지만 사용 가능합니다.</li>
+                                            <li class="tip type2">바바케어 페이지에서 케어 설정하면 코드가 생성됩니다.</li>
+                                            <li class="tip type2">나의 바바캐시 코드를 친구에게 공유한 후, 친구가 코드를 사용하여 주문을 하면 나는 1% 적립이 됩니다.</li>
+                                            <li class="tip type2">친구의 바바캐시 코드를 받아서, 나의 주문 결제 시 사용하면 즉시 1% 할인됩니다.</li>
                                         </ul>
                                         <button class="btn-close">툴팁닫기</button>
                                     </div>
@@ -312,8 +314,7 @@
                         <span class="value"> - 638</span>
                     </dd>
                 </dl>
-
-
+                
                 <script>
                     $(function () {
                         $('.form_list .checkbox input:checkbox').click(function () {
@@ -759,46 +760,51 @@
             <div class="section_item">
                 <div class="prd_info_txt">
                     <p class="tit">DETAIL</p>
-                    <p class="desc">군더더기 없이 간결하게 일자 실루엣이 연출되며 여유로운 핏으로 부담없는 데님 팬츠입니다.
-                        허리 안쪽 밴딩 구성되어 탄탄하게 핏을 잡아주며 장시간 편안하게 착용할 수 있는 아이템입니다.
-                        <br/><br/>
-                        - 쾌적한 착용감의 코튼 블렌드 소재<br/>
-                        - 캐주얼한 감각의 스티치 디테일<br/>
-                        - 여밈라인 버튼과 지퍼 클로징 방식<br/>
-                        - 수납 가능한 양 사이드와 힙 포켓
-                        <br/><br/>
-                        - 모델사이즈 : 키 168 / 신체사이즈 32-24-33 in / 
-                        55 사이즈 착용
-                    </p>
-                </div>                <div class="img_expand_area closed">
-                    <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
-                    <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
-                    <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
-                    <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
-                    <div><img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt=""></div>
-                </div>
-                <button type="button" onclick="imgExpand(this)" class="btn_full_view">
-                    상품정보 더보기
-                </button>
-                <script>
-                    function imgExpand(obj) {
-                        var prdimg = $('.img_expand_area');
-                        var morwbtn = $(obj);
-                        if (prdimg.hasClass('closed')) {
-                            $('.btn_full_view').addClass('show');
-                            prdimg.removeClass('closed');
-                            morwbtn.html('상품정보 닫기');
-                        } else {
-                            $('.btn_full_view').removeClass('show');
-                            prdimg.addClass('closed');
-                            var to = prdimg.offset().top;
-                            if($(window).scrollTop() > to){
-                                $('html, body').animate({ scrollTop: prdimg.offset().top - 148}, 300);
+                    <div class="img_expand_area closed">
+                        <p class="desc">
+                            군더더기 없이 간결하게 일자 실루엣이 연출되며 여유로운 핏으로 부담없는 데님 팬츠입니다.
+                            허리 안쪽 밴딩 구성되어 탄탄하게 핏을 잡아주며 장시간 편안하게 착용할 수 있는 아이템입니다.
+                            <br/><br/>
+                            - 쾌적한 착용감의 코튼 블렌드 소재<br/>
+                            - 캐주얼한 감각의 스티치 디테일<br/>
+                            - 여밈라인 버튼과 지퍼 클로징 방식<br/>
+                            - 수납 가능한 양 사이드와 힙 포켓
+                            <br/><br/>
+                            - 모델사이즈 : 키 168 / 신체사이즈 32-24-33 in / 
+                            55 사이즈 착용
+                        </p>
+                        <div>
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                            <img src="../../img/temp/SUw2UDBCTDE=IL6P0BL1842_1_310x455.jpg" alt="">
+                        </div>
+                    </div>
+                    <button type="button" onclick="imgExpand(this)" class="btn_full_view">
+                        상품정보 더보기
+                    </button>
+                    <script>
+                        function imgExpand(obj) {
+                            var prdimg = $('.img_expand_area');
+                            var morwbtn = $(obj);
+                            if (prdimg.hasClass('closed')) {
+                                $('.btn_full_view').addClass('show');
+                                prdimg.removeClass('closed');
+                                morwbtn.html('상품정보 닫기');
+                            } else {
+                                $('.btn_full_view').removeClass('show');
+                                prdimg.addClass('closed');
+                                var to = prdimg.offset().top;
+                                if($(window).scrollTop() > to){
+                                    $('html, body').animate({ scrollTop: prdimg.offset().top - 148}, 300);
+                                }
+                                morwbtn.html('상품정보 더보기');
                             }
-                            morwbtn.html('상품정보 더보기');
                         }
-                    }
-                </script>
+                    </script>
+                </div>                
+                
             </div>
             <!-- 추가정보 -->
             <div class="section_item">
@@ -1033,6 +1039,8 @@
                         });
                     </script>
                 </div>
+            </div>
+            <div class="section_item">
                 <div class="title_area">
                     <h2 class="tit_h2">함께 보면 좋은 상품이예요.</h2>
                 </div>
@@ -1102,6 +1110,8 @@
                         });
                     </script>
                 </div>
+            </div>
+            <div class="section_item">
                 <div class="title_area">
                     <h2 class="tit_h2"><strong>THE TILBURY</strong><br/>다른 상품을 찾으시나요?</h2>
                     <a href="#" class="more">
@@ -1174,6 +1184,8 @@
                         });
                     </script>
                 </div>
+            </div>
+            <div class="section_item">
                 <div class="title_area">
                     <h2 class="tit_h2">타임특가 상품도 있어요!</h2>
                     <a href="#" class="more">
@@ -1187,7 +1199,7 @@
                                 <div class="thumb_area">
                                     <img src="https://image.babathe.com/goods/G349610821/G349610821_1.jpg/babathe/resize/360x528/optimize" alt="">
                                     <div class="timer_wrap has_icon">
-                                        <span>20 : 38 : 26</span>
+                                        <span class="hour">20</span><span>:</span><span class="minute">38</span><span>:</span> <span class="second">26</span>
                                     </div>
                                 </div>
                                 <div class="unit_info_area">
@@ -1204,7 +1216,7 @@
                                 <div class="thumb_area">
                                     <img src="https://image.babathe.com/goods/G345168431/G345168431_1.jpg/babathe/resize/360x528/optimize" alt="">
                                     <div class="timer_wrap">
-                                        <span>20 : 38 : 26</span>
+                                        <span class="hour">20</span><span>:</span><span class="minute">38</span><span>:</span> <span class="second">26</span>
                                     </div>
                                 </div>
                                 <div class="unit_info_area">
@@ -1221,7 +1233,7 @@
                                 <div class="thumb_area">
                                     <img src="https://image.babathe.com/goods/G331522427/G331522427_1.jpg/babathe/resize/360x528/optimize" alt="">
                                     <div class="timer_wrap">
-                                        <span>20 : 38 : 26</span>
+                                        <span class="hour">20</span><span>:</span><span class="minute">38</span><span>:</span> <span class="second">26</span>
                                     </div>
                                 </div>
                                 <div class="unit_info_area">
@@ -1238,7 +1250,7 @@
                                 <div class="thumb_area">
                                     <img src="https://image.babathe.com/goods/G276614576/G276614576_1.jpg/babathe/resize/360x528/optimize" alt="">
                                     <div class="timer_wrap">
-                                        <span>20 : 38 : 26</span>
+                                        <span class="hour">20</span><span>:</span><span class="minute">38</span><span>:</span> <span class="second">26</span>
                                     </div>
                                 </div>
                                 <div class="unit_info_area">
@@ -1258,6 +1270,8 @@
                         });
                     </script>
                 </div>
+            </div>
+            <div class="section_item">
                 <div class="title_area">
                     <h2 class="tit_h2">관련 컨텐츠를 확인하세요.</h2>
                 </div>
@@ -1409,55 +1423,57 @@
 
         <div class="layerPop bottomUp type_bar" id="layerPop-goodsOptionSelect">
             <div class="cont">
-                <div class="optionCont renewer" id="optionCont">
-                    <h3>Color : PUPPLE</h3>
-                    <div class="optSelectWrap renewer">
-                        <div class="inner">
-                            <label><input type="radio" name="optCheck-1"><span>BLACK</span></label><!-- 상품 옵션 활성화 > 체크 전 -->
-                            <label><input type="radio" name="optCheck-1" checked><span>PUPPLE</span></label><!-- 상품 옵션 활성화 > 체크 후 -->
-                            <label><input type="radio" name="optCheck-1" disabled><span>WHITE</span></label><!-- 상품 옵션 비활성화 -->
-                        </div>
-                    </div>
-                    <h3>Size : S</h3>
-                    <div class="optSelectWrap renewer">
-                        <div class="inner">
-                            <label><input type="radio" name="optCheck-2"><span>S</span></label><!-- 상품 옵션 활성화 > 체크 전 -->
-                            <label><input type="radio" name="optCheck-2" checked><span>M</span></label><!-- 상품 옵션 활성화 > 체크 후 -->
-                            <label><input type="radio" name="optCheck-2" disabled><span>L</span></label><!-- 상품 옵션 비활성화 -->
-                            <label><input type="radio" name="optCheck-2" class="soldout" disabled><span>XL</span></label><!-- 상품 품절되었을 때 -->
-                        </div>
-                    </div>
-                    
-    
-                    <div class="optSelectBox renewer">
-                        <h3>BLACK / M</h3>
-                        <div class="optNumToPrice">
-                            <div class="countUi">
-                                <button class="btn-minus">-</button>
-                                <input type="tel" value="3">
-                                <button class="btn-plus">+</button>
+                <div class="scroll_area">
+                    <div class="optionCont renewer" id="optionCont">
+                        <h3>Color : PUPPLE</h3>
+                        <div class="optSelectWrap renewer">
+                            <div class="inner">
+                                <label><input type="radio" name="optCheck-1"><span>BLACK</span></label><!-- 상품 옵션 활성화 > 체크 전 -->
+                                <label><input type="radio" name="optCheck-1" checked><span>PUPPLE</span></label><!-- 상품 옵션 활성화 > 체크 후 -->
+                                <label><input type="radio" name="optCheck-1" disabled><span>WHITE</span></label><!-- 상품 옵션 비활성화 -->
                             </div>
-                            <span class="price">1,097,000원</span>
                         </div>
-                        <button class="del">삭제</button>
-                    </div>
-                    <div class="optSelectBox renewer">
-                        <h3>PUPPLE / S</h3>
-                        <div class="optNumToPrice">
-                            <div class="countUi">
-                                <button class="btn-minus">-</button>
-                                <input type="tel" value="3">
-                                <button class="btn-plus">+</button>
+                        <h3>Size : S</h3>
+                        <div class="optSelectWrap renewer">
+                            <div class="inner">
+                                <label><input type="radio" name="optCheck-2"><span>S</span></label><!-- 상품 옵션 활성화 > 체크 전 -->
+                                <label><input type="radio" name="optCheck-2" checked><span>M</span></label><!-- 상품 옵션 활성화 > 체크 후 -->
+                                <label><input type="radio" name="optCheck-2" disabled><span>L</span></label><!-- 상품 옵션 비활성화 -->
+                                <label><input type="radio" name="optCheck-2" class="soldout" disabled><span>XL</span></label><!-- 상품 품절되었을 때 -->
                             </div>
-                            <span class="price">1,097,000원</span>
                         </div>
-                        <button class="del">삭제</button>
+                        
+        
+                        <div class="optSelectBox renewer">
+                            <h3>BLACK / M</h3>
+                            <div class="optNumToPrice">
+                                <div class="countUi">
+                                    <button class="btn-minus">-</button>
+                                    <input type="tel" value="3">
+                                    <button class="btn-plus">+</button>
+                                </div>
+                                <span class="price">1,097,000원</span>
+                            </div>
+                            <button class="del">삭제</button>
+                        </div>
+                        <div class="optSelectBox renewer">
+                            <h3>PUPPLE / S</h3>
+                            <div class="optNumToPrice">
+                                <div class="countUi">
+                                    <button class="btn-minus">-</button>
+                                    <input type="tel" value="3">
+                                    <button class="btn-plus">+</button>
+                                </div>
+                                <span class="price">1,097,000원</span>
+                            </div>
+                            <button class="del">삭제</button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="orderAmount renewer">
-                    <span class="num">총 <em>6</em>개</span>
-                    <span class="totalPrice">총 주문금액 <em>3,614,000</em>원</span>
+                    <div class="orderAmount renewer">
+                        <span class="num">총 <em>6</em>개</span>
+                        <span class="totalPrice">총 주문금액 <em>3,614,000</em>원</span>
+                    </div>
                 </div>
                 <div class="optionContBottom">
                     <button class="btn-cart">장바구니</button>

@@ -5106,11 +5106,11 @@ section.section_care_renewal .care-banner .right_part a{display: flex; justify-c
 section.section_care_renewal .care-banner .right_part a .img_box{width: 16px; height: 16px; margin-right: 8px; box-sizing: border-box;}
 section.section_care_renewal .care-banner .right_part a .img_box img{display: block; width: 100%; height: 100%; line-height: 44px; padding: 14px 0;}
 
-/* 20040610 #6031 스타일챗 베타 버전 표기 > 레이어팝업 -> 페이지로 변경 */
+/* 20040610 #6031 스타일챗 베타 버전 표기 > 레이어팝업 -> 페이지로 변경  탭바 높이 56px */
 .pop_style_chat.full {position: relative; left:-20px; padding-bottom:0; width:calc(100% + 40px);}
-.pop_style_chat.full .style_chat_area {padding-bottom: 0; height:calc(100vh - 160px);}
-.pop_style_chat.full .style_chat_area .chat_wrap_inner {padding-bottom:50px;}
-.pop_style_chat.full .inp_wrap {bottom:50px;}
+.pop_style_chat.full .style_chat_area {padding-bottom: 0; height:calc(100vh - 166px);}
+.pop_style_chat.full .style_chat_area .chat_wrap_inner {padding-bottom:0;}
+.pop_style_chat.full .inp_wrap {bottom:56px;}
 /* 스타일챗 하단 플로팅 아이콘 추가 */
 .bottomFloating .btn {position: relative;}
 .bottomFloating .btn.chat::before {background-image: url(../img/bg_bottomFloating_chat.png);} /* 스타일챗 기본 */
