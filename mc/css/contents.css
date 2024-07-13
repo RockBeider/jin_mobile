@@ -2020,7 +2020,7 @@ section > .menu-3dep{margin-left:-20px;margin-right:-20px}
 section > .topMenuNav,
 .contentsGroup > .topMenuNav{margin-left:-20px;margin-right:-20px}
 .topMenuNav{overflow:hidden;padding: 0 20px 10px 20px;margin: 0 -20px;background: #fff;z-index: 1002;}
-.topMenuNav.sticky{position: sticky;top: 56px;transition: .3s ease;}
+.topMenuNav.sticky{position: sticky;top: 50px;transition: .3s ease;}
 .topMenuNav > ul > li{flex:none;white-space: nowrap;display: inline-block;width: auto;}
 .topMenuNav > ul > li:not(:last-child){margin-right:25px}
 .topMenuNav > ul > li > a{box-sizing: border-box;display: flex;align-items: center;background: #fff;font-size: 16px;color: #999;height: 40px;font-weight: 300;}
@@ -4223,7 +4223,8 @@ section.section_care_renewal .care_recent .unitListSwiper-similarProduct .swiper
 [class *= 'unitList'].swiper.center-type .swiper-wrapper .swiper-slide.swiper-slide-next .wrap-prod,
 [class *= 'unitList'].swiper.center-type .swiper-wrapper .swiper-slide.swiper-slide-duplicate-next .wrap-prod {transform-origin:12% 50%; box-sizing:border-box}
 /* [class *= 'unitList'].swiper.center-type .thumb:after {content:""; background:rgba(26,26,26,0.1)} */
-[class *= 'unitList'].swiper.center-type .thumb:after {content:""; background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(90,90,90,0.1) 65%, rgba(0,0,0,0.3) 100%)}
+[class *= 'unitList'].swiper.center-type .thumb:after {content:""; background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(90,90,90,0.1) 65%, rgba(0,0,0,0.3) 100%);position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+[class *= 'unitList'].swiper.center-type .thumb_area:after {content:""; background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(90,90,90,0.1) 65%, rgba(0,0,0,0.3) 100%);position: absolute;top: 0;left: 0;width: 100%;height: 100%;} /* 2.0 버전 */
 [class *= 'unitList'].swiper.center-type .unitInfoWrap {position:absolute; left:0; bottom:0; width:100%; padding:0 20px 20px; color:#fff}
 [class *= 'unitList'].swiper.center-type .unitInfoWrap .category {font-weight:200; color:#fff}
 [class *= 'unitList'].swiper.center-type .unitInfoWrap .category + .title {margin-top:8px}
@@ -4722,8 +4723,8 @@ html.topMenuAdnFilter-on .fashion-wrap.new .prd-list-filter {top:40px !important
 .content-wrap.search-renewal .tab-a + .prd-list {margin-top:25px}
 .content-wrap.search-renewal .prd-list-filter {position:relative; top:0; margin-top:0}
 .content-wrap.search-renewal .expand.has-line {margin-top:25px}
-.content-wrap.search-renewal .filter-nav {position:sticky; top:53px; left:0; z-index:1002; width:calc(100% + 40px); margin-left:-20px; padding:5px 20px; background:#fff; transition:0.3s ease; box-sizing:border-box}
-html.scrollUp .content-wrap.search-renewal .filter-nav {top:-1px}
+.content-wrap.search-renewal .filter-nav {position:sticky; top:50px; left:0; z-index:1002; width:calc(100% + 40px); margin-left:-20px; padding:5px 20px; background:#fff; transition:0.3s ease; box-sizing:border-box}
+/* html.scrollUp .content-wrap.search-renewal .filter-nav {top:-1px} */ /* 2.0에 버전에 맞춤*/
 .content-wrap.search-renewal .filter-nav .tab-menu {width:calc(100% - 17px); margin-left:-20px}
 .content-wrap.search-renewal .filter-nav .tab-menu ul {padding:0 8px 0 20px; white-space:nowrap; font-size:0; overflow-x:scroll}
 .content-wrap.search-renewal .filter-nav .tab-menu ul::-webkit-scrollbar {display:none}
@@ -4968,8 +4969,11 @@ button.btn-styleChat:active {background-color:#fff}
 .pop_style_chat .style_chat_area .chat_wrap_inner .date {/* position:fixed; top:50px; left:0; z-index:2; */ display:block; width:100%; padding:20px 0; text-align:center; font-weight:400; font-size:12px; color:#888}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box {display:flex; align-items:end; padding:0}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box ~ .chat_box {margin-top:8px} 
+.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.right {margin-top:40px;}
+.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.right + .right {margin-top:8px;}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.left + .chat_box.right,
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.right + .chat_box.left {margin-top:40px}
+.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.right {margin-top:40px;}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.left {flex-direction:row}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.right {flex-direction:row-reverse}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box .bubble {position:relative; display:inline-block; width:fit-content; max-width:calc(100% - 60px); min-height:38px; padding:10px 18px; text-align:left; line-height:1.28em; white-space:pre-wrap; word-break:keep-all; font-size:14px; border-radius:38px; box-sizing:border-box; overflow:hidden}
@@ -5024,7 +5028,7 @@ button.btn-styleChat:active {background-color:#fff}
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box.right .time {margin-right:6px}
 .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area .guide {margin-bottom:14px; padding-left:22px; line-height:1.3em; font-size:14px; box-sizing:border-box}
 .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area .guide.recom_prod {background:url(../img/icon_baba_chat_zoom_type1.png) 0 50% no-repeat; background-size:18px auto}
-.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box + .recom_prod_area {margin-top:20px; margin-bottom: 40px;} 
+.pop_style_chat .style_chat_area .chat_wrap_inner .chat_box + .recom_prod_area {margin-top:40px; margin-bottom: 40px;} 
 .pop_style_chat .style_chat_area .chat_wrap_inner .chat_box + .recom_prod_area:last-child {margin-bottom: 0;}
 /* .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area [class *= 'ratio-']::before {content:""; padding-top:calc(200 / 158 * 100%)} */
 .pop_style_chat .style_chat_area .chat_wrap_inner .recom_prod_area [class *= 'unitList'] .thumb.ratio-a > img {object-fit:cover}
@@ -5108,7 +5112,7 @@ section.section_care_renewal .care-banner .right_part a .img_box img{display: bl
 
 /* 20040610 #6031 스타일챗 베타 버전 표기 > 레이어팝업 -> 페이지로 변경  탭바 높이 56px */
 .pop_style_chat.full {position: relative; left:-20px; padding-bottom:0; width:calc(100% + 40px);}
-.pop_style_chat.full .style_chat_area {padding-bottom: 0; height:calc(100vh - 166px);}
+.pop_style_chat.full .style_chat_area {padding-bottom: 30px; height:calc(100vh - 166px);}
 .pop_style_chat.full .style_chat_area .chat_wrap_inner {padding-bottom:0;}
 .pop_style_chat.full .inp_wrap {bottom:56px;}
 /* 스타일챗 하단 플로팅 아이콘 추가 */

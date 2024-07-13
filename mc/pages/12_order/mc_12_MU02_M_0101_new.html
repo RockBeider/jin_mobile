@@ -142,8 +142,22 @@
         <!-- 할인적용정보 -->
         <div class="section_line prd_sale_detail">
             <!-- 아코디언 비활성화 상태의 경우 disabled 추가 -->
-            <div class="accordion-title">
-                <div class="tit">회원 최대 할인가</div>
+            <div class="accordion-title disabled">
+                <div class="tit">
+                    <span>회원 최대 할인가</span>
+                    <div class="tooltip tooltip_w">
+                        <a class="tipIcon" href="javascript:void(0)">?</a>
+                        <div class="tipCont">
+                            <strong>회원 최대 할인가 안내</strong>
+                            <ul class="tip-wrap indent">
+                                <li class="tip type2">옵션 한 개를 기준으로 계산 된 할인가입니다.</li>
+                                <li class="tip type2">회원 최대 할인가는 가격 확인 용도로만 사용 할 수 있습니다.</li>
+                                <li class="tip type2">옵션 또는 배송비 조건, 상품에 따라 회원 최대 할인가가 달라질 수 있으므로, 주문서에서 다시 한번 확인해 주세요.</li>
+                            </ul>
+                            <button class="btn-close">툴팁닫기</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="price_wrap">
                     <span class="current">139,000</span>원
                 </div>

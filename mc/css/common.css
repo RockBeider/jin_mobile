@@ -154,10 +154,29 @@ input[type="text"]:focus,input[type="password"]:focus,input[type="tel"]:focus,in
 input[type='checkbox']{appearance: none;-webkit-appearance: none;width: 17px;height: 17px;vertical-align: middle;border-radius: 2px;margin: 0;cursor: pointer;border: 1px solid #999;background: #fff url(../img/check.png) no-repeat center;background-position-y: -10px;background-size: 10px auto;}
 input[type='checkbox']:checked{background-position-y: 4px;background-color: #fff;border: 1px solid #111;}
 input[type='checkbox']:disabled{opacity:.1;pointer-events: none;}
+
+
+/* S - 리뉴얼 수정 */
+input[type='checkbox'] { width: 20px; height: 20px; flex-shrink: 0;  border: none; background: url(../img/check.png) no-repeat center/ 20px 20px;  border-radius: 0;
+}
+input[type='checkbox']:checked { border: none; background: url(../img/check_on.png) no-repeat center/ 20px 20px; }
+input[type='checkbox']:disabled { opacity: 1; background-image: url(../img/check_disabled.png) ; }
+input[type='checkbox']:checked:disabled {background-image: url(../img/check_on_disabled.png)}
+/* E - 리뉴얼 수정 */
+
+
+
 label input[type='checkbox']{margin-right: 6px;vertical-align: middle;}
 label input[type='checkbox'] + span{vertical-align:middle;font-size: 12px;}
 input[type='checkbox'].type2{background:#e3e3e3;border:1px solid #e3e3e3;width:20px;height:20px;border-radius: 4px;background: #e3e3e3 url(../img/check2.png) no-repeat center 4px;background-size: 10px auto;background-position-y: -10px;}
 input[type='checkbox'].type2:checked{border: 1px solid #111;background-position-y: 5px;background-color: #111;}
+
+/* S - 리뉴얼 수정 */
+input[type='checkbox'].type2:checked {
+    background: #111 url(../img/check2.png) no-repeat center 5px; background-size: 10px auto; 
+}
+/* E - 리뉴얼 수정 */
+
 input[type='checkbox'].check-push{width: 30px;height: 30px;background: url(../img/icon-push.png) no-repeat;background-size: 30px auto;border: 0;background-position-y:-30px}
 input[type='checkbox'].check-push:checked{background-position-y:0}
 

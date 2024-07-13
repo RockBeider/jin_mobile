@@ -24,23 +24,32 @@
   --no-bg: transparent;
 }
 
+
+/*
+    상단 레이아웃 (추후 서브도 적용하기)
+-----------------------------------------
+*/
+.center-wrap {width: 100%;}
+header .sticky-wrapper {position: sticky !important;}
+header .header-gnb {overflow: auto hidden; width: calc(100vw - (100vw - 100%)) !important;}
+header .header-gnb::-webkit-scrollbar {display: none;}
 /*
     메인 레이아웃
 -----------------------------------------
 */
-.main .center-wrap {min-width: 1903px;}
-#contents {margin:0 auto; min-width:1320px; max-width: 1903px;}
-.main_layout {position: relative; display: flex; align-items: start; gap:0; margin-top: 27px; padding-left: 40px;}
+#contents {margin:0 auto; min-width:auto; max-width: 1920px; width: 100%;}
+.main_layout {position: relative; display: flex; justify-content: end; gap:0; margin-top: 10px; padding:0 40px; padding-bottom: 90px; width: 100%;}
 
 /* visual */
-.main_visual {position: fixed; top: 0; left: 50%; margin-left: -910px; flex-shrink: 0; overflow: hidden auto; padding-top: 190px; padding-bottom: 80px; width: 760px; height: 100vh; transition: .2s;}
-.main_visual::-webkit-scrollbar{ display: none; }
-.main_visual.fixed {padding-top: 95px;}
-.main_visual.static {position: absolute; top: auto; bottom: 0; height: auto;}
+.main_visual {position: relative; width: 31.729%;}
+.main_visual .main_visual_inner {overflow: hidden auto; position: sticky; top: 90px; padding-bottom: 2.60vw; width: 100%; height: calc(100vh - 4.69vw);}
+.main_visual .main_visual_inner.static {padding-bottom: 0;}
+.main_visual .main_visual_inner::-webkit-scrollbar {display: none;}
 
 /* contents */
-.main_conts_area {margin-left: 760px; width: 1080px;}
-.main_unit_wrap {overflow: hidden; position: relative; display: block; margin: 0 0 80px 40px; width: 500px;}
+.main_conts_box {width: calc(100% - 31.729%);}
+.main_unit_sizer {display: inline-block; width: 50%;}
+.main_unit_wrap {overflow: hidden; display: inline-block; vertical-align: top; margin: 0 0 4.17vw; padding-left: 2.725%; width: 50%;}
 
 
 /*
@@ -48,26 +57,25 @@
 ----------------------------------------- */
 /* ------- main viisual ------- */
 /* mainVisual */
-.mainVisual {position: relative; padding-top: 84px; overflow-x: hidden;}
+.mainVisual {position: relative; padding-top: 74px; overflow-x: hidden;}
 .mainVisual .imgWrap {}
 .mainVisual .imgWrap img {position: absolute;top: 0;left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top;}
 .mainVisual .videoWrap:before,
 .mainVisual .imgWrap:before {display: block; content:""; padding-bottom: 161.5%;}
 
-.swiper-pagination-custom {position: absolute; left: unset; right: 40px; bottom: 45px; width: auto; height: 36px; border-radius: 100px; line-height: 1; z-index: 1;}
+.swiper-pagination-custom {position: absolute; left: unset; right: 20px; bottom: 26px; width: auto; height: 36px; border-radius: 100px; line-height: 1; z-index: 1;}
 .swiper-pagination-custom {display:inline-flex; align-items: center; padding: 0 16px; background: var(--black3); color: var(--white); font-size: 16px; font-weight: 400;}
 .swiper-pagination-custom .current {margin-right: 5px; font-weight: 500;}
 .swiper-pagination-custom .total {margin-left: 5px; font-weight: 300;}
 .swiper-pagination-custom::after {content: ''; display: inline-block; width: 15px; height: 15px; margin-left: 8px; background: url(../img/icon_plus_white_14.png) no-repeat center center/ auto 100%;}
 
 .mainVisual .badge_group {position: absolute; top: 0; display: flex; flex-direction: column; width: 100%; z-index: 1;}
-.mainVisual .badge_set .badge_item p {position: relative; display: inline-block; height: 58px; padding: 0 24px; background: #000; color: var(--white); font-size: 22px; font-weight: 500; line-height: 58px;}
-.mainVisual .badge_set .badge_item p {max-width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.mainVisual .badge_set .badge_item p::before {content: ''; position: absolute; top: 0; left: 0; display: block; width: 4px; height: 100%; background: var(--point_pink);}
-.mainVisual .badge_set .badge_item:first-child p::after {content: ''; position: absolute; bottom: 0; left: 0; display: block; width: 100%; height: 4px; background: var(--point_pink);}
+.mainVisual .badge_set .badge_item p {overflow: hidden; position: relative; display: inline-block; vertical-align: top; max-width: 90%; height: 3.13vw; padding: 0 1.25vw; background: #000; color: var(--white); font-size: 1.25vw; font-weight: 500; line-height: 3.13vw; text-overflow: ellipsis; white-space: nowrap;}
+.mainVisual .badge_set .badge_item p::before {content: ''; position: absolute; top: 0; left: 0; display: block; width: 0.21vw; height: 100%; background: var(--point_pink);}
+.mainVisual .badge_set .badge_item:first-child p::after {content: ''; position: absolute; bottom: 0; left: 0; display: block; width: 100%; height: 0.21vw; background: var(--point_pink);}
 .mainVisual .badge_set .badge_item {width: 100%;}
 .mainVisual .badge_set .badge_item.main { line-height: 0;}
-.mainVisual .badge_set .badge_item.main p { height: 84px; font-size: 44px; font-weight: 700; line-height: 84px;}
+.mainVisual .badge_set .badge_item.main p { height: 74px; font-size: 40px; font-weight: 700; line-height: 70px;}
 .badge_group .badge_item {animation: none;}
 .badge_group .badge_item p {display: inline-block; letter-spacing: -0.5px; animation: none; opacity: 1;}
 .badge_group .badge_item p span {display: inline-block; letter-spacing: -0.5px; opacity: 0;}
@@ -83,7 +91,7 @@
 /* slim_banner */
 .slim_banner {overflow: hidden; display: block; margin-top: 14px;}
 .slim_banner a.swiper-slide {display: flex; justify-content: space-between; align-items: center; padding:0 27px; width: 100%; height: 66px; background: var(--point_pink);}
-.slim_banner a.swiper-slide .slogan {width:100%; font-weight: 700; font-size: 22px; color: var(--white);}
+.slim_banner a.swiper-slide .slogan {overflow: hidden; display: block; width:100%; font-weight: 700; font-size: 22px; color: var(--white); white-space: nowrap; text-overflow: ellipsis;}
 .slim_banner a.swiper-slide .slogan strong {font-weight: 700; color: var(--point_yellow);}
 .slim_banner a.swiper-slide img {flex-shrink: 0; width:auto; height:16px;}
 
@@ -131,7 +139,7 @@
 .main .page-top .btn-group .line {display: flex; justify-content: center; align-items: center; width: 69px; height: 40px; box-sizing: border-box; border: 1px solid var(--gray_02); font-weight: 500; font-size: 14px; color: var(--gray_08);}
 
 /* 상품리스트 */
-.main .swiper {width: 100%;}
+.main .swiper {overflow: hidden; width: 100%;}
 .main .prd-list {flex-wrap:nowrap;}
 .main .gray-bg .swiper {overflow: hidden;}
 .main .n3 .prd-list {transform: none !important; display: grid; gap: 30px 4px; grid-template-columns: repeat(3, minmax(0, 1fr));}
@@ -190,11 +198,11 @@
 .top_brand_list .top_brand_thumb {overflow: hidden; position: absolute; left: 20px; bottom: 20px; width: calc(100% - 20px);}
 
 /* 유사브랜드 */
-.brand_tabs {position: relative; margin-bottom: 32px; width: calc(100% - 42px);}
-.brand_tabs::after {content: ''; position: absolute; top: 0; left: 100%; width: 42px; height: 100%; background: var(--white);}
-.brand_tabs .tabs-arrow {top: 0; right: -42px; margin-top: 0; margin-right: 0; height: 82px;}
-.brand_tabs .list {margin-right: 12px;}
-.brand_tabs .list .thumb_area {overflow: hidden; position: relative; display: block; width: 82px; height: 82px;}
+.brand_tabs {position: relative; margin-bottom: 32px; width: calc(100% - 2.19vw);}
+.brand_tabs::after {content: ''; position: absolute; bottom: 0; left: 100%; margin-left: 3.4%; width: 2.19vw; height: 15%; background: var(--white);}
+.brand_tabs .tabs-arrow {top: 0; right: -2.19vw; margin-top: 0; margin-right: 0; height: 4.27vw;}
+.brand_tabs .list {margin-right: 0.63vw;}
+.brand_tabs .list .thumb_area {overflow: hidden; position: relative; display: block; width: 4.27vw; height: 4.27vw;}
 .brand_tabs .list .thumb_area img {position: absolute; top: 0; left: 0; width: 100%; height: auto;}
 .brand_tabs .list .txt {overflow: hidden; display: block; margin: 8px auto 0; width: 100%; max-width: 82px; font-weight: 500; font-size: 14px; color: var(--gray_06); text-align: center; text-overflow: ellipsis; white-space: nowrap;}
 .brand_tabs .list.on .thumb_area:after {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 1px solid var(--gray_06); box-sizing: border-box; border-radius: 50%;}

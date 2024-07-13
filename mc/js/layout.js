@@ -854,6 +854,46 @@ function popOpen(id){
     document.getElementsByTagName('html')[0].classList.add('layerPopOpen');
     // 팝업 외부 클릭 시 닫기 이벤트 추가
     document.addEventListener('click', outsideClickListener);
+
+    if (document.getElementById(id).classList.contains('type_bar')) { //bar 타입의 경우
+        let startY;
+        let isDragging = false;
+        let popupHeight;
+
+        const popup = document.getElementById(id).querySelector('.cont');
+        const popupBtn = document.getElementById(id).querySelector('.btn-close');
+        popup.style.height = 'auto';
+        popup.style.padding = '40px 20px 20px 20px';
+
+        popupBtn.addEventListener('touchstart', (e) => {
+            startY = e.touches[0].clientY;
+            popupHeight = popup.offsetHeight;
+            isDragging = true;
+        });
+        popupBtn.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            const touchY = e.touches[0].clientY;
+            const moveY = touchY - startY;
+            if (moveY > 0) {
+                popup.style.height = `${popupHeight - moveY}px`;
+            }
+        });
+        popupBtn.addEventListener('touchend', (e) => {
+            isDragging = false;
+            const touchY = e.changedTouches[0].clientY;
+            const moveY = touchY - startY;
+            if (moveY > 150) {
+                popup.style.height = '0';
+                popup.style.padding = '0';
+                setTimeout(() => {
+                    popClose(id);
+                }, 200);
+            } else {
+                popup.style.height = 'auto';
+            }
+        });
+    }
+
 }
 
 //팝업닫기
@@ -862,101 +902,18 @@ function popClose(id){
     document.getElementById(id).classList.remove('open')
     // 팝업 닫기 시 외부 클릭 이벤트 제거
     document.removeEventListener('click', outsideClickListener);
+
 }
 // 팝업 외부 클릭
 function outsideClickListener(event) {
-    const popups = document.querySelectorAll('.layerPop');
-    const isClickedOutside = !popups.some(popup => popup.contains(event.target));
-
-    if (isClickedOutside) {
-        for (let i = 0; i < popups.length; i++) {
-            popups[i].classList.remove('open');
+    const popups = document.querySelectorAll('.layerPop.open');
+    popups.forEach(popup => {
+        const cont = popup.querySelector('.cont');
+        if (cont && !cont.contains(event.target) && popup.contains(event.target)) {
+            popClose(popup.id);
         }
-        document.getElementsByTagName('html')[0].classList.remove('layerPopOpen');
-        document.removeEventListener('click', outsideClickListener);
-    }
+    });
 }
-
-
-// //팝업열기
-// function popOpen(id){
-//     /*
-//     const list = document.getElementsByClassName('layerPop');
-//     for (let index = 0; index < list.length; index++) {
-//         list[index].classList.remove('open')
-//     }
-//     */
-//    document.getElementById(id).classList.add('open')
-//    document.getElementsByTagName('html')[0].classList.add('layerPopOpen');
-//    // 팝업 외부 클릭 시 닫기 이벤트 추가
-//    setTimeout(function() {
-//        document.addEventListener('click', outsideClickListener);
-//        // type_bar 클래스가 존재하는 경우에만 터치 이벤트 추가
-//        const popup = document.getElementById(id);
-//        if (popup.classList.contains('type_bar')) {
-//            const closeButton = popup.querySelector('.btn-close');
-//            closeButton.addEventListener('touchstart', handleTouchStart, { passive: true });
-//            closeButton.addEventListener('touchmove', handleTouchMove, { passive: true });
-//            popup.addEventListener('touchstart', preventOutsideTouch, { passive: false });
-//        }
-//     }, 300)
-// }
-
-// //팝업닫기
-// function popClose(id){
-//     document.getElementsByTagName('html')[0].classList.remove('layerPopOpen');
-//     document.getElementById(id).classList.remove('open')
-//     // 팝업 닫기 시 외부 클릭 이벤트 제거
-//     document.removeEventListener('click', outsideClickListener);
-//     setTimeout(function() {
-//         const popup = document.getElementById(id);
-//         // type_bar 클래스가 존재하는 경우에만 터치 이벤트 제거
-//         if (popup.classList.contains('type_bar')) {
-//             const closeButton = popup.querySelector('.btn-close');
-//             closeButton.removeEventListener('touchstart', handleTouchStart, { passive: true });
-//             closeButton.removeEventListener('touchmove', handleTouchMove, { passive: true });
-//             popup.removeEventListener('touchstart', preventOutsideTouch, { passive: false });
-//         }
-//     }, 300)
-// }
-// // 팝업 외부 클릭
-// function outsideClickListener(event) {
-//     const popups = document.querySelectorAll('.layerPop.open');
-//     popups.forEach(popup => {
-//         const cont = popup.querySelector('.cont');
-//         if (cont && !cont.contains(event.target)) {
-//             popClose(popup.id);
-//         }
-//     });
-// }
-// // 터치 시작 위치 기록
-// function handleTouchStart(event) {
-//     startY = event.touches[0].clientY;
-// }
-
-// // 터치 이동 거리 확인하여 아래로 스와이프 시 팝업 닫기
-// function handleTouchMove(event) {
-//     if (!startY) {
-//         return;
-//     }
-//     let endY = event.touches[0].clientY;
-//     let diffY = startY - endY;
-
-//     // 아래로 50px 이상 스와이프 시 팝업 닫기
-//     if (diffY < -50) {
-//         popClose('layerPop-goodsOptionSelect');
-//     }
-// }
-// function preventOutsideTouch(event) {
-//     const cont = event.currentTarget.querySelector('.layerPop');
-//     if (cont && !cont.contains(event.target)) {
-//         event.preventDefault();
-//     }
-// }
-
-
-
-
 
 
 

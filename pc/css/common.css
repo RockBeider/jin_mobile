@@ -282,7 +282,7 @@ header.fixed {position:fixed; left:0; top:0; z-index:20; background:#fff; width:
 /* header.fixed + .container {padding-top:200px;} */
 header.fixed .topfixBanner{display:none}
 
-header .logo {display:block; width:180px; height:16px; margin-right:77.75px; font-size:0; background:url('../img/logo.png') no-repeat; background-size:contain}
+header .logo {display:block; width:124px; height:17px; margin-right:77.75px; font-size:0; background:url('../img/logo_new.jpg') no-repeat left center;}
 header .util-menu {display:flex; justify-content:flex-end; align-items:center;}
 header .util-menu li + li {margin-left:20px;}
 header .util-menu li a {display:block; font-size:13px; color:#111; line-height: 1.46; text-decoration:none;}
